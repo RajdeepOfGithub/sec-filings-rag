@@ -1,0 +1,10 @@
+openai
+chromadb
+rank-bm25
+pypdf
+python-dotenv
+langchain
+langchain-text-splitters
+beautifulsoup4
+lxml
+sentence-transformers

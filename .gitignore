@@ -1,0 +1,9 @@
+.env
+venv/
+chroma_db/
+data/*
+!data/README.md
+__pycache__/
+*.pyc
+*.pkl
+.vscode/
