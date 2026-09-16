@@ -1,0 +1,1294 @@
+{
+  "question_id": "q16",
+  "question": "What was the CEO's total compensation?",
+  "category": "no_answer",
+  "difficulty": "medium",
+  "expected": {
+    "should_decline": true,
+    "reason": "Executive compensation is not disclosed in either the 10-K or the 10-Q in this corpus. Item 11 of the 10-K incorporates it by reference rather than stating it."
+  },
+  "evidence": {
+    "document": null,
+    "note": "No supporting evidence exists in the corpus. Any figure returned is a failure."
+  },
+  "notes": "REGRESSION CHECK for the insufficient-context path. v1 declines correctly with an empty citations list. Chosen specifically because Item 11 in JPMC's 10-K is a pointer, so adjacent compensation-expense figures exist in the corpus and could tempt a wrong answer.",
+  "run": {
+    "timestamp": "2026-09-16T00:01:01.660461+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-K_FY2025_707",
+      "rank": 1,
+      "score": 1.0091676712036133,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K"
+      },
+      "text": "ices. The CMDC reviews and approves the Firm’s compensation and qualified benefits programs. The Committee reviews the performance of Operating Committee members against their goals, and approves their compensation awards. In addition, the CEO’s compensation award is subject to ratification by the independent directors of the Board. The CMDC also reviews the development of and succession for key executives. As part of the Board’s role of reinforcing, demonstrating and communicating the “tone at "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_80",
+      "rank": 2,
+      "score": 1.0135678052902222,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Item 1 - Business",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "el employees, and all members of the Operating Committee and the Board of Directors. (d) Presented as a percentage of total U.S.-based employees, total U.S.-based senior level employees, all members of the Operating Committee, and all members of the Board of Directors, respectively. (e) Senior level employees represents employees with the titles of Managing Director and above. (f) Excludes Todd A. Combs, who resigned from the Firm’s Board of Directors, effective December 7, 2025. Refer to Recent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_380",
+      "rank": 3,
+      "score": 1.0428327322006226,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": "0,000 (a) $ 152.19 77,131,051 (b) Total 2,250,000 $ 152.19 77,131,051 (a) Does not include restricted stock units or performance stock units granted under the shareholder-approved Long-Term Incentive Plan (“LTIP”). Refer to Note 9 for further information. (b) Represents shares available for future issuance under the shareholder-approved LTIP. All shares available for future issuance will be issued under the shareholder-approved LTIP. Refer to Note 9 for further discussion. Item 13. Certain Relat"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_232",
+      "rank": 4,
+      "score": 1.0824694633483887,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Man"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rank": 5,
+      "score": 1.0886858701705933,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rank": 6,
+      "score": 1.102095127105713,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_887",
+      "rank": 7,
+      "score": 1.1049890518188477,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "s (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1260",
+      "rank": 8,
+      "score": 1.1122419834136963,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "$ 587 million and $ 541 million, respectively. (e) Included a $ 4.6 billion net gain related to Visa shares and $ 763 million of gains on certain equity investments. Refer to Notes 2 and 5 for additional information. (f) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Cor"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_201",
+      "rank": 9,
+      "score": 1.1153192520141602,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_157",
+      "rank": 10,
+      "score": 1.1257034540176392,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "on expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 22 Quarterly results Net income was $5.3 billion, up 3%. Net revenue was $20.3 billion, up 8%. Net interest income was $15.1 billion, up 5%, predominan"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_360",
+      "rank": 11,
+      "score": 1.128494143486023,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K"
+      },
+      "text": "ting on March 25, 2026 Jeremy Barnum Chief Financial Officer November 14, 2025 November 14, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Lori Beer Chief Information Officer November 13, 2025 November 13, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 James Dimon (a) Chairman and CEO November 10, 2025 November 10, 2025 – August 7, 2026 200,000 Mary Erdoes CEO, AWM November 12, 202"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_95",
+      "rank": 12,
+      "score": 1.1306092739105225,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "uto operating lease assets. Refer to Note 16 for additional information. (b) Refer to Note 5 for additional information. Quarterly results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_594",
+      "rank": 13,
+      "score": 1.1336220502853394,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "pensation expense as percentage of total net revenue 25 26 27 Revenue by business Investment Banking $ 10,198 $ 9,636 $ 7,076 Payments 19,331 18,085 17,818 Lending 7,601 7,470 6,896 Other 6 76 107 Total Banking & Payments 37,136 35,267 31,897 Fixed Income Markets 22,532 20,066 19,180 Equity Markets 13,250 9,941 8,784 Securities Services 5,599 5,084 4,772 Credit Adjustments & Other (a) (63) (244) (280) Total Markets & Securities Services 41,318 34,847 32,456 Total net revenue $ 78,454 $ 70,114 $ "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_252",
+      "rank": 14,
+      "score": 1.133629322052002,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "orporate 5,253 (c) (111) NM 5,131 (c) 629 NM Total net revenue $ 6,046 $ 1,538 293 $ 7,261 $ 3,842 89 Net income Treasury and CIO $ 529 $ 1,121 (53) $ 1,371 $ 2,279 (40) Other Corporate 3,680 (c) 574 NM 3,537 (c) 1,109 219 Total net income $ 4,209 $ 1,695 148 $ 4,908 $ 3,388 45 Total assets (period-end) $ 1,309,857 (d) $ 1,370,312 (4) $ 1,309,857 (d) $ 1,370,312 (4) Loans (period-end) 3,126 2,033 54 3,126 2,033 54 Deposits (period-end) (b) 59,437 27,952 113 59,437 27,952 113 Employees 54,832 55,"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_253",
+      "rank": 15,
+      "score": 1.1344068050384521,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " 27,952 113 59,437 27,952 113 Employees 54,832 55,310 (e) (1) % 54,832 55,310 (e) (1) % (a) Included tax-equivalent adjustments, predominantly driven by tax-exempt income from municipal bonds, of $44 million and $38 million for the three months ended June 30, 2026 and 2025, respectively, and $88 million and $74 million for the six months ended June 30, 2026 and 2025, respectively. (b) Predominantly relates to the Firm's international consumer initiatives. (c) Included a $4.6 billion net gain rel"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1806",
+      "rank": 16,
+      "score": 1.1365007162094116,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans $ 3,614 $ 3,504 $ 3,117 At December 31, 2025, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compe"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_560",
+      "rank": 17,
+      "score": 1.142148494720459,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": " 5,227 Return on equity (“ROE”) 32 % 32 % 38 % 18 % 18 % 14 % 40 % 34 % 31 % Year ended December 31, Corporate Total (in millions, except ratios) 2025 2024 2023 2025 2024 2023 Total net revenue $ 7,025 $ 17,394 (b) $ 8,038 $ 185,581 $ 180,593 (b) $ 162,366 Total noninterest expense 1,825 3,994 (c) 5,601 95,640 91,797 (c) 87,172 Pre-provision profit 5,200 13,400 2,437 89,941 88,796 75,194 Provision for credit losses 7 10 171 14,212 10,678 9,320 Net income 4,520 10,601 2,821 57,048 58,471 49,552 R"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_236",
+      "rank": 18,
+      "score": 1.1421805620193481,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "her management fees due to strong net inflows and higher average market levels, as well as higher brokerage commissions, and • higher net interest income driven by higher average loans, largely offset by narrower spreads on loans. Noninterest expense was $8.4 billion, up 12%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advisor teams, as well as higher distribution fees. 36 Selected metrics As of or for the three mon"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_886",
+      "rank": 19,
+      "score": 1.1430176496505737,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "ng policies and other information relating to employee share-based incentives. The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Cost of prior grants of restricted stock units (“RSUs”), performance share units (“PSUs”) and stock appreciation rights (“SARs”) that are amortized over their applicabl"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1804",
+      "rank": 20,
+      "score": 1.146291732788086,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "609 $ 150.41 2,250 $ 152.19 Granted 14,602 261.24 — — Exercised or vested ( 20,469 ) 148.74 — — Forfeited ( 2,182 ) 176.47 — — Canceled NA NA — — Outstanding, December 31 42,560 $ 187.64 2,250 $ 152.19 5.7 $ 385,369 Exercisable, December 31 NA NA — — — — The total fair value of RSUs and PSUs that vested during the years ended December 31, 2025, 2024 and 2023, was $ 5.0 billion, $ 3.5 billion and $ 2.5 billion, respectively. There were no SARs exercised in 2025 and 2024. The total intrinsic value"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_707",
+      "rank": 1,
+      "score": 12.785345820923744,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "ices. The CMDC reviews and approves the Firm’s compensation and qualified benefits programs. The Committee reviews the performance of Operating Committee members against their goals, and approves their compensation awards. In addition, the CEO’s compensation award is subject to ratification by the independent directors of the Board. The CMDC also reviews the development of and succession for key executives. As part of the Board’s role of reinforcing, demonstrating and communicating the “tone at "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_700",
+      "rank": 2,
+      "score": 9.277619452397817,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "neral Auditor reports to the Audit Committee and administratively to the Firm’s CEO. (d) The Firmwide Risk Committee escalates to the Board Risk Committee, as appropriate. (e) The Asset and Liability Committee escalates to the Firm’s CEO or the Board of Directors (including its committees), as appropriate. The Firm’s Operating Committee, which consists of the Firm’s CEO, CRO, Chief Financial Officer (“CFO”), General Counsel, CEOs of the LOBs and other senior executives, is accountable to and may"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_59",
+      "rank": 3,
+      "score": 8.966257683908884,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_361",
+      "rank": 4,
+      "score": 8.177262223778811,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "2026 200,000 Mary Erdoes CEO, AWM November 12, 2025 November 12, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Marianne Lake (b) CEO, CCB November 12, 2025 November 12, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Robin Leopold Head of Human Resources November 14, 2025 November 14, 2025 – June 30, 2026 865 Douglas Petno Co-CEO, CIB November 14, 2025 November 14, 2025 – June 30, "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_699",
+      "rank": 5,
+      "score": 8.021470014087908,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "re. In addition, there are other committees, forums and channels of escalation that support the oversight of risk that are not shown in the chart below or described in this Form 10-K. (a) The Firm’s CEO is also the Chairman of the Board of Directors. (b) The Firm’s CRO reports to the Firm’s CEO and the Board Risk Committee. The Firm’s CRO may escalate directly to the Board of Directors (including its committees), as appropriate. (c) The Firm’s General Auditor reports to the Audit Committee and a"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_69",
+      "rank": 6,
+      "score": 7.09490561664499,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Item 1 - Business",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "as also established standards covering compensation principles for banks. The Firm’s compensation practices are also subject to regulation and oversight by regulators in other jurisdictions, notably the Fifth Capital Requirements Directive (“CRD V”), as implemented in the EU, which includes compensation-related provisions. The European Banking Authority has instituted guidelines on compensation policies including under CRD V which in certain countries (such as Germany) are implemented or supplem"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_360",
+      "rank": 7,
+      "score": 6.9972906671969275,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "ting on March 25, 2026 Jeremy Barnum Chief Financial Officer November 14, 2025 November 14, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Lori Beer Chief Information Officer November 13, 2025 November 13, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 James Dimon (a) Chairman and CEO November 10, 2025 November 10, 2025 – August 7, 2026 200,000 Mary Erdoes CEO, AWM November 12, 202"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_70",
+      "rank": 8,
+      "score": 6.660847417547814,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Item 1 - Business",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "tries (such as Germany) are implemented or supplemented by local regulations or guidelines. The U.K. regulators have also instituted regulations and guidelines on compensation policies, which diverge in certain areas from EU rules. The Firm expects that the implementation of regulatory guidelines regarding compensation in the U.S. and other countries will continue to evolve, and may affect the manner in which the Firm structures its compensation programs and practices. Sustainability: Policymake"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rank": 9,
+      "score": 6.52457682012912,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_68",
+      "rank": 10,
+      "score": 6.516282280628666,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Item 1 - Business"
+      },
+      "text": "he U.K. Bribery Act. Compensation practices: The Firm’s compensation practices are subject to oversight by the Federal Reserve, as well as other agencies. The Federal Reserve has jointly issued guidance with the FDIC and the OCC that is designed to ensure that incentive compensation paid by banking organizations does not encourage imprudent risk-taking that threatens the organizations’ safety and soundness. The Financial Stability Board (“FSB”) has also established standards covering compensatio"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1298",
+      "rank": 11,
+      "score": 6.516282280628666,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "ss/transaction volume or revenue. Examples of volume- and revenue-related expenses include commissions and incentive compensation, depreciation expense related to operating lease assets, and brokerage expense related to equities trading transaction volume. • Investments include expenses associated with supporting medium- to longer-term strategic plans of the Firm. Examples of investments include initiatives in technology (including related compensation), marketing, and compensation for new banke"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_84",
+      "rank": 12,
+      "score": 6.488119022830203,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Item 1 - Business"
+      },
+      "text": "e Firm requires that its employees, including new hires, complete a training curriculum that covers, among other topics, information concerning Firm policies and standards. Rewarding and supporting employees The Firm provides market-competitive compensation and benefits programs. JPMorganChase’s compensation philosophy includes guiding principles that drive compensation-related decisions across the Firm, including pay-for-performance practices that are designed to attract and retain top talent, "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1807",
+      "rank": 13,
+      "score": 6.324122542167946,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": ". That cost is expected to be amortized into compensation expense over a weighted-average period of 1.6 years. The Firm does not capitalize any compensation expense related to share-based compensation awards to employees. Tax benefits Income tax benefits (including tax benefits from dividends or d ividend equivalents) related to share-based incentive arrangements recognized in the Firm’s Consolidated statements of income for the years ended December 31, 2025, 2024 and 2023, were $ 1.4 billion, $"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1806",
+      "rank": 14,
+      "score": 6.309108909975935,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans $ 3,614 $ 3,504 $ 3,117 At December 31, 2025, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compe"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_694",
+      "rank": 15,
+      "score": 6.094812215297961,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "tation of policies and standards with respect to its own processes. The third line of defense is Internal Audit, an independent function that provides objective assessment of the adequacy and effectiveness of Firmwide processes, controls, governance and risk management. The Internal Audit function is led by the General Auditor, who reports to the Audit Committee and administratively to the CEO. In addition, there are other functions that contribute to the Firmwide control environment but are not"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_85",
+      "rank": 16,
+      "score": 5.899706911404425,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Item 1 - Business",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "at are designed to attract and retain top talent, to be responsive to and aligned with shareholder interests, and to reinforce the Firm’s culture and Business Principles that guide how the Firm does business. The Firm follows a disciplined and balanced compensation framework, including the integration of risk, controls and conduct considerations. The Firm’s compensation approach is designed to pay the Firm’s employees fairly and competitively for the work they do. JPMorganChase offers extensive "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_688",
+      "rank": 17,
+      "score": 5.893153562774404,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "s, and fines or penalties, or qualitative impacts such as damage to the Firm’s reputation, loss of clients and customers, and regulatory and enforcement actions. The Firm’s risk governance framework is managed on a Firmwide basis. The Firm has an Independent Risk Management (“IRM”) function, which is comprised of Risk Management and Compliance. The Firm’s Chief Executive Officer (“CEO”) appoints, subject to approval by the Risk Committee of the Board of Directors (the “Board Risk Committee”), th"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1223",
+      "rank": 18,
+      "score": 5.893153562774404,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "irm’s Conflicts Office which reviews the Firm’s wholesale transactions that may have the potential to create conflicts of interest for the Firm. Governance and oversight The Firm’s General Counsel reports to the CEO and is a member of the Operating Committee, the Firmwide Risk Committee and the Firmwide Control Committee. The Firm’s General Counsel and other members of Legal report on significant legal matters to the Firm’s Board of Directors and to the Audit Committee. Legal serves on and advis"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 19,
+      "score": 5.7972469969561775,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_683",
+      "rank": 20,
+      "score": 5.797183234954989,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "s and Corporate; and • A Firmwide risk governance and oversight structure. The Firm follows a disciplined and balanced compensation framework with strong internal governance and independent oversight by the Board of Directors (the “Board”). The impact of risk and control issues is carefully considered in the Firm’s performance evaluation and incentive compensation processes. Risk governance framework The Firm’s risk governance framework involves understanding drivers of risks, types of risks and"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-K_FY2025_707",
+      "rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "ices. The CMDC reviews and approves the Firm’s compensation and qualified benefits programs. The Committee reviews the performance of Operating Committee members against their goals, and approves their compensation awards. In addition, the CEO’s compensation award is subject to ratification by the independent directors of the Board. The CMDC also reviews the development of and succession for key executives. As part of the Board’s role of reinforcing, demonstrating and communicating the “tone at "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rank": 2,
+      "rrf_score": 0.02964426877470356,
+      "found_in": {
+        "dense": 6,
+        "sparse": 9
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_360",
+      "rank": 3,
+      "rrf_score": 0.02900988017658188,
+      "found_in": {
+        "dense": 11,
+        "sparse": 7
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "ting on March 25, 2026 Jeremy Barnum Chief Financial Officer November 14, 2025 November 14, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Lori Beer Chief Information Officer November 13, 2025 November 13, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 James Dimon (a) Chairman and CEO November 10, 2025 November 10, 2025 – August 7, 2026 200,000 Mary Erdoes CEO, AWM November 12, 202"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1806",
+      "rank": 4,
+      "rrf_score": 0.02667140825035562,
+      "found_in": {
+        "dense": 16,
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans $ 3,614 $ 3,504 $ 3,117 At December 31, 2025, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compe"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_80",
+      "rank": 5,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Item 1 - Business",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "el employees, and all members of the Operating Committee and the Board of Directors. (d) Presented as a percentage of total U.S.-based employees, total U.S.-based senior level employees, all members of the Operating Committee, and all members of the Board of Directors, respectively. (e) Senior level employees represents employees with the titles of Managing Director and above. (f) Excludes Todd A. Combs, who resigned from the Firm’s Board of Directors, effective December 7, 2025. Refer to Recent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_700",
+      "rank": 6,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "neral Auditor reports to the Audit Committee and administratively to the Firm’s CEO. (d) The Firmwide Risk Committee escalates to the Board Risk Committee, as appropriate. (e) The Asset and Liability Committee escalates to the Firm’s CEO or the Board of Directors (including its committees), as appropriate. The Firm’s Operating Committee, which consists of the Firm’s CEO, CRO, Chief Financial Officer (“CFO”), General Counsel, CEOs of the LOBs and other senior executives, is accountable to and may"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_380",
+      "rank": 7,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": "0,000 (a) $ 152.19 77,131,051 (b) Total 2,250,000 $ 152.19 77,131,051 (a) Does not include restricted stock units or performance stock units granted under the shareholder-approved Long-Term Incentive Plan (“LTIP”). Refer to Note 9 for further information. (b) Represents shares available for future issuance under the shareholder-approved LTIP. All shares available for future issuance will be issued under the shareholder-approved LTIP. Refer to Note 9 for further discussion. Item 13. Certain Relat"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_59",
+      "rank": 8,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_232",
+      "rank": 9,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Man"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_361",
+      "rank": 10,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "2026 200,000 Mary Erdoes CEO, AWM November 12, 2025 November 12, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Marianne Lake (b) CEO, CCB November 12, 2025 November 12, 2025 – June 30, 2026 50% of the net issued shares received as a result of PSUs vesting on March 25, 2026 Robin Leopold Head of Human Resources November 14, 2025 November 14, 2025 – June 30, 2026 865 Douglas Petno Co-CEO, CIB November 14, 2025 November 14, 2025 – June 30, "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rank": 11,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_699",
+      "rank": 12,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "re. In addition, there are other committees, forums and channels of escalation that support the oversight of risk that are not shown in the chart below or described in this Form 10-K. (a) The Firm’s CEO is also the Chairman of the Board of Directors. (b) The Firm’s CRO reports to the Firm’s CEO and the Board Risk Committee. The Firm’s CRO may escalate directly to the Board of Directors (including its committees), as appropriate. (c) The Firm’s General Auditor reports to the Audit Committee and a"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_69",
+      "rank": 13,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "Item 1 - Business",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "as also established standards covering compensation principles for banks. The Firm’s compensation practices are also subject to regulation and oversight by regulators in other jurisdictions, notably the Fifth Capital Requirements Directive (“CRD V”), as implemented in the EU, which includes compensation-related provisions. The European Banking Authority has instituted guidelines on compensation policies including under CRD V which in certain countries (such as Germany) are implemented or supplem"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_887",
+      "rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "s (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1260",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "$ 587 million and $ 541 million, respectively. (e) Included a $ 4.6 billion net gain related to Visa shares and $ 763 million of gains on certain equity investments. Refer to Notes 2 and 5 for additional information. (f) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Cor"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_70",
+      "rank": 16,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Item 1 - Business",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "tries (such as Germany) are implemented or supplemented by local regulations or guidelines. The U.K. regulators have also instituted regulations and guidelines on compensation policies, which diverge in certain areas from EU rules. The Firm expects that the implementation of regulatory guidelines regarding compensation in the U.S. and other countries will continue to evolve, and may affect the manner in which the Firm structures its compensation programs and practices. Sustainability: Policymake"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_201",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_157",
+      "rank": 18,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "on expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 22 Quarterly results Net income was $5.3 billion, up 3%. Net revenue was $20.3 billion, up 8%. Net interest income was $15.1 billion, up 5%, predominan"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_68",
+      "rank": 19,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Item 1 - Business"
+      },
+      "text": "he U.K. Bribery Act. Compensation practices: The Firm’s compensation practices are subject to oversight by the Federal Reserve, as well as other agencies. The Federal Reserve has jointly issued guidance with the FDIC and the OCC that is designed to ensure that incentive compensation paid by banking organizations does not encourage imprudent risk-taking that threatens the organizations’ safety and soundness. The Financial Stability Board (“FSB”) has also established standards covering compensatio"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1298",
+      "rank": 20,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "ss/transaction volume or revenue. Examples of volume- and revenue-related expenses include commissions and incentive compensation, depreciation expense related to operating lease assets, and brokerage expense related to equities trading transaction volume. • Investments include expenses associated with supporting medium- to longer-term strategic plans of the Firm. Examples of investments include initiatives in technology (including related compensation), marketing, and compensation for new banke"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_95",
+      "rank": 21,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "uto operating lease assets. Refer to Note 16 for additional information. (b) Refer to Note 5 for additional information. Quarterly results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_84",
+      "rank": 22,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Item 1 - Business"
+      },
+      "text": "e Firm requires that its employees, including new hires, complete a training curriculum that covers, among other topics, information concerning Firm policies and standards. Rewarding and supporting employees The Firm provides market-competitive compensation and benefits programs. JPMorganChase’s compensation philosophy includes guiding principles that drive compensation-related decisions across the Firm, including pay-for-performance practices that are designed to attract and retain top talent, "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_594",
+      "rank": 23,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "pensation expense as percentage of total net revenue 25 26 27 Revenue by business Investment Banking $ 10,198 $ 9,636 $ 7,076 Payments 19,331 18,085 17,818 Lending 7,601 7,470 6,896 Other 6 76 107 Total Banking & Payments 37,136 35,267 31,897 Fixed Income Markets 22,532 20,066 19,180 Equity Markets 13,250 9,941 8,784 Securities Services 5,599 5,084 4,772 Credit Adjustments & Other (a) (63) (244) (280) Total Markets & Securities Services 41,318 34,847 32,456 Total net revenue $ 78,454 $ 70,114 $ "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1807",
+      "rank": 24,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": ". That cost is expected to be amortized into compensation expense over a weighted-average period of 1.6 years. The Firm does not capitalize any compensation expense related to share-based compensation awards to employees. Tax benefits Income tax benefits (including tax benefits from dividends or d ividend equivalents) related to share-based incentive arrangements recognized in the Firm’s Consolidated statements of income for the years ended December 31, 2025, 2024 and 2023, were $ 1.4 billion, $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_252",
+      "rank": 25,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "orporate 5,253 (c) (111) NM 5,131 (c) 629 NM Total net revenue $ 6,046 $ 1,538 293 $ 7,261 $ 3,842 89 Net income Treasury and CIO $ 529 $ 1,121 (53) $ 1,371 $ 2,279 (40) Other Corporate 3,680 (c) 574 NM 3,537 (c) 1,109 219 Total net income $ 4,209 $ 1,695 148 $ 4,908 $ 3,388 45 Total assets (period-end) $ 1,309,857 (d) $ 1,370,312 (4) $ 1,309,857 (d) $ 1,370,312 (4) Loans (period-end) 3,126 2,033 54 3,126 2,033 54 Deposits (period-end) (b) 59,437 27,952 113 59,437 27,952 113 Employees 54,832 55,"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_253",
+      "rank": 26,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " 27,952 113 59,437 27,952 113 Employees 54,832 55,310 (e) (1) % 54,832 55,310 (e) (1) % (a) Included tax-equivalent adjustments, predominantly driven by tax-exempt income from municipal bonds, of $44 million and $38 million for the three months ended June 30, 2026 and 2025, respectively, and $88 million and $74 million for the six months ended June 30, 2026 and 2025, respectively. (b) Predominantly relates to the Firm's international consumer initiatives. (c) Included a $4.6 billion net gain rel"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_694",
+      "rank": 27,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "tation of policies and standards with respect to its own processes. The third line of defense is Internal Audit, an independent function that provides objective assessment of the adequacy and effectiveness of Firmwide processes, controls, governance and risk management. The Internal Audit function is led by the General Auditor, who reports to the Audit Committee and administratively to the CEO. In addition, there are other functions that contribute to the Firmwide control environment but are not"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_85",
+      "rank": 28,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Item 1 - Business",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "at are designed to attract and retain top talent, to be responsive to and aligned with shareholder interests, and to reinforce the Firm’s culture and Business Principles that guide how the Firm does business. The Firm follows a disciplined and balanced compensation framework, including the integration of risk, controls and conduct considerations. The Firm’s compensation approach is designed to pay the Firm’s employees fairly and competitively for the work they do. JPMorganChase offers extensive "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_560",
+      "rank": 29,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": " 5,227 Return on equity (“ROE”) 32 % 32 % 38 % 18 % 18 % 14 % 40 % 34 % 31 % Year ended December 31, Corporate Total (in millions, except ratios) 2025 2024 2023 2025 2024 2023 Total net revenue $ 7,025 $ 17,394 (b) $ 8,038 $ 185,581 $ 180,593 (b) $ 162,366 Total noninterest expense 1,825 3,994 (c) 5,601 95,640 91,797 (c) 87,172 Pre-provision profit 5,200 13,400 2,437 89,941 88,796 75,194 Provision for credit losses 7 10 171 14,212 10,678 9,320 Net income 4,520 10,601 2,821 57,048 58,471 49,552 R"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_688",
+      "rank": 30,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "s, and fines or penalties, or qualitative impacts such as damage to the Firm’s reputation, loss of clients and customers, and regulatory and enforcement actions. The Firm’s risk governance framework is managed on a Firmwide basis. The Firm has an Independent Risk Management (“IRM”) function, which is comprised of Risk Management and Compliance. The Firm’s Chief Executive Officer (“CEO”) appoints, subject to approval by the Risk Committee of the Board of Directors (the “Board Risk Committee”), th"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_236",
+      "rank": 31,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "her management fees due to strong net inflows and higher average market levels, as well as higher brokerage commissions, and • higher net interest income driven by higher average loans, largely offset by narrower spreads on loans. Noninterest expense was $8.4 billion, up 12%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advisor teams, as well as higher distribution fees. 36 Selected metrics As of or for the three mon"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1223",
+      "rank": 32,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "irm’s Conflicts Office which reviews the Firm’s wholesale transactions that may have the potential to create conflicts of interest for the Firm. Governance and oversight The Firm’s General Counsel reports to the CEO and is a member of the Operating Committee, the Firmwide Risk Committee and the Firmwide Control Committee. The Firm’s General Counsel and other members of Legal report on significant legal matters to the Firm’s Board of Directors and to the Audit Committee. Legal serves on and advis"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_886",
+      "rank": 33,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "ng policies and other information relating to employee share-based incentives. The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Cost of prior grants of restricted stock units (“RSUs”), performance share units (“PSUs”) and stock appreciation rights (“SARs”) that are amortized over their applicabl"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 34,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1804",
+      "rank": 35,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "609 $ 150.41 2,250 $ 152.19 Granted 14,602 261.24 — — Exercised or vested ( 20,469 ) 148.74 — — Forfeited ( 2,182 ) 176.47 — — Canceled NA NA — — Outstanding, December 31 42,560 $ 187.64 2,250 $ 152.19 5.7 $ 385,369 Exercisable, December 31 NA NA — — — — The total fair value of RSUs and PSUs that vested during the years ended December 31, 2025, 2024 and 2023, was $ 5.0 billion, $ 3.5 billion and $ 2.5 billion, respectively. There were no SARs exercised in 2025 and 2024. The total intrinsic value"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_683",
+      "rank": 36,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "s and Corporate; and • A Firmwide risk governance and oversight structure. The Firm follows a disciplined and balanced compensation framework with strong internal governance and independent oversight by the Board of Directors (the “Board”). The impact of risk and control issues is carefully considered in the Firm’s performance evaluation and incentive compensation processes. Risk governance framework The Firm’s risk governance framework involves understanding drivers of risks, types of risks and"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_707",
+      "rerank_rank": 1,
+      "rerank_score": -1.1203240156173706,
+      "rrf_rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "ices. The CMDC reviews and approves the Firm’s compensation and qualified benefits programs. The Committee reviews the performance of Operating Committee members against their goals, and approves their compensation awards. In addition, the CEO’s compensation award is subject to ratification by the independent directors of the Board. The CMDC also reviews the development of and succession for key executives. As part of the Board’s role of reinforcing, demonstrating and communicating the “tone at "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rerank_rank": 2,
+      "rerank_score": -4.900712013244629,
+      "rrf_rank": 11,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rerank_rank": 3,
+      "rerank_score": -4.912714004516602,
+      "rrf_rank": 2,
+      "rrf_score": 0.02964426877470356,
+      "found_in": {
+        "dense": 6,
+        "sparse": 9
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_887",
+      "rerank_rank": 4,
+      "rerank_score": -5.036094665527344,
+      "rrf_rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "s (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1806",
+      "rerank_rank": 5,
+      "rerank_score": -5.891193389892578,
+      "rrf_rank": 4,
+      "rrf_score": 0.02667140825035562,
+      "found_in": {
+        "dense": 16,
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans $ 3,614 $ 3,504 $ 3,117 At December 31, 2025, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compe"
+    }
+  ],
+  "context": "[1] (10-K, FY2025, Body - MD&A and financials)\nices. The CMDC reviews and approves the Firm’s compensation and qualified benefits programs. The Committee reviews the performance of Operating Committee members against their goals, and approves their compensation awards. In addition, the CEO’s compensation award is subject to ratification by the independent directors of the Board. The CMDC also reviews the development of and succession for key executives. As part of the Board’s role of reinforcing, demonstrating and communicating the “tone at \n\n[2] (10-Q, Q2-2026)\nrecorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)\n\n[3] (10-K, FY2025, Body - MD&A and financials)\nrcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o\n\n[4] (10-Q, Q2-2026)\ns (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs\n\n[5] (10-K, FY2025, Body - MD&A and financials)\n vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans $ 3,614 $ 3,504 $ 3,117 At December 31, 2025, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compe",
+  "user_prompt": "[1] (10-K, FY2025, Body - MD&A and financials)\nices. The CMDC reviews and approves the Firm’s compensation and qualified benefits programs. The Committee reviews the performance of Operating Committee members against their goals, and approves their compensation awards. In addition, the CEO’s compensation award is subject to ratification by the independent directors of the Board. The CMDC also reviews the development of and succession for key executives. As part of the Board’s role of reinforcing, demonstrating and communicating the “tone at \n\n[2] (10-Q, Q2-2026)\nrecorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)\n\n[3] (10-K, FY2025, Body - MD&A and financials)\nrcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o\n\n[4] (10-Q, Q2-2026)\ns (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs\n\n[5] (10-K, FY2025, Body - MD&A and financials)\n vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 2,073 1,882 1,607 Total noncash compensation expense related to employee share-based incentive plans $ 3,614 $ 3,504 $ 3,117 At December 31, 2025, approximately $ 1.0 billion (pretax) of compensation expense related to unvested awards had not yet been charged to net income. That cost is expected to be amortized into compe\n\nQuestion: What was the CEO's total compensation?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_707"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1259"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_1805"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_887"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_1806"
+    }
+  ],
+  "answer_text": "The context does not provide information about the CEO's total compensation. Specifically, it lacks details on the amount or components of the CEO's compensation package.",
+  "parsed_citations": [],
+  "resolved_citations": []
+}

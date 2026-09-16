@@ -1,0 +1,1238 @@
+{
+  "question_id": "q14",
+  "question": "What did Jamie Dimon say about the recent management changes and Marianne Lake's departure?",
+  "category": "transcript",
+  "difficulty": "easy",
+  "expected": {
+    "claims": [
+      "the board decided to appoint two co-presidents to prepare them to do more at the company",
+      "the timetable has not changed",
+      "Lake decided to retire rather than stay once she knew about the plans"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_earnings_call_Q2-2026",
+    "speaker": "Jamie Dimon",
+    "section": "Q&A",
+    "responding_to": "Ken Usdin, Autonomous Research",
+    "topic": "management changes and co-president appointments",
+    "period": "Q2-2026"
+  },
+  "notes": "CONTROL CASE. Short answer, ~100 words, probably survives chunking intact. If v2.1 changes nothing here, that is correct behaviour, not a failure.",
+  "run": {
+    "timestamp": "2026-09-16T00:00:58.265842+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0
+  },
+  "dense": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_14",
+      "rank": 1,
+      "score": 0.6180797219276428,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "e board's perspective. Thanks. Jamie Dimon: It's exactly, I think we try to be totally clear on the press release, which is, look, Marianne is an exceptional individual as a human being, as a leader, and is obviously an executive. The board made a decision to go ahead with making two co-presidents, which will be preparing them to do far more at the company, be prepared. Hasn't changed the timetable or anything, and obviously wish Marianne the best. As a result, she decided, when she knew about t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 2,
+      "score": 0.6337625980377197,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "earnings_call"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_41",
+      "rank": 3,
+      "score": 0.7434254884719849,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "earnings_call"
+      },
+      "text": "xecutive chair. Jamie Dimon: The question to that is, though the timing's essentially the same, obviously completely up to the board, but it hasn't changed. It's just a natural change that we have to go to about how we go about this. Look, that question is obviously critical, but I've always said you want to be good at management, you want to be good at people, you want to be analytical, you want to be detailed, you want to be a culture carrier, you want to be curious, you want to have heart, yo"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_13",
+      "rank": 4,
+      "score": 0.7450363636016846,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "rst question, we will go to the line of Ken Usdin with Autonomous Research. Your line is open. Ken Usdin: Thanks. Hi, good morning. Jamie, I was just wondering if you could start by just evaluating on the recent management changes and elevation of Doug and Troy to co-presidents, and just anything we should be thinking about in terms of the ongoing development of the leadership team and anything it may mean in terms of your tenure as a CEO from the board's perspective. Thanks. Jamie Dimon: It's e"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_1",
+      "rank": 5,
+      "score": 0.826343297958374,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "none"
+      },
+      "text": "relations website. Please stand by. At this time, I would like to turn the call over to JPMorgan Chase's Chairman and CEO, Jamie Dimon, and Chief Financial Officer, Jeremy Barnum. Mr. Barnum, please go ahead. Jeremy Barnum: Thanks, Amanda, and good morning, everyone. Including the significant items noted on the page, the firm delivered net income of $16.9 billion, EPS of $6.14, and an ROTCE of 23%. Excluding the significant items, revenue was up 15% year-on-year, predominantly driven by markets "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_144",
+      "rank": 6,
+      "score": 0.8632822036743164,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "n light of the stated goal to reduce the size of the Fed balance sheet. You really need to reduce bank demand for reserves to get that done, that in turn probably requires some adjustment to liquidity regulation. That's the next thing on the agenda. Jamie Dimon: Right. Our risk standards haven't changed. It's possible some of these things change because people self-select and pick somebody else, and that would be fine with us. Manan Gosalia: Got it. Thank you. Jeremy Barnum: Thank you very much."
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_52",
+      "rank": 7,
+      "score": 0.8636277914047241,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "ements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_121",
+      "rank": 8,
+      "score": 0.8707945942878723,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": " kind of appropriately skeptical view of the environment. Jamie Dimon: We didn't talk about a huge deterioration in credit underwriting standards. I think we talked about it as a very mild one, but it's across several spectrum, which is people assumptions on revenue growth or add back of expenses, more PIK, and this is not across the board, by the way. It's more some players than others. Some weaker covenants, some people taking more rollover risk. By that I mean if rates go up, how much interes"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1309",
+      "rank": 9,
+      "score": 0.8757217526435852,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "mes Dimon Chairman and Chief Executive Officer Jeremy Barnum Executive Vice President and Chief Financial Officer February 13, 2026 JPMorgan Chase & Co./2025 Form 10-K 161 Report of Independent Registered Public Accounting Firm To the Board of Directors and Shareholders of JPMorgan Chase & Co.: Opinions on the Financial Statements and Internal Control over Financial Reporting We have audited the accompanying consolidated balance sheets of JPMorgan Chase & Co. and its subsidiaries (the “Firm”) as"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_28",
+      "rank": 10,
+      "score": 0.8977765440940857,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "the returns that you're getting from the branch build-out, the AI investments, the hire of the bankers. Ultimately, I guess the question is, where are we in the investment cycle? Really, how does it play into the operating leverage outlook over the medium term? Thanks. Jamie Dimon: I would just say it's a complete continuation of what we've been doing for years. You shouldn't really expect any change. Jeremy Barnum: That's what I was going to say too. Obviously there are other expense dynamics t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_127",
+      "rank": 11,
+      "score": 0.9133549928665161,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "hieving that state would be particularly supportive of bank stock valuations, I'll leave that question to you. At least I think for banks like us, I'm not convinced that's a major drag right now, to be honest, or that it has been in the recent past. Jamie Dimon: Yeah. I would just add there's one litigate Supreme Court decision that makes it less likely that we would have flip-flopping, which is a president can remove a lot of people more easily. I'm hoping what really should happen now is when "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_48",
+      "rank": 12,
+      "score": 0.9173823595046997,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "'m just going to answer that by saying when you have great returns and very good margins, which actually went up this quarter, not down James Mitchell: Yeah Jamie Dimon: The notion that somehow you can forever increase your operating leverage is a crazy notion. We don't have that. I think it's part of the reason why banks failed, if you go back 20 years ago. We're never going to have that point of view. AI will have its gives and takes. We can't project. I do think you might actually see a slowd"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_75",
+      "rank": 13,
+      "score": 0.920845627784729,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "ormation internally. To oversimplify and exaggerate, we have an FX trader now selling mortgage, credit cards, and deposits. I'm being simplistic for a reason, but what gives you confidence that Troy is the right person to run the consumer business when he doesn't have that experience in the past? Jamie Dimon: Yeah. Mike, it's a great question. First of all, like I mentioned, how you evaluate people is their analytics, it's their brain power, it's their EQ, it's their heart, their soul, their cul"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_369",
+      "rank": 14,
+      "score": 0.921363115310669,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": " 9C. Disclosure regarding Foreign Jurisdictions that Prevent Inspections. Not applicable. 36 Item 10. Directors, Executive Officers and Corporate Governance. Executive officers of the registrant Age Name (at December 31, 2025) Positions and offices James Dimon 69 Chairman of the Board since December 2006 and Chief Executive Officer since December 2005. Ashley Bacon 56 Chief Risk Officer since June 2013. Jeremy Barnum 53 Chief Financial Officer since May 2021, prior to which he was Head of Global"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_39",
+      "rank": 15,
+      "score": 0.9359256625175476,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "pany. John McDonald: Okay, that's helpful. Thank you. Operator: Thank you. Our next question comes from Erika Najarian with UBS. Your line is open. Erika Najarian: Hi. Good morning. I just had one question. I do want to revisit the succession line of questioning because it is so critical for a lot of your current investor base. Jamie, I guess maybe re-asking the question a different way. What characteristics are you and the board looking for in terms of the new leader of JPMorgan? What do you th"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_371",
+      "rank": 16,
+      "score": 0.9445597529411316,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "nce January 2016. Marianne Lake 56 Chief Executive Officer of Consumer & Community Banking since January 2024, having previously served as its Co-Chief Executive Officer since May 2021. She was Chief Executive Officer of Consumer Lending from May 2019 until May 2021. Robin Leopold 61 Head of Human Resources since January 2018. Douglas B. Petno 60 Co-Chief Executive Officer of the Commercial & Investment Bank since January 2025, having previously served as Co-Head of Global Banking since January "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 17,
+      "score": 0.9543315172195435,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_131",
+      "rank": 18,
+      "score": 0.96634840965271,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "did not work. Resolution recovery does not work. People should look at the discount window differently. Anyway, if those things are done, I think we can have a safer banking system where we don't have to be breathless every time a bank fails. Gerard Cassidy: Thank you. My thoughts exactly. Thank you, Jamie. Jamie Dimon: You guys. Gerard Cassidy: Yeah, go ahead Jamie Dimon: You guys are the guys who know so much about this that should be making some of these recommendations to the regulators. It'"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_124",
+      "rank": 19,
+      "score": 0.9921178817749023,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": ", I don't want to sound Pollyannish, but a period where the regulators are just set, where you go, because the last 20 years there's been constant change with the regulators affecting the banking industry. Could we enter a period where we have a stability in the regulatory environment which could enhance valuations possibly for bank stocks? Jeremy Barnum: Well- Jamie Dimon: Go ahead. Jeremy Barnum: I would break the question down into two parts, could we envision stability and impact on valuatio"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2601",
+      "rank": 20,
+      "score": 0.9940282702445984,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "sky) /s/ MELLODY HOBSON Director (Mellody Hobson) /s/ PHEBE N. NOVAKOVIC Director (Phebe N. Novakovic) /s/ VIRGINIA M. ROMETTY Director (Virginia M. Rometty) /s/ BRAD D. SMITH Director (Brad D. Smith) /s/ MARK A. WEINBERGER Director (Mark A. Weinberger) /s/ JEREMY BARNUM Executive Vice President and Chief Financial Officer (Jeremy Barnum) (Principal Financial Officer) /s/ ELENA KORABLINA Managing Director and Firmwide Controller (Elena Korablina) (Principal Accounting Officer) 328 JPMorgan Chase"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_13",
+      "rank": 1,
+      "score": 26.04307650378878,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "rst question, we will go to the line of Ken Usdin with Autonomous Research. Your line is open. Ken Usdin: Thanks. Hi, good morning. Jamie, I was just wondering if you could start by just evaluating on the recent management changes and elevation of Doug and Troy to co-presidents, and just anything we should be thinking about in terms of the ongoing development of the leadership team and anything it may mean in terms of your tenure as a CEO from the board's perspective. Thanks. Jamie Dimon: It's e"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 2,
+      "score": 23.896426924251415,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_14",
+      "rank": 3,
+      "score": 22.85159762657265,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "e board's perspective. Thanks. Jamie Dimon: It's exactly, I think we try to be totally clear on the press release, which is, look, Marianne is an exceptional individual as a human being, as a leader, and is obviously an executive. The board made a decision to go ahead with making two co-presidents, which will be preparing them to do far more at the company, be prepared. Hasn't changed the timetable or anything, and obviously wish Marianne the best. As a result, she decided, when she knew about t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 4,
+      "score": 20.4452521776035,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_28",
+      "rank": 5,
+      "score": 18.537034110975075,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "the returns that you're getting from the branch build-out, the AI investments, the hire of the bankers. Ultimately, I guess the question is, where are we in the investment cycle? Really, how does it play into the operating leverage outlook over the medium term? Thanks. Jamie Dimon: I would just say it's a complete continuation of what we've been doing for years. You shouldn't really expect any change. Jeremy Barnum: That's what I was going to say too. Obviously there are other expense dynamics t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_52",
+      "rank": 6,
+      "score": 18.53106290846282,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_131",
+      "rank": 7,
+      "score": 18.04021395122941,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "did not work. Resolution recovery does not work. People should look at the discount window differently. Anyway, if those things are done, I think we can have a safer banking system where we don't have to be breathless every time a bank fails. Gerard Cassidy: Thank you. My thoughts exactly. Thank you, Jamie. Jamie Dimon: You guys. Gerard Cassidy: Yeah, go ahead Jamie Dimon: You guys are the guys who know so much about this that should be making some of these recommendations to the regulators. It'"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_66",
+      "rank": 8,
+      "score": 17.658728211416385,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " up 10%, if your margin overall is 25%, when revenues go up 10%, the marginal return on that, since you're not adding all the overhead, is going to be a lot more than 25%. Jeremy Barnum: Yeah, I got it. Jamie Dimon: People kind of forget that. Mike Mayo: Exactly. Jamie Dimon: Obviously, a rapid increase in revenue drives a big increase in operating leverage. Jeremy Barnum: Yeah. I agree with what Jamie just said. Maybe just since we've had a couple of questions about this and obviously we did re"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_41",
+      "rank": 9,
+      "score": 17.168405041902066,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call"
+      },
+      "text": "xecutive chair. Jamie Dimon: The question to that is, though the timing's essentially the same, obviously completely up to the board, but it hasn't changed. It's just a natural change that we have to go to about how we go about this. Look, that question is obviously critical, but I've always said you want to be good at management, you want to be good at people, you want to be analytical, you want to be detailed, you want to be a culture carrier, you want to be curious, you want to have heart, yo"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_127",
+      "rank": 10,
+      "score": 16.05275879088176,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "hieving that state would be particularly supportive of bank stock valuations, I'll leave that question to you. At least I think for banks like us, I'm not convinced that's a major drag right now, to be honest, or that it has been in the recent past. Jamie Dimon: Yeah. I would just add there's one litigate Supreme Court decision that makes it less likely that we would have flip-flopping, which is a president can remove a lot of people more easily. I'm hoping what really should happen now is when "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 11,
+      "score": 15.335051317866018,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_132",
+      "rank": 12,
+      "score": 15.130580993207074,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "me of these recommendations to the regulators. It's in all of our interest, the system be better. Not any one of us, all of us. Gerard Cassidy: Agreed. Thank you, Jamie, and thank you, Jeremy. Jamie Dimon: Thanks, Gerard. Operator: Thank you. For our final question, we will go to the line of Manan Gosalia from Morgan Stanley. Your line is open. Manan Gosalia: Hey, good morning. Jeremy, as we think about the various expense buckets you called out at the start of the year, the volume related expen"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_109",
+      "rank": 13,
+      "score": 14.70130768201593,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "ck follow-ups. One, in the last couple of times you talked publicly, we had a couple of comments on the smart cash tool that you're working on. I know you said it's nascent and early, sometimes technology moves fast. Curious status of the tool, when you might roll it out, and to who, and maybe a little more on your comments on you're gonna have to pay more for money over time. Just curious. Jamie Dimon: Yeah. It kind of relates to the thing that Jeremy was talking about before, about the velocit"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_121",
+      "rank": 14,
+      "score": 14.398889434798484,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " kind of appropriately skeptical view of the environment. Jamie Dimon: We didn't talk about a huge deterioration in credit underwriting standards. I think we talked about it as a very mild one, but it's across several spectrum, which is people assumptions on revenue growth or add back of expenses, more PIK, and this is not across the board, by the way. It's more some players than others. Some weaker covenants, some people taking more rollover risk. By that I mean if rates go up, how much interes"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_63",
+      "rank": 15,
+      "score": 14.200189902849218,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "mpirical EAR is probably higher than our reported EAR, and you ignore the convexity dynamics, you could convince yourself that a 7% rate environment is great. Obviously that wouldn't be true if you had to do a massive repurchase of the deposit franchise in order to protect it, essentially. Jamie Dimon: We do assume some of that. Jeremy Barnum: It's something that we think about. It's in the models. It's very much part of the discipline. The question is when, and obviously there's the larger ques"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_370",
+      "rank": 16,
+      "score": 13.997439800946706,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "nce May 2021, prior to which he was Head of Global Research for the former Corporate & Investment Bank since February 2021. He previously served as Chief Financial Officer of the former Corporate & Investment Bank from July 2013 until February 2021. Lori A. Beer 58 Chief Information Officer since September 2017. Mary Callahan Erdoes 58 Chief Executive Officer of Asset & Wealth Management since September 2009. Stacey Friedman 57 General Counsel since January 2016. Marianne Lake 56 Chief Executive"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_112",
+      "rank": 17,
+      "score": 13.73799544854154,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "'d state your European consumer banking aspirations. You mentioned opportunities. You do plenty of business there. You mentioned opportunities each country by country. Maybe you could just sum it up in aggregate of what are you trying to be as a consumer bank across the major markets in Europe? Jamie Dimon: Yeah. When we were talking about just bricks and mortar, we weren't going to try to compete because we couldn't have with local banks, their brands, their capabilities. Unlike the U.S., over "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_80",
+      "rank": 18,
+      "score": 13.627110053032006,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "earnings_call"
+      },
+      "text": " velocity and commercial outcomes. I guess I'm asking if you think there could be a parallel with banks where you can operate with a different structure, be much more agile, be more efficient over time. I know it's a sensitive topic. I'm curious how you think about these questions and how you're positioning yourself for this world. Jamie Dimon: It's not a sensitive topic at all. We are going to use AI to do a better job for our clients. That's our job. We fully expect it'll have huge efficiency "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_59",
+      "rank": 19,
+      "score": 13.516392156007184,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "upply chains management? As we put all that together, what are your thoughts? Jamie Dimon: It's getting close to as good as it gets. We just don't know how long it's going to last. Matt O'Connor: Okay. The rate expectations continue to move all over the place out there, and you show that you're kind of well-positioned for higher rates, you make more money. Is there a tipping point where the deposit behavior changes, both from a volume perspective, and then betas, which you alluded to earlier, ha"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_59",
+      "rank": 20,
+      "score": 13.275352982025938,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_14",
+      "rank": 1,
+      "rrf_score": 0.032266458495966696,
+      "found_in": {
+        "dense": 1,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "e board's perspective. Thanks. Jamie Dimon: It's exactly, I think we try to be totally clear on the press release, which is, look, Marianne is an exceptional individual as a human being, as a leader, and is obviously an executive. The board made a decision to go ahead with making two co-presidents, which will be preparing them to do far more at the company, be prepared. Hasn't changed the timetable or anything, and obviously wish Marianne the best. As a result, she decided, when she knew about t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 2,
+      "rrf_score": 0.03225806451612903,
+      "found_in": {
+        "dense": 2,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_13",
+      "rank": 3,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 4,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "rst question, we will go to the line of Ken Usdin with Autonomous Research. Your line is open. Ken Usdin: Thanks. Hi, good morning. Jamie, I was just wondering if you could start by just evaluating on the recent management changes and elevation of Doug and Troy to co-presidents, and just anything we should be thinking about in terms of the ongoing development of the leadership team and anything it may mean in terms of your tenure as a CEO from the board's perspective. Thanks. Jamie Dimon: It's e"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_41",
+      "rank": 4,
+      "rrf_score": 0.03036576949620428,
+      "found_in": {
+        "dense": 3,
+        "sparse": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call"
+      },
+      "text": "xecutive chair. Jamie Dimon: The question to that is, though the timing's essentially the same, obviously completely up to the board, but it hasn't changed. It's just a natural change that we have to go to about how we go about this. Look, that question is obviously critical, but I've always said you want to be good at management, you want to be good at people, you want to be analytical, you want to be detailed, you want to be a culture carrier, you want to be curious, you want to have heart, yo"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_52",
+      "rank": 5,
+      "rrf_score": 0.03007688828584351,
+      "found_in": {
+        "dense": 7,
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "none",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_28",
+      "rank": 6,
+      "rrf_score": 0.02967032967032967,
+      "found_in": {
+        "dense": 10,
+        "sparse": 5
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "the returns that you're getting from the branch build-out, the AI investments, the hire of the bankers. Ultimately, I guess the question is, where are we in the investment cycle? Really, how does it play into the operating leverage outlook over the medium term? Thanks. Jamie Dimon: I would just say it's a complete continuation of what we've been doing for years. You shouldn't really expect any change. Jeremy Barnum: That's what I was going to say too. Obviously there are other expense dynamics t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 7,
+      "rrf_score": 0.028612012987012988,
+      "found_in": {
+        "dense": 17,
+        "sparse": 4
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_127",
+      "rank": 8,
+      "rrf_score": 0.028370221327967807,
+      "found_in": {
+        "dense": 11,
+        "sparse": 10
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "hieving that state would be particularly supportive of bank stock valuations, I'll leave that question to you. At least I think for banks like us, I'm not convinced that's a major drag right now, to be honest, or that it has been in the recent past. Jamie Dimon: Yeah. I would just add there's one litigate Supreme Court decision that makes it less likely that we would have flip-flopping, which is a president can remove a lot of people more easily. I'm hoping what really should happen now is when "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_121",
+      "rank": 9,
+      "rrf_score": 0.02821939586645469,
+      "found_in": {
+        "dense": 8,
+        "sparse": 14
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " kind of appropriately skeptical view of the environment. Jamie Dimon: We didn't talk about a huge deterioration in credit underwriting standards. I think we talked about it as a very mild one, but it's across several spectrum, which is people assumptions on revenue growth or add back of expenses, more PIK, and this is not across the board, by the way. It's more some players than others. Some weaker covenants, some people taking more rollover risk. By that I mean if rates go up, how much interes"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_131",
+      "rank": 10,
+      "rrf_score": 0.027745885954841176,
+      "found_in": {
+        "dense": 18,
+        "sparse": 7
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "did not work. Resolution recovery does not work. People should look at the discount window differently. Anyway, if those things are done, I think we can have a safer banking system where we don't have to be breathless every time a bank fails. Gerard Cassidy: Thank you. My thoughts exactly. Thank you, Jamie. Jamie Dimon: You guys. Gerard Cassidy: Yeah, go ahead Jamie Dimon: You guys are the guys who know so much about this that should be making some of these recommendations to the regulators. It'"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_1",
+      "rank": 11,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "none"
+      },
+      "text": "relations website. Please stand by. At this time, I would like to turn the call over to JPMorgan Chase's Chairman and CEO, Jamie Dimon, and Chief Financial Officer, Jeremy Barnum. Mr. Barnum, please go ahead. Jeremy Barnum: Thanks, Amanda, and good morning, everyone. Including the significant items noted on the page, the firm delivered net income of $16.9 billion, EPS of $6.14, and an ROTCE of 23%. Excluding the significant items, revenue was up 15% year-on-year, predominantly driven by markets "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_144",
+      "rank": 12,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "n light of the stated goal to reduce the size of the Fed balance sheet. You really need to reduce bank demand for reserves to get that done, that in turn probably requires some adjustment to liquidity regulation. That's the next thing on the agenda. Jamie Dimon: Right. Our risk standards haven't changed. It's possible some of these things change because people self-select and pick somebody else, and that would be fine with us. Manan Gosalia: Got it. Thank you. Jeremy Barnum: Thank you very much."
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_66",
+      "rank": 13,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " up 10%, if your margin overall is 25%, when revenues go up 10%, the marginal return on that, since you're not adding all the overhead, is going to be a lot more than 25%. Jeremy Barnum: Yeah, I got it. Jamie Dimon: People kind of forget that. Mike Mayo: Exactly. Jamie Dimon: Obviously, a rapid increase in revenue drives a big increase in operating leverage. Jeremy Barnum: Yeah. I agree with what Jamie just said. Maybe just since we've had a couple of questions about this and obviously we did re"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1309",
+      "rank": 14,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "mes Dimon Chairman and Chief Executive Officer Jeremy Barnum Executive Vice President and Chief Financial Officer February 13, 2026 JPMorgan Chase & Co./2025 Form 10-K 161 Report of Independent Registered Public Accounting Firm To the Board of Directors and Shareholders of JPMorgan Chase & Co.: Opinions on the Financial Statements and Internal Control over Financial Reporting We have audited the accompanying consolidated balance sheets of JPMorgan Chase & Co. and its subsidiaries (the “Firm”) as"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 15,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_48",
+      "rank": 16,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "'m just going to answer that by saying when you have great returns and very good margins, which actually went up this quarter, not down James Mitchell: Yeah Jamie Dimon: The notion that somehow you can forever increase your operating leverage is a crazy notion. We don't have that. I think it's part of the reason why banks failed, if you go back 20 years ago. We're never going to have that point of view. AI will have its gives and takes. We can't project. I do think you might actually see a slowd"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_132",
+      "rank": 17,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "me of these recommendations to the regulators. It's in all of our interest, the system be better. Not any one of us, all of us. Gerard Cassidy: Agreed. Thank you, Jamie, and thank you, Jeremy. Jamie Dimon: Thanks, Gerard. Operator: Thank you. For our final question, we will go to the line of Manan Gosalia from Morgan Stanley. Your line is open. Manan Gosalia: Hey, good morning. Jeremy, as we think about the various expense buckets you called out at the start of the year, the volume related expen"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_75",
+      "rank": 18,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "ormation internally. To oversimplify and exaggerate, we have an FX trader now selling mortgage, credit cards, and deposits. I'm being simplistic for a reason, but what gives you confidence that Troy is the right person to run the consumer business when he doesn't have that experience in the past? Jamie Dimon: Yeah. Mike, it's a great question. First of all, like I mentioned, how you evaluate people is their analytics, it's their brain power, it's their EQ, it's their heart, their soul, their cul"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_109",
+      "rank": 19,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "ck follow-ups. One, in the last couple of times you talked publicly, we had a couple of comments on the smart cash tool that you're working on. I know you said it's nascent and early, sometimes technology moves fast. Curious status of the tool, when you might roll it out, and to who, and maybe a little more on your comments on you're gonna have to pay more for money over time. Just curious. Jamie Dimon: Yeah. It kind of relates to the thing that Jeremy was talking about before, about the velocit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_369",
+      "rank": 20,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": " 9C. Disclosure regarding Foreign Jurisdictions that Prevent Inspections. Not applicable. 36 Item 10. Directors, Executive Officers and Corporate Governance. Executive officers of the registrant Age Name (at December 31, 2025) Positions and offices James Dimon 69 Chairman of the Board since December 2006 and Chief Executive Officer since December 2005. Ashley Bacon 56 Chief Risk Officer since June 2013. Jeremy Barnum 53 Chief Financial Officer since May 2021, prior to which he was Head of Global"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_39",
+      "rank": 21,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "pany. John McDonald: Okay, that's helpful. Thank you. Operator: Thank you. Our next question comes from Erika Najarian with UBS. Your line is open. Erika Najarian: Hi. Good morning. I just had one question. I do want to revisit the succession line of questioning because it is so critical for a lot of your current investor base. Jamie, I guess maybe re-asking the question a different way. What characteristics are you and the board looking for in terms of the new leader of JPMorgan? What do you th"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_63",
+      "rank": 22,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "mpirical EAR is probably higher than our reported EAR, and you ignore the convexity dynamics, you could convince yourself that a 7% rate environment is great. Obviously that wouldn't be true if you had to do a massive repurchase of the deposit franchise in order to protect it, essentially. Jamie Dimon: We do assume some of that. Jeremy Barnum: It's something that we think about. It's in the models. It's very much part of the discipline. The question is when, and obviously there's the larger ques"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_371",
+      "rank": 23,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "nce January 2016. Marianne Lake 56 Chief Executive Officer of Consumer & Community Banking since January 2024, having previously served as its Co-Chief Executive Officer since May 2021. She was Chief Executive Officer of Consumer Lending from May 2019 until May 2021. Robin Leopold 61 Head of Human Resources since January 2018. Douglas B. Petno 60 Co-Chief Executive Officer of the Commercial & Investment Bank since January 2025, having previously served as Co-Head of Global Banking since January "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_370",
+      "rank": 24,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "nce May 2021, prior to which he was Head of Global Research for the former Corporate & Investment Bank since February 2021. He previously served as Chief Financial Officer of the former Corporate & Investment Bank from July 2013 until February 2021. Lori A. Beer 58 Chief Information Officer since September 2017. Mary Callahan Erdoes 58 Chief Executive Officer of Asset & Wealth Management since September 2009. Stacey Friedman 57 General Counsel since January 2016. Marianne Lake 56 Chief Executive"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_112",
+      "rank": 25,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "'d state your European consumer banking aspirations. You mentioned opportunities. You do plenty of business there. You mentioned opportunities each country by country. Maybe you could just sum it up in aggregate of what are you trying to be as a consumer bank across the major markets in Europe? Jamie Dimon: Yeah. When we were talking about just bricks and mortar, we weren't going to try to compete because we couldn't have with local banks, their brands, their capabilities. Unlike the U.S., over "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_80",
+      "rank": 26,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "earnings_call"
+      },
+      "text": " velocity and commercial outcomes. I guess I'm asking if you think there could be a parallel with banks where you can operate with a different structure, be much more agile, be more efficient over time. I know it's a sensitive topic. I'm curious how you think about these questions and how you're positioning yourself for this world. Jamie Dimon: It's not a sensitive topic at all. We are going to use AI to do a better job for our clients. That's our job. We fully expect it'll have huge efficiency "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_124",
+      "rank": 27,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": ", I don't want to sound Pollyannish, but a period where the regulators are just set, where you go, because the last 20 years there's been constant change with the regulators affecting the banking industry. Could we enter a period where we have a stability in the regulatory environment which could enhance valuations possibly for bank stocks? Jeremy Barnum: Well- Jamie Dimon: Go ahead. Jeremy Barnum: I would break the question down into two parts, could we envision stability and impact on valuatio"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_59",
+      "rank": 28,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "upply chains management? As we put all that together, what are your thoughts? Jamie Dimon: It's getting close to as good as it gets. We just don't know how long it's going to last. Matt O'Connor: Okay. The rate expectations continue to move all over the place out there, and you show that you're kind of well-positioned for higher rates, you make more money. Is there a tipping point where the deposit behavior changes, both from a volume perspective, and then betas, which you alluded to earlier, ha"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2601",
+      "rank": 29,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "sky) /s/ MELLODY HOBSON Director (Mellody Hobson) /s/ PHEBE N. NOVAKOVIC Director (Phebe N. Novakovic) /s/ VIRGINIA M. ROMETTY Director (Virginia M. Rometty) /s/ BRAD D. SMITH Director (Brad D. Smith) /s/ MARK A. WEINBERGER Director (Mark A. Weinberger) /s/ JEREMY BARNUM Executive Vice President and Chief Financial Officer (Jeremy Barnum) (Principal Financial Officer) /s/ ELENA KORABLINA Managing Director and Firmwide Controller (Elena Korablina) (Principal Accounting Officer) 328 JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_59",
+      "rank": 30,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_14",
+      "rerank_rank": 1,
+      "rerank_score": 1.855538010597229,
+      "rrf_rank": 1,
+      "rrf_score": 0.032266458495966696,
+      "found_in": {
+        "dense": 1,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "e board's perspective. Thanks. Jamie Dimon: It's exactly, I think we try to be totally clear on the press release, which is, look, Marianne is an exceptional individual as a human being, as a leader, and is obviously an executive. The board made a decision to go ahead with making two co-presidents, which will be preparing them to do far more at the company, be prepared. Hasn't changed the timetable or anything, and obviously wish Marianne the best. As a result, she decided, when she knew about t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_13",
+      "rerank_rank": 2,
+      "rerank_score": 0.4562828540802002,
+      "rrf_rank": 3,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 4,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "rst question, we will go to the line of Ken Usdin with Autonomous Research. Your line is open. Ken Usdin: Thanks. Hi, good morning. Jamie, I was just wondering if you could start by just evaluating on the recent management changes and elevation of Doug and Troy to co-presidents, and just anything we should be thinking about in terms of the ongoing development of the leadership team and anything it may mean in terms of your tenure as a CEO from the board's perspective. Thanks. Jamie Dimon: It's e"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_41",
+      "rerank_rank": 3,
+      "rerank_score": -0.81866455078125,
+      "rrf_rank": 4,
+      "rrf_score": 0.03036576949620428,
+      "found_in": {
+        "dense": 3,
+        "sparse": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call"
+      },
+      "text": "xecutive chair. Jamie Dimon: The question to that is, though the timing's essentially the same, obviously completely up to the board, but it hasn't changed. It's just a natural change that we have to go to about how we go about this. Look, that question is obviously critical, but I've always said you want to be good at management, you want to be good at people, you want to be analytical, you want to be detailed, you want to be a culture carrier, you want to be curious, you want to have heart, yo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_59",
+      "rerank_rank": 4,
+      "rerank_score": -1.610100507736206,
+      "rrf_rank": 30,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_52",
+      "rerank_rank": 5,
+      "rerank_score": -2.201392412185669,
+      "rrf_rank": 5,
+      "rrf_score": 0.03007688828584351,
+      "found_in": {
+        "dense": 7,
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "none",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik"
+    }
+  ],
+  "context": "[1] (earnings_call, Q2-2026)\ne board's perspective. Thanks. Jamie Dimon: It's exactly, I think we try to be totally clear on the press release, which is, look, Marianne is an exceptional individual as a human being, as a leader, and is obviously an executive. The board made a decision to go ahead with making two co-presidents, which will be preparing them to do far more at the company, be prepared. Hasn't changed the timetable or anything, and obviously wish Marianne the best. As a result, she decided, when she knew about t\n\n[2] (earnings_call, Q2-2026)\nrst question, we will go to the line of Ken Usdin with Autonomous Research. Your line is open. Ken Usdin: Thanks. Hi, good morning. Jamie, I was just wondering if you could start by just evaluating on the recent management changes and elevation of Doug and Troy to co-presidents, and just anything we should be thinking about in terms of the ongoing development of the leadership team and anything it may mean in terms of your tenure as a CEO from the board's perspective. Thanks. Jamie Dimon: It's e\n\n[3] (earnings_call, Q2-2026)\nxecutive chair. Jamie Dimon: The question to that is, though the timing's essentially the same, obviously completely up to the board, but it hasn't changed. It's just a natural change that we have to go to about how we go about this. Look, that question is obviously critical, but I've always said you want to be good at management, you want to be good at people, you want to be analytical, you want to be detailed, you want to be a culture carrier, you want to be curious, you want to have heart, yo\n\n[4] (10-Q, Q2-2026)\n named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an\n\n[5] (earnings_call, Q2-2026)\nements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik",
+  "user_prompt": "[1] (earnings_call, Q2-2026)\ne board's perspective. Thanks. Jamie Dimon: It's exactly, I think we try to be totally clear on the press release, which is, look, Marianne is an exceptional individual as a human being, as a leader, and is obviously an executive. The board made a decision to go ahead with making two co-presidents, which will be preparing them to do far more at the company, be prepared. Hasn't changed the timetable or anything, and obviously wish Marianne the best. As a result, she decided, when she knew about t\n\n[2] (earnings_call, Q2-2026)\nrst question, we will go to the line of Ken Usdin with Autonomous Research. Your line is open. Ken Usdin: Thanks. Hi, good morning. Jamie, I was just wondering if you could start by just evaluating on the recent management changes and elevation of Doug and Troy to co-presidents, and just anything we should be thinking about in terms of the ongoing development of the leadership team and anything it may mean in terms of your tenure as a CEO from the board's perspective. Thanks. Jamie Dimon: It's e\n\n[3] (earnings_call, Q2-2026)\nxecutive chair. Jamie Dimon: The question to that is, though the timing's essentially the same, obviously completely up to the board, but it hasn't changed. It's just a natural change that we have to go to about how we go about this. Look, that question is obviously critical, but I've always said you want to be good at management, you want to be good at people, you want to be analytical, you want to be detailed, you want to be a culture carrier, you want to be curious, you want to have heart, yo\n\n[4] (10-Q, Q2-2026)\n named Co-Presidents of the Firm, effective immediately. In addition to their new roles, Mr. Petno became the sole CEO of the CIB, and Mr. Rohrbaugh became the CEO of Consumer & Community Banking (“CCB”). Marianne Lake, the former CEO of CCB, is retiring after more than 25 years with the Firm. Outlook The statements set forth below are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements are based on the beliefs an\n\n[5] (earnings_call, Q2-2026)\nements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik\n\nQuestion: What did Jamie Dimon say about the recent management changes and Marianne Lake's departure?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_14"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_13"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_41"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_59"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_52"
+    }
+  ],
+  "answer_text": "Jamie Dimon mentioned that the board decided to make Doug and Troy co-presidents to prepare them for greater responsibilities within the company. He expressed that Marianne Lake is an exceptional individual and leader, and she decided to retire after more than 25 years with the firm. He noted that the management changes have not altered the timetable for leadership transitions [1][4].",
+  "parsed_citations": [
+    1,
+    4
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_14",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      }
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_59",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      }
+    }
+  ]
+}

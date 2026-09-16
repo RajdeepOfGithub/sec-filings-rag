@@ -1,0 +1,72 @@
+{
+  "version": "v1",
+  "timestamp": "2026-09-16T00:01:01.863114+00:00",
+  "git": {
+    "commit": "b24b63a1e2de2802106f92a39189ade4d58598dd",
+    "branch": "main",
+    "dirty": true
+  },
+  "chunking": {
+    "chunk_size": 500,
+    "overlap": 50,
+    "documents": {
+      "JPMC_10-K_FY2025": {
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "chunks": 2603
+      },
+      "JPMC_10-Q_Q2-2026": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "chunks": 1389
+      },
+      "JPMC_earnings_call_Q2-2026": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "chunks": 146
+      }
+    }
+  },
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "distance": "l2",
+    "distance_note": "chroma hnsw 'l2' is squared L2; lower is better",
+    "collection": "financial_docs"
+  },
+  "retrieval": {
+    "n": 20,
+    "top_k": 5,
+    "rrf_k": 60,
+    "dedup_threshold": 0.85,
+    "dedup_shingle": 40,
+    "dedup_passes": [
+      "dense",
+      "sparse",
+      "post_fusion"
+    ],
+    "bm25_cache": "data/processed/bm25.pkl"
+  },
+  "reranker": {
+    "model": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  },
+  "generation": {
+    "model": "gpt-4o-mini",
+    "temperature": 0,
+    "system_prompt": "You answer questions about SEC filings using only the numbered context passages provided.\n\nRules:\n- Use only information stated in the context. Do not use outside knowledge about the company, and do not infer figures that are not written down.\n- Cite the passage number for every factual claim, like this: [1]. If a claim draws on two passages, cite both: [1][2].\n- Quote figures exactly as they appear, including units and the period they cover. Do not convert, round, or aggregate numbers across periods.\n- Tables in the context have been flattened, so column headers and values appear as plain sequences of numbers. Before using a figure from a table, state which column header it sits under and check the position matches. If a table lists headers like \"2026 2025 2026 2025\" followed by values, the first value belongs to the first header, the second to the second, and so on.\n- If a table row appears cut off, or if you cannot confidently match a figure to its column, say so rather than guessing.\n- If the context does not contain enough information to answer, say so plainly and state what is missing. Do not answer partially and hope it passes.\n- Be brief. Answer the question asked and stop."
+  },
+  "corpus": {
+    "total_chunks": 4138,
+    "per_document": {
+      "JPMC_10-K_FY2025": 2603,
+      "JPMC_10-Q_Q2-2026": 1389,
+      "JPMC_earnings_call_Q2-2026": 146
+    }
+  }
+}

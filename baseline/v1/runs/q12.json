@@ -1,0 +1,1214 @@
+{
+  "question_id": "q12",
+  "question": "What did Jeremy Barnum say about the sustainability of the investment banking and markets results?",
+  "category": "transcript",
+  "difficulty": "hard",
+  "expected": {
+    "claims": [
+      "bifurcates investment banking from markets",
+      "IB fees were fine by historical standards but not at peak levels",
+      "some pull-forward of pipeline from large high-profile IPOs and capital raisings",
+      "pipeline is quite robust and the high-profile activity is itself begetting more activity",
+      "markets revenues elevated for some time but associated with more financial resource deployment",
+      "the equities quarter is hard to imagine being repeated"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_earnings_call_Q2-2026",
+    "speaker": "Jeremy Barnum",
+    "section": "Q&A",
+    "responding_to": "Ken Usdin, Autonomous Research",
+    "topic": "sustainability of IB and markets activity",
+    "period": "Q2-2026"
+  },
+  "notes": "Four-paragraph answer, roughly 400 words. At 500-char fixed-size chunks this fragments into 3-4 pieces, so retrieval gets part of the reasoning. Primary test case for v2.1 speaker-turn chunking.",
+  "run": {
+    "timestamp": "2026-09-16T00:00:55.629836+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0
+  },
+  "dense": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_16",
+      "rank": 1,
+      "score": 0.7829090356826782,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": " do you judge just how risk-on are we across the various businesses? Thanks. Jeremy Barnum: Good question, Ken. I would actually bifurcate that a little bit between investment banking and markets, in the sense that by historical standards, investment banking fees were fine, but they weren't at sort of super peak level. They had some room to come up a little bit. One of the things we looked at is, okay, how much cannibalization of the future pipeline might have happened through the acceleration t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_15",
+      "rank": 2,
+      "score": 0.8493689894676208,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "t. As a result, she decided, when she knew about the plans, that she'd rather retire than stay here. That's it. No mystery. Ken Usdin: Okay. Very good. Jeremy, on your follow-up to the strength that you're seeing across investment banking and markets, I know it depends on conversion opportunities and just the environment, but this is clearly far higher level of activity than anyone would have expected. How do you judge the sustainability, and how do you judge just how risk-on are we across the v"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_28",
+      "rank": 3,
+      "score": 0.8771706819534302,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "the returns that you're getting from the branch build-out, the AI investments, the hire of the bankers. Ultimately, I guess the question is, where are we in the investment cycle? Really, how does it play into the operating leverage outlook over the medium term? Thanks. Jamie Dimon: I would just say it's a complete continuation of what we've been doing for years. You shouldn't really expect any change. Jeremy Barnum: That's what I was going to say too. Obviously there are other expense dynamics t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_87",
+      "rank": 4,
+      "score": 0.888152539730072,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "s quarter that may be difficult to sustain going forward? Jeremy Barnum: Yeah. There's really not a lot behind my comment. It's essentially what you would get from asking any of the commercial AI models this question, and the 2 stages old version of the model. In other words, it's all the obvious stuff that's been heavily reported. We had some major IPOs. We had some major index rebalancing. We had some very complicated dynamics in the Korean equity market. There's been a lot of activity in Asia"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_124",
+      "rank": 5,
+      "score": 0.8989392518997192,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": ", I don't want to sound Pollyannish, but a period where the regulators are just set, where you go, because the last 20 years there's been constant change with the regulators affecting the banking industry. Could we enter a period where we have a stability in the regulatory environment which could enhance valuations possibly for bank stocks? Jeremy Barnum: Well- Jamie Dimon: Go ahead. Jeremy Barnum: I would break the question down into two parts, could we envision stability and impact on valuatio"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_121",
+      "rank": 6,
+      "score": 0.9509891867637634,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": " kind of appropriately skeptical view of the environment. Jamie Dimon: We didn't talk about a huge deterioration in credit underwriting standards. I think we talked about it as a very mild one, but it's across several spectrum, which is people assumptions on revenue growth or add back of expenses, more PIK, and this is not across the board, by the way. It's more some players than others. Some weaker covenants, some people taking more rollover risk. By that I mean if rates go up, how much interes"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_1",
+      "rank": 7,
+      "score": 0.9793850183486938,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "relations website. Please stand by. At this time, I would like to turn the call over to JPMorgan Chase's Chairman and CEO, Jamie Dimon, and Chief Financial Officer, Jeremy Barnum. Mr. Barnum, please go ahead. Jeremy Barnum: Thanks, Amanda, and good morning, everyone. Including the significant items noted on the page, the firm delivered net income of $16.9 billion, EPS of $6.14, and an ROTCE of 23%. Excluding the significant items, revenue was up 15% year-on-year, predominantly driven by markets "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_86",
+      "rank": 8,
+      "score": 0.9796541333198547,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " Jeremy, you said, and if I recall correctly, that the particular set of things that happened this quarter are difficult to see repeated. Can you just maybe elaborate on what was most exceptional this quarter? I think some of your peers have talked about Asia, prime brokerage there, I think you mentioned derivatives and cash being strong. Are there any areas or products or geographies that were particularly noteworthy in terms of the strength this quarter that may be difficult to sustain going f"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_52",
+      "rank": 9,
+      "score": 0.9865830540657043,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "ements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_117",
+      "rank": 10,
+      "score": 1.0022859573364258,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " you guys have talked about you're seeing some excesses in underwriting and credit late last year, I think it was Jamie. Jeremy, you talked about risk on in the capital markets. What are you guys seeing in credit underwriting from your competitors? Is it getting crazier or no, it's still pretty good? What's the outlook there, please? Jeremy Barnum: I mean, crazy is a strong word, but I spent some time looking into this issue a week ago, and we did hear some example. I mean, I don't know. For wha"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 11,
+      "score": 1.0121554136276245,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_132",
+      "rank": 12,
+      "score": 1.0322613716125488,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "me of these recommendations to the regulators. It's in all of our interest, the system be better. Not any one of us, all of us. Gerard Cassidy: Agreed. Thank you, Jamie, and thank you, Jeremy. Jamie Dimon: Thanks, Gerard. Operator: Thank you. For our final question, we will go to the line of Manan Gosalia from Morgan Stanley. Your line is open. Manan Gosalia: Hey, good morning. Jeremy, as we think about the various expense buckets you called out at the start of the year, the volume related expen"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_99",
+      "rank": 13,
+      "score": 1.0350899696350098,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": " talk to us in terms of how you're thinking about buybacks at these levels. I know Jamie's talked about potential M&A at some point, maybe asset management, fintechs. Yeah, would love to revisit that. Thanks. Jeremy Barnum: Yeah. Before I answer that, I want to tell you I always enjoy reading your weekend notes. They're insightful and sometimes quite funny. Thank you for that. Ebrahim Poonawala: Thank you. Jeremy Barnum: Look, you're absolutely correct. I mean, we've always said we want to buy b"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_57",
+      "rank": 14,
+      "score": 1.0436996221542358,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none"
+      },
+      "text": "let it happen by accident as a result of a seemingly very technical thing, like removing RWA from the denominator of the short-term wholesale funding contribution to the G-SIB score. I mean, this is a little bit of what Jamie talks about when he's saying like, do the numbers right and just be clear about your policy objectives. James Mitchell: No, absolutely. I appreciate the thoughts. Jeremy Barnum: Thanks. Operator: Thank you. Our next question comes from Matt O'Connor with Deutsche Bank. Your"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 15,
+      "score": 1.0505101680755615,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_48",
+      "rank": 16,
+      "score": 1.0574545860290527,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "'m just going to answer that by saying when you have great returns and very good margins, which actually went up this quarter, not down James Mitchell: Yeah Jamie Dimon: The notion that somehow you can forever increase your operating leverage is a crazy notion. We don't have that. I think it's part of the reason why banks failed, if you go back 20 years ago. We're never going to have that point of view. AI will have its gives and takes. We can't project. I do think you might actually see a slowd"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_77",
+      "rank": 17,
+      "score": 1.0734590291976929,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "ks taken over by someone only from the investment bank who only cares about the investment bank Believe me, the rest of the franchise can suffer. You need respect for the rest of the franchise. I think it's great for him. It's great for the company. He's already excited. He's always been to branches and out and about, and he'll take it hopefully onward and upward. Jeremy Barnum: Mike, just a minor correction. Troy, with no offense intended to my old good friends who are foreign exchange spot tra"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_19",
+      "rank": 18,
+      "score": 1.075535774230957,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": " and some kind of exceptional events this quarter. On the market side, I would probably separate between fixed income and equities. All the normal caveats, like we don't know, anything can happen. Clearly, markets revenues in general have been quite elevated and strong for some time, although, as we pointed out, that also is associated with much more financial resource deployment in support of our clients. I think the particular set of things that happened in equities this quarter, it's a little"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_140",
+      "rank": 19,
+      "score": 1.0776598453521729,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": "ny internal limits that you might be rubbing up against? Is there room to keep allocating more balance sheet to the business if the environment remains where it is? Jeremy Barnum: I'm definitely not going to get into discussions with you about internal limit management. It was on the press call, some of you didn't hear this, but I did get a question about this, and I think you said this correctly, but I just want to err on the side of being precise here. Sometimes people think about capital allo"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_90",
+      "rank": 20,
+      "score": 1.0790879726409912,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none"
+      },
+      "text": "ing. I guess maybe a lot of discussion on the strong Wall Street backdrop. Maybe Jeremy, just talk about the Main Street part of the U.S. economy. There is a sense that there's a fragility when you look at housing, real estate, rates potentially could go higher. Give us a sense around what you're seeing on the consumer side, the ability to sort of pull forward and resiliency if rates go up. Are you seeing any broadening in CapEx beyond AI, or is it very AI-centric in terms of what you're seeing "
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_15",
+      "rank": 1,
+      "score": 23.711745081929724,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "t. As a result, she decided, when she knew about the plans, that she'd rather retire than stay here. That's it. No mystery. Ken Usdin: Okay. Very good. Jeremy, on your follow-up to the strength that you're seeing across investment banking and markets, I know it depends on conversion opportunities and just the environment, but this is clearly far higher level of activity than anyone would have expected. How do you judge the sustainability, and how do you judge just how risk-on are we across the v"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 2,
+      "score": 23.463838308448757,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_28",
+      "rank": 3,
+      "score": 21.228903486169976,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "the returns that you're getting from the branch build-out, the AI investments, the hire of the bankers. Ultimately, I guess the question is, where are we in the investment cycle? Really, how does it play into the operating leverage outlook over the medium term? Thanks. Jamie Dimon: I would just say it's a complete continuation of what we've been doing for years. You shouldn't really expect any change. Jeremy Barnum: That's what I was going to say too. Obviously there are other expense dynamics t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_16",
+      "rank": 4,
+      "score": 20.679361689702585,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "period": "Q2-2026"
+      },
+      "text": " do you judge just how risk-on are we across the various businesses? Thanks. Jeremy Barnum: Good question, Ken. I would actually bifurcate that a little bit between investment banking and markets, in the sense that by historical standards, investment banking fees were fine, but they weren't at sort of super peak level. They had some room to come up a little bit. One of the things we looked at is, okay, how much cannibalization of the future pipeline might have happened through the acceleration t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_117",
+      "rank": 5,
+      "score": 20.28729928471453,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": " you guys have talked about you're seeing some excesses in underwriting and credit late last year, I think it was Jamie. Jeremy, you talked about risk on in the capital markets. What are you guys seeing in credit underwriting from your competitors? Is it getting crazier or no, it's still pretty good? What's the outlook there, please? Jeremy Barnum: I mean, crazy is a strong word, but I spent some time looking into this issue a week ago, and we did hear some example. I mean, I don't know. For wha"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 6,
+      "score": 19.124799671905706,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_99",
+      "rank": 7,
+      "score": 19.017279971852872,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " talk to us in terms of how you're thinking about buybacks at these levels. I know Jamie's talked about potential M&A at some point, maybe asset management, fintechs. Yeah, would love to revisit that. Thanks. Jeremy Barnum: Yeah. Before I answer that, I want to tell you I always enjoy reading your weekend notes. They're insightful and sometimes quite funny. Thank you for that. Ebrahim Poonawala: Thank you. Jeremy Barnum: Look, you're absolutely correct. I mean, we've always said we want to buy b"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_1",
+      "rank": 8,
+      "score": 17.836163302032208,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "relations website. Please stand by. At this time, I would like to turn the call over to JPMorgan Chase's Chairman and CEO, Jamie Dimon, and Chief Financial Officer, Jeremy Barnum. Mr. Barnum, please go ahead. Jeremy Barnum: Thanks, Amanda, and good morning, everyone. Including the significant items noted on the page, the firm delivered net income of $16.9 billion, EPS of $6.14, and an ROTCE of 23%. Excluding the significant items, revenue was up 15% year-on-year, predominantly driven by markets "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_124",
+      "rank": 9,
+      "score": 17.676410304802758,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": ", I don't want to sound Pollyannish, but a period where the regulators are just set, where you go, because the last 20 years there's been constant change with the regulators affecting the banking industry. Could we enter a period where we have a stability in the regulatory environment which could enhance valuations possibly for bank stocks? Jeremy Barnum: Well- Jamie Dimon: Go ahead. Jeremy Barnum: I would break the question down into two parts, could we envision stability and impact on valuatio"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_77",
+      "rank": 10,
+      "score": 17.59082663580401,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "ks taken over by someone only from the investment bank who only cares about the investment bank Believe me, the rest of the franchise can suffer. You need respect for the rest of the franchise. I think it's great for him. It's great for the company. He's already excited. He's always been to branches and out and about, and he'll take it hopefully onward and upward. Jeremy Barnum: Mike, just a minor correction. Troy, with no offense intended to my old good friends who are foreign exchange spot tra"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_66",
+      "rank": 11,
+      "score": 17.415365517994886,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " up 10%, if your margin overall is 25%, when revenues go up 10%, the marginal return on that, since you're not adding all the overhead, is going to be a lot more than 25%. Jeremy Barnum: Yeah, I got it. Jamie Dimon: People kind of forget that. Mike Mayo: Exactly. Jamie Dimon: Obviously, a rapid increase in revenue drives a big increase in operating leverage. Jeremy Barnum: Yeah. I agree with what Jamie just said. Maybe just since we've had a couple of questions about this and obviously we did re"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_140",
+      "rank": 12,
+      "score": 16.329426111174406,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "ny internal limits that you might be rubbing up against? Is there room to keep allocating more balance sheet to the business if the environment remains where it is? Jeremy Barnum: I'm definitely not going to get into discussions with you about internal limit management. It was on the press call, some of you didn't hear this, but I did get a question about this, and I think you said this correctly, but I just want to err on the side of being precise here. Sometimes people think about capital allo"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_57",
+      "rank": 13,
+      "score": 15.301955782263708,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "let it happen by accident as a result of a seemingly very technical thing, like removing RWA from the denominator of the short-term wholesale funding contribution to the G-SIB score. I mean, this is a little bit of what Jamie talks about when he's saying like, do the numbers right and just be clear about your policy objectives. James Mitchell: No, absolutely. I appreciate the thoughts. Jeremy Barnum: Thanks. Operator: Thank you. Our next question comes from Matt O'Connor with Deutsche Bank. Your"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_63",
+      "rank": 14,
+      "score": 14.846305808019547,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "mpirical EAR is probably higher than our reported EAR, and you ignore the convexity dynamics, you could convince yourself that a 7% rate environment is great. Obviously that wouldn't be true if you had to do a massive repurchase of the deposit franchise in order to protect it, essentially. Jamie Dimon: We do assume some of that. Jeremy Barnum: It's something that we think about. It's in the models. It's very much part of the discipline. The question is when, and obviously there's the larger ques"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_93",
+      "rank": 15,
+      "score": 14.782304642917484,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "Dimon: To give you the big numbers, I think CapEx is about $4 trillion a year, AI went from $400 billion last year to $700 billion this year. People project, which so do our people, it will be like a little over a trillion next year and maybe a little reduction in the non-AI CapEx. That's hard to figure out because some of the same people are doing the same. Jeremy Barnum: Yeah. I was talking to our economist the other day about the CapEx impact of CHIPS Act and some of that's kind of rolled off"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_60",
+      "rank": 16,
+      "score": 14.133076265539263,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": ", and then betas, which you alluded to earlier, have been better than expected so far, if we go up a certain amount, do you think there could be a meaningful change in that? Jeremy Barnum: Yeah, that's a good question actually, Matt. I think the short answer is we don't really know. If you'd asked me that question a couple of years ago, I would have said that you're essentially asking a question about the convexity of the rate paid dynamic, especially for consumer deposits, the negative convexit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_186",
+      "rank": 17,
+      "score": 13.94278926817458,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Item 1A - Risk Factors",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "egal costs. These consequences could also impair JPMorganChase’s ability to effectively manage its credit risk exposure from its market activities, or cause reputational harm. The financial or operational failure of a significant market participant, such as a major financial institution or a CCP, or concerns about the creditworthiness or operational sustainability of one or more market participants, could cause substantial and cascading disruption within the financial markets, including in circu"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2601",
+      "rank": 18,
+      "score": 13.878470576441284,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "sky) /s/ MELLODY HOBSON Director (Mellody Hobson) /s/ PHEBE N. NOVAKOVIC Director (Phebe N. Novakovic) /s/ VIRGINIA M. ROMETTY Director (Virginia M. Rometty) /s/ BRAD D. SMITH Director (Brad D. Smith) /s/ MARK A. WEINBERGER Director (Mark A. Weinberger) /s/ JEREMY BARNUM Executive Vice President and Chief Financial Officer (Jeremy Barnum) (Principal Financial Officer) /s/ ELENA KORABLINA Managing Director and Firmwide Controller (Elena Korablina) (Principal Accounting Officer) 328 JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_34",
+      "rank": 19,
+      "score": 13.532937148657933,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "s probably disproportionately in the front end. When you assemble that together, you have a little bit of the increase as a function of higher rates, but most of it is balances overall. John McDonald: Okay. Just to finish up on the NII. The markets NII is guided a bit higher, even though the outlook for rates is also a little bit higher. I guess what are some of the drivers there? Is it balance sheet mix and some other factors? Jeremy Barnum: It's a great question, John. You correctly allude to "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_22",
+      "rank": 20,
+      "score": 13.382990570216517,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "atty: Good morning. Thanks for the question. On deposits, what stuck out was slide four to me, the growth in CCB in the quarter. Interested in kind of the progression towards that 15% retail market share that you've talked about in the past, and really how higher for longer may impact the pace of market share gains over time. Thanks. Jeremy Barnum: Sure. Let me just do near-term deposits for the company quickly. Let me actually start with wholesale. Wholesale deposit growth was quite strong this"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_15",
+      "rank": 1,
+      "rrf_score": 0.03252247488101534,
+      "found_in": {
+        "dense": 2,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "t. As a result, she decided, when she knew about the plans, that she'd rather retire than stay here. That's it. No mystery. Ken Usdin: Okay. Very good. Jeremy, on your follow-up to the strength that you're seeing across investment banking and markets, I know it depends on conversion opportunities and just the environment, but this is clearly far higher level of activity than anyone would have expected. How do you judge the sustainability, and how do you judge just how risk-on are we across the v"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_16",
+      "rank": 2,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 1,
+        "sparse": 4
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "period": "Q2-2026"
+      },
+      "text": " do you judge just how risk-on are we across the various businesses? Thanks. Jeremy Barnum: Good question, Ken. I would actually bifurcate that a little bit between investment banking and markets, in the sense that by historical standards, investment banking fees were fine, but they weren't at sort of super peak level. They had some room to come up a little bit. One of the things we looked at is, okay, how much cannibalization of the future pipeline might have happened through the acceleration t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_28",
+      "rank": 3,
+      "rrf_score": 0.031746031746031744,
+      "found_in": {
+        "dense": 3,
+        "sparse": 3
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "the returns that you're getting from the branch build-out, the AI investments, the hire of the bankers. Ultimately, I guess the question is, where are we in the investment cycle? Really, how does it play into the operating leverage outlook over the medium term? Thanks. Jamie Dimon: I would just say it's a complete continuation of what we've been doing for years. You shouldn't really expect any change. Jeremy Barnum: That's what I was going to say too. Obviously there are other expense dynamics t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_124",
+      "rank": 4,
+      "rrf_score": 0.029877369007803793,
+      "found_in": {
+        "dense": 5,
+        "sparse": 9
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": ", I don't want to sound Pollyannish, but a period where the regulators are just set, where you go, because the last 20 years there's been constant change with the regulators affecting the banking industry. Could we enter a period where we have a stability in the regulatory environment which could enhance valuations possibly for bank stocks? Jeremy Barnum: Well- Jamie Dimon: Go ahead. Jeremy Barnum: I would break the question down into two parts, could we envision stability and impact on valuatio"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_117",
+      "rank": 5,
+      "rrf_score": 0.02967032967032967,
+      "found_in": {
+        "dense": 10,
+        "sparse": 5
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": " you guys have talked about you're seeing some excesses in underwriting and credit late last year, I think it was Jamie. Jeremy, you talked about risk on in the capital markets. What are you guys seeing in credit underwriting from your competitors? Is it getting crazier or no, it's still pretty good? What's the outlook there, please? Jeremy Barnum: I mean, crazy is a strong word, but I spent some time looking into this issue a week ago, and we did hear some example. I mean, I don't know. For wha"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_1",
+      "rank": 6,
+      "rrf_score": 0.029631255487269532,
+      "found_in": {
+        "dense": 7,
+        "sparse": 8
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "relations website. Please stand by. At this time, I would like to turn the call over to JPMorgan Chase's Chairman and CEO, Jamie Dimon, and Chief Financial Officer, Jeremy Barnum. Mr. Barnum, please go ahead. Jeremy Barnum: Thanks, Amanda, and good morning, everyone. Including the significant items noted on the page, the firm delivered net income of $16.9 billion, EPS of $6.14, and an ROTCE of 23%. Excluding the significant items, revenue was up 15% year-on-year, predominantly driven by markets "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 7,
+      "rrf_score": 0.029236022193768675,
+      "found_in": {
+        "dense": 11,
+        "sparse": 6
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_99",
+      "rank": 8,
+      "rrf_score": 0.02862400327131466,
+      "found_in": {
+        "dense": 13,
+        "sparse": 7
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " talk to us in terms of how you're thinking about buybacks at these levels. I know Jamie's talked about potential M&A at some point, maybe asset management, fintechs. Yeah, would love to revisit that. Thanks. Jeremy Barnum: Yeah. Before I answer that, I want to tell you I always enjoy reading your weekend notes. They're insightful and sometimes quite funny. Thank you for that. Ebrahim Poonawala: Thank you. Jeremy Barnum: Look, you're absolutely correct. I mean, we've always said we want to buy b"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_77",
+      "rank": 9,
+      "rrf_score": 0.027272727272727275,
+      "found_in": {
+        "dense": 17,
+        "sparse": 10
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "ks taken over by someone only from the investment bank who only cares about the investment bank Believe me, the rest of the franchise can suffer. You need respect for the rest of the franchise. I think it's great for him. It's great for the company. He's already excited. He's always been to branches and out and about, and he'll take it hopefully onward and upward. Jeremy Barnum: Mike, just a minor correction. Troy, with no offense intended to my old good friends who are foreign exchange spot tra"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_57",
+      "rank": 10,
+      "rrf_score": 0.027212143650499815,
+      "found_in": {
+        "dense": 14,
+        "sparse": 13
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "let it happen by accident as a result of a seemingly very technical thing, like removing RWA from the denominator of the short-term wholesale funding contribution to the G-SIB score. I mean, this is a little bit of what Jamie talks about when he's saying like, do the numbers right and just be clear about your policy objectives. James Mitchell: No, absolutely. I appreciate the thoughts. Jeremy Barnum: Thanks. Operator: Thank you. Our next question comes from Matt O'Connor with Deutsche Bank. Your"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_140",
+      "rank": 11,
+      "rrf_score": 0.026547116736990152,
+      "found_in": {
+        "dense": 19,
+        "sparse": 12
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "ny internal limits that you might be rubbing up against? Is there room to keep allocating more balance sheet to the business if the environment remains where it is? Jeremy Barnum: I'm definitely not going to get into discussions with you about internal limit management. It was on the press call, some of you didn't hear this, but I did get a question about this, and I think you said this correctly, but I just want to err on the side of being precise here. Sometimes people think about capital allo"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 12,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_87",
+      "rank": 13,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "s quarter that may be difficult to sustain going forward? Jeremy Barnum: Yeah. There's really not a lot behind my comment. It's essentially what you would get from asking any of the commercial AI models this question, and the 2 stages old version of the model. In other words, it's all the obvious stuff that's been heavily reported. We had some major IPOs. We had some major index rebalancing. We had some very complicated dynamics in the Korean equity market. There's been a lot of activity in Asia"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_121",
+      "rank": 14,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": " kind of appropriately skeptical view of the environment. Jamie Dimon: We didn't talk about a huge deterioration in credit underwriting standards. I think we talked about it as a very mild one, but it's across several spectrum, which is people assumptions on revenue growth or add back of expenses, more PIK, and this is not across the board, by the way. It's more some players than others. Some weaker covenants, some people taking more rollover risk. By that I mean if rates go up, how much interes"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_86",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " Jeremy, you said, and if I recall correctly, that the particular set of things that happened this quarter are difficult to see repeated. Can you just maybe elaborate on what was most exceptional this quarter? I think some of your peers have talked about Asia, prime brokerage there, I think you mentioned derivatives and cash being strong. Are there any areas or products or geographies that were particularly noteworthy in terms of the strength this quarter that may be difficult to sustain going f"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_52",
+      "rank": 16,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": "ements of Basel III. Just curious if there's been any developments there. Jamie Dimon: There are four obvious changes they should make. I think it's unfair when I hear them say, they should do the numbers the right way, and you guys should demand it. Do the numbers the right way. If they think they want to be more conservative, they should add conservatism. They should not do the numbers in a false way to make the number higher. I just think that's intellectual clarity and honesty, and stuff lik"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_66",
+      "rank": 17,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " up 10%, if your margin overall is 25%, when revenues go up 10%, the marginal return on that, since you're not adding all the overhead, is going to be a lot more than 25%. Jeremy Barnum: Yeah, I got it. Jamie Dimon: People kind of forget that. Mike Mayo: Exactly. Jamie Dimon: Obviously, a rapid increase in revenue drives a big increase in operating leverage. Jeremy Barnum: Yeah. I agree with what Jamie just said. Maybe just since we've had a couple of questions about this and obviously we did re"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_132",
+      "rank": 18,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "me of these recommendations to the regulators. It's in all of our interest, the system be better. Not any one of us, all of us. Gerard Cassidy: Agreed. Thank you, Jamie, and thank you, Jeremy. Jamie Dimon: Thanks, Gerard. Operator: Thank you. For our final question, we will go to the line of Manan Gosalia from Morgan Stanley. Your line is open. Manan Gosalia: Hey, good morning. Jeremy, as we think about the various expense buckets you called out at the start of the year, the volume related expen"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_63",
+      "rank": 19,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "mpirical EAR is probably higher than our reported EAR, and you ignore the convexity dynamics, you could convince yourself that a 7% rate environment is great. Obviously that wouldn't be true if you had to do a massive repurchase of the deposit franchise in order to protect it, essentially. Jamie Dimon: We do assume some of that. Jeremy Barnum: It's something that we think about. It's in the models. It's very much part of the discipline. The question is when, and obviously there's the larger ques"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_40",
+      "rank": 20,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "erms of the new leader of JPMorgan? What do you think makes an exceptional CEO in the future as you pass the baton on? Additionally, I think that some of your investors may have read the announcement, particularly Marian's departure as sort of an extension of your tenure. I'm wondering if we should think about your remaining tenure as more fixed or if investors are still thinking about a more rolling type of retirement date and a longer stay as executive chair. Jamie Dimon: The question to that "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_93",
+      "rank": 21,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "Dimon: To give you the big numbers, I think CapEx is about $4 trillion a year, AI went from $400 billion last year to $700 billion this year. People project, which so do our people, it will be like a little over a trillion next year and maybe a little reduction in the non-AI CapEx. That's hard to figure out because some of the same people are doing the same. Jeremy Barnum: Yeah. I was talking to our economist the other day about the CapEx impact of CHIPS Act and some of that's kind of rolled off"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_48",
+      "rank": 22,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "earnings_call"
+      },
+      "text": "'m just going to answer that by saying when you have great returns and very good margins, which actually went up this quarter, not down James Mitchell: Yeah Jamie Dimon: The notion that somehow you can forever increase your operating leverage is a crazy notion. We don't have that. I think it's part of the reason why banks failed, if you go back 20 years ago. We're never going to have that point of view. AI will have its gives and takes. We can't project. I do think you might actually see a slowd"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_60",
+      "rank": 23,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": ", and then betas, which you alluded to earlier, have been better than expected so far, if we go up a certain amount, do you think there could be a meaningful change in that? Jeremy Barnum: Yeah, that's a good question actually, Matt. I think the short answer is we don't really know. If you'd asked me that question a couple of years ago, I would have said that you're essentially asking a question about the convexity of the rate paid dynamic, especially for consumer deposits, the negative convexit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_186",
+      "rank": 24,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "section": "Item 1A - Risk Factors",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "egal costs. These consequences could also impair JPMorganChase’s ability to effectively manage its credit risk exposure from its market activities, or cause reputational harm. The financial or operational failure of a significant market participant, such as a major financial institution or a CCP, or concerns about the creditworthiness or operational sustainability of one or more market participants, could cause substantial and cascading disruption within the financial markets, including in circu"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_19",
+      "rank": 25,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": " and some kind of exceptional events this quarter. On the market side, I would probably separate between fixed income and equities. All the normal caveats, like we don't know, anything can happen. Clearly, markets revenues in general have been quite elevated and strong for some time, although, as we pointed out, that also is associated with much more financial resource deployment in support of our clients. I think the particular set of things that happened in equities this quarter, it's a little"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2601",
+      "rank": 26,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "sky) /s/ MELLODY HOBSON Director (Mellody Hobson) /s/ PHEBE N. NOVAKOVIC Director (Phebe N. Novakovic) /s/ VIRGINIA M. ROMETTY Director (Virginia M. Rometty) /s/ BRAD D. SMITH Director (Brad D. Smith) /s/ MARK A. WEINBERGER Director (Mark A. Weinberger) /s/ JEREMY BARNUM Executive Vice President and Chief Financial Officer (Jeremy Barnum) (Principal Financial Officer) /s/ ELENA KORABLINA Managing Director and Firmwide Controller (Elena Korablina) (Principal Accounting Officer) 328 JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_34",
+      "rank": 27,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "s probably disproportionately in the front end. When you assemble that together, you have a little bit of the increase as a function of higher rates, but most of it is balances overall. John McDonald: Okay. Just to finish up on the NII. The markets NII is guided a bit higher, even though the outlook for rates is also a little bit higher. I guess what are some of the drivers there? Is it balance sheet mix and some other factors? Jeremy Barnum: It's a great question, John. You correctly allude to "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_90",
+      "rank": 28,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none"
+      },
+      "text": "ing. I guess maybe a lot of discussion on the strong Wall Street backdrop. Maybe Jeremy, just talk about the Main Street part of the U.S. economy. There is a sense that there's a fragility when you look at housing, real estate, rates potentially could go higher. Give us a sense around what you're seeing on the consumer side, the ability to sort of pull forward and resiliency if rates go up. Are you seeing any broadening in CapEx beyond AI, or is it very AI-centric in terms of what you're seeing "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_22",
+      "rank": 29,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "atty: Good morning. Thanks for the question. On deposits, what stuck out was slide four to me, the growth in CCB in the quarter. Interested in kind of the progression towards that 15% retail market share that you've talked about in the past, and really how higher for longer may impact the pace of market share gains over time. Thanks. Jeremy Barnum: Sure. Let me just do near-term deposits for the company quickly. Let me actually start with wholesale. Wholesale deposit growth was quite strong this"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_16",
+      "rerank_rank": 1,
+      "rerank_score": 3.3514797687530518,
+      "rrf_rank": 2,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 1,
+        "sparse": 4
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "period": "Q2-2026"
+      },
+      "text": " do you judge just how risk-on are we across the various businesses? Thanks. Jeremy Barnum: Good question, Ken. I would actually bifurcate that a little bit between investment banking and markets, in the sense that by historical standards, investment banking fees were fine, but they weren't at sort of super peak level. They had some room to come up a little bit. One of the things we looked at is, okay, how much cannibalization of the future pipeline might have happened through the acceleration t"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_15",
+      "rerank_rank": 2,
+      "rerank_score": 2.945486545562744,
+      "rrf_rank": 1,
+      "rrf_score": 0.03252247488101534,
+      "found_in": {
+        "dense": 2,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "t. As a result, she decided, when she knew about the plans, that she'd rather retire than stay here. That's it. No mystery. Ken Usdin: Okay. Very good. Jeremy, on your follow-up to the strength that you're seeing across investment banking and markets, I know it depends on conversion opportunities and just the environment, but this is clearly far higher level of activity than anyone would have expected. How do you judge the sustainability, and how do you judge just how risk-on are we across the v"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rerank_rank": 3,
+      "rerank_score": 0.040239762514829636,
+      "rrf_rank": 7,
+      "rrf_score": 0.029236022193768675,
+      "found_in": {
+        "dense": 11,
+        "sparse": 6
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_117",
+      "rerank_rank": 4,
+      "rerank_score": -0.2384178340435028,
+      "rrf_rank": 5,
+      "rrf_score": 0.02967032967032967,
+      "found_in": {
+        "dense": 10,
+        "sparse": 5
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "company": "JPMC"
+      },
+      "text": " you guys have talked about you're seeing some excesses in underwriting and credit late last year, I think it was Jamie. Jeremy, you talked about risk on in the capital markets. What are you guys seeing in credit underwriting from your competitors? Is it getting crazier or no, it's still pretty good? What's the outlook there, please? Jeremy Barnum: I mean, crazy is a strong word, but I spent some time looking into this issue a week ago, and we did hear some example. I mean, I don't know. For wha"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_87",
+      "rerank_rank": 5,
+      "rerank_score": -0.41452786326408386,
+      "rrf_rank": 13,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "s quarter that may be difficult to sustain going forward? Jeremy Barnum: Yeah. There's really not a lot behind my comment. It's essentially what you would get from asking any of the commercial AI models this question, and the 2 stages old version of the model. In other words, it's all the obvious stuff that's been heavily reported. We had some major IPOs. We had some major index rebalancing. We had some very complicated dynamics in the Korean equity market. There's been a lot of activity in Asia"
+    }
+  ],
+  "context": "[1] (earnings_call, Q2-2026)\n do you judge just how risk-on are we across the various businesses? Thanks. Jeremy Barnum: Good question, Ken. I would actually bifurcate that a little bit between investment banking and markets, in the sense that by historical standards, investment banking fees were fine, but they weren't at sort of super peak level. They had some room to come up a little bit. One of the things we looked at is, okay, how much cannibalization of the future pipeline might have happened through the acceleration t\n\n[2] (earnings_call, Q2-2026)\nt. As a result, she decided, when she knew about the plans, that she'd rather retire than stay here. That's it. No mystery. Ken Usdin: Okay. Very good. Jeremy, on your follow-up to the strength that you're seeing across investment banking and markets, I know it depends on conversion opportunities and just the environment, but this is clearly far higher level of activity than anyone would have expected. How do you judge the sustainability, and how do you judge just how risk-on are we across the v\n\n[3] (earnings_call, Q2-2026)\ncredit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub\n\n[4] (earnings_call, Q2-2026)\n you guys have talked about you're seeing some excesses in underwriting and credit late last year, I think it was Jamie. Jeremy, you talked about risk on in the capital markets. What are you guys seeing in credit underwriting from your competitors? Is it getting crazier or no, it's still pretty good? What's the outlook there, please? Jeremy Barnum: I mean, crazy is a strong word, but I spent some time looking into this issue a week ago, and we did hear some example. I mean, I don't know. For wha\n\n[5] (earnings_call, Q2-2026)\ns quarter that may be difficult to sustain going forward? Jeremy Barnum: Yeah. There's really not a lot behind my comment. It's essentially what you would get from asking any of the commercial AI models this question, and the 2 stages old version of the model. In other words, it's all the obvious stuff that's been heavily reported. We had some major IPOs. We had some major index rebalancing. We had some very complicated dynamics in the Korean equity market. There's been a lot of activity in Asia",
+  "user_prompt": "[1] (earnings_call, Q2-2026)\n do you judge just how risk-on are we across the various businesses? Thanks. Jeremy Barnum: Good question, Ken. I would actually bifurcate that a little bit between investment banking and markets, in the sense that by historical standards, investment banking fees were fine, but they weren't at sort of super peak level. They had some room to come up a little bit. One of the things we looked at is, okay, how much cannibalization of the future pipeline might have happened through the acceleration t\n\n[2] (earnings_call, Q2-2026)\nt. As a result, she decided, when she knew about the plans, that she'd rather retire than stay here. That's it. No mystery. Ken Usdin: Okay. Very good. Jeremy, on your follow-up to the strength that you're seeing across investment banking and markets, I know it depends on conversion opportunities and just the environment, but this is clearly far higher level of activity than anyone would have expected. How do you judge the sustainability, and how do you judge just how risk-on are we across the v\n\n[3] (earnings_call, Q2-2026)\ncredit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub\n\n[4] (earnings_call, Q2-2026)\n you guys have talked about you're seeing some excesses in underwriting and credit late last year, I think it was Jamie. Jeremy, you talked about risk on in the capital markets. What are you guys seeing in credit underwriting from your competitors? Is it getting crazier or no, it's still pretty good? What's the outlook there, please? Jeremy Barnum: I mean, crazy is a strong word, but I spent some time looking into this issue a week ago, and we did hear some example. I mean, I don't know. For wha\n\n[5] (earnings_call, Q2-2026)\ns quarter that may be difficult to sustain going forward? Jeremy Barnum: Yeah. There's really not a lot behind my comment. It's essentially what you would get from asking any of the commercial AI models this question, and the 2 stages old version of the model. In other words, it's all the obvious stuff that's been heavily reported. We had some major IPOs. We had some major index rebalancing. We had some very complicated dynamics in the Korean equity market. There's been a lot of activity in Asia\n\nQuestion: What did Jeremy Barnum say about the sustainability of the investment banking and markets results?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_16"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_15"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_73"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_117"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_87"
+    }
+  ],
+  "answer_text": "Jeremy Barnum indicated that the level of activity in investment banking and markets is clearly far higher than anyone would have expected, but he did not provide a definitive judgment on sustainability, suggesting it depends on conversion opportunities and the environment [2].",
+  "parsed_citations": [
+    2
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_15",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "section": "none",
+        "strategy": "fixed_size"
+      }
+    }
+  ]
+}

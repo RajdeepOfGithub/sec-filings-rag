@@ -1,0 +1,1254 @@
+{
+  "question_id": "q05",
+  "question": "What was the total provision for credit losses in Q2 2026?",
+  "category": "tabular",
+  "difficulty": "medium",
+  "expected": {
+    "value": 2515,
+    "unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated Results of Operations",
+    "table": "Provision for credit losses",
+    "row": "Total provision for credit losses",
+    "column": "Three months ended June 30, 2026",
+    "period": "Q2-2026"
+  },
+  "notes": "Prose immediately below the table says 'The provision for credit losses was $2.5 billion' - so the model may answer from narrative rather than the table. Both are correct; worth noting which source it cites.",
+  "run": {
+    "timestamp": "2026-09-16T00:00:45.509965+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rank": 1,
+      "score": 0.5555903911590576,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_486",
+      "rank": 2,
+      "score": 0.5941115617752075,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": " excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rank": 3,
+      "score": 0.596000611782074,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_165",
+      "rank": 4,
+      "score": 0.64885014295578,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": " and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_48",
+      "rank": 5,
+      "score": 0.6499617099761963,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "illion. Net charge-offs were $2.4 billion, down $44 million. The net addition to the allowance for credit losses was $149 million, primarily in wholesale. In the prior year, the provision was $2.8 billion, net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $439 million. • The total allowance for credit losses was $31.5 billion at June 30, 2026. The Firm had an allowance for loan losses to retained loans coverage ratio of 1.79%, compared with 1.85% in th"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_90",
+      "rank": 6,
+      "score": 0.6547810435295105,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " allowance for credit losses was $439 million. Refer to CCB, CIB and AWM segment and Corporate results on pages 22-26, pages 27-34, pages 35-39, and pages 40-42, respectively; Allowance for Credit Losses on pages 75-77; Critical Accounting Estimates Used by the Firm on pages 87-89; and Notes 11 and 12 for additional information on the credit portfolio and the allowance for credit losses. Year-to-date results The provision for credit losses was $5.0 billion. Net charge-offs were $4.7 billion and "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_88",
+      "rank": 7,
+      "score": 0.6613507270812988,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "ision for credit losses was $2.5 billion. Net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $149 million. The provision for credit losses included: • $2.2 billion in consumer , reflecting net charge-offs of $2.2 billion, predominantly driven by Card Services, primarily due to loan growth. The allowance for credit losses was relatively flat, and • $361 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit qualit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_195",
+      "rank": 8,
+      "score": 0.6616923809051514,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ty of certain exposures, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. Net charge-offs were $207 million and the net addition to the allowance for credit losses was $149 million. In the prior year, the provision was $696 million, the net addition to the allowance for credit losses was $371 million and net charge-offs were $325 million. Refer to Credit and Investment Risk Management on pa"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_489",
+      "rank": 9,
+      "score": 0.6646756529808044,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "addition to the allowance for credit losses was $1.1 billion. In the prior year, the provision was $10.7 billion, net charge-offs were $8.6 billion and the net addition to the allowance for credit losses was $2.0 billion. Refer to CCB, CIB and AWM segment and Corporate results on pages 65–68, pages 69–75, pages 76–79, and pages 80–82, respectively; Allowance for Credit Losses on pages 129–131; Critical Accounting Estimates Used by the Firm on pages 154–157; and Notes 12 and 13 for additional inf"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_92",
+      "rank": 10,
+      "score": 0.6655105352401733,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "026, and • $808 million in wholesale , driven by changes in the credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for credit losses was $479 million and net charge-offs were $329 million. In the prior year, the provision was $6.2 billion, net charge-offs were $4.7 billion and the n"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_89",
+      "rank": 11,
+      "score": 0.6957168579101562,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "he loan portfolio and changes in the credit quality of certain exposures, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. Net charge-offs were $209 million and the net addition to the allowance for credit losses was $152 million. In the prior year, the provision was $2.8 billion, net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $439 million. Ref"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_91",
+      "rank": 12,
+      "score": 0.6968573331832886,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": ".0 billion. Net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $340 million. The provision for credit losses included: • $4.2 billion in consumer , consisting of net charge-offs of $4.4 billion, predominantly driven by Card Services, reflecting loan growth, and a net reduction in the allowance for credit losses of $128 million, predominantly driven by improvements in home prices in the first quarter of 2026, and • $808 million in wholesale , driven by c"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_161",
+      "rank": 13,
+      "score": 0.6998735070228577,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "venue-related compensation. The provision for credit losses was $2.2 billion. Net charge-offs were $2.2 billion, up $70 million, predominantly driven by Card Services, reflecting loan growth. The allowance for credit losses was flat. In the prior year, the provision was $2.1 billion, net charge-offs were $2.1 billion and the allowance for credit losses was relatively flat. Refer to Credit and Investment Risk Management on pages 59-78 and Allowance for Credit Losses on pages 75-77 for a further d"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_201",
+      "rank": 14,
+      "score": 0.7116215229034424,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1038",
+      "rank": 15,
+      "score": 0.7169702053070068,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "2026 and 2025, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 165 million and $ 288 million, respectively, associated with certain accounts receivable in CIB. (b) Includes collateral-dependent loans, including those for which foreclosure is deemed probable, and nonaccrual risk-rated loans. 159 (c) The allowance for lending-related commitments is reported in accounts payable and other liabilities on the Consolidated balance"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_605",
+      "rank": 16,
+      "score": 0.7281643152236938,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "d commitment portfolios, net changes in credit quality of client-specific exposures, an update to loss assumptions on certain leveraged loans, and estimated losses related to borrower fraud in certain secured lending facilities, partially offset by the impact of changes in the Firm's weighted-average macroeconomic outlook. Net charge-offs were $1.5 billion and the net addition to the allowance for credit losses was $1.1 billion. In the prior year, the provision was $762 million, net charge-offs "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_496",
+      "rank": 17,
+      "score": 0.7441208362579346,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": " losses on investment securities, which is reflected in investment securities on the Consolidated balance sheets. Discussion of changes in the allowance The allowance for credit losses as of June 30, 2026 was $31.5 billion, reflecting a net addition of $303 million from December 31, 2025. The net addition to the allowance for credit losses included: • $473 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offse"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1031",
+      "rank": 18,
+      "score": 0.7450227737426758,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "methodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_573",
+      "rank": 19,
+      "score": 0.7457630038261414,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "logy. The provision for credit losses was $11.5 billion. Net charge-offs were $8.2 billion, up $319 million, primarily driven by Card Services, reflecting loan growth. The net addition to the allowance for credit losses of $3.2 billion which was driven by $2.2 billion related to the Apple Card transaction, loan growth in Card Services and the impact of changes in the Firm's weighted-average macroeconomic outlook, partially offset by reduced borrower uncertainty. In the prior year, the provision "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_148",
+      "rank": 20,
+      "score": 0.7513577938079834,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "45 20 Provision for credit losses 4,206 4,711 (11) 838 1,401 (40) (11) 36 NM Net income 10,287 9,594 7 18,722 13,592 38 3,732 3,056 22 ROE 33 % 34 % 22 % 18 % 46 % 38 % Six months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 7,261 (a) $ 3,842 89 % $ 108,558 $ 91,694 18 % Total noninterest expense 1,179 732 61 54,166 47,376 14 Pre-provision profit 6,082 3,110 96 54,392 44,318 23 Provision for credit losses (11) 6 NM 5,022 6,154 "
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_486",
+      "rank": 1,
+      "score": 11.83527659150331,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_148",
+      "rank": 2,
+      "score": 11.729828548224232,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "45 20 Provision for credit losses 4,206 4,711 (11) 838 1,401 (40) (11) 36 NM Net income 10,287 9,594 7 18,722 13,592 38 3,732 3,056 22 ROE 33 % 34 % 22 % 18 % 46 % 38 % Six months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 7,261 (a) $ 3,842 89 % $ 108,558 $ 91,694 18 % Total noninterest expense 1,179 732 61 54,166 47,376 14 Pre-provision profit 6,082 3,110 96 54,392 44,318 23 Provision for credit losses (11) 6 NM 5,022 6,154 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rank": 3,
+      "score": 11.66108387606278,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rank": 4,
+      "score": 11.059572995341277,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_48",
+      "rank": 5,
+      "score": 11.055072615515638,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "illion. Net charge-offs were $2.4 billion, down $44 million. The net addition to the allowance for credit losses was $149 million, primarily in wholesale. In the prior year, the provision was $2.8 billion, net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $439 million. • The total allowance for credit losses was $31.5 billion at June 30, 2026. The Firm had an allowance for loan losses to retained loans coverage ratio of 1.79%, compared with 1.85% in th"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_165",
+      "rank": 6,
+      "score": 10.626153227670915,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_905",
+      "rank": 7,
+      "score": 10.240059439506751,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " June 30, (in millions) 2026 2025 2026 2025 Realized gains $ 224 $ 94 $ 617 $ 239 Realized losses ( 619 ) ( 148 ) ( 948 ) ( 330 ) Investment securities losses $ ( 395 ) $ ( 54 ) $ ( 331 ) $ ( 91 ) Provision for credit losses $ ( 14 ) $ ( 10 ) $ ( 11 ) $ ( 27 ) 136 Contractual maturities and yields The following table presents the amortized cost and estimated fair value at June 30, 2026, of JPMorganChase’s investment securities portfolio by contractual maturity. By remaining maturity June 30, 202"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_147",
+      "rank": 8,
+      "score": 10.221282645764372,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "1,155 14,987 41 ROE NM NM 24 % 18 % Six months ended June 30, Consumer & Community Banking Commercial & Investment Bank Asset & Wealth Management (in millions, except ratios) 2026 2025 Change 2026 2025 Change 2026 2025 Change Total net revenue $ 39,840 $ 37,160 7 % $ 48,232 $ 39,201 23 % $ 13,225 $ 11,491 15 % Total noninterest expense 22,087 19,715 12 22,526 19,483 16 8,374 7,446 12 Pre-provision profit 17,753 17,445 2 25,706 19,718 30 4,851 4,045 20 Provision for credit losses 4,206 4,711 (11)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_146",
+      "rank": 9,
+      "score": 9.905309293808429,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " 9,678 6,650 46 1,957 1,473 33 Return on equity (“ROE”) 34 % 36 % 22 % 17 % 48 % 36 % Three months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 6,046 (a) $ 1,538 293 % $ 58,022 $ 45,680 27 % Total noninterest expense 611 547 12 27,316 23,779 15 Pre-provision profit 5,435 991 448 30,706 21,901 40 Provision for credit losses (10) 25 NM 2,515 2,849 (12) Net income 4,209 1,695 148 21,155 14,987 41 ROE NM NM 24 % 18 % Six months end"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_91",
+      "rank": 10,
+      "score": 9.888557337384546,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": ".0 billion. Net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $340 million. The provision for credit losses included: • $4.2 billion in consumer , consisting of net charge-offs of $4.4 billion, predominantly driven by Card Services, reflecting loan growth, and a net reduction in the allowance for credit losses of $128 million, predominantly driven by improvements in home prices in the first quarter of 2026, and • $808 million in wholesale , driven by c"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_145",
+      "rank": 11,
+      "score": 9.866193125694664,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "g Commercial & Investment Bank Asset & Wealth Management (in millions, except ratios) 2026 2025 Change 2026 2025 Change 2026 2025 Change Total net revenue $ 20,272 $ 18,847 8 % $ 24,853 $ 19,535 27 % $ 6,851 $ 5,760 19 % Total noninterest expense 11,108 9,858 13 11,390 9,641 18 4,207 3,733 13 Pre-provision profit 9,164 8,989 2 13,463 9,894 36 2,644 2,027 30 Provision for credit losses 2,156 2,082 4 356 696 (49) 13 46 (72) Net income 5,311 5,169 3 9,678 6,650 46 1,957 1,473 33 Return on equity (“"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_161",
+      "rank": 12,
+      "score": 9.864983425951428,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "venue-related compensation. The provision for credit losses was $2.2 billion. Net charge-offs were $2.2 billion, up $70 million, predominantly driven by Card Services, reflecting loan growth. The allowance for credit losses was flat. In the prior year, the provision was $2.1 billion, net charge-offs were $2.1 billion and the allowance for credit losses was relatively flat. Refer to Credit and Investment Risk Management on pages 59-78 and Allowance for Credit Losses on pages 75-77 for a further d"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2577",
+      "rank": 13,
+      "score": 9.755379432117623,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "vidends declared and deemed dividends upon redemption of preferred stock Pre-provision profit/(loss): Represents total net revenue less noninterest expense. The Firm believes that this financial measure is useful in assessing the ability of a lending institution to generate income in excess of its provision for credit losses. Pre-tax margin: Represents income before income tax expense divided by total net revenue, which is, in management’s view, a comprehensive measure of pretax performance deri"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_454",
+      "rank": 14,
+      "score": 9.63211746182326,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "e Firm had an allowance for loan losses to retained loans coverage ratio of 1.83%, compared with 1.87% in the prior year. Refer to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 51–54 and pages 55–57, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis, are non-GAAP financial measures. Refer to "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1255",
+      "rank": 15,
+      "score": 9.564413890744214,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "or the six months ended June 30, (in millions, except ratios) Corporate Reconciling Items (a) Total 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 5,413 (e) $ 702 $ ( 1,151 ) $ ( 1,265 ) $ 56,306 $ 43,740 Net interest income 1,848 3,140 ( 224 ) ( 207 ) 50,877 46,482 Total net revenue 7,261 3,842 ( 1,375 ) ( 1,472 ) 107,183 90,222 Provision for credit losses ( 11 ) 6 — — 5,022 6,154 Total noninterest expense (d) 1,179 732 (f) — — 54,166 47,376 Income/(loss) before income tax expense/(benefit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_942",
+      "rank": 16,
+      "score": 9.500430272309437,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "justments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_453",
+      "rank": 17,
+      "score": 9.41857216775337,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "net addition to the allowance for credit losses was $4.4 billion and consisted of $3.3 billion in consumer , which included $2.2 billion related to the Apple Card transaction, and $1.1 billion in wholesale . In the prior year, the provision was $10.7 billion, net charge-offs were $8.6 billion and the net addition to the allowance for credit losses was $2.0 billion. • The total allowance for credit losses was $31.2 billion at December 31, 2025. The Firm had an allowance for loan losses to retaine"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_784",
+      "rank": 18,
+      "score": 9.30127399960248,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "any excess deducted from RWA. Refer to Note 27 for additional information on the CECL capital transition. (e) Represents an adjustment to qualifying allowance for credit losses for the excess of eligible credit reserves over expected credit losses up to 0.6% of credit risk RWA. As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The year ended December 31, 2024 included the impact of the CECL capital transition provision with any excess deduct"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2021",
+      "rank": 19,
+      "score": 9.153951802761846,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "urities, which is reflected in investment securities on the Consolidated balance sheets. The income statement effect of all changes in the allowance for credit losses is recognized in the provision for credit losses. Determining the appropriateness of the allowance for credit losses is complex and requires significant judgment by management about the effect of matters that are inherently uncertain. At least quarterly, the allowance for credit losses is reviewed by the CRO, the CFO and the Contro"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_49",
+      "rank": 20,
+      "score": 8.995610687324591,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "coverage ratio of 1.79%, compared with 1.85% in the prior year. Refer to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 9-14 and pages 15-16, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis are non-GAAP financial measures. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-K_FY2025_486",
+      "rank": 1,
+      "rrf_score": 0.03252247488101534,
+      "found_in": {
+        "dense": 2,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rank": 2,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 1,
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rank": 3,
+      "rrf_score": 0.031746031746031744,
+      "found_in": {
+        "dense": 3,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_165",
+      "rank": 4,
+      "rrf_score": 0.030776515151515152,
+      "found_in": {
+        "dense": 4,
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_48",
+      "rank": 5,
+      "rrf_score": 0.03076923076923077,
+      "found_in": {
+        "dense": 5,
+        "sparse": 5
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "illion. Net charge-offs were $2.4 billion, down $44 million. The net addition to the allowance for credit losses was $149 million, primarily in wholesale. In the prior year, the provision was $2.8 billion, net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $439 million. • The total allowance for credit losses was $31.5 billion at June 30, 2026. The Firm had an allowance for loan losses to retained loans coverage ratio of 1.79%, compared with 1.85% in th"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_148",
+      "rank": 6,
+      "rrf_score": 0.028629032258064516,
+      "found_in": {
+        "dense": 20,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "45 20 Provision for credit losses 4,206 4,711 (11) 838 1,401 (40) (11) 36 NM Net income 10,287 9,594 7 18,722 13,592 38 3,732 3,056 22 ROE 33 % 34 % 22 % 18 % 46 % 38 % Six months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 7,261 (a) $ 3,842 89 % $ 108,558 $ 91,694 18 % Total noninterest expense 1,179 732 61 54,166 47,376 14 Pre-provision profit 6,082 3,110 96 54,392 44,318 23 Provision for credit losses (11) 6 NM 5,022 6,154 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_91",
+      "rank": 7,
+      "rrf_score": 0.02817460317460317,
+      "found_in": {
+        "dense": 12,
+        "sparse": 10
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": ".0 billion. Net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $340 million. The provision for credit losses included: • $4.2 billion in consumer , consisting of net charge-offs of $4.4 billion, predominantly driven by Card Services, reflecting loan growth, and a net reduction in the allowance for credit losses of $128 million, predominantly driven by improvements in home prices in the first quarter of 2026, and • $808 million in wholesale , driven by c"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_161",
+      "rank": 8,
+      "rrf_score": 0.02758751902587519,
+      "found_in": {
+        "dense": 13,
+        "sparse": 12
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "venue-related compensation. The provision for credit losses was $2.2 billion. Net charge-offs were $2.2 billion, up $70 million, predominantly driven by Card Services, reflecting loan growth. The allowance for credit losses was flat. In the prior year, the provision was $2.1 billion, net charge-offs were $2.1 billion and the allowance for credit losses was relatively flat. Refer to Credit and Investment Risk Management on pages 59-78 and Allowance for Credit Losses on pages 75-77 for a further d"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_90",
+      "rank": 9,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " allowance for credit losses was $439 million. Refer to CCB, CIB and AWM segment and Corporate results on pages 22-26, pages 27-34, pages 35-39, and pages 40-42, respectively; Allowance for Credit Losses on pages 75-77; Critical Accounting Estimates Used by the Firm on pages 87-89; and Notes 11 and 12 for additional information on the credit portfolio and the allowance for credit losses. Year-to-date results The provision for credit losses was $5.0 billion. Net charge-offs were $4.7 billion and "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_88",
+      "rank": 10,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "ision for credit losses was $2.5 billion. Net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $149 million. The provision for credit losses included: • $2.2 billion in consumer , reflecting net charge-offs of $2.2 billion, predominantly driven by Card Services, primarily due to loan growth. The allowance for credit losses was relatively flat, and • $361 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit qualit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_905",
+      "rank": 11,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " June 30, (in millions) 2026 2025 2026 2025 Realized gains $ 224 $ 94 $ 617 $ 239 Realized losses ( 619 ) ( 148 ) ( 948 ) ( 330 ) Investment securities losses $ ( 395 ) $ ( 54 ) $ ( 331 ) $ ( 91 ) Provision for credit losses $ ( 14 ) $ ( 10 ) $ ( 11 ) $ ( 27 ) 136 Contractual maturities and yields The following table presents the amortized cost and estimated fair value at June 30, 2026, of JPMorganChase’s investment securities portfolio by contractual maturity. By remaining maturity June 30, 202"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_195",
+      "rank": 12,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ty of certain exposures, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. Net charge-offs were $207 million and the net addition to the allowance for credit losses was $149 million. In the prior year, the provision was $696 million, the net addition to the allowance for credit losses was $371 million and net charge-offs were $325 million. Refer to Credit and Investment Risk Management on pa"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_147",
+      "rank": 13,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "1,155 14,987 41 ROE NM NM 24 % 18 % Six months ended June 30, Consumer & Community Banking Commercial & Investment Bank Asset & Wealth Management (in millions, except ratios) 2026 2025 Change 2026 2025 Change 2026 2025 Change Total net revenue $ 39,840 $ 37,160 7 % $ 48,232 $ 39,201 23 % $ 13,225 $ 11,491 15 % Total noninterest expense 22,087 19,715 12 22,526 19,483 16 8,374 7,446 12 Pre-provision profit 17,753 17,445 2 25,706 19,718 30 4,851 4,045 20 Provision for credit losses 4,206 4,711 (11)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_489",
+      "rank": 14,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "addition to the allowance for credit losses was $1.1 billion. In the prior year, the provision was $10.7 billion, net charge-offs were $8.6 billion and the net addition to the allowance for credit losses was $2.0 billion. Refer to CCB, CIB and AWM segment and Corporate results on pages 65–68, pages 69–75, pages 76–79, and pages 80–82, respectively; Allowance for Credit Losses on pages 129–131; Critical Accounting Estimates Used by the Firm on pages 154–157; and Notes 12 and 13 for additional inf"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_146",
+      "rank": 15,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " 9,678 6,650 46 1,957 1,473 33 Return on equity (“ROE”) 34 % 36 % 22 % 17 % 48 % 36 % Three months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 6,046 (a) $ 1,538 293 % $ 58,022 $ 45,680 27 % Total noninterest expense 611 547 12 27,316 23,779 15 Pre-provision profit 5,435 991 448 30,706 21,901 40 Provision for credit losses (10) 25 NM 2,515 2,849 (12) Net income 4,209 1,695 148 21,155 14,987 41 ROE NM NM 24 % 18 % Six months end"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_92",
+      "rank": 16,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "026, and • $808 million in wholesale , driven by changes in the credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for credit losses was $479 million and net charge-offs were $329 million. In the prior year, the provision was $6.2 billion, net charge-offs were $4.7 billion and the n"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_89",
+      "rank": 17,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "he loan portfolio and changes in the credit quality of certain exposures, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. Net charge-offs were $209 million and the net addition to the allowance for credit losses was $152 million. In the prior year, the provision was $2.8 billion, net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $439 million. Ref"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_145",
+      "rank": 18,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "g Commercial & Investment Bank Asset & Wealth Management (in millions, except ratios) 2026 2025 Change 2026 2025 Change 2026 2025 Change Total net revenue $ 20,272 $ 18,847 8 % $ 24,853 $ 19,535 27 % $ 6,851 $ 5,760 19 % Total noninterest expense 11,108 9,858 13 11,390 9,641 18 4,207 3,733 13 Pre-provision profit 9,164 8,989 2 13,463 9,894 36 2,644 2,027 30 Provision for credit losses 2,156 2,082 4 356 696 (49) 13 46 (72) Net income 5,311 5,169 3 9,678 6,650 46 1,957 1,473 33 Return on equity (“"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2577",
+      "rank": 19,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "vidends declared and deemed dividends upon redemption of preferred stock Pre-provision profit/(loss): Represents total net revenue less noninterest expense. The Firm believes that this financial measure is useful in assessing the ability of a lending institution to generate income in excess of its provision for credit losses. Pre-tax margin: Represents income before income tax expense divided by total net revenue, which is, in management’s view, a comprehensive measure of pretax performance deri"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_201",
+      "rank": 20,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_454",
+      "rank": 21,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "e Firm had an allowance for loan losses to retained loans coverage ratio of 1.83%, compared with 1.87% in the prior year. Refer to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 51–54 and pages 55–57, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis, are non-GAAP financial measures. Refer to "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1038",
+      "rank": 22,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "2026 and 2025, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 165 million and $ 288 million, respectively, associated with certain accounts receivable in CIB. (b) Includes collateral-dependent loans, including those for which foreclosure is deemed probable, and nonaccrual risk-rated loans. 159 (c) The allowance for lending-related commitments is reported in accounts payable and other liabilities on the Consolidated balance"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1255",
+      "rank": 23,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "or the six months ended June 30, (in millions, except ratios) Corporate Reconciling Items (a) Total 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 5,413 (e) $ 702 $ ( 1,151 ) $ ( 1,265 ) $ 56,306 $ 43,740 Net interest income 1,848 3,140 ( 224 ) ( 207 ) 50,877 46,482 Total net revenue 7,261 3,842 ( 1,375 ) ( 1,472 ) 107,183 90,222 Provision for credit losses ( 11 ) 6 — — 5,022 6,154 Total noninterest expense (d) 1,179 732 (f) — — 54,166 47,376 Income/(loss) before income tax expense/(benefit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_605",
+      "rank": 24,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "d commitment portfolios, net changes in credit quality of client-specific exposures, an update to loss assumptions on certain leveraged loans, and estimated losses related to borrower fraud in certain secured lending facilities, partially offset by the impact of changes in the Firm's weighted-average macroeconomic outlook. Net charge-offs were $1.5 billion and the net addition to the allowance for credit losses was $1.1 billion. In the prior year, the provision was $762 million, net charge-offs "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_942",
+      "rank": 25,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "justments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_496",
+      "rank": 26,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": " losses on investment securities, which is reflected in investment securities on the Consolidated balance sheets. Discussion of changes in the allowance The allowance for credit losses as of June 30, 2026 was $31.5 billion, reflecting a net addition of $303 million from December 31, 2025. The net addition to the allowance for credit losses included: • $473 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offse"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_453",
+      "rank": 27,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "net addition to the allowance for credit losses was $4.4 billion and consisted of $3.3 billion in consumer , which included $2.2 billion related to the Apple Card transaction, and $1.1 billion in wholesale . In the prior year, the provision was $10.7 billion, net charge-offs were $8.6 billion and the net addition to the allowance for credit losses was $2.0 billion. • The total allowance for credit losses was $31.2 billion at December 31, 2025. The Firm had an allowance for loan losses to retaine"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1031",
+      "rank": 28,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "methodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_784",
+      "rank": 29,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "any excess deducted from RWA. Refer to Note 27 for additional information on the CECL capital transition. (e) Represents an adjustment to qualifying allowance for credit losses for the excess of eligible credit reserves over expected credit losses up to 0.6% of credit risk RWA. As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The year ended December 31, 2024 included the impact of the CECL capital transition provision with any excess deduct"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_573",
+      "rank": 30,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "logy. The provision for credit losses was $11.5 billion. Net charge-offs were $8.2 billion, up $319 million, primarily driven by Card Services, reflecting loan growth. The net addition to the allowance for credit losses of $3.2 billion which was driven by $2.2 billion related to the Apple Card transaction, loan growth in Card Services and the impact of changes in the Firm's weighted-average macroeconomic outlook, partially offset by reduced borrower uncertainty. In the prior year, the provision "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2021",
+      "rank": 31,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "urities, which is reflected in investment securities on the Consolidated balance sheets. The income statement effect of all changes in the allowance for credit losses is recognized in the provision for credit losses. Determining the appropriateness of the allowance for credit losses is complex and requires significant judgment by management about the effect of matters that are inherently uncertain. At least quarterly, the allowance for credit losses is reviewed by the CRO, the CFO and the Contro"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_49",
+      "rank": 32,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "coverage ratio of 1.79%, compared with 1.85% in the prior year. Refer to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 9-14 and pages 15-16, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis are non-GAAP financial measures. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_165",
+      "rerank_rank": 1,
+      "rerank_score": 7.08856201171875,
+      "rrf_rank": 4,
+      "rrf_score": 0.030776515151515152,
+      "found_in": {
+        "dense": 4,
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_91",
+      "rerank_rank": 2,
+      "rerank_score": 6.2761430740356445,
+      "rrf_rank": 7,
+      "rrf_score": 0.02817460317460317,
+      "found_in": {
+        "dense": 12,
+        "sparse": 10
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": ".0 billion. Net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $340 million. The provision for credit losses included: • $4.2 billion in consumer , consisting of net charge-offs of $4.4 billion, predominantly driven by Card Services, reflecting loan growth, and a net reduction in the allowance for credit losses of $128 million, predominantly driven by improvements in home prices in the first quarter of 2026, and • $808 million in wholesale , driven by c"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_486",
+      "rerank_rank": 3,
+      "rerank_score": 6.246373653411865,
+      "rrf_rank": 1,
+      "rrf_score": 0.03252247488101534,
+      "found_in": {
+        "dense": 2,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rerank_rank": 4,
+      "rerank_score": 6.210236072540283,
+      "rrf_rank": 3,
+      "rrf_score": 0.031746031746031744,
+      "found_in": {
+        "dense": 3,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rerank_rank": 5,
+      "rerank_score": 6.206478595733643,
+      "rrf_rank": 2,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 1,
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026)\n and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo\n\n[2] (10-Q, Q2-2026)\n.0 billion. Net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $340 million. The provision for credit losses included: • $4.2 billion in consumer , consisting of net charge-offs of $4.4 billion, predominantly driven by Card Services, reflecting loan growth, and a net reduction in the allowance for credit losses of $128 million, predominantly driven by improvements in home prices in the first quarter of 2026, and • $808 million in wholesale , driven by c\n\n[3] (10-K, FY2025, Body - MD&A and financials)\n excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch\n\n[4] (10-Q, Q2-2026)\nThree months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char\n\n[5] (10-Q, Q2-2026)\nin Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total",
+  "user_prompt": "[1] (10-Q, Q2-2026)\n and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo\n\n[2] (10-Q, Q2-2026)\n.0 billion. Net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $340 million. The provision for credit losses included: • $4.2 billion in consumer , consisting of net charge-offs of $4.4 billion, predominantly driven by Card Services, reflecting loan growth, and a net reduction in the allowance for credit losses of $128 million, predominantly driven by improvements in home prices in the first quarter of 2026, and • $808 million in wholesale , driven by c\n\n[3] (10-K, FY2025, Body - MD&A and financials)\n excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch\n\n[4] (10-Q, Q2-2026)\nThree months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char\n\n[5] (10-Q, Q2-2026)\nin Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total\n\nQuestion: What was the total provision for credit losses in Q2 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_165"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_91"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_486"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_87"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_202"
+    }
+  ],
+  "answer_text": "The total provision for credit losses in Q2 2026 was $2.5 billion [4].",
+  "parsed_citations": [
+    4
+  ],
+  "resolved_citations": [
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_87",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      }
+    }
+  ]
+}
