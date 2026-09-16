@@ -1,5 +1,11 @@
-from loader import load_document
+from loader import load_document_ir
 from chunker import structure_aware_chunk, fixed_size_chunk
+from ir import serialize_document
+
+
+def make_doc_id(company, form, period):
+    """The one naming scheme: block ids and chunk ids both build on this."""
+    return f"{company}_{form}_{period}"
 
 
 def build_corpus():
@@ -32,7 +38,9 @@ def build_corpus():
 
     corpus = []
     for doc in documents:
-        text = load_document(doc["path"], doc["doc_type"])
+        doc_id = make_doc_id(doc["company"], doc["form"], doc["period"])
+        document = load_document_ir(doc["path"], doc["doc_type"], doc_id)
+        text = serialize_document(document)
 
         if doc["strategy"] == "structure_aware":
             pieces = structure_aware_chunk(text)
@@ -42,7 +50,7 @@ def build_corpus():
 
         for i, piece in enumerate(pieces):
             corpus.append({
-                "id": f"{doc['company']}_{doc['form']}_{doc['period']}_{i}",
+                "id": f"{doc_id}_{i}",
                 "text": piece["text"],
                 "company": doc["company"],
                 "form": doc["form"],

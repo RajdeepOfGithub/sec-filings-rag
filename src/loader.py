@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
 from pypdf import PdfReader
 import warnings
 
+from ir import Document, TextBlock, assign_block_ids
+
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 def load_html(filepath):            #Fn for SEC filing  (10K and 10Q)
@@ -56,6 +58,30 @@ def load_document(filepath, doc_type):
         return load_pdf(filepath)
     else:
         raise ValueError(f"Unknown doc_type: {doc_type}")
+
+
+def load_document_ir(filepath, doc_type, doc_id):
+    """
+    IR version of load_document(). Step 1 is deliberately dumb: the whole
+    extracted string becomes a single TextBlock, so serialize_document() of
+    the result equals load_document() exactly. Splitting into real blocks
+    (headings, tables, speaker turns) comes in later steps.
+
+    doc_id is required and must match the corpus naming (JPMC_10-Q_Q2-2026),
+    so block ids and chunk ids never drift into two schemes.
+    """
+    text = load_document(filepath, doc_type)
+
+    blocks = assign_block_ids([
+        TextBlock(doc_id=doc_id, source_order=0, text=text),
+    ])
+
+    return Document(
+        doc_id=doc_id,
+        source_path=filepath,
+        doc_type=doc_type,
+        blocks=blocks,
+    )
 
 
 if __name__ == "__main__":
