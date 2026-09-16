@@ -35,21 +35,34 @@ def check(name, condition, detail=""):
         failures.append(name)
 
 
-def test_serialization_is_identical():
-    """THE acceptance test: IR serialization equals the old loader exactly."""
-    print("\nserialize_document(load_document_ir(...)) == load_document(...)")
+def test_serialization_invariants():
+    """
+    Step 4 deliberately changes serialization for filings with tables, so the
+    old equality test is replaced by two narrower ones:
+      - a document with no tables must still serialize identically
+      - a filing loaded with convert_tables=False must serialize identically,
+        proving the delta comes from conversion and not from block splitting
+    """
+    print("\nserialization invariants")
 
     for path, doc_type, doc_id in DOCUMENTS:
         old = load_document(path, doc_type)
-        doc = load_document_ir(path, doc_type, doc_id)
-        new = serialize_document(doc)
-
         name = os.path.basename(path)
-        if old == new:
-            check(name, True, f"{len(new):,} chars identical")
+
+        doc = load_document_ir(path, doc_type, doc_id, convert_tables=False)
+        tables = [b for b in doc.blocks if isinstance(b, TableBlock)]
+        check(f"{name}: unconverted serialization identical",
+              serialize_document(doc) == old,
+              f"{len(doc.blocks)} blocks, {len(tables)} tables")
+
+        converted = load_document_ir(path, doc_type, doc_id, convert_tables=True)
+        new = serialize_document(converted)
+        if not tables:
+            check(f"{name}: no tables, so still identical", new == old, f"{len(new):,} chars")
         else:
-            first_diff = next((i for i in range(min(len(old), len(new))) if old[i] != new[i]), min(len(old), len(new)))
-            check(name, False, f"old {len(old):,} vs new {len(new):,}, first difference at {first_diff}")
+            delta = len(new) - len(old)
+            check(f"{name}: tables converted, serialization changed", new != old,
+                  f"{len(old):,} -> {len(new):,} chars ({delta:+,})")
 
 
 def test_block_ids_are_content_derived():
@@ -217,7 +230,7 @@ def test_doc_id_is_required_and_matches_chunk_ids():
 
 
 if __name__ == "__main__":
-    test_serialization_is_identical()
+    test_serialization_invariants()
     test_block_ids_are_content_derived()
     test_inserting_a_block_does_not_shift_ids()
     test_speaker_is_part_of_turn_identity()

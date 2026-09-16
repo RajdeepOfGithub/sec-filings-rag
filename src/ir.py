@@ -69,14 +69,20 @@ class TextBlock(Block):
 class TableBlock(Block):
     raw_html: str
     block_type: str = "table"
+    # Filled in by table_convert at load time. Records are self-describing
+    # lines, one per value cell; without them the block falls back to the
+    # flattened text the loader used to produce.
+    records: list = field(default_factory=list)
+    conversion_status: str = ""
+    reason_code: str = ""
 
     def identity_text(self):
         return normalize(self.raw_html)
 
     def serialized_text(self):
-        """Matches the current loader: get_text(separator=" ", strip=True)."""
-        soup = BeautifulSoup(self.raw_html, "lxml")
-        return soup.get_text(separator=" ", strip=True)
+        if self.records:
+            return "\n".join(self.records)
+        return BeautifulSoup(self.raw_html, "lxml").get_text(separator=" ", strip=True)
 
 
 @dataclass(kw_only=True)

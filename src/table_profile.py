@@ -16,7 +16,7 @@ much prose per cell), not values tuned to any filer.
 import re
 from dataclasses import asdict, dataclass, field
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, CData, NavigableString
 
 from ir import make_block_id, normalize
 from sections import detect_sections_report, section_id_at
@@ -306,7 +306,7 @@ def table_text_offsets(soup):
     offsets = {}
     position = 0
 
-    for string in soup.find_all(string=True):
+    for string in text_nodes(soup):
         text = string.strip()
         if not text:
             continue
@@ -315,6 +315,16 @@ def table_text_offsets(soup):
         position += len(text) + 1
 
     return offsets
+
+def text_nodes(soup):
+    """
+    The strings get_text() actually joins. Exact type match on purpose:
+    Comment, Doctype, Script and Stylesheet all subclass NavigableString but
+    are excluded from get_text(), and counting them drifts every offset.
+    """
+    for descendant in soup.descendants:
+        if type(descendant) in (NavigableString, CData):
+            yield descendant
 
 def load_soup(path, doc_type):
     with open(path, "r", encoding="utf-8") as f:

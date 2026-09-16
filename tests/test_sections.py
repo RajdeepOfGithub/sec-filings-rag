@@ -49,12 +49,15 @@ def test_attribution_preserves_serialization():
     print("\nattributing sections does not change the serialized text")
 
     path, doc_type, doc_id = TEN_K
-    original = load_document(path, doc_type)
     document = load_document_ir(path, doc_type, doc_id)
+    loaded_text = serialize_document(document)
     attributed, _ = attribute_sections_report(document, strict=False)
 
-    check("10-K serialization unchanged", serialize_document(attributed) == original,
-          f"{len(original):,} chars")
+    # Since step 4 the loader's own output differs from load_document() for
+    # filings with tables. What attribution must not do is change the text it
+    # was given, whatever that text is.
+    check("attribution does not change the loaded text",
+          serialize_document(attributed) == loaded_text, f"{len(loaded_text):,} chars")
     check("blocks were split at boundaries", len(attributed.blocks) > len(document.blocks),
           f"{len(document.blocks)} -> {len(attributed.blocks)} blocks")
     check("every block has a section_id", all(b.section_id for b in attributed.blocks))
@@ -139,7 +142,9 @@ def test_chunker_carries_section_and_covers_document():
     print("\nstructure_aware_chunk_ir carries section_id and loses no text")
 
     path, doc_type, doc_id = TEN_K
-    attributed, _ = attribute_sections_report(load_document_ir(path, doc_type, doc_id), strict=False)
+    document = load_document_ir(path, doc_type, doc_id)
+    expected_chars = len(serialize_document(document))
+    attributed, _ = attribute_sections_report(document, strict=False)
     chunks = structure_aware_chunk_ir(attributed, chunk_size=500, overlap=50)
 
     check("every chunk has a section label", all(c["section"] for c in chunks))
@@ -148,7 +153,7 @@ def test_chunker_carries_section_and_covers_document():
 
     covered = sum(len(block.serialized_text()) for block in attributed.blocks)
     check("chunks cover the whole document including front matter",
-          covered == len(load_document(path, doc_type)), f"{covered:,} chars")
+          covered == expected_chars, f"{covered:,} chars")
 
 
 def test_ten_q_does_not_crash_without_ten_k_items():
