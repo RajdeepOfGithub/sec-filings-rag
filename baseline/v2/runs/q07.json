@@ -1,0 +1,1427 @@
+{
+  "question_id": "q07",
+  "question": "What was compensation expense in Q2 2026 compared with Q2 2025?",
+  "category": "tabular",
+  "difficulty": "medium",
+  "expected": {
+    "value_2026": 15159,
+    "value_2025": 13710,
+    "unit": "USD millions",
+    "change_pct": 11
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated Results of Operations",
+    "table": "Noninterest expense",
+    "row": "Compensation expense",
+    "column": "Three months ended June 30, 2026 and 2025",
+    "period": "Q2-2026 vs Q2-2025"
+  },
+  "notes": "Two-figure answer, so it has to get both columns right rather than one. In the flattened text the '(in millions)' label and the period headers land on separate lines.",
+  "run": {
+    "timestamp": "2026-09-16T03:16:48.080121+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_929",
+      "rank": 1,
+      "score": 0.6795696020126343,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "none"
+      },
+      "text": " (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_639",
+      "rank": 2,
+      "score": 0.6923190951347351,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q"
+      },
+      "text": "r the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3471",
+      "rank": 3,
+      "score": 0.6944032907485962,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Compensation expense | Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods | Year ended December 31, 2025 | 1,541 | USD millions\nCompensation expense | Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods | Year ended December 31, 2024 | 1,622 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3472",
+      "rank": 4,
+      "score": 0.7043161988258362,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods | Year ended December 31, 2023 | 1,510 | USD millions\nCompensation expense | Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees | Year ended December 31, 2025 | 2,073 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3475",
+      "rank": 5,
+      "score": 0.7060695290565491,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2024 | 3,504 | USD millions\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2023 | 3,117 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3474",
+      "rank": 6,
+      "score": 0.7205257415771484,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "period": "FY2025"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees | Year ended December 31, 2023 | 1,607 | millions\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2025 | 3,614 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3473",
+      "rank": 7,
+      "score": 0.7210640907287598,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees | Year ended December 31, 2024 | 1,882 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_294",
+      "rank": 8,
+      "score": 0.7279727458953857,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/af368966dc1a",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "wholesale | Compensation expense | Three months ended June 30, 2026 | 15,159 | USD millions\nwholesale | Compensation expense | Three months ended June 30, 2025 | 13,710 | USD millions\nwholesale | Compensation expense | Three months ended June 30, Change | 11 | percent\nwholesale | Compensation expense | Six months ended June 30, 2026 | 30,498 | USD millions\nwholesale | Compensation expense | Six months ended June 30, 2025 | 27,803 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_655",
+      "rank": 9,
+      "score": 0.7449955344200134,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/c1bd3c481854",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "wholesale | Compensation expense | 2025 | 54,487 | USD millions\nwholesale | Compensation expense | 2024 | 51,357 | USD millions\nwholesale | Compensation expense | 2023 | 46,465 | USD millions\nwholesale | Noncompensation expense: - Occupancy | 2025 | 5,461 | millions\nwholesale | Noncompensation expense: - Occupancy | 2024 | 5,026 | millions\nwholesale | Noncompensation expense: - Occupancy | 2023 | 4,590 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3652",
+      "rank": 10,
+      "score": 0.7567845582962036,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense (b) | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 8,635 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 11,284 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 9,942 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1821",
+      "rank": 11,
+      "score": 0.7629213333129883,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-Q"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 15,159 | millions\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 13,710 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1822",
+      "rank": 12,
+      "score": 0.7652338743209839,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 30,498 | millions\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 27,803 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_311",
+      "rank": 13,
+      "score": 0.7663377523422241,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": " (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 16 for additional information. (b) Refer to Note 5 for additional information. Quarterly results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across th"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3653",
+      "rank": 14,
+      "score": 0.7703709602355957,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense (b) | As of or for the six months ended June 30, Asset & Wealth Management 2026 | 4,661 | millions\nCompensation expense (b) | As of or for the six months ended June 30, 2025 | 4,150 | millions\nNoncompensation expense (c)(d) | As of or for the six months ended June 30, Consumer & Community Banking 2026 | 12,783 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_313",
+      "rank": 15,
+      "score": 0.782676637172699,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "rmation on other expense. Year-to-date results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher brokerage expense in CIB and higher distribution fees in AWM, • higher FDIC-related expense,"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_493",
+      "rank": 16,
+      "score": 0.8039380311965942,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "Q2-2026"
+      },
+      "text": " (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $1.6 billion for each of "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3601",
+      "rank": 17,
+      "score": 0.8143779635429382,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/a09d7e670f30",
+        "form": "10-Q"
+      },
+      "text": "Segment & Corporate results (continued) | values in millions unless the record states otherwise\nSegment & Corporate results | Compensation expense (b) | As of or for the three months ended June 30, 2025 | 2,083 | millions\nSegment & Corporate results | Noncompensation expense (c)(d) | As of or for the three months ended June 30, Consumer & Community Banking 2026 | 6,426 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3600",
+      "rank": 18,
+      "score": 0.8205013275146484,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/a09d7e670f30",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Segment & Corporate results (continued) | values in millions unless the record states otherwise\nSegment & Corporate results | Compensation expense (b) | As of or for the three months ended June 30, Commercial & Investment Bank 2025 | 4,815 | millions\nSegment & Corporate results | Compensation expense (b) | As of or for the three months ended June 30, Asset & Wealth Management 2026 | 2,322 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3691",
+      "rank": 19,
+      "score": 0.8217778205871582,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "table business segments, with the allocations recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 58"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_904",
+      "rank": 20,
+      "score": 0.8242409229278564,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/2abbbfbf77f0",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense as percentage of total net revenue | Year ended December 31, 2024 | 26 | millions\nCompensation expense as percentage of total net revenue | Year ended December 31, 2023 | 27 | millions\nRevenue by business - Investment Banking | Year ended December 31, 2025 | 10,198 | USD millions\nRevenue by business - Investment Banking | Year ended December 31, 2024 | 9,636 | USD millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_294",
+      "rank": 1,
+      "score": 16.377899043145632,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/af368966dc1a",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "wholesale | Compensation expense | Three months ended June 30, 2026 | 15,159 | USD millions\nwholesale | Compensation expense | Three months ended June 30, 2025 | 13,710 | USD millions\nwholesale | Compensation expense | Three months ended June 30, Change | 11 | percent\nwholesale | Compensation expense | Six months ended June 30, 2026 | 30,498 | USD millions\nwholesale | Compensation expense | Six months ended June 30, 2025 | 27,803 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_655",
+      "rank": 2,
+      "score": 14.980023127602925,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/c1bd3c481854",
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "wholesale | Compensation expense | 2025 | 54,487 | USD millions\nwholesale | Compensation expense | 2024 | 51,357 | USD millions\nwholesale | Compensation expense | 2023 | 46,465 | USD millions\nwholesale | Noncompensation expense: - Occupancy | 2025 | 5,461 | millions\nwholesale | Noncompensation expense: - Occupancy | 2024 | 5,026 | millions\nwholesale | Noncompensation expense: - Occupancy | 2023 | 4,590 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3652",
+      "rank": 3,
+      "score": 14.720905751211761,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense (b) | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 8,635 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 11,284 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 9,942 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_461",
+      "rank": 4,
+      "score": 14.614229084618465,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 4,682 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 4,260 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Three months ended June 30, Change | 10 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_462",
+      "rank": 5,
+      "score": 14.614229084618465,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 9,304 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 8,635 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Six months ended June 30, Change | 8 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_621",
+      "rank": 6,
+      "score": 14.614229084618465,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 5,544 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 4,815 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Three months ended June 30, Change | 15 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_622",
+      "rank": 7,
+      "score": 14.614229084618465,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 11,284 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 9,942 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Six months ended June 30, Change | 13 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_905",
+      "rank": 8,
+      "score": 14.614229084618465,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Three months ended June 30, Change | 11 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 4,661 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 4,150 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1821",
+      "rank": 9,
+      "score": 14.08307318083714,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 15,159 | millions\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 13,710 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1822",
+      "rank": 10,
+      "score": 14.08307318083714,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 30,498 | millions\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 27,803 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_904",
+      "rank": 11,
+      "score": 13.932290847755759,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Six months ended June 30, 2025 | 36 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 2,322 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 2,083 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_676",
+      "rank": 12,
+      "score": 13.926288359282186,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "• Credit Adjustments & Other was a loss of $148 million, compared with a loss of $87 million in the prior year. Noninterest expense was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3474",
+      "rank": 13,
+      "score": 13.913573078328819,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "strategy": "record_aware"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees | Year ended December 31, 2023 | 1,607 | millions\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2025 | 3,614 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_815",
+      "rank": 14,
+      "score": 13.736858427642225,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/3665c891a2c7",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Year ended December 31, 2025 | 17,669 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Year ended December 31, 2024 | 17,045 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Year ended December 31, 2023 | 15,171 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_894",
+      "rank": 15,
+      "score": 13.736858427642225,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/40859c8e1e10"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Year ended December 31, 2025 | 19,345 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Year ended December 31, 2024 | 18,191 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Year ended December 31, 2023 | 17,105 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1058",
+      "rank": 16,
+      "score": 13.736858427642225,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/0cf57f8031b3",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "Global Private Bank (continued) | values in millions unless the record states otherwise\nGlobal Private Bank | Noninterest expense - Compensation expense | Year ended December 31, 2025 | 8,645 | millions\nGlobal Private Bank | Noninterest expense - Compensation expense | Year ended December 31, 2024 | 7,984 | millions\nGlobal Private Bank | Noninterest expense - Compensation expense | Year ended December 31, 2023 | 7,115 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_663",
+      "rank": 17,
+      "score": 13.544223093568489,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": " (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 18 for additional information. (b) Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher reve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3653",
+      "rank": 18,
+      "score": 13.540757733770164,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense (b) | As of or for the six months ended June 30, Asset & Wealth Management 2026 | 4,661 | millions\nCompensation expense (b) | As of or for the six months ended June 30, 2025 | 4,150 | millions\nNoncompensation expense (c)(d) | As of or for the six months ended June 30, Consumer & Community Banking 2026 | 12,783 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_926",
+      "rank": 19,
+      "score": 13.539753505694497,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025"
+      },
+      "text": "n, up 10%, driven by higher average deposits as well as fee growth related to higher client activity and market levels, partially offset by deposit margin compression. • Credit Adjustments & Other was a loss of $63 million, compared with a loss of $244 million in the prior year. Noninterest expense was $38.2 billion, up 8%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage, technology and regulatory expense. The provision for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_669",
+      "rank": 20,
+      "score": 13.354611014049587,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "urities Services revenue was $1.7 billion, up 17%, predominantly driven by fee growth on higher market levels and client activity, as well as higher average deposits. • Credit Adjustments & Other was a loss of $44 million, compared with a loss of $67 million in the prior year. Noninterest expense was $11.4 billion, up 18%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $356 milli"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_3473",
+      "JPMC_10-K_FY2025_3472"
+    ]
+  ],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_294",
+      "rank": 1,
+      "rrf_score": 0.03131881575727918,
+      "found_in": {
+        "dense": 7,
+        "sparse": 1
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/af368966dc1a",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "wholesale | Compensation expense | Three months ended June 30, 2026 | 15,159 | USD millions\nwholesale | Compensation expense | Three months ended June 30, 2025 | 13,710 | USD millions\nwholesale | Compensation expense | Three months ended June 30, Change | 11 | percent\nwholesale | Compensation expense | Six months ended June 30, 2026 | 30,498 | USD millions\nwholesale | Compensation expense | Six months ended June 30, 2025 | 27,803 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_655",
+      "rank": 2,
+      "rrf_score": 0.030834914611005692,
+      "found_in": {
+        "dense": 8,
+        "sparse": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/c1bd3c481854",
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "wholesale | Compensation expense | 2025 | 54,487 | USD millions\nwholesale | Compensation expense | 2024 | 51,357 | USD millions\nwholesale | Compensation expense | 2023 | 46,465 | USD millions\nwholesale | Noncompensation expense: - Occupancy | 2025 | 5,461 | millions\nwholesale | Noncompensation expense: - Occupancy | 2024 | 5,026 | millions\nwholesale | Noncompensation expense: - Occupancy | 2023 | 4,590 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3652",
+      "rank": 3,
+      "rrf_score": 0.03036576949620428,
+      "found_in": {
+        "dense": 9,
+        "sparse": 3
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense (b) | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 8,635 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 11,284 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 9,942 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3474",
+      "rank": 4,
+      "rrf_score": 0.028850145288501453,
+      "found_in": {
+        "dense": 6,
+        "sparse": 13
+      },
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "strategy": "record_aware"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees | Year ended December 31, 2023 | 1,607 | millions\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2025 | 3,614 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1821",
+      "rank": 5,
+      "rrf_score": 0.02877846790890269,
+      "found_in": {
+        "dense": 10,
+        "sparse": 9
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 15,159 | millions\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 13,710 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1822",
+      "rank": 6,
+      "rrf_score": 0.028370221327967807,
+      "found_in": {
+        "dense": 11,
+        "sparse": 10
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 30,498 | millions\nConsolidated statements of income (unaudited) | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 27,803 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3653",
+      "rank": 7,
+      "rrf_score": 0.02651914295749912,
+      "found_in": {
+        "dense": 13,
+        "sparse": 18
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense (b) | As of or for the six months ended June 30, Asset & Wealth Management 2026 | 4,661 | millions\nCompensation expense (b) | As of or for the six months ended June 30, 2025 | 4,150 | millions\nNoncompensation expense (c)(d) | As of or for the six months ended June 30, Consumer & Community Banking 2026 | 12,783 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_929",
+      "rank": 8,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "none"
+      },
+      "text": " (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_639",
+      "rank": 9,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q"
+      },
+      "text": "r the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3471",
+      "rank": 10,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Compensation expense | Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods | Year ended December 31, 2025 | 1,541 | USD millions\nCompensation expense | Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods | Year ended December 31, 2024 | 1,622 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3472",
+      "rank": 11,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods | Year ended December 31, 2023 | 1,510 | USD millions\nCompensation expense | Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees | Year ended December 31, 2025 | 2,073 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_461",
+      "rank": 12,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 4,682 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 4,260 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Three months ended June 30, Change | 10 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3475",
+      "rank": 13,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/b1d955a477ac",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware"
+      },
+      "text": "Compensation expense (continued) | values in millions unless the record states otherwise\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2024 | 3,504 | USD millions\nCompensation expense | Total noncash compensation expense related to employee share-based incentive plans | Year ended December 31, 2023 | 3,117 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_462",
+      "rank": 14,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 9,304 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 8,635 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Six months ended June 30, Change | 8 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_621",
+      "rank": 15,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 5,544 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 4,815 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Three months ended June 30, Change | 15 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_622",
+      "rank": 16,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 11,284 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 9,942 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Six months ended June 30, Change | 13 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_905",
+      "rank": 17,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Three months ended June 30, Change | 11 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Six months ended June 30, 2026 | 4,661 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Six months ended June 30, 2025 | 4,150 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_904",
+      "rank": 18,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Six months ended June 30, 2025 | 36 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Three months ended June 30, 2026 | 2,322 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Compensation expense | Three months ended June 30, 2025 | 2,083 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_311",
+      "rank": 19,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": " (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 16 for additional information. (b) Refer to Note 5 for additional information. Quarterly results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across th"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_676",
+      "rank": 20,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "• Credit Adjustments & Other was a loss of $148 million, compared with a loss of $87 million in the prior year. Noninterest expense was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_313",
+      "rank": 21,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "rmation on other expense. Year-to-date results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher brokerage expense in CIB and higher distribution fees in AWM, • higher FDIC-related expense,"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_815",
+      "rank": 22,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/3665c891a2c7",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Year ended December 31, 2025 | 17,669 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Year ended December 31, 2024 | 17,045 | millions\nCONSUMER & COMMUNITY BANKING | Noninterest expense - Compensation expense | Year ended December 31, 2023 | 15,171 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_493",
+      "rank": 23,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "Q2-2026"
+      },
+      "text": " (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $1.6 billion for each of "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_894",
+      "rank": 24,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/40859c8e1e10"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Year ended December 31, 2025 | 19,345 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Year ended December 31, 2024 | 18,191 | millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Compensation expense | Year ended December 31, 2023 | 17,105 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3601",
+      "rank": 25,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/a09d7e670f30",
+        "form": "10-Q"
+      },
+      "text": "Segment & Corporate results (continued) | values in millions unless the record states otherwise\nSegment & Corporate results | Compensation expense (b) | As of or for the three months ended June 30, 2025 | 2,083 | millions\nSegment & Corporate results | Noncompensation expense (c)(d) | As of or for the three months ended June 30, Consumer & Community Banking 2026 | 6,426 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1058",
+      "rank": 26,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/0cf57f8031b3",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "Global Private Bank (continued) | values in millions unless the record states otherwise\nGlobal Private Bank | Noninterest expense - Compensation expense | Year ended December 31, 2025 | 8,645 | millions\nGlobal Private Bank | Noninterest expense - Compensation expense | Year ended December 31, 2024 | 7,984 | millions\nGlobal Private Bank | Noninterest expense - Compensation expense | Year ended December 31, 2023 | 7,115 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3600",
+      "rank": 27,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/a09d7e670f30",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Segment & Corporate results (continued) | values in millions unless the record states otherwise\nSegment & Corporate results | Compensation expense (b) | As of or for the three months ended June 30, Commercial & Investment Bank 2025 | 4,815 | millions\nSegment & Corporate results | Compensation expense (b) | As of or for the three months ended June 30, Asset & Wealth Management 2026 | 2,322 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_663",
+      "rank": 28,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": " (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 18 for additional information. (b) Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher reve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3691",
+      "rank": 29,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "table business segments, with the allocations recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 58"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_904",
+      "rank": 30,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/2abbbfbf77f0",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nCompensation expense as percentage of total net revenue | Year ended December 31, 2024 | 26 | millions\nCompensation expense as percentage of total net revenue | Year ended December 31, 2023 | 27 | millions\nRevenue by business - Investment Banking | Year ended December 31, 2025 | 10,198 | USD millions\nRevenue by business - Investment Banking | Year ended December 31, 2024 | 9,636 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_926",
+      "rank": 31,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025"
+      },
+      "text": "n, up 10%, driven by higher average deposits as well as fee growth related to higher client activity and market levels, partially offset by deposit margin compression. • Credit Adjustments & Other was a loss of $63 million, compared with a loss of $244 million in the prior year. Noninterest expense was $38.2 billion, up 8%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage, technology and regulatory expense. The provision for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_669",
+      "rank": 32,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "urities Services revenue was $1.7 billion, up 17%, predominantly driven by fee growth on higher market levels and client activity, as well as higher average deposits. • Credit Adjustments & Other was a loss of $44 million, compared with a loss of $67 million in the prior year. Noninterest expense was $11.4 billion, up 18%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $356 milli"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_929",
+      "rerank_rank": 1,
+      "rerank_score": 4.208897113800049,
+      "rrf_rank": 8,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "none"
+      },
+      "text": " (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_663",
+      "rerank_rank": 2,
+      "rerank_score": 4.1783599853515625,
+      "rrf_rank": 28,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": " (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 18 for additional information. (b) Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher reve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3691",
+      "rerank_rank": 3,
+      "rerank_score": 3.768599510192871,
+      "rrf_rank": 29,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "table business segments, with the allocations recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 58"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_639",
+      "rerank_rank": 4,
+      "rerank_score": 3.570652723312378,
+      "rrf_rank": 9,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q"
+      },
+      "text": "r the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_655",
+      "rerank_rank": 5,
+      "rerank_score": 0.4925849139690399,
+      "rrf_rank": 2,
+      "rrf_score": 0.030834914611005692,
+      "found_in": {
+        "dense": 8,
+        "sparse": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/c1bd3c481854",
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "wholesale | Compensation expense | 2025 | 54,487 | USD millions\nwholesale | Compensation expense | 2024 | 51,357 | USD millions\nwholesale | Compensation expense | 2023 | 46,465 | USD millions\nwholesale | Noncompensation expense: - Occupancy | 2025 | 5,461 | millions\nwholesale | Noncompensation expense: - Occupancy | 2024 | 5,026 | millions\nwholesale | Noncompensation expense: - Occupancy | 2023 | 4,590 | millions"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026, section_unknown)\n (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs \n\n[2] (10-K, FY2025, section_unknown)\n (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 18 for additional information. (b) Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher reve\n\n[3] (10-Q, Q2-2026, section_unknown)\ntable business segments, with the allocations recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 58\n\n[4] (10-Q, Q2-2026, section_unknown)\nr the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026\n\n[5] (10-K, FY2025, section_unknown)\nwholesale | Compensation expense | 2025 | 54,487 | USD millions\nwholesale | Compensation expense | 2024 | 51,357 | USD millions\nwholesale | Compensation expense | 2023 | 46,465 | USD millions\nwholesale | Noncompensation expense: - Occupancy | 2025 | 5,461 | millions\nwholesale | Noncompensation expense: - Occupancy | 2024 | 5,026 | millions\nwholesale | Noncompensation expense: - Occupancy | 2023 | 4,590 | millions",
+  "user_prompt": "[1] (10-Q, Q2-2026, section_unknown)\n (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs \n\n[2] (10-K, FY2025, section_unknown)\n (a) Includes depreciation expense associated with auto operating lease assets. Refer to Note 18 for additional information. (b) Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher reve\n\n[3] (10-Q, Q2-2026, section_unknown)\ntable business segments, with the allocations recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 58\n\n[4] (10-Q, Q2-2026, section_unknown)\nr the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026\n\n[5] (10-K, FY2025, section_unknown)\nwholesale | Compensation expense | 2025 | 54,487 | USD millions\nwholesale | Compensation expense | 2024 | 51,357 | USD millions\nwholesale | Compensation expense | 2023 | 46,465 | USD millions\nwholesale | Noncompensation expense: - Occupancy | 2025 | 5,461 | millions\nwholesale | Noncompensation expense: - Occupancy | 2024 | 5,026 | millions\nwholesale | Noncompensation expense: - Occupancy | 2023 | 4,590 | millions\n\nQuestion: What was compensation expense in Q2 2026 compared with Q2 2025?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_929"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-K_FY2025_663"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_3691"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_639"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_655"
+    }
+  ],
+  "answer_text": "For the three months ended June 30, 2026, the total compensation expense was $1.2 billion, and for the same period in 2025, it was $1.1 billion [3][4].",
+  "parsed_citations": [
+    3,
+    4
+  ],
+  "resolved_citations": [
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_3691",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      }
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_639",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q"
+      }
+    }
+  ]
+}

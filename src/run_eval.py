@@ -14,6 +14,7 @@ import argparse
 import reranker
 from freeze_baseline import (QUESTIONS_PATH, print_cost_estimate, read_questions,
                             run_all_questions, write_config, write_chunks_snapshot)
+from retriever import DEFAULT_COLLECTION
 
 DEFAULT_OUT_DIR = "baseline/v2"
 
@@ -24,6 +25,8 @@ def parse_args():
     parser.add_argument("--questions", default=QUESTIONS_PATH)
     parser.add_argument("--ids", nargs="+", help="run only these question ids")
     parser.add_argument("--confirm", action="store_true", help="required; without it only the cost estimate prints")
+    parser.add_argument("--collection", default=DEFAULT_COLLECTION,
+                        help="Chroma collection to query, e.g. financial_docs_v2")
     parser.add_argument("--snapshot", action="store_true",
                         help="also write chunks.jsonl and config.json for this run")
     return parser.parse_args()
@@ -44,11 +47,12 @@ if __name__ == "__main__":
     print(f"\nloading cross-encoder ({reranker.MODEL_NAME})...")
     reranker.get_model()
 
-    succeeded, failed = run_all_questions(rows, args.out)
+    print(f"querying collection: {args.collection}")
+    succeeded, failed = run_all_questions(rows, args.out, collection=args.collection)
 
     if args.snapshot:
-        chunks = write_chunks_snapshot(args.out)
-        write_config(args.out, chunks)
+        chunks = write_chunks_snapshot(args.out, collection=args.collection)
+        write_config(args.out, chunks, collection=args.collection)
 
     print(f"\ndone: {len(succeeded)} succeeded, {len(failed)} failed -> {args.out}")
     if failed:

@@ -26,7 +26,11 @@ def load_runs(run_dir):
     return runs
 
 def reranked_ids(record):
-    return [r["id"] for r in record["reranked"]]
+    """(id, kind) - v1 chunks predate the kind metadata, so they show as '-'."""
+    return [(r["id"], r["metadata"].get("kind", "-")) for r in record["reranked"]]
+
+def short_kind(kind):
+    return {"table_records": "TABLE", "narrative": "prose", "-": "-"}.get(kind, kind)
 
 def cited_sources(record):
     """(form, period) pairs for resolved citations, in citation order."""
@@ -48,6 +52,7 @@ def compare_question(qid, a, b, label_a, label_b):
     print(f"{qid}  [{a.get('category', '?')}]  {a['question']}")
     print("=" * 78)
 
+    print(f"expected: {a.get('expected')}")
     answer_changed = a["answer_text"] != b["answer_text"]
     print(f"answer text changed: {'YES' if answer_changed else 'no'}")
 
@@ -59,9 +64,9 @@ def compare_question(qid, a, b, label_a, label_b):
     print("reranked top 5 (ids differ across versions by design):")
     ids_a, ids_b = reranked_ids(a), reranked_ids(b)
     for i in range(max(len(ids_a), len(ids_b))):
-        left = ids_a[i] if i < len(ids_a) else ""
-        right = ids_b[i] if i < len(ids_b) else ""
-        print(f"  #{i + 1}  {left:<34} | {right}")
+        left = f"{ids_a[i][0]} [{short_kind(ids_a[i][1])}]" if i < len(ids_a) else ""
+        right = f"{ids_b[i][0]} [{short_kind(ids_b[i][1])}]" if i < len(ids_b) else ""
+        print(f"  #{i + 1}  {left:<44} | {right}")
 
     print(f"\n{label_a} answer:\n{a['answer_text']}\n")
     print(f"{label_b} answer:\n{b['answer_text']}\n")

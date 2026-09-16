@@ -1,6 +1,12 @@
 from loader import load_document_ir
-from chunker import structure_aware_chunk, fixed_size_chunk
-from ir import serialize_document
+from chunker import structure_aware_chunk_ir
+from sections import attribute_sections_report
+
+
+# Every document now goes through the same path: IR blocks, dynamic section
+# attribution, record-aware chunking. The old per-document strategy labels
+# ("structure_aware" / "fixed_size") no longer describe what happens.
+STRATEGY = "record_aware"
 
 
 def make_doc_id(company, form, period):
@@ -8,7 +14,7 @@ def make_doc_id(company, form, period):
     return f"{company}_{form}_{period}"
 
 
-def build_corpus():
+def build_corpus(chunk_size=500, overlap=50):
     documents = [
         {
             "path": "data/raw/jpmc/jpmc_10k_2025.htm",
@@ -16,7 +22,6 @@ def build_corpus():
             "company": "JPMC",
             "form": "10-K",
             "period": "FY2025",
-            "strategy": "structure_aware",
         },
         {
             "path": "data/raw/jpmc/jpmc_10q_q2_2026.htm",
@@ -24,7 +29,6 @@ def build_corpus():
             "company": "JPMC",
             "form": "10-Q",
             "period": "Q2-2026",
-            "strategy": "fixed_size",
         },
         {
             "path": "data/raw/jpmc/jpmc_earnings_call_q2_2026.htm",
@@ -32,7 +36,6 @@ def build_corpus():
             "company": "JPMC",
             "form": "earnings_call",
             "period": "Q2-2026",
-            "strategy": "fixed_size",
         },
     ]
 
@@ -40,13 +43,8 @@ def build_corpus():
     for doc in documents:
         doc_id = make_doc_id(doc["company"], doc["form"], doc["period"])
         document = load_document_ir(doc["path"], doc["doc_type"], doc_id)
-        text = serialize_document(document)
-
-        if doc["strategy"] == "structure_aware":
-            pieces = structure_aware_chunk(text)
-        else:
-            pieces = [{"text": t, "section": None, "chunk_index_in_section": i}
-                      for i, t in enumerate(fixed_size_chunk(text))]
+        attributed, _ = attribute_sections_report(document, strict=False)
+        pieces = structure_aware_chunk_ir(attributed, chunk_size, overlap)
 
         for i, piece in enumerate(pieces):
             corpus.append({
@@ -56,10 +54,15 @@ def build_corpus():
                 "form": doc["form"],
                 "period": doc["period"],
                 "section": piece["section"],
-                "strategy": doc["strategy"],
+                "strategy": STRATEGY,
+                "kind": piece["kind"],
+                "block_id": piece["block_id"],
             })
 
-        print(f"{doc['form']}: {len(pieces)} chunks")
+        kinds = {}
+        for piece in pieces:
+            kinds[piece["kind"]] = kinds.get(piece["kind"], 0) + 1
+        print(f"{doc['form']}: {len(pieces)} chunks  {kinds}")
 
     return corpus
 

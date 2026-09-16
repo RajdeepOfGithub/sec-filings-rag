@@ -8,9 +8,14 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 MODEL = "text-embedding-3-small"
 
+# Actual tokens billed this process, so cost can be reported rather than guessed.
+USAGE = {"tokens": 0, "calls": 0}
+
 
 def embed_texts(texts):
     response = client.embeddings.create(model=MODEL, input=texts)
+    USAGE["tokens"] += getattr(response.usage, "total_tokens", 0)
+    USAGE["calls"] += 1
     return [item.embedding for item in response.data]
 
 def embed_in_batches(texts, batch_size=100):

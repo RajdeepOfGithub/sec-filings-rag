@@ -19,24 +19,27 @@ import argparse
 import chromadb
 
 from embedder import embed_texts
-from indexer import load_bm25, tokenize
+from indexer import COLLECTION, load_bm25, tokenize
 
-# Loaded once per process, so a loop of queries doesn't reopen them every call.
+DEFAULT_COLLECTION = COLLECTION   # v1; pass collection= to query v2
+
+# Loaded once per process and per collection, so a loop of queries doesn't
+# reopen them every call and v1/v2 can both be queried in one session.
 _collections = {}
-_bm25 = None
+_bm25 = {}
 
 
-def get_collection(persist_dir="chroma_db"):
-    if persist_dir not in _collections:
+def get_collection(persist_dir="chroma_db", collection=DEFAULT_COLLECTION):
+    key = (persist_dir, collection)
+    if key not in _collections:
         client = chromadb.PersistentClient(path=persist_dir)
-        _collections[persist_dir] = client.get_collection(name="financial_docs")
-    return _collections[persist_dir]
+        _collections[key] = client.get_collection(name=collection)
+    return _collections[key]
 
-def get_bm25(rebuild=False):
-    global _bm25
-    if rebuild or _bm25 is None:
-        _bm25 = load_bm25(rebuild=rebuild)
-    return _bm25
+def get_bm25(rebuild=False, collection=DEFAULT_COLLECTION):
+    if rebuild or collection not in _bm25:
+        _bm25[collection] = load_bm25(rebuild=rebuild, collection_name=collection)
+    return _bm25[collection]
 
 
 def to_chroma_where(filters):
@@ -52,8 +55,9 @@ def matches_filters(metadata, filters):
     return all(metadata.get(key) == value for key, value in filters.items())
 
 
-def dense_search(query, n=20, filters=None, persist_dir="chroma_db"):
-    collection = get_collection(persist_dir)
+def dense_search(query, n=20, filters=None, persist_dir="chroma_db",
+                 collection=DEFAULT_COLLECTION):
+    collection = get_collection(persist_dir, collection)
 
     qvec = embed_texts([query])[0]
     res = collection.query(
@@ -75,8 +79,9 @@ def dense_search(query, n=20, filters=None, persist_dir="chroma_db"):
         })
     return results
 
-def sparse_search(query, n=20, filters=None, rebuild=False):
-    bm25, chunks = get_bm25(rebuild=rebuild)
+def sparse_search(query, n=20, filters=None, rebuild=False,
+                  collection=DEFAULT_COLLECTION):
+    bm25, chunks = get_bm25(rebuild=rebuild, collection=collection)
     scores = bm25.get_scores(tokenize(query))
 
     candidates = [
@@ -139,6 +144,7 @@ def parse_args():
     parser.add_argument("--form", help='e.g. 10-K, 10-Q, earnings_call')
     parser.add_argument("--period", help='e.g. FY2025, Q2-2026')
     parser.add_argument("--rebuild-bm25", action="store_true")
+    parser.add_argument("--collection", default=DEFAULT_COLLECTION)
     return parser.parse_args()
 
 
@@ -151,8 +157,9 @@ if __name__ == "__main__":
     if args.period:
         filters["period"] = args.period
 
-    dense = dense_search(args.query, n=args.n, filters=filters)
-    sparse = sparse_search(args.query, n=args.n, filters=filters, rebuild=args.rebuild_bm25)
+    dense = dense_search(args.query, n=args.n, filters=filters, collection=args.collection)
+    sparse = sparse_search(args.query, n=args.n, filters=filters,
+                           rebuild=args.rebuild_bm25, collection=args.collection)
 
     print(f"\nQ: {args.query}   filters={filters or None}\n")
     print_side_by_side(dense, sparse)

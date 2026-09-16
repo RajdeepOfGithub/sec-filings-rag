@@ -30,9 +30,9 @@ from chunker import fixed_size_chunk
 from fusion import dedup_results, overlap_ratio, reciprocal_rank_fusion
 from generator import (SYSTEM_PROMPT, build_context, call_llm, parse_citations,
                        resolve_citations)
-from indexer import load_chunks_from_chroma
+from indexer import bm25_cache_path, load_chunks_from_chroma
 from reranker import rerank
-from retriever import dense_search, get_collection, sparse_search
+from retriever import DEFAULT_COLLECTION, dense_search, get_collection, sparse_search
 
 QUESTIONS_PATH = "data/baseline_questions.jsonl"
 DEFAULT_OUT_DIR = "baseline/v1"
@@ -122,15 +122,15 @@ def capture_reranked_result(result):
         "text": result["text"],
     }
 
-def run_question(row, n=N, top_k=TOP_K, filters=None):
+def run_question(row, n=N, top_k=TOP_K, filters=None, collection=DEFAULT_COLLECTION):
     """
     Mirrors pipeline.search(), keeping every intermediate list, then generates
     an answer. Returns the full record for one question.
     """
     question = row["question"]
 
-    dense = dense_search(question, n=n, filters=filters)
-    sparse = sparse_search(question, n=n, filters=filters)
+    dense = dense_search(question, n=n, filters=filters, collection=collection)
+    sparse = sparse_search(question, n=n, filters=filters, collection=collection)
 
     dense_kept, dense_dropped = dedup_results(dense)
     sparse_kept, sparse_dropped = dedup_results(sparse)
@@ -162,6 +162,7 @@ def run_question(row, n=N, top_k=TOP_K, filters=None):
             "filters": filters,
             "generation_model": GENERATION_MODEL,
             "generation_temperature": GENERATION_TEMPERATURE,
+            "collection": collection,
         },
         "dense": [capture_retrieval_result(r) for r in dense],
         "sparse": [capture_retrieval_result(r) for r in sparse],
@@ -183,7 +184,7 @@ def write_json(path, payload):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
-def run_all_questions(rows, out_dir, n=N, top_k=TOP_K):
+def run_all_questions(rows, out_dir, n=N, top_k=TOP_K, collection=DEFAULT_COLLECTION):
     """Writes each run file as it completes, so a later failure keeps earlier work."""
     runs_dir = os.path.join(out_dir, "runs")
     succeeded, failed = [], []
@@ -191,7 +192,7 @@ def run_all_questions(rows, out_dir, n=N, top_k=TOP_K):
     for i, row in enumerate(rows, start=1):
         print(f"[{i}/{len(rows)}] {row['id']} ({row['category']}): {row['question'][:60]}...")
         try:
-            record = run_question(row, n=n, top_k=top_k)
+            record = run_question(row, n=n, top_k=top_k, collection=collection)
             write_json(os.path.join(runs_dir, f"{row['id']}.json"), record)
             succeeded.append(row["id"])
             cited = [c["chunk_id"] for c in record["resolved_citations"]]
@@ -212,8 +213,8 @@ def run_all_questions(rows, out_dir, n=N, top_k=TOP_K):
 
 # Corpus snapshot, config, archive
 
-def write_chunks_snapshot(out_dir, persist_dir=CHROMA_DIR):
-    chunks = load_chunks_from_chroma(persist_dir)
+def write_chunks_snapshot(out_dir, persist_dir=CHROMA_DIR, collection=DEFAULT_COLLECTION):
+    chunks = load_chunks_from_chroma(persist_dir, collection)
     path = os.path.join(out_dir, "chunks.jsonl")
     os.makedirs(out_dir, exist_ok=True)
 
@@ -257,13 +258,13 @@ def document_breakdown(chunks):
         documents[key]["chunks"] += 1
     return documents
 
-def embedding_details(persist_dir=CHROMA_DIR):
-    collection = get_collection(persist_dir)
+def embedding_details(persist_dir=CHROMA_DIR, collection_name=DEFAULT_COLLECTION):
+    collection = get_collection(persist_dir, collection_name)
     sample = collection.get(limit=1, include=["embeddings"])
     dimensions = len(sample["embeddings"][0])
 
     client = chromadb.PersistentClient(path=persist_dir)
-    config = client.get_collection(name="financial_docs").configuration_json
+    config = client.get_collection(name=collection_name).configuration_json
     space = config.get("hnsw", {}).get("space")
 
     return {
@@ -271,10 +272,10 @@ def embedding_details(persist_dir=CHROMA_DIR):
         "dimensions": dimensions,
         "distance": space,
         "distance_note": "chroma hnsw 'l2' is squared L2; lower is better",
-        "collection": "financial_docs",
+        "collection": collection_name,
     }
 
-def write_config(out_dir, chunks):
+def write_config(out_dir, chunks, collection=DEFAULT_COLLECTION):
     config = {
         "version": os.path.basename(out_dir.rstrip("/\\")),
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -284,7 +285,7 @@ def write_config(out_dir, chunks):
             "overlap": default_of(fixed_size_chunk, "overlap"),
             "documents": document_breakdown(chunks),
         },
-        "embedding": embedding_details(),
+        "embedding": embedding_details(collection_name=collection),
         "retrieval": {
             "n": N,
             "top_k": TOP_K,
@@ -292,7 +293,7 @@ def write_config(out_dir, chunks):
             "dedup_threshold": default_of(dedup_results, "threshold"),
             "dedup_shingle": default_of(overlap_ratio, "shingle"),
             "dedup_passes": ["dense", "sparse", "post_fusion"],
-            "bm25_cache": BM25_PATH,
+            "bm25_cache": bm25_cache_path(collection),
         },
         "reranker": {"model": reranker.MODEL_NAME},
         "generation": {
