@@ -69,6 +69,13 @@ MIN_TOC_RUN = 3
 # rather than a measurement, so it is labelled section_unknown.
 UNBOUNDED_TAIL_RATIO = 10
 
+# A section that swallows most of the document was never interrupted by
+# another heading, so its extent rests on one match rather than on evidence
+# at both ends. This catches an item table applied to the wrong form: a 10-Q
+# contains "Item 1A. Risk Factors" in Part II, and without this guard that
+# one match labels the entire filing.
+DOMINANT_SECTION_SHARE = 0.5
+
 
 class SectionDetectionError(Exception):
     """Raised when detected headings cannot form a valid section sequence."""
@@ -253,7 +260,23 @@ def build_boundaries(candidates, text_length, diagnostics):
         ))
 
     flag_unbounded_tail(boundaries, diagnostics)
+    flag_dominant_sections(boundaries, text_length, diagnostics)
     return boundaries
+
+def flag_dominant_sections(boundaries, text_length, diagnostics):
+    """Relabels any section covering most of the document (see DOMINANT_SECTION_SHARE)."""
+    for boundary in boundaries:
+        if boundary.section_id == SECTION_UNKNOWN or not text_length:
+            continue
+
+        share = (boundary.end - boundary.start) / text_length
+        if share > DOMINANT_SECTION_SHARE:
+            diagnostics.append(Diagnostic(
+                "warning", "dominant_section",
+                f"{boundary.section_id} would cover {share:.0%} of the document with no "
+                f"intervening heading; labelling it {SECTION_UNKNOWN} instead"))
+            boundary.section_id = SECTION_UNKNOWN
+            boundary.confidence = "low"
 
 def flag_unbounded_tail(boundaries, diagnostics):
     """
