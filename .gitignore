@@ -3,6 +3,7 @@ venv/
 chroma_db/
 data/*
 !data/README.md
+!data/baseline_questions.jsonl
 __pycache__/
 *.pyc
 *.pkl
