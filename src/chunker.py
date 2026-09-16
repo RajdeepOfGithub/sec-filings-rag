@@ -71,6 +71,42 @@ def structure_aware_chunk(text, chunk_size=500, overlap=50):
 
     return all_chunks
 
+def structure_aware_chunk_ir(document, chunk_size=500, overlap=50):
+    """
+    Chunks per section using blocks already attributed by
+    sections.attribute_sections(). Replaces the hardcoded offsets in
+    structure_aware_chunk(), which is kept alongside for comparison.
+
+    Consecutive blocks sharing a section_id are chunked together, so a chunk
+    never spans a section boundary.
+    """
+    all_chunks = []
+
+    for section_id, section_text in group_blocks_by_section(document.blocks):
+        pieces = fixed_size_chunk(section_text, chunk_size, overlap)
+
+        for i, piece in enumerate(pieces):
+            all_chunks.append({
+                "text": piece,
+                "section": section_id,
+                "chunk_index_in_section": i,
+            })
+
+    return all_chunks
+
+def group_blocks_by_section(blocks):
+    """[(section_id, concatenated text)] for each run of consecutive blocks."""
+    groups = []
+
+    for block in sorted(blocks, key=lambda b: b.source_order):
+        text = block.serialized_text()
+        if groups and groups[-1][0] == block.section_id:
+            groups[-1][1].append(text)
+        else:
+            groups.append((block.section_id, [text]))
+
+    return [(section_id, "".join(parts)) for section_id, parts in groups]
+
 def fixed_size_chunk(text, chunk_size=500, overlap=50):
     chunks = []
     start = 0
