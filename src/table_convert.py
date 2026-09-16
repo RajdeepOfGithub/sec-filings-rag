@@ -41,6 +41,9 @@ PERCENT_UNIT = "percent"
 PLACEHOLDER_CELLS = {"nm", "n/a", "na", "n.m.", "-", "—", "–", "*", "%", "$", "()"}
 FOOTNOTE_ONLY = re.compile(r"^(?:\s*\([a-z]{1,3}\))+$", re.IGNORECASE)
 TITLE_HAS_WORD = re.compile(r"[A-Za-z]{3}")
+# Running heads repeat on every page of a filing and name the form, not the
+# table. SEC-generic, not filer-specific.
+RUNNING_HEAD = re.compile(r"\bForm\s*10-[KQ]\b", re.IGNORECASE)
 MAX_INTERIOR_LABELS = 1             # more than this means a second stub column
 
 MIN_NUMERIC_CELLS_IN_DATA_ROW = 2   # same "repeated shape" rule the census uses
@@ -157,11 +160,21 @@ def value_columns(data_rows):
                 columns.add(column)
     return sorted(columns)
 
-def label_columns(data_rows, value_cols):
-    """Stub columns: everything left of the first value column."""
-    if not value_cols:
-        return []
-    return list(range(0, min(value_cols)))
+def first_header_column(header_rows, fallback):
+    """
+    Leftmost column a period header occupies. The first *value* column can sit
+    further right, because filings put the currency sign in its own cell
+    between the stub and the figure. Using the value column as the boundary
+    pulls that "$" into the row label and the period column into the
+    qualifier, which produces headers like "Year ended December 31, 2025 2024".
+    """
+    columns = [column for line in header_rows for column, cell in enumerate(line)
+               if cell.is_origin and cell.text and is_period_cell(cell.text)]
+    return min(columns) if columns else fallback
+
+def label_columns(boundary):
+    """Stub columns: everything left of the first header/value column."""
+    return list(range(0, boundary))
 
 def resolve_column_headers(header_rows, width):
     """
@@ -313,8 +326,8 @@ def table_title(table):
         text = " ".join(node.strip().split())
         if not text:
             continue
-        # Page numbers and stray symbols are not titles.
-        if not TITLE_HAS_WORD.search(text):
+        # Page numbers, stray symbols and running heads are not titles.
+        if not TITLE_HAS_WORD.search(text) or RUNNING_HEAD.search(text):
             continue
         if len(text) <= TITLE_MAX_CHARS and not text.endswith("."):
             return text
@@ -348,17 +361,19 @@ def interior_label_count(data_rows, value_cols):
     return count
 
 
-def build_records(title, header_rows, data_rows, value_cols, headers, scale, exceptions=()):
+def build_records(title, header_rows, data_rows, value_cols, headers, scale,
+                  exceptions=(), boundary=None):
     """One record per value cell, each carrying its full context."""
     records = []
+    missing_context = 0
     group_label = ""
-    label_cols = label_columns(data_rows, value_cols)
-
     first_value_column = min(value_cols) if value_cols else 0
+    label_cols = label_columns(boundary if boundary is not None else first_value_column)
 
     for line in data_rows:
         texts = [cell.text for cell in line]
-        label_parts = [line[c].text for c in label_cols if c < len(line) and line[c].text]
+        label_parts = [line[c].text for c in label_cols
+                       if c < len(line) and line[c].text and not SYMBOL_ONLY.match(line[c].text)]
         # De-duplicate the label repeated across spanned stub columns.
         row_label = " ".join(dict.fromkeys(label_parts)).strip()
 
@@ -373,13 +388,19 @@ def build_records(title, header_rows, data_rows, value_cols, headers, scale, exc
         full_label = f"{group_label} - {row_label}" if group_label and row_label else row_label
 
         for column, value in values:
-            fields = [part for part in (title, full_label, headers.get(column, ""), value) if part]
+            header_path = headers.get(column, "")
+            # A record that cannot say which row and which column it came
+            # from is not self-describing, so the table is not understood.
+            if not full_label or not header_path:
+                missing_context += 1
+
+            fields = [part for part in (title, full_label, header_path, value) if part]
             unit = value_unit(line, column, full_label, headers.get(column, ""), scale, exceptions)
             if unit:
                 fields.append(unit)
             records.append(FIELD_SEPARATOR.join(fields))
 
-    return records
+    return records, missing_context
 
 def build_preserved_lines(title, header_rows, data_rows, value_cols):
     """
@@ -425,8 +446,9 @@ def convert_table(table, profile):
 
     width = max(len(line) for line in grid)
     first_value_column = min(value_cols)
+    boundary = first_header_column(header_rows, first_value_column)
     headers = resolve_column_headers(header_rows, width)
-    headers = apply_qualifier(headers, header_qualifier(header_rows, first_value_column))
+    headers = apply_qualifier(headers, header_qualifier(header_rows, boundary))
     confident, failure_reason = header_confidence(headers, data_rows, first_value_column, header_rows)
 
     if not confident:
@@ -453,7 +475,15 @@ def convert_table(table, profile):
     stub_texts = " ".join(cell.text for line in grid[:len(header_rows) + 1] for cell in line if cell.is_origin)
     scale = find_scale(stub_texts, title, fallback[:200])
     exceptions = parse_scale_exceptions(stub_texts, fallback[:400])
-    records = build_records(title, header_rows, data_rows, value_cols, headers, scale, exceptions)
+    records, missing_context = build_records(title, header_rows, data_rows, value_cols,
+                                             headers, scale, exceptions, boundary)
+
+    if missing_context:
+        return TableConversion(
+            AMBIGUOUS_PRESERVED, "AMBIGUOUS_ROW_CONTEXT_MISSING",
+            records=build_preserved_lines(title, header_rows, data_rows, value_cols),
+            fallback_text=fallback, title=title,
+            unresolved_columns=len(value_cols))
 
     if not records:
         return TableConversion(AMBIGUOUS_PRESERVED, "AMBIGUOUS_NO_VALUES",

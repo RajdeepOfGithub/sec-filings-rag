@@ -75,6 +75,8 @@ class TableBlock(Block):
     records: list = field(default_factory=list)
     conversion_status: str = ""
     reason_code: str = ""
+    table_title: str = ""   # repeated on continuation chunks
+    unit: str = ""          # table-level scale, e.g. "millions"
 
     def identity_text(self):
         return normalize(self.raw_html)

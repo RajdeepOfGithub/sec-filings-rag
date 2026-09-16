@@ -116,6 +116,8 @@ def sec_filing_blocks(filepath, doc_id, convert_tables, stats):
             block.records = conversion.records
             block.conversion_status = conversion.status
             block.reason_code = conversion.reason
+            block.table_title = conversion.title
+            block.unit = conversion.unit
             stats[conversion.status] = stats.get(conversion.status, 0) + 1
             stats[conversion.reason] = stats.get(conversion.reason, 0) + 1
 
