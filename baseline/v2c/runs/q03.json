@@ -1,0 +1,1458 @@
+{
+  "question_id": "q03",
+  "question": "What was net income for the six months ended June 30, 2026?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "value": 37649,
+    "unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Executive Overview",
+    "table": "Financial performance of JPMorganChase",
+    "row": "Net income",
+    "column": "Six months ended June 30, 2026",
+    "period": "H1-2026"
+  },
+  "notes": "Deliberately asks for the six-month column, forcing the model past the three-month figures. Q2-2026 net income is 21,155 - if that comes back, it read the wrong superheader group.",
+  "run": {
+    "timestamp": "2026-09-17T00:25:24.137199+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1570",
+      "rank": 1,
+      "score": 0.5450865030288696,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/eeaecd05607d",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated statements of comprehensive income (unaudited) | Net income | Three months ended June 30, 2026 | 21,155 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Net income | Three months ended June 30, 2025 | 14,987 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Net income | Six months ended June 30, 2026 | 37,649 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_41",
+      "rank": 2,
+      "score": 0.6436899304389954,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, Six months ended June 30, 2025 | 29,630 | USD millions\nConsolidated financial highlights (unaudited) | Earnings per share data - Net income: Basic | As of or for the period ended, 2Q26 | 7.71 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1534",
+      "rank": 3,
+      "score": 0.6539906859397888,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Net interest income | Six months ended June 30, 2026 | 50,877 | millions\nConsolidated statements of income (unaudited) | Revenue - Net interest income | Six months ended June 30, 2025 | 46,482 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1536",
+      "rank": 4,
+      "score": 0.6559874415397644,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2026 | 107,183 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2025 | 90,222 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_44",
+      "rank": 5,
+      "score": 0.661125123500824,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Earnings per share data - Net income: Basic | As of or for the period ended, Six months ended June 30, 2026 | 13.65 | USD\nConsolidated financial highlights (unaudited) | Earnings per share data - Net income: Basic | As of or for the period ended, Six months ended June 30, 2025 | 10.32 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1558",
+      "rank": 6,
+      "score": 0.673740029335022,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1560",
+      "rank": 7,
+      "score": 0.6800786256790161,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income applicable to common stockholders | Six months ended June 30, 2026 | 36,901 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income applicable to common stockholders | Six months ended June 30, 2025 | 28,948 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2879",
+      "rank": 8,
+      "score": 0.6814789175987244,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/e7e0f88079e2",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "table_records"
+      },
+      "text": "Earnings per share | Basic earnings per share - Net income | Three months ended June 30, 2026 | 21,155 | USD millions\nEarnings per share | Basic earnings per share - Net income | Three months ended June 30, 2025 | 14,987 | USD millions\nEarnings per share | Basic earnings per share - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nEarnings per share | Basic earnings per share - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1571",
+      "rank": 9,
+      "score": 0.6825087070465088,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/eeaecd05607d",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of comprehensive income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of comprehensive income (unaudited) | Net income | Six months ended June 30, 2025 | 29,630 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Other comprehensive income/(loss), after–tax - Unrealized gains/(losses) on investment securities | Three months ended June 30, 2026 | 320 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_19",
+      "rank": 10,
+      "score": 0.6845700740814209,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2026 | 107,183 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2025 | 90,222 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1564",
+      "rank": 11,
+      "score": 0.6879665851593018,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Diluted earnings per share | Six months ended June 30, 2026 | 13.63\nConsolidated statements of income (unaudited) | Net income per common share data - Diluted earnings per share | Six months ended June 30, 2025 | 10.31"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1562",
+      "rank": 12,
+      "score": 0.689048171043396,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2026 | 13.65 | USD\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2025 | 10.32 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_206",
+      "rank": 13,
+      "score": 0.6946303248405457,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 29,630 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Change | 27 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_33",
+      "rank": 14,
+      "score": 0.6972131729125977,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Income before income tax expense | As of or for the period ended, Six months ended June 30, 2026 | 47,995 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1527",
+      "rank": 15,
+      "score": 0.7033339738845825,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Other income | Six months ended June 30, 2025 | 3,077 | millions\nConsolidated statements of income (unaudited) | Revenue - Noninterest revenue | Three months ended June 30, 2026 | 31,836 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_205",
+      "rank": 16,
+      "score": 0.7037519216537476,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, Change | 41 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 37,649 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_40",
+      "rank": 17,
+      "score": 0.7050238847732544,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 2Q25 | 14,987 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, Six months ended June 30, 2026 | 37,649 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_413",
+      "rank": 18,
+      "score": 0.7068171501159668,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/e180efb1b776"
+      },
+      "text": "(column headers unresolved) | header row | Six months ended June 30, | Corporate | Total\n(column headers unresolved) | header row | (in millions, except ratios) | 2026 | 2025 | Change | 2026 | 2025 | Change\n(column headers unresolved) | Total net revenue | $ | 7,261 | (a) | $ | 3,842 | 89 | % | $ | 108,558 | $ | 91,694 | 18 | %\n(column headers unresolved) | Total noninterest expense | 1,179 | 732 | 61 | 54,166 | 47,376 | 14\n(column headers unresolved) | Pre-provision profit | 6,082 | 3,110 | 96 | 54,392 | 44,318 | 23\n(column headers unresolved) | Provision for credit losses | (11) | 6 | NM | 5,022 | 6,154 | (18)\n(column headers unresolved) | Net income | 4,908 | 3,388 | 45 | 37,649 | 29,630 | 27\n(column headers unresolved) | ROE | NM | NM | 22 | % | 18 | %"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_186",
+      "rank": 19,
+      "score": 0.7096563577651978,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 31,836 | USD millions\nEXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 21,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1535",
+      "rank": 20,
+      "score": 0.715343713760376,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2026 | 57,347 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2025 | 44,912 | millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_766",
+      "rank": 1,
+      "score": 18.438967221468044,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, Change | 45 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_755",
+      "rank": 2,
+      "score": 17.941934613189474,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, Change | 45 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_764",
+      "rank": 3,
+      "score": 17.847832589750464,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "kind": "table_records"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Other Corporate | As of or for the six months ended June 30, 2026 | 3,537 | millions\nCORPORATE | Net income - Other Corporate | As of or for the six months ended June 30, 2025 | 1,109 | millions\nCORPORATE | Net income - Other Corporate | As of or for the six months ended June 30, Change | 219 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_770",
+      "rank": 4,
+      "score": 17.571571987256043,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Loans (period-end) | As of or for the six months ended June 30, 2026 | 3,126 | millions\nCORPORATE | Net income - Loans (period-end) | As of or for the six months ended June 30, 2025 | 2,033 | millions\nCORPORATE | Net income - Loans (period-end) | As of or for the six months ended June 30, Change | 54 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_773",
+      "rank": 5,
+      "score": 17.45899530461127,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Employees | As of or for the three months ended June 30, 2026 | 54,832\nCORPORATE | Net income - Employees | As of or for the three months ended June 30, 2025 | 55,310\nCORPORATE | Net income - Employees | As of or for the three months ended June 30, Change | (1) | percent\nCORPORATE | Net income - Employees | As of or for the six months ended June 30, 2026 | 54,832"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_744",
+      "rank": 6,
+      "score": 17.326923812335277,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net interest income | As of or for the three months ended June 30, Change | (45) | percent\nCORPORATE | Revenue - Net interest income | As of or for the six months ended June 30, 2026 | 1,848 | millions\nCORPORATE | Revenue - Net interest income | As of or for the six months ended June 30, 2025 | 3,140 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_772",
+      "rank": 7,
+      "score": 17.30402744204998,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "kind": "table_records"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Deposits (period-end) (b) | As of or for the six months ended June 30, 2026 | 59,437 | millions\nCORPORATE | Net income - Deposits (period-end) (b) | As of or for the six months ended June 30, 2025 | 27,952 | millions\nCORPORATE | Net income - Deposits (period-end) (b) | As of or for the six months ended June 30, Change | 113 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1570",
+      "rank": 8,
+      "score": 17.232821585096097,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/eeaecd05607d",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of comprehensive income (unaudited) | Net income | Three months ended June 30, 2026 | 21,155 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Net income | Three months ended June 30, 2025 | 14,987 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Net income | Six months ended June 30, 2026 | 37,649 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_762",
+      "rank": 9,
+      "score": 17.137950771754017,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Treasury and CIO | As of or for the three months ended June 30, Change | (53) | millions\nCORPORATE | Net income - Treasury and CIO | As of or for the six months ended June 30, 2026 | 1,371 | USD millions\nCORPORATE | Net income - Treasury and CIO | As of or for the six months ended June 30, 2025 | 2,279 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_429",
+      "rank": 10,
+      "score": 17.130294882878637,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Revenue - Net interest income | Six months ended June 30, 2026 | 29,830 | millions\nCONSUMER & COMMUNITY BANKING | Revenue - Net interest income | Six months ended June 30, 2025 | 28,537 | millions\nCONSUMER & COMMUNITY BANKING | Revenue - Net interest income | Six months ended June 30, Change | 5 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_768",
+      "rank": 11,
+      "score": 16.96012699967953,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2026 | 1,309,857 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2025 | 1,370,312 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, Change | (4) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2879",
+      "rank": 12,
+      "score": 16.884364113663292,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/e7e0f88079e2",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Earnings per share | Basic earnings per share - Net income | Three months ended June 30, 2026 | 21,155 | USD millions\nEarnings per share | Basic earnings per share - Net income | Three months ended June 30, 2025 | 14,987 | USD millions\nEarnings per share | Basic earnings per share - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nEarnings per share | Basic earnings per share - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2865",
+      "rank": 13,
+      "score": 16.70618616354871,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/af4635417e1b",
+        "period": "Q2-2026"
+      },
+      "text": "other income | Operating lease income | Three months ended June 30, 2026 | 1,207 | USD millions\nother income | Operating lease income | Three months ended June 30, 2025 | 901 | USD millions\nother income | Operating lease income | Six months ended June 30, 2026 | 2,360 | USD millions\nother income | Operating lease income | Six months ended June 30, 2025 | 1,730 | USD millions\nother income | Depreciation expense | Three months ended June 30, 2026 | 698 | millions\nother income | Depreciation expense | Three months ended June 30, 2025 | 583 | millions\nother income | Depreciation expense | Six months ended June 30, 2026 | 1,459 | millions\nother income | Depreciation expense | Six months ended June 30, 2025 | 1,088 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1534",
+      "rank": 14,
+      "score": 16.674161535688942,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Net interest income | Six months ended June 30, 2026 | 50,877 | millions\nConsolidated statements of income (unaudited) | Revenue - Net interest income | Six months ended June 30, 2025 | 46,482 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_294",
+      "rank": 15,
+      "score": 16.508594377729988,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "kind": "table_records",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "Net interest income (continued) | values in millions unless the record states otherwise\nNet interest income | Provision for credit losses - Wholesale | Six months ended June 30, 2026 | 808 | millions\nNet interest income | Provision for credit losses - Wholesale | Six months ended June 30, 2025 | 1,527 | millions\nNet interest income | Provision for credit losses - Wholesale | Change | (47) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_763",
+      "rank": 16,
+      "score": 16.478414440747954,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "kind": "table_records",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Treasury and CIO | As of or for the six months ended June 30, Change | (40) | millions\nCORPORATE | Net income - Other Corporate | As of or for the three months ended June 30, 2026 | 3,680 | millions\nCORPORATE | Net income - Other Corporate | As of or for the three months ended June 30, 2025 | 574 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1558",
+      "rank": 17,
+      "score": 16.4695328166858,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_205",
+      "rank": 18,
+      "score": 16.458786424005808,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, Change | 41 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 37,649 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_535",
+      "rank": 19,
+      "score": 16.422960856468166,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Net income | Three months ended June 30, Change | 46 | percent\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Net income | Six months ended June 30, 2026 | 18,722 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Net income | Six months ended June 30, 2025 | 13,592 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_685",
+      "rank": 20,
+      "score": 16.422960856468166,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462",
+        "section": "section_unknown"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Noninterest expense - Net income | Three months ended June 30, Change | 33 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Net income | Six months ended June 30, 2026 | 3,732 | USD millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Net income | Six months ended June 30, 2025 | 3,056 | USD millions"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1570",
+      "rank": 1,
+      "rrf_score": 0.031099324975891997,
+      "found_in": {
+        "dense": 1,
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/eeaecd05607d",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of comprehensive income (unaudited) | Net income | Three months ended June 30, 2026 | 21,155 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Net income | Three months ended June 30, 2025 | 14,987 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Net income | Six months ended June 30, 2026 | 37,649 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1534",
+      "rank": 2,
+      "rrf_score": 0.029386529386529386,
+      "found_in": {
+        "dense": 3,
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Net interest income | Six months ended June 30, 2026 | 50,877 | millions\nConsolidated statements of income (unaudited) | Revenue - Net interest income | Six months ended June 30, 2025 | 46,482 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2879",
+      "rank": 3,
+      "rrf_score": 0.028594771241830064,
+      "found_in": {
+        "dense": 8,
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/e7e0f88079e2",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Earnings per share | Basic earnings per share - Net income | Three months ended June 30, 2026 | 21,155 | USD millions\nEarnings per share | Basic earnings per share - Net income | Three months ended June 30, 2025 | 14,987 | USD millions\nEarnings per share | Basic earnings per share - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nEarnings per share | Basic earnings per share - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1558",
+      "rank": 4,
+      "rrf_score": 0.02813852813852814,
+      "found_in": {
+        "dense": 6,
+        "sparse": 17
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_205",
+      "rank": 5,
+      "rrf_score": 0.025978407557354925,
+      "found_in": {
+        "dense": 16,
+        "sparse": 18
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, Change | 41 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 37,649 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_766",
+      "rank": 6,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, Change | 45 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_41",
+      "rank": 7,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, Six months ended June 30, 2025 | 29,630 | USD millions\nConsolidated financial highlights (unaudited) | Earnings per share data - Net income: Basic | As of or for the period ended, 2Q26 | 7.71 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_755",
+      "rank": 8,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, Change | 45 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_764",
+      "rank": 9,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "kind": "table_records"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Other Corporate | As of or for the six months ended June 30, 2026 | 3,537 | millions\nCORPORATE | Net income - Other Corporate | As of or for the six months ended June 30, 2025 | 1,109 | millions\nCORPORATE | Net income - Other Corporate | As of or for the six months ended June 30, Change | 219 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1536",
+      "rank": 10,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2026 | 107,183 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2025 | 90,222 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_770",
+      "rank": 11,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Loans (period-end) | As of or for the six months ended June 30, 2026 | 3,126 | millions\nCORPORATE | Net income - Loans (period-end) | As of or for the six months ended June 30, 2025 | 2,033 | millions\nCORPORATE | Net income - Loans (period-end) | As of or for the six months ended June 30, Change | 54 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_44",
+      "rank": 12,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Earnings per share data - Net income: Basic | As of or for the period ended, Six months ended June 30, 2026 | 13.65 | USD\nConsolidated financial highlights (unaudited) | Earnings per share data - Net income: Basic | As of or for the period ended, Six months ended June 30, 2025 | 10.32 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_773",
+      "rank": 13,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Employees | As of or for the three months ended June 30, 2026 | 54,832\nCORPORATE | Net income - Employees | As of or for the three months ended June 30, 2025 | 55,310\nCORPORATE | Net income - Employees | As of or for the three months ended June 30, Change | (1) | percent\nCORPORATE | Net income - Employees | As of or for the six months ended June 30, 2026 | 54,832"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_744",
+      "rank": 14,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net interest income | As of or for the three months ended June 30, Change | (45) | percent\nCORPORATE | Revenue - Net interest income | As of or for the six months ended June 30, 2026 | 1,848 | millions\nCORPORATE | Revenue - Net interest income | As of or for the six months ended June 30, 2025 | 3,140 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1560",
+      "rank": 15,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income applicable to common stockholders | Six months ended June 30, 2026 | 36,901 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income applicable to common stockholders | Six months ended June 30, 2025 | 28,948 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_772",
+      "rank": 16,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "kind": "table_records"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Deposits (period-end) (b) | As of or for the six months ended June 30, 2026 | 59,437 | millions\nCORPORATE | Net income - Deposits (period-end) (b) | As of or for the six months ended June 30, 2025 | 27,952 | millions\nCORPORATE | Net income - Deposits (period-end) (b) | As of or for the six months ended June 30, Change | 113 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1571",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/eeaecd05607d",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of comprehensive income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of comprehensive income (unaudited) | Net income | Six months ended June 30, 2025 | 29,630 | USD millions\nConsolidated statements of comprehensive income (unaudited) | Other comprehensive income/(loss), after–tax - Unrealized gains/(losses) on investment securities | Three months ended June 30, 2026 | 320 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_762",
+      "rank": 18,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Treasury and CIO | As of or for the three months ended June 30, Change | (53) | millions\nCORPORATE | Net income - Treasury and CIO | As of or for the six months ended June 30, 2026 | 1,371 | USD millions\nCORPORATE | Net income - Treasury and CIO | As of or for the six months ended June 30, 2025 | 2,279 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_19",
+      "rank": 19,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2026 | 107,183 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2025 | 90,222 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_429",
+      "rank": 20,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Revenue - Net interest income | Six months ended June 30, 2026 | 29,830 | millions\nCONSUMER & COMMUNITY BANKING | Revenue - Net interest income | Six months ended June 30, 2025 | 28,537 | millions\nCONSUMER & COMMUNITY BANKING | Revenue - Net interest income | Six months ended June 30, Change | 5 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1564",
+      "rank": 21,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Diluted earnings per share | Six months ended June 30, 2026 | 13.63\nConsolidated statements of income (unaudited) | Net income per common share data - Diluted earnings per share | Six months ended June 30, 2025 | 10.31"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_768",
+      "rank": 22,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2026 | 1,309,857 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2025 | 1,370,312 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, Change | (4) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1562",
+      "rank": 23,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2026 | 13.65 | USD\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2025 | 10.32 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_206",
+      "rank": 24,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 29,630 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Net income | (unaudited) As of or for the period ended, Change | 27 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2865",
+      "rank": 25,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/af4635417e1b",
+        "period": "Q2-2026"
+      },
+      "text": "other income | Operating lease income | Three months ended June 30, 2026 | 1,207 | USD millions\nother income | Operating lease income | Three months ended June 30, 2025 | 901 | USD millions\nother income | Operating lease income | Six months ended June 30, 2026 | 2,360 | USD millions\nother income | Operating lease income | Six months ended June 30, 2025 | 1,730 | USD millions\nother income | Depreciation expense | Three months ended June 30, 2026 | 698 | millions\nother income | Depreciation expense | Three months ended June 30, 2025 | 583 | millions\nother income | Depreciation expense | Six months ended June 30, 2026 | 1,459 | millions\nother income | Depreciation expense | Six months ended June 30, 2025 | 1,088 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_33",
+      "rank": 26,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Income before income tax expense | As of or for the period ended, Six months ended June 30, 2026 | 47,995 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1527",
+      "rank": 27,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Other income | Six months ended June 30, 2025 | 3,077 | millions\nConsolidated statements of income (unaudited) | Revenue - Noninterest revenue | Three months ended June 30, 2026 | 31,836 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_294",
+      "rank": 28,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "kind": "table_records",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "Net interest income (continued) | values in millions unless the record states otherwise\nNet interest income | Provision for credit losses - Wholesale | Six months ended June 30, 2026 | 808 | millions\nNet interest income | Provision for credit losses - Wholesale | Six months ended June 30, 2025 | 1,527 | millions\nNet interest income | Provision for credit losses - Wholesale | Change | (47) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_763",
+      "rank": 29,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "kind": "table_records",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Treasury and CIO | As of or for the six months ended June 30, Change | (40) | millions\nCORPORATE | Net income - Other Corporate | As of or for the three months ended June 30, 2026 | 3,680 | millions\nCORPORATE | Net income - Other Corporate | As of or for the three months ended June 30, 2025 | 574 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_40",
+      "rank": 30,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 2Q25 | 14,987 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, Six months ended June 30, 2026 | 37,649 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_413",
+      "rank": 31,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/e180efb1b776"
+      },
+      "text": "(column headers unresolved) | header row | Six months ended June 30, | Corporate | Total\n(column headers unresolved) | header row | (in millions, except ratios) | 2026 | 2025 | Change | 2026 | 2025 | Change\n(column headers unresolved) | Total net revenue | $ | 7,261 | (a) | $ | 3,842 | 89 | % | $ | 108,558 | $ | 91,694 | 18 | %\n(column headers unresolved) | Total noninterest expense | 1,179 | 732 | 61 | 54,166 | 47,376 | 14\n(column headers unresolved) | Pre-provision profit | 6,082 | 3,110 | 96 | 54,392 | 44,318 | 23\n(column headers unresolved) | Provision for credit losses | (11) | 6 | NM | 5,022 | 6,154 | (18)\n(column headers unresolved) | Net income | 4,908 | 3,388 | 45 | 37,649 | 29,630 | 27\n(column headers unresolved) | ROE | NM | NM | 22 | % | 18 | %"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_186",
+      "rank": 32,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 31,836 | USD millions\nEXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 21,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_535",
+      "rank": 33,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Net income | Three months ended June 30, Change | 46 | percent\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Net income | Six months ended June 30, 2026 | 18,722 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Noninterest expense - Net income | Six months ended June 30, 2025 | 13,592 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1535",
+      "rank": 34,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2026 | 57,347 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2025 | 44,912 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_685",
+      "rank": 35,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462",
+        "section": "section_unknown"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Noninterest expense - Net income | Three months ended June 30, Change | 33 | millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Net income | Six months ended June 30, 2026 | 3,732 | USD millions\nASSET & WEALTH MANAGEMENT | Noninterest expense - Net income | Six months ended June 30, 2025 | 3,056 | USD millions"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1558",
+      "rerank_rank": 1,
+      "rerank_score": 9.730807304382324,
+      "rrf_rank": 4,
+      "rrf_score": 0.02813852813852814,
+      "found_in": {
+        "dense": 6,
+        "sparse": 17
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2025 | 29,630 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_766",
+      "rerank_rank": 2,
+      "rerank_score": 9.636913299560547,
+      "rrf_rank": 6,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, Change | 45 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_755",
+      "rerank_rank": 3,
+      "rerank_score": 9.57725715637207,
+      "rrf_rank": 8,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, Change | 45 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_768",
+      "rerank_rank": 4,
+      "rerank_score": 9.433486938476562,
+      "rrf_rank": 22,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2026 | 1,309,857 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2025 | 1,370,312 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, Change | (4) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1562",
+      "rerank_rank": 5,
+      "rerank_score": 9.429402351379395,
+      "rrf_rank": 23,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2026 | 13.65 | USD\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2025 | 10.32 | USD"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026, section_unknown)\nConsolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2025 | 29,630 | USD millions\n\n[2] (10-Q, Q2-2026, section_unknown)\nCORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, Change | 45 | millions\n\n[3] (10-Q, Q2-2026, section_unknown)\nCORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, Change | 45 | millions\n\n[4] (10-Q, Q2-2026, section_unknown)\nCORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2026 | 1,309,857 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2025 | 1,370,312 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, Change | (4) | millions\n\n[5] (10-Q, Q2-2026, section_unknown)\nConsolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2026 | 13.65 | USD\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2025 | 10.32 | USD",
+  "user_prompt": "[1] (10-Q, Q2-2026, section_unknown)\nConsolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2026 | 37,649 | USD millions\nConsolidated statements of income (unaudited) | Noninterest expense - Net income | Six months ended June 30, 2025 | 29,630 | USD millions\n\n[2] (10-Q, Q2-2026, section_unknown)\nCORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Net income - Total net income | As of or for the six months ended June 30, Change | 45 | millions\n\n[3] (10-Q, Q2-2026, section_unknown)\nCORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2026 | 4,908 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, 2025 | 3,388 | USD millions\nCORPORATE | Revenue - Net income | As of or for the six months ended June 30, Change | 45 | millions\n\n[4] (10-Q, Q2-2026, section_unknown)\nCORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2026 | 1,309,857 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, 2025 | 1,370,312 | USD millions\nCORPORATE | Net income - Total assets (period-end) | As of or for the six months ended June 30, Change | (4) | millions\n\n[5] (10-Q, Q2-2026, section_unknown)\nConsolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2026 | 13.65 | USD\nConsolidated statements of income (unaudited) | Net income per common share data - Basic earnings per share | Six months ended June 30, 2025 | 10.32 | USD\n\nQuestion: What was net income for the six months ended June 30, 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1558"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_766"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_755"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_768"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1562"
+    }
+  ],
+  "answer_text": "Net income for the six months ended June 30, 2026, was 4,908 million USD [2].",
+  "parsed_citations": [
+    2
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_766",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      }
+    }
+  ]
+}

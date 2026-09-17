@@ -1,0 +1,1322 @@
+{
+  "question_id": "q11",
+  "question": "What drove the increase in net interest income in Q2 2026?",
+  "category": "narrative",
+  "difficulty": "medium",
+  "expected": {
+    "claims": [
+      "higher Markets net interest income",
+      "higher deposit balances",
+      "higher revolving balances in Card Services",
+      "higher wholesale loan balances",
+      "partially offset by the impact of lower rates"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Executive Overview",
+    "passage": "Firmwide overview - Total net revenue was $57.3 billion, up 28%, reflecting",
+    "period": "Q2-2026"
+  },
+  "notes": "REGRESSION CHECK. The source passage is truncated at the chunk boundary in the raw extract ('partially offset by the impact of lower' cuts off), so this also tests whether the answer is complete.",
+  "run": {
+    "timestamp": "2026-09-16T23:24:24.622054+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_279",
+      "rank": 1,
+      "score": 0.6726258397102356,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "Net interest income | Consumer, excluding credit card | Three months ended June 30, 2026 | 142 | USD millions\nNet interest income | Consumer, excluding credit card | Three months ended June 30, 2025 | 131 | USD millions\nNet interest income | Consumer, excluding credit card | Six months ended June 30, Change | 8 | percent\nNet interest income | Consumer, excluding credit card | Six months ended June 30, 2026 | 155 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5166",
+      "rank": 2,
+      "score": 0.6866481900215149,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | (5,405) | USD millions\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (2,792) | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_932",
+      "rank": 3,
+      "score": 0.695152223110199,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": " $3.5 billion, up 16%, reflecting: • higher noninterest revenue, predominantly driven by higher management fees due to strong net inflows and higher average market levels, as well as higher brokerage commissions, and • higher net interest income driven by higher average loans, partially offset by narrower spreads on loans. Noninterest expense was $4.2 billion, up 13%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advi"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5241",
+      "rank": 4,
+      "score": 0.6971434354782104,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 6,580 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_933",
+      "rank": 5,
+      "score": 0.6984333395957947,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "ation and continued growth in private banking advisor teams, as well as higher distribution fees. Year-to-date results Net income was $3.7 billion, up 22%. Net revenue was $13.2 billion, up 15%. Net interest income was $3.5 billion, up 3%. Noninterest revenue was $9.7 billion, up 20%. Revenue from Asset Management was $6.4 billion, up 19%, predominantly driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gai"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5238",
+      "rank": 6,
+      "score": 0.701143741607666,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,052) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_931",
+      "rank": 7,
+      "score": 0.7054314613342285,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Management was $3.3 billion, up 23%, driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gains. Revenue from Global Private Bank was $3.5 billion, up 16%, reflecting: • higher nonint"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5237",
+      "rank": 8,
+      "score": 0.7075921893119812,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 2,504 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_383",
+      "rank": 9,
+      "score": 0.7095259428024292,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/14a6d7fe1562",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Net interest income – reported (a) | Three months ended June 30, 2026 | 25,511 | USD millions\nNet interest income – reported (a) | Three months ended June 30, 2025 | 23,209 | USD millions\nNet interest income – reported (a) | Three months ended June 30, Change | 10 | percent\nNet interest income – reported (a) | Six months ended June 30, 2026 | 50,877 | USD millions\nNet interest income – reported (a) | Six months ended June 30, 2025 | 46,482 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5242",
+      "rank": 10,
+      "score": 0.7104445695877075,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Net change | 6,920 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5244",
+      "rank": 11,
+      "score": 0.71480393409729,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,102) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5229",
+      "rank": 12,
+      "score": 0.7190589308738708,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - All other interest-earning assets, largely U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 396 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5247",
+      "rank": 13,
+      "score": 0.719119668006897,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "kind": "table_records",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 1,429 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5240",
+      "rank": 14,
+      "score": 0.720992386341095,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 340 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5243",
+      "rank": 15,
+      "score": 0.7221832275390625,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 1,203 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5239",
+      "rank": 16,
+      "score": 0.7256793975830078,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Net change | (1,548) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5248",
+      "rank": 17,
+      "score": 0.7279818654060364,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Net change | 2,623 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5210",
+      "rank": 18,
+      "score": 0.728598952293396,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 4,036 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5207",
+      "rank": 19,
+      "score": 0.7286859154701233,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | 227 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5246",
+      "rank": 20,
+      "score": 0.7289237976074219,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 1,194 | millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_5169",
+      "rank": 1,
+      "score": 12.525920995784181,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 559 | millions\nChanges in net interest income, volume and rate analysis | Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (1,560) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5294",
+      "rank": 2,
+      "score": 12.431324211039263,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Long-term debt: - Change in net interest income | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (370) | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5296",
+      "rank": 3,
+      "score": 12.431324211039263,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Long-term debt: - Change in net interest income | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 520 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5293",
+      "rank": 4,
+      "score": 12.35184229535404,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Long-term debt: - Change in net interest income | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 3,178 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5297",
+      "rank": 5,
+      "score": 12.35184229535404,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Long-term debt: - Change in net interest income | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 2,793 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5231",
+      "rank": 6,
+      "score": 12.329808116501788,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - Change in interest income | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 14,082 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5232",
+      "rank": 7,
+      "score": 12.329808116501788,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - Change in interest income | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (14,726) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5234",
+      "rank": 8,
+      "score": 12.329808116501788,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "section": "section_unknown",
+        "form": "10-K",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - Change in interest income | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 11,813 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5235",
+      "rank": 9,
+      "score": 12.329808116501788,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - Change in interest income | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 11,529 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_789",
+      "rank": 10,
+      "score": 12.267324108880695,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "none",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": " net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for assets and the funding benefit earned for liabilities generally decreased compared with the"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5166",
+      "rank": 11,
+      "score": 12.198088683747672,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | (5,405) | USD millions\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (2,792) | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5240",
+      "rank": 12,
+      "score": 12.03111323441981,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 340 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5237",
+      "rank": 13,
+      "score": 11.943025021124146,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 2,504 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5238",
+      "rank": 14,
+      "score": 11.943025021124146,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,052) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5241",
+      "rank": 15,
+      "score": 11.943025021124146,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 6,580 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5243",
+      "rank": 16,
+      "score": 11.856293702254604,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 1,203 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5244",
+      "rank": 17,
+      "score": 11.856293702254604,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,102) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5246",
+      "rank": 18,
+      "score": 11.856293702254604,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 1,194 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5247",
+      "rank": 19,
+      "score": 11.856293702254604,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 1,429 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3239",
+      "rank": 20,
+      "score": 11.816679518949583,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "s related to assets represent cumulative fair value hedge basis adjustments that will reduce (increase) net interest income in future periods. Positive (negative) amounts related to liabilities represent cumulative fair value hedge basis adjustments that will increase (reduce) net interest income in future periods. (e) Represents basis adjustments existing on the balance sheet date associated with hedged items that have been de-designated from qualifying fair value hedging relationships. 212 JPM"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_5237",
+      "JPMC_10-K_FY2025_5238"
+    ],
+    [
+      "JPMC_10-K_FY2025_5242",
+      "JPMC_10-K_FY2025_5241"
+    ],
+    [
+      "JPMC_10-K_FY2025_5240",
+      "JPMC_10-K_FY2025_5241"
+    ],
+    [
+      "JPMC_10-K_FY2025_5243",
+      "JPMC_10-K_FY2025_5244"
+    ],
+    [
+      "JPMC_10-K_FY2025_5239",
+      "JPMC_10-K_FY2025_5238"
+    ],
+    [
+      "JPMC_10-K_FY2025_5248",
+      "JPMC_10-K_FY2025_5247"
+    ],
+    [
+      "JPMC_10-K_FY2025_5246",
+      "JPMC_10-K_FY2025_5247"
+    ]
+  ],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_5293",
+      "JPMC_10-K_FY2025_5294"
+    ],
+    [
+      "JPMC_10-K_FY2025_5297",
+      "JPMC_10-K_FY2025_5296"
+    ],
+    [
+      "JPMC_10-K_FY2025_5232",
+      "JPMC_10-K_FY2025_5231"
+    ],
+    [
+      "JPMC_10-K_FY2025_5235",
+      "JPMC_10-K_FY2025_5234"
+    ],
+    [
+      "JPMC_10-K_FY2025_5238",
+      "JPMC_10-K_FY2025_5237"
+    ],
+    [
+      "JPMC_10-K_FY2025_5241",
+      "JPMC_10-K_FY2025_5240"
+    ],
+    [
+      "JPMC_10-K_FY2025_5244",
+      "JPMC_10-K_FY2025_5243"
+    ],
+    [
+      "JPMC_10-K_FY2025_5247",
+      "JPMC_10-K_FY2025_5246"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_10-K_FY2025_5166",
+      "rank": 1,
+      "rrf_score": 0.031054405392392875,
+      "found_in": {
+        "dense": 2,
+        "sparse": 7
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | (5,405) | USD millions\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (2,792) | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_279",
+      "rank": 2,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "Net interest income | Consumer, excluding credit card | Three months ended June 30, 2026 | 142 | USD millions\nNet interest income | Consumer, excluding credit card | Three months ended June 30, 2025 | 131 | USD millions\nNet interest income | Consumer, excluding credit card | Six months ended June 30, Change | 8 | percent\nNet interest income | Consumer, excluding credit card | Six months ended June 30, 2026 | 155 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5169",
+      "rank": 3,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 559 | millions\nChanges in net interest income, volume and rate analysis | Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (1,560) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5294",
+      "rank": 4,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Long-term debt: - Change in net interest income | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (370) | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_932",
+      "rank": 5,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": " $3.5 billion, up 16%, reflecting: • higher noninterest revenue, predominantly driven by higher management fees due to strong net inflows and higher average market levels, as well as higher brokerage commissions, and • higher net interest income driven by higher average loans, partially offset by narrower spreads on loans. Noninterest expense was $4.2 billion, up 13%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advi"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5296",
+      "rank": 6,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Long-term debt: - Change in net interest income | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 520 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5241",
+      "rank": 7,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 6,580 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5231",
+      "rank": 8,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - Change in interest income | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 14,082 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_933",
+      "rank": 9,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "block_id": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "ation and continued growth in private banking advisor teams, as well as higher distribution fees. Year-to-date results Net income was $3.7 billion, up 22%. Net revenue was $13.2 billion, up 15%. Net interest income was $3.5 billion, up 3%. Noninterest revenue was $9.7 billion, up 20%. Revenue from Asset Management was $6.4 billion, up 19%, predominantly driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gai"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5234",
+      "rank": 10,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "section": "section_unknown",
+        "form": "10-K",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - Change in interest income | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 11,813 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5238",
+      "rank": 11,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,052) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_789",
+      "rank": 12,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "none",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": " net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for assets and the funding benefit earned for liabilities generally decreased compared with the"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_931",
+      "rank": 13,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "block_id": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Management was $3.3 billion, up 23%, driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gains. Revenue from Global Private Bank was $3.5 billion, up 16%, reflecting: • higher nonint"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_383",
+      "rank": 14,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/14a6d7fe1562",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Net interest income – reported (a) | Three months ended June 30, 2026 | 25,511 | USD millions\nNet interest income – reported (a) | Three months ended June 30, 2025 | 23,209 | USD millions\nNet interest income – reported (a) | Three months ended June 30, Change | 10 | percent\nNet interest income – reported (a) | Six months ended June 30, 2026 | 50,877 | USD millions\nNet interest income – reported (a) | Six months ended June 30, 2025 | 46,482 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5240",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 340 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5244",
+      "rank": 16,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,102) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5237",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 2,504 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5229",
+      "rank": 18,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Loans: - All other interest-earning assets, largely U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 396 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5243",
+      "rank": 19,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | 1,203 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5247",
+      "rank": 20,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "form": "10-K",
+        "kind": "table_records",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 1,429 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5246",
+      "rank": 21,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - Non-U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Volume | 1,194 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5210",
+      "rank": 22,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 4,036 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3239",
+      "rank": 23,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "s related to assets represent cumulative fair value hedge basis adjustments that will reduce (increase) net interest income in future periods. Positive (negative) amounts related to liabilities represent cumulative fair value hedge basis adjustments that will increase (reduce) net interest income in future periods. (e) Represents basis adjustments existing on the balance sheet date associated with hedged items that have been de-designated from qualifying fair value hedging relationships. 212 JPM"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5207",
+      "rank": 24,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | 227 | millions"
+    }
+  ],
+  "post_fusion_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_5240",
+      "JPMC_10-K_FY2025_5241"
+    ],
+    [
+      "JPMC_10-K_FY2025_5237",
+      "JPMC_10-K_FY2025_5238"
+    ],
+    [
+      "JPMC_10-K_FY2025_5243",
+      "JPMC_10-K_FY2025_5244"
+    ],
+    [
+      "JPMC_10-K_FY2025_5246",
+      "JPMC_10-K_FY2025_5247"
+    ]
+  ],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_789",
+      "rerank_rank": 1,
+      "rerank_score": 2.5878419876098633,
+      "rrf_rank": 12,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "none",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": " net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for assets and the funding benefit earned for liabilities generally decreased compared with the"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5166",
+      "rerank_rank": 2,
+      "rerank_score": 1.4586800336837769,
+      "rrf_rank": 1,
+      "rrf_score": 0.031054405392392875,
+      "found_in": {
+        "dense": 2,
+        "sparse": 7
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Changes in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | (5,405) | USD millions\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (2,792) | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_383",
+      "rerank_rank": 3,
+      "rerank_score": 0.8514763116836548,
+      "rrf_rank": 14,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/14a6d7fe1562",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Net interest income – reported (a) | Three months ended June 30, 2026 | 25,511 | USD millions\nNet interest income – reported (a) | Three months ended June 30, 2025 | 23,209 | USD millions\nNet interest income – reported (a) | Three months ended June 30, Change | 10 | percent\nNet interest income – reported (a) | Six months ended June 30, 2026 | 50,877 | USD millions\nNet interest income – reported (a) | Six months ended June 30, 2025 | 46,482 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5238",
+      "rerank_rank": 4,
+      "rerank_score": 0.47981733083724976,
+      "rrf_rank": 11,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "form": "10-K",
+        "kind": "table_records",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,052) | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_5210",
+      "rerank_rank": 5,
+      "rerank_score": 0.44973814487457275,
+      "rrf_rank": 18,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/ae4f95254047",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "Changes in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 4,036 | millions"
+    }
+  ],
+  "context": "[1] (10-K, FY2025, section_unknown)\n net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for assets and the funding benefit earned for liabilities generally decreased compared with the\n\n[2] (10-K, FY2025, section_unknown)\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | (5,405) | USD millions\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (2,792) | USD millions\n\n[3] (10-Q, Q2-2026, section_unknown)\nNet interest income – reported (a) | Three months ended June 30, 2026 | 25,511 | USD millions\nNet interest income – reported (a) | Three months ended June 30, 2025 | 23,209 | USD millions\nNet interest income – reported (a) | Three months ended June 30, Change | 10 | percent\nNet interest income – reported (a) | Six months ended June 30, 2026 | 50,877 | USD millions\nNet interest income – reported (a) | Six months ended June 30, 2025 | 46,482 | USD millions\n\n[4] (10-K, FY2025, section_unknown)\nChanges in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,052) | millions\n\n[5] (10-K, FY2025, section_unknown)\nChanges in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 4,036 | millions",
+  "user_prompt": "[1] (10-K, FY2025, section_unknown)\n net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for assets and the funding benefit earned for liabilities generally decreased compared with the\n\n[2] (10-K, FY2025, section_unknown)\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Volume | (5,405) | USD millions\nChanges in net interest income, volume and rate analysis | U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (2,792) | USD millions\n\n[3] (10-Q, Q2-2026, section_unknown)\nNet interest income – reported (a) | Three months ended June 30, 2026 | 25,511 | USD millions\nNet interest income – reported (a) | Three months ended June 30, 2025 | 23,209 | USD millions\nNet interest income – reported (a) | Three months ended June 30, Change | 10 | percent\nNet interest income – reported (a) | Six months ended June 30, 2026 | 50,877 | USD millions\nNet interest income – reported (a) | Six months ended June 30, 2025 | 46,482 | USD millions\n\n[4] (10-K, FY2025, section_unknown)\nChanges in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Interest-bearing deposits: - U.S. | (Unaudited) Year ended December 31, 2025 versus 2024 Increase/(decrease) due to change in: Rate | (4,052) | millions\n\n[5] (10-K, FY2025, section_unknown)\nChanges in net interest income, volume and rate analysis (continued) | values in millions unless the record states otherwise\nChanges in net interest income, volume and rate analysis | Investment securities: - U.S. | (Unaudited) Year ended December 31, 2024 versus 2023 Increase/(decrease) due to change in: Rate | 4,036 | millions\n\nQuestion: What drove the increase in net interest income in Q2 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_789"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-K_FY2025_5166"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_383"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-K_FY2025_5238"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_5210"
+    }
+  ],
+  "answer_text": "The context does not provide specific information on what drove the increase in net interest income in Q2 2026. It only states the reported net interest income figures for that period. Additional details on the factors contributing to the increase are missing.",
+  "parsed_citations": [],
+  "resolved_citations": []
+}

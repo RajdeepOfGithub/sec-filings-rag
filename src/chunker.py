@@ -2,6 +2,12 @@ import re
 
 from ir import TableBlock
 
+# A converted table up to this multiple of the chunk budget is emitted as one
+# chunk, so its rows are never separated from each other. THRESHOLD CALIBRATED
+# ON THIS CORPUS: at 3x (1,500 chars) the q01 repurchase table stays whole,
+# and the median converted table (21 records) still splits.
+WHOLE_TABLE_BUDGET_MULTIPLE = 3
+
 
 def find_section_markers(text):
     pattern = r"Item\s+\d+[A-Z]?\."
@@ -143,7 +149,20 @@ def chunk_table_records(records, chunk_size, header, stats):
     Packs whole records into chunks. Continuation chunks start with the
     header. A record longer than the budget becomes its own chunk rather than
     being truncated.
+
+    A table that only slightly exceeds the budget is kept whole instead. q01
+    showed why: a five-row table split in two put the share counts in one
+    chunk and their dollar amounts in another, so the answer could only be
+    half right.
     """
+    whole = "\n".join(records)
+    if len(whole) <= WHOLE_TABLE_BUDGET_MULTIPLE * chunk_size:
+        stats["tables_kept_whole"] = stats.get("tables_kept_whole", 0) + 1
+        stats["table_chunks"] = stats.get("table_chunks", 0) + 1
+        stats["largest_whole_table_chars"] = max(
+            stats.get("largest_whole_table_chars", 0), len(whole))
+        return [whole]
+
     chunks = []
     index = 0
 

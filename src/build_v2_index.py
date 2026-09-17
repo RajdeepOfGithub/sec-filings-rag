@@ -29,6 +29,8 @@ def parse_args():
     parser.add_argument("--collection", default=COLLECTION_V2)
     parser.add_argument("--confirm", action="store_true")
     parser.add_argument("--force", action="store_true", help="index even if the collection already holds chunks")
+    parser.add_argument("--replace", action="store_true",
+                        help="delete and rebuild the v2 collection in place (v1 is never touched)")
     return parser.parse_args()
 
 
@@ -40,6 +42,13 @@ if __name__ == "__main__":
     print(f"existing collections: {sorted(existing)}")
     if COLLECTION not in existing:
         raise SystemExit(f"v1 collection {COLLECTION!r} is missing - refusing to proceed")
+
+    if args.collection in existing and args.replace:
+        if args.collection == COLLECTION:
+            raise SystemExit("refusing to replace the v1 collection")
+        print(f"deleting {args.collection} for an in-place rebuild...")
+        client.delete_collection(args.collection)
+        existing.discard(args.collection)
 
     if args.collection in existing:
         count = client.get_collection(args.collection).count()

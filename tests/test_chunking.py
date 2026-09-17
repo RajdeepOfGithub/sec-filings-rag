@@ -13,7 +13,8 @@ import warnings
 sys.path.insert(0, "src")
 warnings.filterwarnings("ignore")
 
-from chunker import continuation_header, structure_aware_chunk_ir
+from chunker import (WHOLE_TABLE_BUDGET_MULTIPLE, continuation_header,
+                     structure_aware_chunk_ir)
 from ir import Document, TableBlock, TextBlock, assign_block_ids
 from loader import load_document_ir
 from sections import attribute_sections_report
@@ -40,7 +41,7 @@ def records(count, width=60):
 def test_records_are_never_split():
     print("\nrecords stay whole across chunk boundaries")
 
-    table_records = records(20)
+    table_records = records(60)
     document = make_document([
         TableBlock(doc_id="TEST_10-K_FY2025", source_order=0, raw_html="<table></table>",
                    records=table_records, table_title="Capital", unit="millions"),
@@ -67,7 +68,7 @@ def test_continuation_header_on_later_chunks_only():
 
     document = make_document([
         TableBlock(doc_id="TEST_10-K_FY2025", source_order=0, raw_html="<table></table>",
-                   records=records(20), table_title="Capital", unit="millions"),
+                   records=records(60), table_title="Capital", unit="millions"),
     ])
     chunks = [c for c in structure_aware_chunk_ir(document, 500, 50) if c["kind"] == "table_records"]
 
@@ -84,13 +85,37 @@ def test_continuation_header_on_later_chunks_only():
           continuation_header(untitled))
 
 
+def test_small_table_is_kept_whole():
+    """q01: a five-row table split in two separated share counts from dollars."""
+    print("\na table under the whole-table budget is never split")
+
+    small = records(12)   # ~730 chars: over one chunk, under 3 x 500
+    document = make_document([
+        TableBlock(doc_id="TEST_10-K_FY2025", source_order=0, raw_html="<table></table>",
+                   records=small, table_title="Capital", unit="millions"),
+    ])
+    stats = {}
+    chunks = [c for c in structure_aware_chunk_ir(document, 500, 50, stats)
+              if c["kind"] == "table_records"]
+
+    check("emitted as a single chunk", len(chunks) == 1, f"{len(chunks)} chunks")
+    check("holds every record", all(r in chunks[0]["text"] for r in small))
+    check("counted as kept whole", stats.get("tables_kept_whole") == 1, str(stats))
+    check("exceeds the plain chunk budget, as intended",
+          len(chunks[0]["text"]) > 500, f"{len(chunks[0]['text'])} chars")
+    check("stays within the whole-table budget",
+          len(chunks[0]["text"]) <= WHOLE_TABLE_BUDGET_MULTIPLE * 500)
+
+
 def test_oversize_record_is_emitted_whole():
     print("\na record longer than the budget is emitted whole, not truncated")
 
     long_record = "Capital | " + ("A very long row label " * 40) + "| 2025 | 1.0 | millions"
+    # The table must exceed the whole-table budget, or it is kept whole and
+    # the oversize-record path never runs.
     document = make_document([
         TableBlock(doc_id="TEST_10-K_FY2025", source_order=0, raw_html="<table></table>",
-                   records=[records(1)[0], long_record, records(1)[0].replace("00", "99")],
+                   records=[records(1)[0], long_record] + records(20),
                    table_title="Capital", unit="millions"),
     ])
     stats = {}
@@ -107,7 +132,7 @@ def test_oversize_record_is_emitted_whole():
 def test_no_overlap_inside_tables_but_prose_keeps_it():
     print("\noverlap applies to prose, not to records")
 
-    table_records = records(20)
+    table_records = records(60)
     document = make_document([
         TableBlock(doc_id="TEST_10-K_FY2025", source_order=0, raw_html="<table></table>",
                    records=table_records, table_title="Capital", unit="millions"),
@@ -157,6 +182,7 @@ def test_real_document_has_no_split_records():
 
 if __name__ == "__main__":
     test_records_are_never_split()
+    test_small_table_is_kept_whole()
     test_continuation_header_on_later_chunks_only()
     test_oversize_record_is_emitted_whole()
     test_no_overlap_inside_tables_but_prose_keeps_it()

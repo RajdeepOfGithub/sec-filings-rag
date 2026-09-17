@@ -1,5 +1,7 @@
 from sentence_transformers import CrossEncoder
 
+from record_render import scoring_text
+
 MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 _model = None
@@ -17,7 +19,9 @@ def rerank(query, results, top_n=5):
         return []
 
     model = get_model()
-    pairs = [(query, r["text"]) for r in results]
+    # Records are scored as prose; the stored text is untouched. See
+    # record_render. The model itself is unchanged.
+    pairs = [(query, scoring_text(r)) for r in results]
     scores = model.predict(pairs)
 
     scored = []

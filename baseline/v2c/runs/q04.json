@@ -1,0 +1,1356 @@
+{
+  "question_id": "q04",
+  "question": "What was the CET1 capital ratio under the Standardized approach at the end of Q2 2026?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "value": 14.2,
+    "unit": "percent"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated financial highlights",
+    "table": "Consolidated financial highlights (unaudited)",
+    "row": "Common equity Tier 1 (CET1) capital ratio - Standardized",
+    "column": "2Q26",
+    "period": "Q2-2026"
+  },
+  "notes": "Comes from the SEVEN-column table: 2Q26 1Q26 4Q25 3Q25 2Q25 then 2026 2025 under a separate 'Six months ended June 30' superheader that flat text drops entirely. 2Q25 value is 15.1 - a plausible wrong answer. Hardest alignment case in the set.",
+  "run": {
+    "timestamp": "2026-09-17T00:25:25.425212+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_873",
+      "rank": 1,
+      "score": 0.5321477651596069,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "blic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declared on common stock (8,100) Net purchase of treasury s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1186",
+      "rank": 2,
+      "score": 0.5523490905761719,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "urrent rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of December 31, 2025. Refer to Key Regulatory Developments on page 91 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital actions on page 97 for information on actions taken by the Firm’s Board of Directors. Internal Capital Adequacy Assessment Process Annually, the Firm prepares the ICAAP, which informs the Board of Direct"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1241",
+      "rank": 3,
+      "score": 0.5555720329284668,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none"
+      },
+      "text": "xpected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) I"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1262",
+      "rank": 4,
+      "score": 0.6169039607048035,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": "es in CET1 capital, Tier 1 capital and Tier 2 capital for the year ended December 31, 2025. Year ended December 31, (in millions) 2025 Standardized/Advanced CET1 capital at December 31, 2024 $ 275,513 Net income applicable to common equity 55,949 Dividends declared on common stock (16,060) Net purchase of treasury stock (30,573) Changes in additional paid-in capital 203 Changes related to AOCI applicable to capital: Unrealized gains/(losses) on investment securities 3,569 Translation adjustments"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_102",
+      "rank": 5,
+      "score": 0.6287557482719421,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, Six months ended June 30, 2025 | 15.1\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Tier 1 capital ratio – Standardized (d) | As of or for the period ended, 2Q26 | 15.1"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_98",
+      "rank": 6,
+      "score": 0.632819652557373,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 2Q26 | 14.2\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 1Q26 | 14.3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_100",
+      "rank": 7,
+      "score": 0.6385080218315125,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 2Q25 | 15.1"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4326",
+      "rank": 8,
+      "score": 0.6433725357055664,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/21a326ea6ca4",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Regulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements BHC (a)(b) | 11.5 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements IDI (c) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements BHC (a)(b) | 11.5 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2935",
+      "rank": 9,
+      "score": 0.6525740027427673,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b8cd40eb16bb",
+        "section": "section_unknown"
+      },
+      "text": "Regulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements BHC (a) | 11.5 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements IDI (b) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements BHC (a) | 11.5 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_904",
+      "rank": 10,
+      "score": 0.6544920206069946,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CCAR. Other capital requirements Total Loss-Absorbing Capacity The Federal Re"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_875",
+      "rank": 11,
+      "score": 0.655271053314209,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "block_id": "none",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "/Advanced CET1 capital 14,150 Standardized/Advanced CET1 capital at June 30, 2026 $ 302,619 Standardized/Advanced Tier 1 capital at December 31, 2025 $ 307,630 Change in CET1 capital 14,150 Net issuances of noncumulative perpetual preferred stock 995 Other (55) Change in Standardized/Advanced Tier 1 capital 15,090 Standardized/Advanced Tier 1 capital at June 30, 2026 $ 322,720 Standardized Tier 2 capital at December 31, 2025 $ 36,213 Change in long-term debt and other instruments qualifying as T"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4332",
+      "rank": 12,
+      "score": 0.6618480682373047,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "form": "10-K",
+        "block_id": "none",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "d a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_99",
+      "rank": 13,
+      "score": 0.6657125949859619,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 4Q25 | 14.6\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 3Q25 | 14.8"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1209",
+      "rank": 14,
+      "score": 0.6723726987838745,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": " the CET1 capital regulatory ratio requirements for the Firm under the Basel III rules currently in effect. All banking institutions are currently required to have a minimum CET1 capital ratio of 4.5% of risk-weighted assets. Certain banking organizations, including the Firm, are required to hold additional levels of capital to serve as a “capital conservation buffer.” The capital conservation buffer incorporates a GSIB surcharge, a discretionary countercyclical capital buffer and a fixed capita"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_220",
+      "rank": 15,
+      "score": 0.6831234693527222,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 15.1 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_221",
+      "rank": 16,
+      "score": 0.684963583946228,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 15.1 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_507",
+      "rank": 17,
+      "score": 0.6858838200569153,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) (continued) | values in millions unless the record states otherwise\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (c)(d) | As of or for the year ended December 31, 2025 | 14.6"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_508",
+      "rank": 18,
+      "score": 0.6898801326751709,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) (continued) | values in millions unless the record states otherwise\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (c)(d) | As of or for the year ended December 31, 2024 | 15.7"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_101",
+      "rank": 19,
+      "score": 0.6903469562530518,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, Six months ended June 30, 2026 | 14.2"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 20,
+      "score": 0.6920183897018433,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/82b10bc6589a",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Standardized December 31, 2025 | 14.6 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Standardized Capital ratio requirements (a) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced June 30, 2026 | 14.2 | percent"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_2935",
+      "rank": 1,
+      "score": 25.463895798633935,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b8cd40eb16bb",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "Regulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements BHC (a) | 11.5 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements IDI (b) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements BHC (a) | 11.5 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 2,
+      "score": 25.33176905646953,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/82b10bc6589a",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Standardized December 31, 2025 | 14.6 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Standardized Capital ratio requirements (a) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced June 30, 2026 | 14.2 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4326",
+      "rank": 3,
+      "score": 25.237277650155793,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/21a326ea6ca4",
+        "form": "10-K",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Regulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements BHC (a)(b) | 11.5 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements IDI (c) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements BHC (a)(b) | 11.5 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1193",
+      "rank": 4,
+      "score": 24.60885795089631,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "kind": "narrative",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": " Under the rules currently in effect, two comprehensive approaches are prescribed for calculating Basel III RWA: a standardized approach (“Standardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The current Basel III rules establish capital requirements for calculating credit risk"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_827",
+      "rank": 5,
+      "score": 24.048821690712018,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "none",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "narrative"
+      },
+      "text": "ch are on-balance sheet assets and off-balance sheet exposures, weighted according to risk. Under the rules currently in effect, two comprehensive approaches are prescribed for calculating Basel III RWA: a standardized approach (“Standardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requireme"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4323",
+      "rank": 6,
+      "score": 23.518233659095525,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "ect, two comprehensive approaches are prescribed for calculating Basel III RWA: a Standardized approach, and an Advanced approach. For each of these risk-based capital ratios, the capital adequacy of the Firm and JPMorgan Chase Bank, N.A. is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The three components of regulatory capital under the Basel III rules and their primary drivers are as illustrated below"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1230",
+      "rank": 7,
+      "score": 23.363144629862518,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/b6344ec07f22",
+        "section": "section_unknown",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Standardized December 31, 2025 | 14.6 | percent\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Standardized December 31, 2024 | 15.7 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4348",
+      "rank": 8,
+      "score": 23.011430579368287,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/792577696594",
+        "kind": "table_records"
+      },
+      "text": "basis points under the Standardized approach for both the Firm and Bank and approximately (continued) | values in millions unless the record states otherwise\nbasis points under the Standardized approach for both the Firm and Bank and approximately | Leverage-based capital metrics: (a) - Tier 1 leverage ratio | Three months ended December 31, 2025 JPMorgan Chase & Co. | 6.9 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4350",
+      "rank": 9,
+      "score": 23.011430579368287,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/792577696594",
+        "strategy": "record_aware"
+      },
+      "text": "basis points under the Standardized approach for both the Firm and Bank and approximately (continued) | values in millions unless the record states otherwise\nbasis points under the Standardized approach for both the Firm and Bank and approximately | Leverage-based capital metrics: (a) - Tier 1 leverage ratio | Three months ended December 31, 2024 JPMorgan Chase & Co. | 7.2 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4349",
+      "rank": 10,
+      "score": 22.843754977992063,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/792577696594",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "basis points under the Standardized approach for both the Firm and Bank and approximately (continued) | values in millions unless the record states otherwise\nbasis points under the Standardized approach for both the Firm and Bank and approximately | Leverage-based capital metrics: (a) - Tier 1 leverage ratio | Three months ended December 31, 2025 JPMorgan Chase Bank, N.A. | 7.8 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4351",
+      "rank": 11,
+      "score": 22.843754977992063,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/792577696594",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "basis points under the Standardized approach for both the Firm and Bank and approximately (continued) | values in millions unless the record states otherwise\nbasis points under the Standardized approach for both the Firm and Bank and approximately | Leverage-based capital metrics: (a) - Tier 1 leverage ratio | Three months ended December 31, 2024 JPMorgan Chase Bank, N.A. | 7.9 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_873",
+      "rank": 12,
+      "score": 22.82261199402345,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "blic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declared on common stock (8,100) Net purchase of treasury s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1231",
+      "rank": 13,
+      "score": 22.45195580187952,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/b6344ec07f22",
+        "form": "10-K",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Standardized Capital ratio requirements (d) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Advanced December 31, 2025 | 14.1 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_849",
+      "rank": 14,
+      "score": 22.380919943687754,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/82b10bc6589a"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced December 31, 2025 | 14.1 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced Capital ratio requirements (a) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: - Tier 1 capital ratio | Standardized June 30, 2026 | 15.1 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1239",
+      "rank": 15,
+      "score": 22.210249242410693,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. For the year ended December 31, 2024, CET1 capital reflected a $720 million benefit. Refer to Note 27 for additional information. (b) Includes approximately $23 billion under the Standardized approach and approximately $110 billion under the Advanced approach related to the Apple Card transaction. Advanced RWA is expected to reduce to approximately $30 billion once the necessary modeling"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2936",
+      "rank": 16,
+      "score": 21.48435729430328,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b8cd40eb16bb",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Regulatory capital (continued)\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements IDI (b) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Well-capitalized ratios IDI (d) | 6.5 | percent\nRegulatory capital | Risk-based capital ratios - Tier 1 capital | Standardized capital ratio requirements BHC (a) | 13.0"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4327",
+      "rank": 17,
+      "score": 21.3685285521622,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/21a326ea6ca4",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "Regulatory capital (continued)\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements IDI (c) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Well-capitalized ratios IDI (e) | 6.5 | percent\nRegulatory capital | Risk-based capital ratios - Tier 1 capital | Standardized capital ratio requirements BHC (a)(b) | 13.0"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4332",
+      "rank": 18,
+      "score": 21.12680232975474,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "kind": "narrative",
+        "company": "JPMC"
+      },
+      "text": "d a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_875",
+      "rank": 19,
+      "score": 21.042347269243486,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "narrative"
+      },
+      "text": "/Advanced CET1 capital 14,150 Standardized/Advanced CET1 capital at June 30, 2026 $ 302,619 Standardized/Advanced Tier 1 capital at December 31, 2025 $ 307,630 Change in CET1 capital 14,150 Net issuances of noncumulative perpetual preferred stock 995 Other (55) Change in Standardized/Advanced Tier 1 capital 15,090 Standardized/Advanced Tier 1 capital at June 30, 2026 $ 322,720 Standardized Tier 2 capital at December 31, 2025 $ 36,213 Change in long-term debt and other instruments qualifying as T"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_98",
+      "rank": 20,
+      "score": 20.87426246478421,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 2Q26 | 14.2\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 1Q26 | 14.3"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-Q_Q2-2026_100",
+      "JPMC_10-Q_Q2-2026_102"
+    ],
+    [
+      "JPMC_10-K_FY2025_508",
+      "JPMC_10-K_FY2025_507"
+    ],
+    [
+      "JPMC_10-Q_Q2-2026_101",
+      "JPMC_10-Q_Q2-2026_102"
+    ]
+  ],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_4350",
+      "JPMC_10-K_FY2025_4348"
+    ],
+    [
+      "JPMC_10-K_FY2025_4349",
+      "JPMC_10-K_FY2025_4348"
+    ],
+    [
+      "JPMC_10-K_FY2025_4351",
+      "JPMC_10-K_FY2025_4348"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_2935",
+      "rank": 1,
+      "rrf_score": 0.031099324975891997,
+      "found_in": {
+        "dense": 8,
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b8cd40eb16bb",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "Regulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements BHC (a) | 11.5 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements IDI (b) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements BHC (a) | 11.5 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_873",
+      "rank": 2,
+      "rrf_score": 0.030886196246139225,
+      "found_in": {
+        "dense": 1,
+        "sparse": 9
+      },
+      "metadata": {
+        "block_id": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "blic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declared on common stock (8,100) Net purchase of treasury s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4326",
+      "rank": 3,
+      "rrf_score": 0.030798389007344232,
+      "found_in": {
+        "dense": 7,
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/21a326ea6ca4",
+        "form": "10-K",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Regulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements BHC (a)(b) | 11.5 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Standardized capital ratio requirements IDI (c) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements BHC (a)(b) | 11.5 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 4,
+      "rrf_score": 0.029116045245077504,
+      "found_in": {
+        "dense": 17,
+        "sparse": 2
+      },
+      "metadata": {
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/82b10bc6589a",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Standardized December 31, 2025 | 14.6 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Standardized Capital ratio requirements (a) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced June 30, 2026 | 14.2 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_98",
+      "rank": 5,
+      "rrf_score": 0.02813852813852814,
+      "found_in": {
+        "dense": 6,
+        "sparse": 17
+      },
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 2Q26 | 14.2\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 1Q26 | 14.3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_875",
+      "rank": 6,
+      "rrf_score": 0.027443609022556388,
+      "found_in": {
+        "dense": 10,
+        "sparse": 16
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "narrative"
+      },
+      "text": "/Advanced CET1 capital 14,150 Standardized/Advanced CET1 capital at June 30, 2026 $ 302,619 Standardized/Advanced Tier 1 capital at December 31, 2025 $ 307,630 Change in CET1 capital 14,150 Net issuances of noncumulative perpetual preferred stock 995 Other (55) Change in Standardized/Advanced Tier 1 capital 15,090 Standardized/Advanced Tier 1 capital at June 30, 2026 $ 322,720 Standardized Tier 2 capital at December 31, 2025 $ 36,213 Change in long-term debt and other instruments qualifying as T"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4332",
+      "rank": 7,
+      "rrf_score": 0.027417840375586856,
+      "found_in": {
+        "dense": 11,
+        "sparse": 15
+      },
+      "metadata": {
+        "block_id": "none",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "kind": "narrative",
+        "company": "JPMC"
+      },
+      "text": "d a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1186",
+      "rank": 8,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "urrent rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of December 31, 2025. Refer to Key Regulatory Developments on page 91 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital actions on page 97 for information on actions taken by the Firm’s Board of Directors. Internal Capital Adequacy Assessment Process Annually, the Firm prepares the ICAAP, which informs the Board of Direct"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1241",
+      "rank": 9,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none"
+      },
+      "text": "xpected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) I"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1262",
+      "rank": 10,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": "es in CET1 capital, Tier 1 capital and Tier 2 capital for the year ended December 31, 2025. Year ended December 31, (in millions) 2025 Standardized/Advanced CET1 capital at December 31, 2024 $ 275,513 Net income applicable to common equity 55,949 Dividends declared on common stock (16,060) Net purchase of treasury stock (30,573) Changes in additional paid-in capital 203 Changes related to AOCI applicable to capital: Unrealized gains/(losses) on investment securities 3,569 Translation adjustments"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1193",
+      "rank": 11,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-K",
+        "kind": "narrative",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": " Under the rules currently in effect, two comprehensive approaches are prescribed for calculating Basel III RWA: a standardized approach (“Standardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The current Basel III rules establish capital requirements for calculating credit risk"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_102",
+      "rank": 12,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, Six months ended June 30, 2025 | 15.1\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Tier 1 capital ratio – Standardized (d) | As of or for the period ended, 2Q26 | 15.1"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_827",
+      "rank": 13,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "none",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "narrative"
+      },
+      "text": "ch are on-balance sheet assets and off-balance sheet exposures, weighted according to risk. Under the rules currently in effect, two comprehensive approaches are prescribed for calculating Basel III RWA: a standardized approach (“Standardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requireme"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4323",
+      "rank": 14,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "ect, two comprehensive approaches are prescribed for calculating Basel III RWA: a Standardized approach, and an Advanced approach. For each of these risk-based capital ratios, the capital adequacy of the Firm and JPMorgan Chase Bank, N.A. is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The three components of regulatory capital under the Basel III rules and their primary drivers are as illustrated below"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1230",
+      "rank": 15,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/b6344ec07f22",
+        "section": "section_unknown",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Standardized December 31, 2025 | 14.6 | percent\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Standardized December 31, 2024 | 15.7 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4348",
+      "rank": 16,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/792577696594",
+        "kind": "table_records"
+      },
+      "text": "basis points under the Standardized approach for both the Firm and Bank and approximately (continued) | values in millions unless the record states otherwise\nbasis points under the Standardized approach for both the Firm and Bank and approximately | Leverage-based capital metrics: (a) - Tier 1 leverage ratio | Three months ended December 31, 2025 JPMorgan Chase & Co. | 6.9 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_904",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CCAR. Other capital requirements Total Loss-Absorbing Capacity The Federal Re"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1231",
+      "rank": 18,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/b6344ec07f22",
+        "form": "10-K",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Standardized Capital ratio requirements (d) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: (a) - CET1 capital ratio | Advanced December 31, 2025 | 14.1 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_849",
+      "rank": 19,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/82b10bc6589a"
+      },
+      "text": "Selected capital and RWA data (continued) | values in millions unless the record states otherwise\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced December 31, 2025 | 14.1 | percent\nSelected capital and RWA data | Risk-based capital metrics: - CET1 capital ratio | Advanced Capital ratio requirements (a) | 11.5 | percent\nSelected capital and RWA data | Risk-based capital metrics: - Tier 1 capital ratio | Standardized June 30, 2026 | 15.1 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_99",
+      "rank": 20,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 4Q25 | 14.6\nConsolidated financial highlights (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) | As of or for the period ended, 3Q25 | 14.8"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1239",
+      "rank": 21,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. For the year ended December 31, 2024, CET1 capital reflected a $720 million benefit. Refer to Note 27 for additional information. (b) Includes approximately $23 billion under the Standardized approach and approximately $110 billion under the Advanced approach related to the Apple Card transaction. Advanced RWA is expected to reduce to approximately $30 billion once the necessary modeling"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1209",
+      "rank": 22,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": " the CET1 capital regulatory ratio requirements for the Firm under the Basel III rules currently in effect. All banking institutions are currently required to have a minimum CET1 capital ratio of 4.5% of risk-weighted assets. Certain banking organizations, including the Firm, are required to hold additional levels of capital to serve as a “capital conservation buffer.” The capital conservation buffer incorporates a GSIB surcharge, a discretionary countercyclical capital buffer and a fixed capita"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2936",
+      "rank": 23,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b8cd40eb16bb",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "kind": "table_records",
+        "company": "JPMC"
+      },
+      "text": "Regulatory capital (continued)\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements IDI (b) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Well-capitalized ratios IDI (d) | 6.5 | percent\nRegulatory capital | Risk-based capital ratios - Tier 1 capital | Standardized capital ratio requirements BHC (a) | 13.0"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_220",
+      "rank": 24,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 15.1 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4327",
+      "rank": 25,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/21a326ea6ca4",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "Regulatory capital (continued)\nRegulatory capital | Risk-based capital ratios - CET1 capital | Advanced capital ratio requirements IDI (c) | 7.0 | percent\nRegulatory capital | Risk-based capital ratios - CET1 capital | Well-capitalized ratios IDI (e) | 6.5 | percent\nRegulatory capital | Risk-based capital ratios - Tier 1 capital | Standardized capital ratio requirements BHC (a)(b) | 13.0"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_221",
+      "rank": 26,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 15.1 | percent"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_507",
+      "rank": 27,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) (continued) | values in millions unless the record states otherwise\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected ratios and metrics - Common equity Tier 1 (“CET1”) capital ratio – Standardized (c)(d) | As of or for the year ended December 31, 2025 | 14.6"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_873",
+      "rerank_rank": 1,
+      "rerank_score": 5.783635139465332,
+      "rrf_rank": 2,
+      "rrf_score": 0.030886196246139225,
+      "found_in": {
+        "dense": 1,
+        "sparse": 9
+      },
+      "metadata": {
+        "block_id": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "blic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declared on common stock (8,100) Net purchase of treasury s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1241",
+      "rerank_rank": 2,
+      "rerank_score": 5.26464319229126,
+      "rrf_rank": 9,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none"
+      },
+      "text": "xpected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) I"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_904",
+      "rerank_rank": 3,
+      "rerank_score": 5.2240447998046875,
+      "rrf_rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CCAR. Other capital requirements Total Loss-Absorbing Capacity The Federal Re"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_220",
+      "rerank_rank": 4,
+      "rerank_score": 5.073426246643066,
+      "rrf_rank": 24,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 15.1 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_221",
+      "rerank_rank": 5,
+      "rerank_score": 5.012998104095459,
+      "rrf_rank": 26,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 15.1 | percent"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026, section_unknown)\nblic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declared on common stock (8,100) Net purchase of treasury s\n\n[2] (10-K, FY2025, section_unknown)\nxpected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) I\n\n[3] (10-Q, Q2-2026, section_unknown)\n027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CCAR. Other capital requirements Total Loss-Absorbing Capacity The Federal Re\n\n[4] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 15.1 | percent\n\n[5] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 15.1 | percent",
+  "user_prompt": "[1] (10-Q, Q2-2026, section_unknown)\nblic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declared on common stock (8,100) Net purchase of treasury s\n\n[2] (10-K, FY2025, section_unknown)\nxpected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) I\n\n[3] (10-Q, Q2-2026, section_unknown)\n027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CCAR. Other capital requirements Total Loss-Absorbing Capacity The Federal Re\n\n[4] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 15.1 | percent\n\n[5] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 14.2 | percent\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a) - CET1 capital | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 15.1 | percent\n\nQuestion: What was the CET1 capital ratio under the Standardized approach at the end of Q2 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_873"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-K_FY2025_1241"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_904"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_220"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_221"
+    }
+  ],
+  "answer_text": "The CET1 capital ratio under the Standardized approach at the end of Q2 2026 was 14.2 percent [4][5].",
+  "parsed_citations": [
+    4,
+    5
+  ],
+  "resolved_citations": [
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_220",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      }
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_221",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      }
+    }
+  ]
+}

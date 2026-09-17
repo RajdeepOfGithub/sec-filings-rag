@@ -44,6 +44,12 @@ TITLE_HAS_WORD = re.compile(r"[A-Za-z]{3}")
 # Running heads repeat on every page of a filing and name the form, not the
 # table. SEC-generic, not filer-specific.
 RUNNING_HEAD = re.compile(r"\bForm\s*10-[KQ]\b", re.IGNORECASE)
+# A title that stops on a currency sign, punctuation or a dangling function
+# word is a truncated sentence, not a title.
+TITLE_BAD_TAIL = re.compile(r"[$€£¥,;:/\\+\-–—(]$")
+TITLE_DANGLING_WORDS = {"a", "an", "the", "of", "for", "to", "and", "or", "in", "on", "at",
+                        "by", "with", "from", "that", "which", "was", "were", "is", "are",
+                        "new", "its", "their", "this", "these"}
 MAX_INTERIOR_LABELS = 1             # more than this means a second stub column
 
 MIN_NUMERIC_CELLS_IN_DATA_ROW = 2   # same "repeated shape" rule the census uses
@@ -133,14 +139,25 @@ def split_header_and_data(grid):
     """Leading non-data rows are the header stack; the rest are data."""
     first_data = next((i for i, line in enumerate(grid) if is_data_row(line)), None)
     if first_data is None:
-        return [], []
+        return [], [], ""
 
-    # A lone spanning label above the data ("Selected income statement data")
-    # is a group heading, not a header row. Including it would staple that
-    # phrase onto every column header in the table.
-    header_rows = [line for line in grid[:first_data]
+    # A lone spanning label above the data ("Selected income statement data",
+    # "Total net revenue (a)") is a group heading, not a header row. Including
+    # it would staple that phrase onto every column header. It is not thrown
+    # away either: it is the group the first data rows belong to, and dropping
+    # it silently is what let a segment total read as a firmwide total.
+    above = grid[:first_data]
+    header_rows = [line for line in above
                    if len({cell.text for cell in line if cell.is_origin and cell.text}) >= 2]
-    return header_rows[-MAX_HEADER_ROWS:], grid[first_data:]
+    group_rows = [line for line in above if line not in header_rows]
+
+    leading_group = ""
+    for line in group_rows:
+        texts = [cell.text for cell in line if cell.is_origin and cell.text]
+        if texts:
+            leading_group = texts[0]
+
+    return header_rows[-MAX_HEADER_ROWS:], grid[first_data:], leading_group
 
 def is_value_cell(cell):
     """Origin only: a spanned copy of 21.7 is the same figure, not a second one."""
@@ -329,6 +346,9 @@ def table_title(table):
         # Page numbers, stray symbols and running heads are not titles.
         if not TITLE_HAS_WORD.search(text) or RUNNING_HEAD.search(text):
             continue
+        # Nor is a sentence fragment that stops mid-clause.
+        if TITLE_BAD_TAIL.search(text) or text.split()[-1].lower() in TITLE_DANGLING_WORDS:
+            continue
         if len(text) <= TITLE_MAX_CHARS and not text.endswith("."):
             return text
 
@@ -362,11 +382,13 @@ def interior_label_count(data_rows, value_cols):
 
 
 def build_records(title, header_rows, data_rows, value_cols, headers, scale,
-                  exceptions=(), boundary=None):
+                  exceptions=(), boundary=None, leading_group=""):
     """One record per value cell, each carrying its full context."""
     records = []
     missing_context = 0
-    group_label = ""
+    ungrouped_rows = 0
+    saw_group = bool(leading_group)
+    group_label = leading_group
     first_value_column = min(value_cols) if value_cols else 0
     label_cols = label_columns(boundary if boundary is not None else first_value_column)
 
@@ -383,7 +405,11 @@ def build_records(title, header_rows, data_rows, value_cols, headers, scale,
             # A label with no figures is a group heading for the rows below it.
             if row_label:
                 group_label = row_label
+                saw_group = True
             continue
+
+        if saw_group and not group_label:
+            ungrouped_rows += 1
 
         full_label = f"{group_label} - {row_label}" if group_label and row_label else row_label
 
@@ -400,7 +426,7 @@ def build_records(title, header_rows, data_rows, value_cols, headers, scale,
                 fields.append(unit)
             records.append(FIELD_SEPARATOR.join(fields))
 
-    return records, missing_context
+    return records, missing_context, ungrouped_rows
 
 def build_preserved_lines(title, header_rows, data_rows, value_cols):
     """
@@ -436,7 +462,7 @@ def convert_table(table, profile):
         return TableConversion(LAYOUT_PASSTHROUGH, reason, fallback_text=fallback, title=title)
 
     grid = expand_grid(table)
-    header_rows, data_rows = split_header_and_data(grid)
+    header_rows, data_rows, leading_group = split_header_and_data(grid)
     value_cols = value_columns(data_rows)
 
     if not data_rows or not value_cols:
@@ -475,8 +501,28 @@ def convert_table(table, profile):
     stub_texts = " ".join(cell.text for line in grid[:len(header_rows) + 1] for cell in line if cell.is_origin)
     scale = find_scale(stub_texts, title, fallback[:200])
     exceptions = parse_scale_exceptions(stub_texts, fallback[:400])
-    records, missing_context = build_records(title, header_rows, data_rows, value_cols,
-                                             headers, scale, exceptions, boundary)
+    # A record has to say what it is a figure OF. Without a table title there
+    # is no scope anchor: "Total net revenue | ... | 24,853" reads as a
+    # firmwide total when it is one segment's. Do not guess the scope.
+    if not title:
+        return TableConversion(
+            AMBIGUOUS_PRESERVED, "AMBIGUOUS_NO_TABLE_SCOPE",
+            records=build_preserved_lines(title, header_rows, data_rows, value_cols),
+            fallback_text=fallback, title=title,
+            unresolved_columns=len(value_cols))
+
+    records, missing_context, ungrouped_rows = build_records(
+        title, header_rows, data_rows, value_cols, headers, scale, exceptions,
+        boundary, leading_group)
+
+    if ungrouped_rows:
+        # The table is organised by groups but some rows sit outside any of
+        # them, so those values have no established identity.
+        return TableConversion(
+            AMBIGUOUS_PRESERVED, "AMBIGUOUS_GROUP_SCOPE_MISSING",
+            records=build_preserved_lines(title, header_rows, data_rows, value_cols),
+            fallback_text=fallback, title=title,
+            unresolved_columns=len(value_cols))
 
     if missing_context:
         return TableConversion(

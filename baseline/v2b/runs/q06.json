@@ -1,0 +1,1359 @@
+{
+  "question_id": "q06",
+  "question": "What was the credit card provision for credit losses for the six months ended June 30, 2026?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "value": 4070,
+    "unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated Results of Operations",
+    "table": "Provision for credit losses",
+    "row": "Credit card",
+    "column": "Six months ended June 30, 2026",
+    "period": "H1-2026"
+  },
+  "notes": "Row-and-column intersection with no supporting prose. Q2-2026 credit card is 2,026 and H1-2025 is 4,319 - two plausible wrong answers adjacent to the right one.",
+  "run": {
+    "timestamp": "2026-09-16T23:24:16.504347+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1571",
+      "rank": 1,
+      "score": 0.4672819674015045,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2026 Credit card | 4,070\nProvision for loan losses | Six months ended June 30, 2026 Wholesale | 838\nProvision for loan losses | Six months ended June 30, 2026 Total | 5,071\nProvision for loan losses | Six months ended June 30, 2025 Consumer, excluding credit card | 334\nProvision for loan losses | Six months ended June 30, 2025 Credit card | 4,319"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3678",
+      "rank": 2,
+      "score": 0.5907098650932312,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/9935713adc1d",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Corporate 2025 | 6 | millions\nProvision for credit losses | As of or for the six months ended June 30, Total 2026 | 5,022 | millions\nProvision for credit losses | As of or for the six months ended June 30, 2025 | 6,154 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1594",
+      "rank": 3,
+      "score": 0.5997083187103271,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Total | 31,366 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Consumer, excluding credit card | 1,932 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Credit card | 15,001 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1820",
+      "rank": 4,
+      "score": 0.6024287939071655,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Provision for credit losses | Six months ended June 30, 2026 | 5,022 | millions\nConsolidated statements of income (unaudited) | Provision for credit losses | Six months ended June 30, 2025 | 6,154 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1570",
+      "rank": 5,
+      "score": 0.612280011177063,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nNet charge-offs | Six months ended June 30, 2026 Total | 4,682\nNet charge-offs | Six months ended June 30, 2025 Consumer, excluding credit card | 292\nNet charge-offs | Six months ended June 30, 2025 Credit card | 3,918\nNet charge-offs | Six months ended June 30, 2025 Wholesale | 532\nNet charge-offs | Six months ended June 30, 2025 Total | 4,742\nProvision for loan losses | Six months ended June 30, 2026 Consumer, excluding credit card | 163"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3632",
+      "rank": 6,
+      "score": 0.6152099370956421,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/d6cc10ea508f",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the three months ended June 30, Corporate 2026 | ( 10 ) | millions\nProvision for credit losses | As of or for the three months ended June 30, Corporate 2025 | 25 | millions\nProvision for credit losses | As of or for the three months ended June 30, Total 2026 | 2,515 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_29",
+      "rank": 7,
+      "score": 0.6298648715019226,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Provision for credit losses | As of or for the period ended, 2Q25 | 2,849 | millions\nConsolidated financial highlights (unaudited) | Provision for credit losses | As of or for the period ended, Six months ended June 30, 2026 | 5,022 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3650",
+      "rank": 8,
+      "score": 0.6309683322906494,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 4,711 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 838 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 1,401 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_197",
+      "rank": 9,
+      "score": 0.6342657804489136,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 5,022 | millions\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 6,154 | millions\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Change | (18) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1593",
+      "rank": 10,
+      "score": 0.6490417718887329,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Consumer, excluding credit card | 1,871 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Credit card | 17,761 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Wholesale | 11,671 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3096",
+      "rank": 11,
+      "score": 0.6492793560028076,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/07230ce2f6e5",
+        "strategy": "record_aware",
+        "kind": "table_records"
+      },
+      "text": "Allowance for credit losses and related information (column headers unresolved) | header row | 2026 | 2025\nAllowance for credit losses and related information (column headers unresolved) | header row | Six months ended June 30, (in millions) | Consumer, excluding credit card | Credit card | Wholesale | Total | Consumer, excluding credit card | Credit card | Wholesale | Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1819",
+      "rank": 12,
+      "score": 0.653861403465271,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Provision for credit losses | Three months ended June 30, 2026 | 2,515 | millions\nConsolidated statements of income (unaudited) | Provision for credit losses | Three months ended June 30, 2025 | 2,849 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1566",
+      "rank": 13,
+      "score": 0.6556005477905273,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table)\nBeginning balance at January 1, | Six months ended June 30, 2025 Credit card | 14,600 | USD\nBeginning balance at January 1, | Six months ended June 30, 2025 Wholesale | 7,938 | USD\nBeginning balance at January 1, | Six months ended June 30, 2025 Total | 24,345 | USD\nGross charge-offs | Six months ended June 30, 2026 Consumer, excluding credit card | 510\nGross charge-offs | Six months ended June 30, 2026 Credit card | 4,978"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1585",
+      "rank": 14,
+      "score": 0.6578686237335205,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Credit card | 15,561 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Wholesale | 8,795 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Total | 26,152 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1604",
+      "rank": 15,
+      "score": 0.6649730205535889,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Wholesale | 210\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Total | 132"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1572",
+      "rank": 16,
+      "score": 0.6655822992324829,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2025 Wholesale | 691\nProvision for loan losses | Six months ended June 30, 2025 Total | 5,344\nOther | Six months ended June 30, 2026 Wholesale | (2)\nOther | Six months ended June 30, 2026 Total | (2)\nOther | Six months ended June 30, 2025 Wholesale | 6\nOther | Six months ended June 30, 2025 Total | 6\nEnding balance at June 30, | Six months ended June 30, 2026 Consumer, excluding credit card | 1,796 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1602",
+      "rank": 17,
+      "score": 0.668182373046875,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans (c) | Six months ended June 30, 2026 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans (c) | Six months ended June 30, 2026 Wholesale | 210\nCredit ratios - Allowance for loan losses to retained nonaccrual loans (c) | Six months ended June 30, 2026 Total | 326"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1601",
+      "rank": 18,
+      "score": 0.6701914072036743,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2025 Credit card | 6.44 | percent\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2025 Wholesale | 1.09 | percent\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2025 Total | 1.85 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1595",
+      "rank": 19,
+      "score": 0.6709010601043701,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Wholesale | 10,952 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Total | 27,993 | USD\nMemo: - Retained loans, end-of-period | Six months ended June 30, 2026 Consumer, excluding credit card | 367,128 | USD\nMemo: - Retained loans, end-of-period | Six months ended June 30, 2026 Credit card | 249,876 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_794",
+      "rank": 20,
+      "score": 0.6798259615898132,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/955e10686ffd",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nAllowance for credit losses: - Total allowance for credit losses | As of or for the six months ended June 30, 2026 | 10,995 | USD millions\nAllowance for credit losses: - Total allowance for credit losses | As of or for the six months ended June 30, 2025 | 10,165 | USD millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1571",
+      "rank": 1,
+      "score": 31.16532453348412,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2026 Credit card | 4,070\nProvision for loan losses | Six months ended June 30, 2026 Wholesale | 838\nProvision for loan losses | Six months ended June 30, 2026 Total | 5,071\nProvision for loan losses | Six months ended June 30, 2025 Consumer, excluding credit card | 334\nProvision for loan losses | Six months ended June 30, 2025 Credit card | 4,319"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3678",
+      "rank": 2,
+      "score": 25.317459505980196,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/9935713adc1d",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Corporate 2025 | 6 | millions\nProvision for credit losses | As of or for the six months ended June 30, Total 2026 | 5,022 | millions\nProvision for credit losses | As of or for the six months ended June 30, 2025 | 6,154 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1570",
+      "rank": 3,
+      "score": 24.751870814614712,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table)\nNet charge-offs | Six months ended June 30, 2026 Total | 4,682\nNet charge-offs | Six months ended June 30, 2025 Consumer, excluding credit card | 292\nNet charge-offs | Six months ended June 30, 2025 Credit card | 3,918\nNet charge-offs | Six months ended June 30, 2025 Wholesale | 532\nNet charge-offs | Six months ended June 30, 2025 Total | 4,742\nProvision for loan losses | Six months ended June 30, 2026 Consumer, excluding credit card | 163"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1604",
+      "rank": 4,
+      "score": 24.625553934107263,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Wholesale | 210\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Total | 132"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_620",
+      "rank": 5,
+      "score": 24.410672073591783,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Provision for credit losses | Six months ended June 30, 2026 | 838 | millions\nCOMMERCIAL & INVESTMENT BANK | Provision for credit losses | Six months ended June 30, 2025 | 1,401 | millions\nCOMMERCIAL & INVESTMENT BANK | Provision for credit losses | Six months ended June 30, Change | (40) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3650",
+      "rank": 6,
+      "score": 24.410672073591783,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 4,711 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 838 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 1,401 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_460",
+      "rank": 7,
+      "score": 24.286529406718003,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Provision for credit losses | Six months ended June 30, 2026 | 4,206 | millions\nCONSUMER & COMMUNITY BANKING | Provision for credit losses | Six months ended June 30, 2025 | 4,711 | millions\nCONSUMER & COMMUNITY BANKING | Provision for credit losses | Six months ended June 30, Change | (11) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1572",
+      "rank": 8,
+      "score": 23.980979382663172,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2025 Wholesale | 691\nProvision for loan losses | Six months ended June 30, 2025 Total | 5,344\nOther | Six months ended June 30, 2026 Wholesale | (2)\nOther | Six months ended June 30, 2026 Total | (2)\nOther | Six months ended June 30, 2025 Wholesale | 6\nOther | Six months ended June 30, 2025 Total | 6\nEnding balance at June 30, | Six months ended June 30, 2026 Consumer, excluding credit card | 1,796 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1593",
+      "rank": 9,
+      "score": 23.56117591766772,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Consumer, excluding credit card | 1,871 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Credit card | 17,761 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Wholesale | 11,671 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3651",
+      "rank": 10,
+      "score": 23.38078690265449,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Asset & Wealth Management 2026 | ( 11 ) | millions\nProvision for credit losses | As of or for the six months ended June 30, 2025 | 36 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Consumer & Community Banking 2026 | 9,304 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_903",
+      "rank": 11,
+      "score": 23.27653067745177,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Three months ended June 30, 2025 | 46 | millions\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Three months ended June 30, Change | (72) | millions\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Six months ended June 30, 2026 | (11) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_197",
+      "rank": 12,
+      "score": 23.125895529737306,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 5,022 | millions\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 6,154 | millions\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Change | (18) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1605",
+      "rank": 13,
+      "score": 22.953469813310775,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2025 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2025 Wholesale | 181\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2025 Total | 118"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_287",
+      "rank": 14,
+      "score": 22.876188632246485,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "Net interest income (continued) | values in millions unless the record states otherwise\nNet interest income | Total provision for credit losses | Six months ended June 30, 2026 | 5,022 | USD millions\nNet interest income | Total provision for credit losses | Six months ended June 30, 2025 | 6,154 | USD millions\nNet interest income | Total provision for credit losses | Change | (18) | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1024",
+      "rank": 15,
+      "score": 22.870461409190014,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Provision for credit losses | As of or for the six months ended June 30, 2026 | (11) | millions\nCORPORATE | Provision for credit losses | As of or for the six months ended June 30, 2025 | 6 | millions\nCORPORATE | Noninterest expense | As of or for the three months ended June 30, 2026 | 611 | millions\nCORPORATE | Noninterest expense | As of or for the three months ended June 30, 2025 | 547 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1594",
+      "rank": 16,
+      "score": 22.844246045434776,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Total | 31,366 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Consumer, excluding credit card | 1,932 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Credit card | 15,001 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1599",
+      "rank": 17,
+      "score": 22.84230322973485,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nMemo: - Retained loans, average | Six months ended June 30, 2025 Total | 1,303,527\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2026 Consumer, excluding credit card | 0.49 | percent\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2026 Credit card | 6.23 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3632",
+      "rank": 18,
+      "score": 22.574446659174022,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d6cc10ea508f",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the three months ended June 30, Corporate 2026 | ( 10 ) | millions\nProvision for credit losses | As of or for the three months ended June 30, Corporate 2025 | 25 | millions\nProvision for credit losses | As of or for the three months ended June 30, Total 2026 | 2,515 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1820",
+      "rank": 19,
+      "score": 22.426961973970393,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Provision for credit losses | Six months ended June 30, 2026 | 5,022 | millions\nConsolidated statements of income (unaudited) | Provision for credit losses | Six months ended June 30, 2025 | 6,154 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_286",
+      "rank": 20,
+      "score": 22.421617819715348,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Net interest income (continued) | values in millions unless the record states otherwise\nNet interest income | Total provision for credit losses | Three months ended June 30, 2026 | 2,515 | USD millions\nNet interest income | Total provision for credit losses | Three months ended June 30, 2025 | 2,849 | USD millions\nNet interest income | Total provision for credit losses | Six months ended June 30, Change | (12) | percent"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1571",
+      "rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2026 Credit card | 4,070\nProvision for loan losses | Six months ended June 30, 2026 Wholesale | 838\nProvision for loan losses | Six months ended June 30, 2026 Total | 5,071\nProvision for loan losses | Six months ended June 30, 2025 Consumer, excluding credit card | 334\nProvision for loan losses | Six months ended June 30, 2025 Credit card | 4,319"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3678",
+      "rank": 2,
+      "rrf_score": 0.03225806451612903,
+      "found_in": {
+        "dense": 2,
+        "sparse": 2
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/9935713adc1d",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Corporate 2025 | 6 | millions\nProvision for credit losses | As of or for the six months ended June 30, Total 2026 | 5,022 | millions\nProvision for credit losses | As of or for the six months ended June 30, 2025 | 6,154 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1570",
+      "rank": 3,
+      "rrf_score": 0.03125763125763126,
+      "found_in": {
+        "dense": 5,
+        "sparse": 3
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "form": "10-Q",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table)\nNet charge-offs | Six months ended June 30, 2026 Total | 4,682\nNet charge-offs | Six months ended June 30, 2025 Consumer, excluding credit card | 292\nNet charge-offs | Six months ended June 30, 2025 Credit card | 3,918\nNet charge-offs | Six months ended June 30, 2025 Wholesale | 532\nNet charge-offs | Six months ended June 30, 2025 Total | 4,742\nProvision for loan losses | Six months ended June 30, 2026 Consumer, excluding credit card | 163"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3650",
+      "rank": 4,
+      "rrf_score": 0.029857397504456328,
+      "found_in": {
+        "dense": 8,
+        "sparse": 6
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 4,711 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 838 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 1,401 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1594",
+      "rank": 5,
+      "rrf_score": 0.029030910609857977,
+      "found_in": {
+        "dense": 3,
+        "sparse": 16
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Total | 31,366 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Consumer, excluding credit card | 1,932 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Credit card | 15,001 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1604",
+      "rank": 6,
+      "rrf_score": 0.028958333333333336,
+      "found_in": {
+        "dense": 15,
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Wholesale | 210\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2026 Total | 132"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1593",
+      "rank": 7,
+      "rrf_score": 0.02877846790890269,
+      "found_in": {
+        "dense": 10,
+        "sparse": 9
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Consumer, excluding credit card | 1,871 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Credit card | 17,761 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Wholesale | 11,671 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_197",
+      "rank": 8,
+      "rrf_score": 0.028381642512077296,
+      "found_in": {
+        "dense": 9,
+        "sparse": 12
+      },
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 5,022 | millions\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 6,154 | millions\nEXECUTIVE OVERVIEW | Provision for credit losses | (unaudited) As of or for the period ended, Change | (18) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1820",
+      "rank": 9,
+      "rrf_score": 0.028283227848101264,
+      "found_in": {
+        "dense": 4,
+        "sparse": 19
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Provision for credit losses | Six months ended June 30, 2026 | 5,022 | millions\nConsolidated statements of income (unaudited) | Provision for credit losses | Six months ended June 30, 2025 | 6,154 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3632",
+      "rank": 10,
+      "rrf_score": 0.027972027972027972,
+      "found_in": {
+        "dense": 6,
+        "sparse": 18
+      },
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d6cc10ea508f",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the three months ended June 30, Corporate 2026 | ( 10 ) | millions\nProvision for credit losses | As of or for the three months ended June 30, Corporate 2025 | 25 | millions\nProvision for credit losses | As of or for the three months ended June 30, Total 2026 | 2,515 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1572",
+      "rank": 11,
+      "rrf_score": 0.02786377708978328,
+      "found_in": {
+        "dense": 16,
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2025 Wholesale | 691\nProvision for loan losses | Six months ended June 30, 2025 Total | 5,344\nOther | Six months ended June 30, 2026 Wholesale | (2)\nOther | Six months ended June 30, 2026 Total | (2)\nOther | Six months ended June 30, 2025 Wholesale | 6\nOther | Six months ended June 30, 2025 Total | 6\nEnding balance at June 30, | Six months ended June 30, 2026 Consumer, excluding credit card | 1,796 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_620",
+      "rank": 12,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK (continued) | values in millions unless the record states otherwise\nCOMMERCIAL & INVESTMENT BANK | Provision for credit losses | Six months ended June 30, 2026 | 838 | millions\nCOMMERCIAL & INVESTMENT BANK | Provision for credit losses | Six months ended June 30, 2025 | 1,401 | millions\nCOMMERCIAL & INVESTMENT BANK | Provision for credit losses | Six months ended June 30, Change | (40) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_29",
+      "rank": 13,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Provision for credit losses | As of or for the period ended, 2Q25 | 2,849 | millions\nConsolidated financial highlights (unaudited) | Provision for credit losses | As of or for the period ended, Six months ended June 30, 2026 | 5,022 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_460",
+      "rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/cb228df846f5",
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "CONSUMER & COMMUNITY BANKING (continued) | values in millions unless the record states otherwise\nCONSUMER & COMMUNITY BANKING | Provision for credit losses | Six months ended June 30, 2026 | 4,206 | millions\nCONSUMER & COMMUNITY BANKING | Provision for credit losses | Six months ended June 30, 2025 | 4,711 | millions\nCONSUMER & COMMUNITY BANKING | Provision for credit losses | Six months ended June 30, Change | (11) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3651",
+      "rank": 15,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Asset & Wealth Management 2026 | ( 11 ) | millions\nProvision for credit losses | As of or for the six months ended June 30, 2025 | 36 | millions\nCompensation expense (b) | As of or for the six months ended June 30, Consumer & Community Banking 2026 | 9,304 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3096",
+      "rank": 16,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/07230ce2f6e5",
+        "strategy": "record_aware",
+        "kind": "table_records"
+      },
+      "text": "Allowance for credit losses and related information (column headers unresolved) | header row | 2026 | 2025\nAllowance for credit losses and related information (column headers unresolved) | header row | Six months ended June 30, (in millions) | Consumer, excluding credit card | Credit card | Wholesale | Total | Consumer, excluding credit card | Credit card | Wholesale | Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_903",
+      "rank": 17,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/d3cc3e6bd462"
+      },
+      "text": "ASSET & WEALTH MANAGEMENT (continued) | values in millions unless the record states otherwise\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Three months ended June 30, 2025 | 46 | millions\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Three months ended June 30, Change | (72) | millions\nASSET & WEALTH MANAGEMENT | Provision for credit losses | Six months ended June 30, 2026 | (11) | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1819",
+      "rank": 18,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Provision for credit losses | Three months ended June 30, 2026 | 2,515 | millions\nConsolidated statements of income (unaudited) | Provision for credit losses | Three months ended June 30, 2025 | 2,849 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1566",
+      "rank": 19,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table)\nBeginning balance at January 1, | Six months ended June 30, 2025 Credit card | 14,600 | USD\nBeginning balance at January 1, | Six months ended June 30, 2025 Wholesale | 7,938 | USD\nBeginning balance at January 1, | Six months ended June 30, 2025 Total | 24,345 | USD\nGross charge-offs | Six months ended June 30, 2026 Consumer, excluding credit card | 510\nGross charge-offs | Six months ended June 30, 2026 Credit card | 4,978"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1605",
+      "rank": 20,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2025 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2025 Wholesale | 181\nCredit ratios - Allowance for loan losses to retained nonaccrual loans excluding credit card | Six months ended June 30, 2025 Total | 118"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1585",
+      "rank": 21,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Credit card | 15,561 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Wholesale | 8,795 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Total | 26,152 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_287",
+      "rank": 22,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "Net interest income (continued) | values in millions unless the record states otherwise\nNet interest income | Total provision for credit losses | Six months ended June 30, 2026 | 5,022 | USD millions\nNet interest income | Total provision for credit losses | Six months ended June 30, 2025 | 6,154 | USD millions\nNet interest income | Total provision for credit losses | Change | (18) | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1024",
+      "rank": 23,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Provision for credit losses | As of or for the six months ended June 30, 2026 | (11) | millions\nCORPORATE | Provision for credit losses | As of or for the six months ended June 30, 2025 | 6 | millions\nCORPORATE | Noninterest expense | As of or for the three months ended June 30, 2026 | 611 | millions\nCORPORATE | Noninterest expense | As of or for the three months ended June 30, 2025 | 547 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1602",
+      "rank": 24,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained nonaccrual loans (c) | Six months ended June 30, 2026 Consumer, excluding credit card | 47\nCredit ratios - Allowance for loan losses to retained nonaccrual loans (c) | Six months ended June 30, 2026 Wholesale | 210\nCredit ratios - Allowance for loan losses to retained nonaccrual loans (c) | Six months ended June 30, 2026 Total | 326"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1599",
+      "rank": 25,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nMemo: - Retained loans, average | Six months ended June 30, 2025 Total | 1,303,527\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2026 Consumer, excluding credit card | 0.49 | percent\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2026 Credit card | 6.23 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1601",
+      "rank": 26,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table)\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2025 Credit card | 6.44 | percent\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2025 Wholesale | 1.09 | percent\nCredit ratios - Allowance for loan losses to retained loans | Six months ended June 30, 2025 Total | 1.85 | percent"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1595",
+      "rank": 27,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Wholesale | 10,952 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Total | 27,993 | USD\nMemo: - Retained loans, end-of-period | Six months ended June 30, 2026 Consumer, excluding credit card | 367,128 | USD\nMemo: - Retained loans, end-of-period | Six months ended June 30, 2026 Credit card | 249,876 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_794",
+      "rank": 28,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/955e10686ffd",
+        "company": "JPMC",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nAllowance for credit losses: - Total allowance for credit losses | As of or for the six months ended June 30, 2026 | 10,995 | USD millions\nAllowance for credit losses: - Total allowance for credit losses | As of or for the six months ended June 30, 2025 | 10,165 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_286",
+      "rank": 29,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f7267309fb17",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Net interest income (continued) | values in millions unless the record states otherwise\nNet interest income | Total provision for credit losses | Three months ended June 30, 2026 | 2,515 | USD millions\nNet interest income | Total provision for credit losses | Three months ended June 30, 2025 | 2,849 | USD millions\nNet interest income | Total provision for credit losses | Six months ended June 30, Change | (12) | percent"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1571",
+      "rerank_rank": 1,
+      "rerank_score": 9.553772926330566,
+      "rrf_rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records"
+      },
+      "text": "(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2026 Credit card | 4,070\nProvision for loan losses | Six months ended June 30, 2026 Wholesale | 838\nProvision for loan losses | Six months ended June 30, 2026 Total | 5,071\nProvision for loan losses | Six months ended June 30, 2025 Consumer, excluding credit card | 334\nProvision for loan losses | Six months ended June 30, 2025 Credit card | 4,319"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1585",
+      "rerank_rank": 2,
+      "rerank_score": 8.563323974609375,
+      "rrf_rank": 21,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "form": "10-Q",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Credit card | 15,561 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Wholesale | 8,795 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Total | 26,152 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1593",
+      "rerank_rank": 3,
+      "rerank_score": 8.557012557983398,
+      "rrf_rank": 7,
+      "rrf_score": 0.02877846790890269,
+      "found_in": {
+        "dense": 10,
+        "sparse": 9
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Consumer, excluding credit card | 1,871 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Credit card | 17,761 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Wholesale | 11,671 | USD"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3650",
+      "rerank_rank": 4,
+      "rerank_score": 8.544189453125,
+      "rrf_rank": 4,
+      "rrf_score": 0.029857397504456328,
+      "found_in": {
+        "dense": 8,
+        "sparse": 6
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/f9b0bb146b23",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 4,711 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 838 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 1,401 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1594",
+      "rerank_rank": 5,
+      "rerank_score": 8.409979820251465,
+      "rrf_rank": 5,
+      "rrf_score": 0.029030910609857977,
+      "found_in": {
+        "dense": 3,
+        "sparse": 16
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Total | 31,366 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Consumer, excluding credit card | 1,932 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Credit card | 15,001 | USD"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2026 Credit card | 4,070\nProvision for loan losses | Six months ended June 30, 2026 Wholesale | 838\nProvision for loan losses | Six months ended June 30, 2026 Total | 5,071\nProvision for loan losses | Six months ended June 30, 2025 Consumer, excluding credit card | 334\nProvision for loan losses | Six months ended June 30, 2025 Credit card | 4,319\n\n[2] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Credit card | 15,561 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Wholesale | 8,795 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Total | 26,152 | USD\n\n[3] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Consumer, excluding credit card | 1,871 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Credit card | 17,761 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Wholesale | 11,671 | USD\n\n[4] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 4,711 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 838 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 1,401 | millions\n\n[5] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Total | 31,366 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Consumer, excluding credit card | 1,932 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Credit card | 15,001 | USD",
+  "user_prompt": "[1] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nProvision for loan losses | Six months ended June 30, 2026 Credit card | 4,070\nProvision for loan losses | Six months ended June 30, 2026 Wholesale | 838\nProvision for loan losses | Six months ended June 30, 2026 Total | 5,071\nProvision for loan losses | Six months ended June 30, 2025 Consumer, excluding credit card | 334\nProvision for loan losses | Six months ended June 30, 2025 Credit card | 4,319\n\n[2] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Credit card | 15,561 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Wholesale | 8,795 | USD\nImpairment methodology - Total allowance for loan losses | Six months ended June 30, 2026 Total | 26,152 | USD\n\n[3] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Consumer, excluding credit card | 1,871 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Credit card | 17,761 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Wholesale | 11,671 | USD\n\n[4] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table) | values in millions unless the record states otherwise\nProvision for credit losses | As of or for the six months ended June 30, Consumer & Community Banking 2025 | 4,711 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2026 | 838 | millions\nProvision for credit losses | As of or for the six months ended June 30, Commercial & Investment Bank 2025 | 1,401 | millions\n\n[5] (10-Q, Q2-2026, section_unknown)\n(continued from the preceding table)\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2026 Total | 31,366 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Consumer, excluding credit card | 1,932 | USD\nImpairment methodology - Total allowance for credit losses (b) | Six months ended June 30, 2025 Credit card | 15,001 | USD\n\nQuestion: What was the credit card provision for credit losses for the six months ended June 30, 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1571"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1585"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1593"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_3650"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1594"
+    }
+  ],
+  "answer_text": "The credit card provision for credit losses for the six months ended June 30, 2026, was 4,070 [1].",
+  "parsed_citations": [
+    1
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1571",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1546553e3c29",
+        "kind": "table_records"
+      }
+    }
+  ]
+}

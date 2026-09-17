@@ -1,0 +1,1337 @@
+{
+  "question_id": "q13",
+  "question": "Why was the NII excluding Markets guidance revised upward, and to what figure?",
+  "category": "transcript",
+  "difficulty": "hard",
+  "expected": {
+    "value_from": 95,
+    "value_to": 96.5,
+    "unit": "USD billions, full year",
+    "claims": [
+      "biggest single factor is deposit balances across both wholesale and consumer",
+      "mix shift within deposits toward slightly higher margin",
+      "rates a little higher at both the short end and back end",
+      "most of the increase is balances rather than rates"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_earnings_call_Q2-2026",
+    "speaker": "Jeremy Barnum",
+    "section": "Q&A",
+    "responding_to": "John McDonald, Truist Securities",
+    "topic": "drivers of NII ex-Markets revision",
+    "period": "Q2-2026"
+  },
+  "notes": "MOST VALUABLE TRANSCRIPT CASE. The figures ($95B to $96.5B) appear in the first sentence; the reasoning ('biggest single factor is deposit balances') appears ~120 words later. Under fixed-size chunking those land in different chunks, so the question can retrieve the numbers without the reasoning or vice versa.",
+  "run": {
+    "timestamp": "2026-09-17T00:25:39.643938+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_36",
+      "rank": 1,
+      "score": 0.7448656558990479,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "earnings_call",
+        "kind": "narrative"
+      },
+      "text": " have expected markets NII to be down, and instead the forecast is up. The difference is changes in balance sheet composition, essentially expecting lower amounts of finance, non-interest-bearing assets on the balance sheet in the second half of the year. At this level of rates, one balance sheet unit of that stuff drives the number quite a bit if you think about it, and can overwhelm sort of the rate effect. That's what's going on there. To just indulge myself for 30 seconds, there's also anoth"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_67",
+      "rank": 2,
+      "score": 0.7464842200279236,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "none",
+        "kind": "narrative"
+      },
+      "text": "le of questions about this and obviously we did revise up this year's expense guidance by $2.5 billion, which is not a trivial number. Maybe I can piece all this together to add a little bit of clarity here. First of all, if you remember the guidance that we gave in fourth quarter last year for the full year for the company, and if you made some kind of reasonable assumptions about what type of markets environment and NII ex-Markets for the rest of the company at the time, and you build out your"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 3,
+      "score": 0.7481942176818848,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_38",
+      "rank": 4,
+      "score": 0.843450665473938,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "That obviously comes with a little bit of NII, that NII is moving out of NII ex-Markets into markets NII. It's sort of a rare exception to the rule that changes in markets NII are offset in the bottom line. This piece, which to be fair, is quite small, it's probably like $150 million, is a part of the increase that we would not expect to be offset on the bottom line, all else equal. Obviously it's left pocket, right pocket at the level of the company. John McDonald: Okay, that's helpful. Thank y"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_11",
+      "rank": 5,
+      "score": 0.8653415441513062,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "earnings_call",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "l NII to be approximately $105.5 billion as a function of markets NII increasing to about $9 billion. The new adjusted expense outlook is about $107.5 billion, with the increase primarily due to higher volume and revenue-related expenses driven by the activity levels and associated revenue outperformance. Finally, we now expect card net charge-off rate to be approximately 3.2%, reflecting better-than-expected consumer credit performance. With that, we're now happy to take your questions, so let'"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_35",
+      "rank": 6,
+      "score": 0.8746417760848999,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "earnings_call",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "company": "JPMC"
+      },
+      "text": "s a great question, John. You correctly allude to the fact that we've said previously that the markets NII number is actually liability sensitive, all else equal. Obviously in the context of what we always say, which is that in general, changes in the markets NII, especially when they are driven by rates, are almost always fully offset in the bottom line through NIR. You're right. This quarter, all else equal, based on the higher rates, you would have expected markets NII to be down, and instead"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_34",
+      "rank": 7,
+      "score": 0.883408784866333,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "none",
+        "kind": "narrative",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "s probably disproportionately in the front end. When you assemble that together, you have a little bit of the increase as a function of higher rates, but most of it is balances overall. John McDonald: Okay. Just to finish up on the NII. The markets NII is guided a bit higher, even though the outlook for rates is also a little bit higher. I guess what are some of the drivers there? Is it balance sheet mix and some other factors? Jeremy Barnum: It's a great question, John. You correctly allude to "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_603",
+      "rank": 8,
+      "score": 0.8907274007797241,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "narrative",
+        "block_id": "none",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": "osit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses in Treasury and CIO, higher Payments"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_226",
+      "rank": 9,
+      "score": 0.9303319454193115,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 23,677 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 22,753 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_228",
+      "rank": 10,
+      "score": 0.9324254393577576,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 45,343 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Change | 4 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_227",
+      "rank": 11,
+      "score": 0.9352405071258545,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, Change | 4 | millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 46,957 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_595",
+      "rank": 12,
+      "score": 0.9556910395622253,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/2a598aa55219"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a)(b) - Total capital | Year ended December 31, 2024 | 18.5\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (c) | Year ended December 31, 2025 | 92,591 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (c) | Year ended December 31, 2024 | 92,419 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_391",
+      "rank": 13,
+      "score": 0.9568454027175903,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/14a6d7fe1562",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table)\n(column headers unresolved) | Net interest income – managed basis | $ | 25,622 | $ | 23,314 | 10 | $ | 51,101 | $ | 46,689 | 9\n(column headers unresolved) | Less: Markets net interest income (b) | 1,945 | 561 | 247 | 4,144 | 1,346 | 208\n(column headers unresolved) | Net interest income excluding Markets | $ | 23,677 | $ | 22,753 | 4 | $ | 46,957 | $ | 45,343 | 4"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_596",
+      "rank": 14,
+      "score": 0.9636337161064148,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/2a598aa55219",
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NIR excluding Markets (c) | Year ended December 31, 2025 | 57,208 | millions\nEXECUTIVE OVERVIEW | Memo: - NIR excluding Markets (c) | Year ended December 31, 2024 | 58,167 | millions\nEXECUTIVE OVERVIEW | Memo: - NIR excluding Markets (c) | Year ended December 31, Change | (2) | millions\nEXECUTIVE OVERVIEW | Memo: - Markets (d) | Year ended December 31, 2025 | 35,782 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_783",
+      "rank": 15,
+      "score": 0.9714754819869995,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/e15c1af1f974"
+      },
+      "text": "Net yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue – reported | $ | 87,004 | $ | 84,973 | (c) | $ | 68,837\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Fully taxable-equivalent adjustments | 2,709 | 2,560 | (c) | 3,782\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue – managed basis | $ | 89,713 | $ | 87,533 | $ | 72,619\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Less: Markets noninterest revenue (b) | 32,505 | 29,366 | 28,258\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue excluding Markets | $ | 57,208 | $ | 58,167 | $ | 44,361\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Memo: Total Markets net revenue (b) | $ | 35,782 | $ | 30,007 | $ | 27,964"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_761",
+      "rank": 16,
+      "score": 0.9815672039985657,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Fully taxable-equivalent adjustments | Year ended December 31, 2025 | 425 | millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Fully taxable-equivalent adjustments | Year ended December 31, 2024 | 477 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_600",
+      "rank": 17,
+      "score": 0.9821059703826904,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "block_id": "none",
+        "form": "10-K"
+      },
+      "text": "ional information. (c)    NII and NIR refer to net interest income and noninterest revenue, respectively. (d)    Markets consists of CIB's Fixed Income Markets and Equity Markets businesses.The Firm assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Apple Card transaction: On January 7, 2026, JPMorganChase announced that Chase will become the new issuer of A"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_645",
+      "rank": 18,
+      "score": 0.9821829795837402,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/5fcad82f1763",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records"
+      },
+      "text": "Markets revenue (continued)\nMarkets revenue (column headers unresolved) | Net interest income | 2,579 | (634) | 1,945 | 1,783 | (1,222) | 561\nMarkets revenue (column headers unresolved) | Total net revenue | $ | 6,053 | $ | 6,025 | $ | 12,078 | $ | 5,690 | $ | 3,246 | $ | 8,936\nMarkets revenue (column headers unresolved) | Six months ended June 30, | Six months ended June 30,\nMarkets revenue (column headers unresolved) | 2026 | 2025"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_762",
+      "rank": 19,
+      "score": 0.9832364916801453,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Fully taxable-equivalent adjustments | Year ended December 31, 2023 | 480 | millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income – managed basis | Year ended December 31, 2025 | 95,868 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_955",
+      "rank": 20,
+      "score": 0.9878606200218201,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/2e618d78fbfc",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Markets revenue (continued) | values in millions unless the record states otherwise\nMarkets revenue | Net interest income | Year ended December 31, 2023 Fixed Income Markets | 3,171 | millions\nMarkets revenue | Net interest income | Year ended December 31, 2023 Equity Markets | (3,465) | millions\nMarkets revenue | Net interest income | Year ended December 31, 2023 Total Markets | (294) | millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_228",
+      "rank": 1,
+      "score": 18.30433812214747,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 45,343 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Change | 4 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_227",
+      "rank": 2,
+      "score": 17.711150119639115,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, Change | 4 | millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 46,957 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_226",
+      "rank": 3,
+      "score": 17.484502274524658,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 23,677 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 22,753 | USD millions"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_67",
+      "rank": 4,
+      "score": 17.09476641395161,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "narrative"
+      },
+      "text": "le of questions about this and obviously we did revise up this year's expense guidance by $2.5 billion, which is not a trivial number. Maybe I can piece all this together to add a little bit of clarity here. First of all, if you remember the guidance that we gave in fourth quarter last year for the full year for the company, and if you made some kind of reasonable assumptions about what type of markets environment and NII ex-Markets for the rest of the company at the time, and you build out your"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_595",
+      "rank": 5,
+      "score": 16.734957652876865,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/2a598aa55219",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a)(b) - Total capital | Year ended December 31, 2024 | 18.5\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (c) | Year ended December 31, 2025 | 92,591 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (c) | Year ended December 31, 2024 | 92,419 | USD millions"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_38",
+      "rank": 6,
+      "score": 16.346202595630665,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "That obviously comes with a little bit of NII, that NII is moving out of NII ex-Markets into markets NII. It's sort of a rare exception to the rule that changes in markets NII are offset in the bottom line. This piece, which to be fair, is quite small, it's probably like $150 million, is a part of the increase that we would not expect to be offset on the bottom line, all else equal. Obviously it's left pocket, right pocket at the level of the company. John McDonald: Okay, that's helpful. Thank y"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_35",
+      "rank": 7,
+      "score": 15.074560136123964,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "s a great question, John. You correctly allude to the fact that we've said previously that the markets NII number is actually liability sensitive, all else equal. Obviously in the context of what we always say, which is that in general, changes in the markets NII, especially when they are driven by rates, are almost always fully offset in the bottom line through NIR. You're right. This quarter, all else equal, based on the higher rates, you would have expected markets NII to be down, and instead"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 8,
+      "score": 14.648565664114077,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "block_id": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_241",
+      "rank": 9,
+      "score": 14.573883988282773,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "none"
+      },
+      "text": " to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII excluding Markets was $23.7 billion, up 4%. – Noninterest revenue (\"NIR\")"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_600",
+      "rank": 10,
+      "score": 13.927752444866753,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": "ional information. (c)    NII and NIR refer to net interest income and noninterest revenue, respectively. (d)    Markets consists of CIB's Fixed Income Markets and Equity Markets businesses.The Firm assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Apple Card transaction: On January 7, 2026, JPMorganChase announced that Chase will become the new issuer of A"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 11,
+      "score": 12.873065221707234,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "section": "section_unknown"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_603",
+      "rank": 12,
+      "score": 12.803886916158152,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-K",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "osit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses in Treasury and CIO, higher Payments"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_766",
+      "rank": 13,
+      "score": 11.851084217491628,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "period": "FY2025",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income excluding Markets | Year ended December 31, 2024 | 92,419 | USD millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income excluding Markets | Year ended December 31, 2023 | 90,041 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_245",
+      "rank": 14,
+      "score": 11.567700556988042,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 9-14 and pages 15-16, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis are non-GAAP financial measures. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP Financial Measures on pages 18-19 for a further discussion of each of"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_34",
+      "rank": 15,
+      "score": 11.563037687809148,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none"
+      },
+      "text": "s probably disproportionately in the front end. When you assemble that together, you have a little bit of the increase as a function of higher rates, but most of it is balances overall. John McDonald: Okay. Just to finish up on the NII. The markets NII is guided a bit higher, even though the outlook for rates is also a little bit higher. I guess what are some of the drivers there? Is it balance sheet mix and some other factors? Jeremy Barnum: It's a great question, John. You correctly allude to "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_765",
+      "rank": 16,
+      "score": 11.548932533438688,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Less: Markets net interest income (b) | Year ended December 31, 2023 | (294) | millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income excluding Markets | Year ended December 31, 2025 | 92,591 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_608",
+      "rank": 17,
+      "score": 11.470586029685126,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "kind": "narrative",
+        "company": "JPMC",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown"
+      },
+      "text": "ed with 1.87% in the prior year. Refer to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 51–54 and pages 55–57, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis, are non-GAAP financial measures. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP Financial Measures on pages "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_783",
+      "rank": 18,
+      "score": 11.353004835043953,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/e15c1af1f974",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "Net yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue – reported | $ | 87,004 | $ | 84,973 | (c) | $ | 68,837\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Fully taxable-equivalent adjustments | 2,709 | 2,560 | (c) | 3,782\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue – managed basis | $ | 89,713 | $ | 87,533 | $ | 72,619\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Less: Markets noninterest revenue (b) | 32,505 | 29,366 | 28,258\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue excluding Markets | $ | 57,208 | $ | 58,167 | $ | 44,361\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Memo: Total Markets net revenue (b) | $ | 35,782 | $ | 30,007 | $ | 27,964"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_770",
+      "rank": 19,
+      "score": 11.203214548678226,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Average interest-earning assets excluding Markets | Year ended December 31, 2025 | 2,471,185 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_771",
+      "rank": 20,
+      "score": 11.203214548678226,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Average interest-earning assets excluding Markets | Year ended December 31, 2024 | 2,409,414 | USD millions"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_771",
+      "JPMC_10-K_FY2025_770"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_67",
+      "rank": 1,
+      "rrf_score": 0.031754032258064516,
+      "found_in": {
+        "dense": 2,
+        "sparse": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "narrative"
+      },
+      "text": "le of questions about this and obviously we did revise up this year's expense guidance by $2.5 billion, which is not a trivial number. Maybe I can piece all this together to add a little bit of clarity here. First of all, if you remember the guidance that we gave in fourth quarter last year for the full year for the company, and if you made some kind of reasonable assumptions about what type of markets environment and NII ex-Markets for the rest of the company at the time, and you build out your"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_38",
+      "rank": 2,
+      "rrf_score": 0.030776515151515152,
+      "found_in": {
+        "dense": 4,
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "That obviously comes with a little bit of NII, that NII is moving out of NII ex-Markets into markets NII. It's sort of a rare exception to the rule that changes in markets NII are offset in the bottom line. This piece, which to be fair, is quite small, it's probably like $150 million, is a part of the increase that we would not expect to be offset on the bottom line, all else equal. Obviously it's left pocket, right pocket at the level of the company. John McDonald: Okay, that's helpful. Thank y"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_228",
+      "rank": 3,
+      "rrf_score": 0.030679156908665108,
+      "found_in": {
+        "dense": 10,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 45,343 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Change | 4 | millions"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rank": 4,
+      "rrf_score": 0.03057889822595705,
+      "found_in": {
+        "dense": 3,
+        "sparse": 8
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "block_id": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_226",
+      "rank": 5,
+      "rrf_score": 0.03036576949620428,
+      "found_in": {
+        "dense": 9,
+        "sparse": 3
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 23,677 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 22,753 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_227",
+      "rank": 6,
+      "rrf_score": 0.03021353930031804,
+      "found_in": {
+        "dense": 11,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, Change | 4 | millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 46,957 | USD millions"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_35",
+      "rank": 7,
+      "rrf_score": 0.03007688828584351,
+      "found_in": {
+        "dense": 6,
+        "sparse": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "s a great question, John. You correctly allude to the fact that we've said previously that the markets NII number is actually liability sensitive, all else equal. Obviously in the context of what we always say, which is that in general, changes in the markets NII, especially when they are driven by rates, are almost always fully offset in the bottom line through NIR. You're right. This quarter, all else equal, based on the higher rates, you would have expected markets NII to be down, and instead"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_595",
+      "rank": 8,
+      "rrf_score": 0.029273504273504274,
+      "found_in": {
+        "dense": 12,
+        "sparse": 5
+      },
+      "metadata": {
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/2a598aa55219",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Capital ratios - Standardized (a)(b) - Total capital | Year ended December 31, 2024 | 18.5\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (c) | Year ended December 31, 2025 | 92,591 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (c) | Year ended December 31, 2024 | 92,419 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_603",
+      "rank": 9,
+      "rrf_score": 0.028594771241830064,
+      "found_in": {
+        "dense": 8,
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-K",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "osit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses in Treasury and CIO, higher Payments"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_34",
+      "rank": 10,
+      "rrf_score": 0.028258706467661692,
+      "found_in": {
+        "dense": 7,
+        "sparse": 15
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none"
+      },
+      "text": "s probably disproportionately in the front end. When you assemble that together, you have a little bit of the increase as a function of higher rates, but most of it is balances overall. John McDonald: Okay. Just to finish up on the NII. The markets NII is guided a bit higher, even though the outlook for rates is also a little bit higher. I guess what are some of the drivers there? Is it balance sheet mix and some other factors? Jeremy Barnum: It's a great question, John. You correctly allude to "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_600",
+      "rank": 11,
+      "rrf_score": 0.027272727272727275,
+      "found_in": {
+        "dense": 17,
+        "sparse": 10
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": "ional information. (c)    NII and NIR refer to net interest income and noninterest revenue, respectively. (d)    Markets consists of CIB's Fixed Income Markets and Equity Markets businesses.The Firm assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Apple Card transaction: On January 7, 2026, JPMorganChase announced that Chase will become the new issuer of A"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_783",
+      "rank": 12,
+      "rrf_score": 0.026153846153846153,
+      "found_in": {
+        "dense": 15,
+        "sparse": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/e15c1af1f974",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "Net yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue – reported | $ | 87,004 | $ | 84,973 | (c) | $ | 68,837\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Fully taxable-equivalent adjustments | 2,709 | 2,560 | (c) | 3,782\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue – managed basis | $ | 89,713 | $ | 87,533 | $ | 72,619\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Less: Markets noninterest revenue (b) | 32,505 | 29,366 | 28,258\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Noninterest revenue excluding Markets | $ | 57,208 | $ | 58,167 | $ | 44,361\nNet yield on average interest-earning assets excluding Markets (column headers unresolved) | Memo: Total Markets net revenue (b) | $ | 35,782 | $ | 30,007 | $ | 27,964"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_36",
+      "rank": 13,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "earnings_call",
+        "kind": "narrative"
+      },
+      "text": " have expected markets NII to be down, and instead the forecast is up. The difference is changes in balance sheet composition, essentially expecting lower amounts of finance, non-interest-bearing assets on the balance sheet in the second half of the year. At this level of rates, one balance sheet unit of that stuff drives the number quite a bit if you think about it, and can overwhelm sort of the rate effect. That's what's going on there. To just indulge myself for 30 seconds, there's also anoth"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_11",
+      "rank": 14,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "earnings_call",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "l NII to be approximately $105.5 billion as a function of markets NII increasing to about $9 billion. The new adjusted expense outlook is about $107.5 billion, with the increase primarily due to higher volume and revenue-related expenses driven by the activity levels and associated revenue outperformance. Finally, we now expect card net charge-off rate to be approximately 3.2%, reflecting better-than-expected consumer credit performance. With that, we're now happy to take your questions, so let'"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_241",
+      "rank": 15,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "kind": "narrative",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "none"
+      },
+      "text": " to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII excluding Markets was $23.7 billion, up 4%. – Noninterest revenue (\"NIR\")"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_73",
+      "rank": 16,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "section": "section_unknown"
+      },
+      "text": "credit card spend, a little bit of that other parts of the business too. Jeremy Barnum: That's why I say a capital markets complex is really the whole company as well. Jamie Dimon: Yeah, exactly. Mike Mayo: Your marginal margin based on the number you just gave is 77% on that. Why is that as good as it gets? Are you referring to the revenue environment may be as good as it gets, Jamie? Or are you just being conservative or what? Jamie Dimon: No, I just think we're in a very healthy, active, exub"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_391",
+      "rank": 17,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/14a6d7fe1562",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "(continued from the preceding table)\n(column headers unresolved) | Net interest income – managed basis | $ | 25,622 | $ | 23,314 | 10 | $ | 51,101 | $ | 46,689 | 9\n(column headers unresolved) | Less: Markets net interest income (b) | 1,945 | 561 | 247 | 4,144 | 1,346 | 208\n(column headers unresolved) | Net interest income excluding Markets | $ | 23,677 | $ | 22,753 | 4 | $ | 46,957 | $ | 45,343 | 4"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_766",
+      "rank": 18,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "period": "FY2025",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income excluding Markets | Year ended December 31, 2024 | 92,419 | USD millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income excluding Markets | Year ended December 31, 2023 | 90,041 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_596",
+      "rank": 19,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/2a598aa55219",
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NIR excluding Markets (c) | Year ended December 31, 2025 | 57,208 | millions\nEXECUTIVE OVERVIEW | Memo: - NIR excluding Markets (c) | Year ended December 31, 2024 | 58,167 | millions\nEXECUTIVE OVERVIEW | Memo: - NIR excluding Markets (c) | Year ended December 31, Change | (2) | millions\nEXECUTIVE OVERVIEW | Memo: - Markets (d) | Year ended December 31, 2025 | 35,782 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_245",
+      "rank": 20,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "block_id": "none",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 9-14 and pages 15-16, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis are non-GAAP financial measures. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP Financial Measures on pages 18-19 for a further discussion of each of"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_761",
+      "rank": 21,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Fully taxable-equivalent adjustments | Year ended December 31, 2025 | 425 | millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Fully taxable-equivalent adjustments | Year ended December 31, 2024 | 477 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_765",
+      "rank": 22,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "table_records"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Less: Markets net interest income (b) | Year ended December 31, 2023 | (294) | millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income excluding Markets | Year ended December 31, 2025 | 92,591 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_608",
+      "rank": 23,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "form": "10-K",
+        "kind": "narrative",
+        "company": "JPMC",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown"
+      },
+      "text": "ed with 1.87% in the prior year. Refer to Consolidated Results of Operations and Consolidated Balance Sheets Analysis on pages 51–54 and pages 55–57, respectively, for a further discussion of the Firm's results, including the provision for credit losses. Pre-provision profit, ROTCE, TCE, TBVPS, NII and NIR excluding Markets, and total net revenue on a managed basis, are non-GAAP financial measures. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP Financial Measures on pages "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_645",
+      "rank": 24,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/5fcad82f1763",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records"
+      },
+      "text": "Markets revenue (continued)\nMarkets revenue (column headers unresolved) | Net interest income | 2,579 | (634) | 1,945 | 1,783 | (1,222) | 561\nMarkets revenue (column headers unresolved) | Total net revenue | $ | 6,053 | $ | 6,025 | $ | 12,078 | $ | 5,690 | $ | 3,246 | $ | 8,936\nMarkets revenue (column headers unresolved) | Six months ended June 30, | Six months ended June 30,\nMarkets revenue (column headers unresolved) | 2026 | 2025"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_762",
+      "rank": 25,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435",
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Fully taxable-equivalent adjustments | Year ended December 31, 2023 | 480 | millions\nNet interest income, net yield, and noninterest revenue excluding Markets | Net interest income – managed basis | Year ended December 31, 2025 | 95,868 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_770",
+      "rank": 26,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/5fdc1960d435"
+      },
+      "text": "Net interest income, net yield, and noninterest revenue excluding Markets (continued) | values in millions unless the record states otherwise\nNet interest income, net yield, and noninterest revenue excluding Markets | Average interest-earning assets excluding Markets | Year ended December 31, 2025 | 2,471,185 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_955",
+      "rank": 27,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/2e618d78fbfc",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Markets revenue (continued) | values in millions unless the record states otherwise\nMarkets revenue | Net interest income | Year ended December 31, 2023 Fixed Income Markets | 3,171 | millions\nMarkets revenue | Net interest income | Year ended December 31, 2023 Equity Markets | (3,465) | millions\nMarkets revenue | Net interest income | Year ended December 31, 2023 Total Markets | (294) | millions"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_earnings_call_Q2-2026_31",
+      "rerank_rank": 1,
+      "rerank_score": 2.6826014518737793,
+      "rrf_rank": 4,
+      "rrf_score": 0.03057889822595705,
+      "found_in": {
+        "dense": 3,
+        "sparse": 8
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "block_id": "none",
+        "company": "JPMC"
+      },
+      "text": " was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_603",
+      "rerank_rank": 2,
+      "rerank_score": 0.9075372815132141,
+      "rrf_rank": 9,
+      "rrf_score": 0.028594771241830064,
+      "found_in": {
+        "dense": 8,
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-K",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "osit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses in Treasury and CIO, higher Payments"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_227",
+      "rerank_rank": 3,
+      "rerank_score": 0.014770474284887314,
+      "rrf_rank": 6,
+      "rrf_score": 0.03021353930031804,
+      "found_in": {
+        "dense": 11,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, Change | 4 | millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 46,957 | USD millions"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_67",
+      "rerank_rank": 4,
+      "rerank_score": -0.46206164360046387,
+      "rrf_rank": 1,
+      "rrf_score": 0.031754032258064516,
+      "found_in": {
+        "dense": 2,
+        "sparse": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "earnings_call",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "kind": "narrative"
+      },
+      "text": "le of questions about this and obviously we did revise up this year's expense guidance by $2.5 billion, which is not a trivial number. Maybe I can piece all this together to add a little bit of clarity here. First of all, if you remember the guidance that we gave in fourth quarter last year for the full year for the company, and if you made some kind of reasonable assumptions about what type of markets environment and NII ex-Markets for the rest of the company at the time, and you build out your"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_228",
+      "rerank_rank": 5,
+      "rerank_score": -0.6798568964004517,
+      "rrf_rank": 3,
+      "rrf_score": 0.030679156908665108,
+      "found_in": {
+        "dense": 10,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 45,343 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Change | 4 | millions"
+    }
+  ],
+  "context": "[1] (earnings_call, Q2-2026, section_unknown)\n was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su\n\n[2] (10-K, FY2025, section_unknown)\nosit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses in Treasury and CIO, higher Payments\n\n[3] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, Change | 4 | millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 46,957 | USD millions\n\n[4] (earnings_call, Q2-2026, section_unknown)\nle of questions about this and obviously we did revise up this year's expense guidance by $2.5 billion, which is not a trivial number. Maybe I can piece all this together to add a little bit of clarity here. First of all, if you remember the guidance that we gave in fourth quarter last year for the full year for the company, and if you made some kind of reasonable assumptions about what type of markets environment and NII ex-Markets for the rest of the company at the time, and you build out your\n\n[5] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 45,343 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Change | 4 | millions",
+  "user_prompt": "[1] (earnings_call, Q2-2026, section_unknown)\n was wondering if you could talk a little bit about the drivers of the upward revision to the NII ex-Markets on perhaps the cadence too in third quarter, fourth quarter, as we think about the exit rate heading into next year. Jeremy Barnum: Sure, John. Revising up from $95 billion to $96.5 billion for the full year, and you see our first half actual, so you can infer the second half. As Jamie always likes to say, what matters is the run rates and the exit. If you sort of do that math, it does su\n\n[2] (10-K, FY2025, section_unknown)\nosit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses in Treasury and CIO, higher Payments\n\n[3] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, Change | 4 | millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 46,957 | USD millions\n\n[4] (earnings_call, Q2-2026, section_unknown)\nle of questions about this and obviously we did revise up this year's expense guidance by $2.5 billion, which is not a trivial number. Maybe I can piece all this together to add a little bit of clarity here. First of all, if you remember the guidance that we gave in fourth quarter last year for the full year for the company, and if you made some kind of reasonable assumptions about what type of markets environment and NII ex-Markets for the rest of the company at the time, and you build out your\n\n[5] (10-Q, Q2-2026, section_unknown)\nEXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 45,343 | USD millions\nEXECUTIVE OVERVIEW | Memo: - NII excluding Markets (b) | (unaudited) As of or for the period ended, Change | 4 | millions\n\nQuestion: Why was the NII excluding Markets guidance revised upward, and to what figure?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_31"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-K_FY2025_603"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_227"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_67"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_228"
+    }
+  ],
+  "answer_text": "The NII excluding Markets guidance was revised upward from $95 billion to $96.5 billion for the full year [1]. The specific reasons for the revision are not detailed in the provided context.",
+  "parsed_citations": [
+    1
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_earnings_call_Q2-2026_31",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "earnings_call",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "block_id": "none",
+        "company": "JPMC"
+      }
+    }
+  ]
+}

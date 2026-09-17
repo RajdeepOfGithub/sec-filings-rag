@@ -1,0 +1,1312 @@
+{
+  "question_id": "q09",
+  "question": "Why did investment banking fees increase in the second quarter of 2026?",
+  "category": "narrative",
+  "difficulty": "medium",
+  "expected": {
+    "claims": [
+      "higher equity underwriting fees driven by large IPOs and convertible securities offerings",
+      "higher debt underwriting fees driven by investment-grade loans and bonds and non-investment grade bonds",
+      "higher advisory fees from Financial Institutions, Technology and Diversified Industries sectors",
+      "largely offset by lower fees from the Consumer & Retail sector"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated Results of Operations",
+    "passage": "Quarterly results - Investment banking fees increased, reflecting in CIB",
+    "period": "Q2-2026"
+  },
+  "notes": "REGRESSION CHECK. Pure prose, bulleted. Should be unaffected by table work. Partial credit if it gets 3 of 4 drivers.",
+  "run": {
+    "timestamp": "2026-09-17T00:25:33.541665+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_2205",
+      "rank": 1,
+      "score": 0.5985044836997986,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees | Underwriting - Equity | Three months ended June 30, 2026 | 827 | USD millions\nInvestment banking fees | Underwriting - Equity | Three months ended June 30, 2025 | 469 | USD millions\nInvestment banking fees | Underwriting - Equity | Six months ended June 30, 2026 | 1,303 | USD millions\nInvestment banking fees | Underwriting - Equity | Six months ended June 30, 2025 | 790 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2207",
+      "rank": 2,
+      "score": 0.6028596758842468,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Three months ended June 30, 2026 | 2,197 | millions\nInvestment banking fees | Underwriting - Total underwriting | Three months ended June 30, 2025 | 1,650 | millions\nInvestment banking fees | Underwriting - Total underwriting | Six months ended June 30, 2026 | 3,780 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_550",
+      "rank": 3,
+      "score": 0.607749879360199,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "y higher fees across all products, with particularly strong performance in equity underwriting fees. The Firm ranked #2 for global investment banking fees for the three months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $829 million, up 78%, predominantly driven by higher revenue from certain large IPOs and convertible securities offerings. – Advisory fees were $1.0 billion, up 20%, driven by higher fees from deals in the Financial Institutions, Technology and Div"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_556",
+      "rank": 4,
+      "score": 0.6110760569572449,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "48.2 billion, up 23% . Banking & Payments revenue was $21.6 billion, up 20% . • Investment Banking revenue was $7.0 billion, up 42%, predominantly driven by higher investment banking fees and net gains on equity investments. Investment banking fees were up 29%, driven by higher fees across products. The Firm ranked #1 for global investment banking fees for the six months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $1.3 billion, up 65%, driven by higher revenue acr"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2206",
+      "rank": 5,
+      "score": 0.6145917773246765,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Debt | Three months ended June 30, 2026 | 1,370 | millions\nInvestment banking fees | Underwriting - Debt | Three months ended June 30, 2025 | 1,181 | millions\nInvestment banking fees | Underwriting - Debt | Six months ended June 30, 2026 | 2,477 | millions\nInvestment banking fees | Underwriting - Debt | Six months ended June 30, 2025 | 2,350 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_645",
+      "rank": 6,
+      "score": 0.6196290850639343,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "block_id": "none",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware"
+      },
+      "text": "nformation. 2025 compared with 2024 Investment banking fees increased, reflecting in CIB : • higher debt underwriting fees predominantly driven by non-investment grade loans and investment grade bonds, • higher advisory fees benefiting from higher fees from deals in the Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Media & Telecommunications sector, and • higher equity underwriting fees primarily driven by higher revenue from IPOs. Refer to CIB s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3184",
+      "rank": 7,
+      "score": 0.6246656179428101,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "FY2025",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "Investment banking fees | Underwriting - Equity | Year ended December 31, 2025 | 1,734 | USD millions\nInvestment banking fees | Underwriting - Equity | Year ended December 31, 2024 | 1,687 | USD millions\nInvestment banking fees | Underwriting - Equity | Year ended December 31, 2023 | 1,149 | USD millions\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2025 | 4,378 | millions\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2024 | 3,945 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2210",
+      "rank": 8,
+      "score": 0.6329546570777893,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total investment banking fees | Three months ended June 30, 2025 | 2,499 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Six months ended June 30, 2026 | 6,066 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Six months ended June 30, 2025 | 4,677 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3185",
+      "rank": 9,
+      "score": 0.6374546885490417,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2023 | 2,610 | millions\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2025 | 6,112 | millions\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2024 | 5,632 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2209",
+      "rank": 10,
+      "score": 0.6480739712715149,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "table_records",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Advisory | Six months ended June 30, 2026 | 2,286 | millions\nInvestment banking fees | Underwriting - Advisory | Six months ended June 30, 2025 | 1,537 | millions\nInvestment banking fees | Underwriting - Total investment banking fees | Three months ended June 30, 2026 | 3,208 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2208",
+      "rank": 11,
+      "score": 0.6671472191810608,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Six months ended June 30, 2025 | 3,140 | millions\nInvestment banking fees | Underwriting - Advisory | Three months ended June 30, 2026 | 1,011 | millions\nInvestment banking fees | Underwriting - Advisory | Three months ended June 30, 2025 | 849 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3187",
+      "rank": 12,
+      "score": 0.6678509712219238,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2023 | 2,760 | millions\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2025 | 9,615 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2024 | 8,910 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3188",
+      "rank": 13,
+      "score": 0.675399899482727,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2023 | 6,519 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3186",
+      "rank": 14,
+      "score": 0.6867942214012146,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2023 | 3,759 | millions\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2025 | 3,503 | millions\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2024 | 3,278 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_504",
+      "rank": 15,
+      "score": 0.7243109941482544,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, 2026 | 3,277 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, 2025 | 2,513 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, Change | 30 | percent\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Six months ended June 30, 2026 | 6,160 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1511",
+      "rank": 16,
+      "score": 0.7627274394035339,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935"
+      },
+      "text": "Consolidated statements of income (unaudited) | Revenue - Investment banking fees | Three months ended June 30, 2026 | 3,208 | USD millions\nConsolidated statements of income (unaudited) | Revenue - Investment banking fees | Three months ended June 30, 2025 | 2,499 | USD millions\nConsolidated statements of income (unaudited) | Revenue - Investment banking fees | Six months ended June 30, 2026 | 6,066 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_907",
+      "rank": 17,
+      "score": 0.7720644474029541,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "med Commercial & Specialized Industries. 70 JPMorgan Chase & Co./2025 Form 10-K 2025 compared with 2024 Net income was $27.8 billion, up 12%. Net revenue was $78.5 billion, up 12%. Banking & Payments revenue was $37.1 billion, up 5%. • Investment Banking revenue was $10.2 billion, up 6%. Investment Banking fees were up 7%, driven by higher fees across products. The Firm ranked #1 for Global Investment Banking fees, according to Dealogic. – Debt underwriting fees were $4.5 billion, up 9%, predomi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_268",
+      "rank": 18,
+      "score": 0.7722911238670349,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "$263 million in CIB. Refer to Executive Overview on pages 5–8, and Notes 2 and 5 for additional information. Quarterly results Investment banking fees increased, reflecting in CIB : • higher equity underwriting fees predominantly driven by higher revenue from certain large IPOs and convertible securities offerings, • higher debt underwriting fees predominantly driven by higher investment-grade loans and bonds and non-investment grade bonds, and • higher advisory fees driven by higher fees from d"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_557",
+      "rank": 19,
+      "score": 0.7789068222045898,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "none",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "$1.3 billion, up 65%, driven by higher revenue across all products. – Advisory fees were $2.3 billion, up 48%, largely driven by higher fees from deals in the Diversified Industries, Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Consumer & Retail sector. – Debt underwriting fees were $2.6 billion, up 6%, driven by higher Investment grade loans and bonds and non-investment grade bonds, largely offset by lower non-investment grade loans. • Payments"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_876",
+      "rank": 20,
+      "score": 0.781618058681488,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/40859c8e1e10",
+        "period": "FY2025"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Year ended December 31, 2025 | 9,735 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Year ended December 31, 2024 | 9,116 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Year ended December 31, 2023 | 6,631 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Principal transactions | Year ended December 31, 2025 | 27,226 | millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_906",
+      "rank": 1,
+      "score": 22.494931314074613,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative"
+      },
+      "text": " (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rank": 2,
+      "score": 20.48363599575245,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "cs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 3,
+      "score": 19.576539479994253,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "rities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2210",
+      "rank": 4,
+      "score": 18.262118099576114,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total investment banking fees | Three months ended June 30, 2025 | 2,499 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Six months ended June 30, 2026 | 6,066 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Six months ended June 30, 2025 | 4,677 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2209",
+      "rank": 5,
+      "score": 17.987173186985554,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Advisory | Six months ended June 30, 2026 | 2,286 | millions\nInvestment banking fees | Underwriting - Advisory | Six months ended June 30, 2025 | 1,537 | millions\nInvestment banking fees | Underwriting - Total investment banking fees | Three months ended June 30, 2026 | 3,208 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_921",
+      "rank": 6,
+      "score": 17.926072166694734,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "form": "10-K",
+        "strategy": "record_aware"
+      },
+      "text": "r the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (d) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. (e) On January 1, 2025, $5.6 billion of loans were realigned from Global Corporate Banking to Fixed Income Markets. (f) In the first quarter of 2025, 219 employees were transferred to Corporate as a result of "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2206",
+      "rank": 7,
+      "score": 17.362024949638258,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Debt | Three months ended June 30, 2026 | 1,370 | millions\nInvestment banking fees | Underwriting - Debt | Three months ended June 30, 2025 | 1,181 | millions\nInvestment banking fees | Underwriting - Debt | Six months ended June 30, 2026 | 2,477 | millions\nInvestment banking fees | Underwriting - Debt | Six months ended June 30, 2025 | 2,350 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2207",
+      "rank": 8,
+      "score": 17.120757643829823,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Three months ended June 30, 2026 | 2,197 | millions\nInvestment banking fees | Underwriting - Total underwriting | Three months ended June 30, 2025 | 1,650 | millions\nInvestment banking fees | Underwriting - Total underwriting | Six months ended June 30, 2026 | 3,780 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_504",
+      "rank": 9,
+      "score": 17.080265659352424,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, 2026 | 3,277 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, 2025 | 2,513 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, Change | 30 | percent\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Six months ended June 30, 2026 | 6,160 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2205",
+      "rank": 10,
+      "score": 16.978960747997437,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Investment banking fees | Underwriting - Equity | Three months ended June 30, 2026 | 827 | USD millions\nInvestment banking fees | Underwriting - Equity | Three months ended June 30, 2025 | 469 | USD millions\nInvestment banking fees | Underwriting - Equity | Six months ended June 30, 2026 | 1,303 | USD millions\nInvestment banking fees | Underwriting - Equity | Six months ended June 30, 2025 | 790 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3187",
+      "rank": 11,
+      "score": 16.943990005324864,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "company": "JPMC"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2023 | 2,760 | millions\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2025 | 9,615 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2024 | 8,910 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2208",
+      "rank": 12,
+      "score": 16.81621516006169,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Six months ended June 30, 2025 | 3,140 | millions\nInvestment banking fees | Underwriting - Advisory | Three months ended June 30, 2026 | 1,011 | millions\nInvestment banking fees | Underwriting - Advisory | Three months ended June 30, 2025 | 849 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_556",
+      "rank": 13,
+      "score": 16.471789981562694,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative"
+      },
+      "text": "48.2 billion, up 23% . Banking & Payments revenue was $21.6 billion, up 20% . • Investment Banking revenue was $7.0 billion, up 42%, predominantly driven by higher investment banking fees and net gains on equity investments. Investment banking fees were up 29%, driven by higher fees across products. The Firm ranked #1 for global investment banking fees for the six months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $1.3 billion, up 65%, driven by higher revenue acr"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2204",
+      "rank": 14,
+      "score": 16.334135053576105,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "erest revenue. Investment banking fees The following table presents the components of investment banking fees. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3188",
+      "rank": 15,
+      "score": 16.285904196707392,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "section": "section_unknown",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2023 | 6,519 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1511",
+      "rank": 16,
+      "score": 15.862289477033164,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "Consolidated statements of income (unaudited) | Revenue - Investment banking fees | Three months ended June 30, 2026 | 3,208 | USD millions\nConsolidated statements of income (unaudited) | Revenue - Investment banking fees | Three months ended June 30, 2025 | 2,499 | USD millions\nConsolidated statements of income (unaudited) | Revenue - Investment banking fees | Six months ended June 30, 2026 | 6,066 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3186",
+      "rank": 17,
+      "score": 15.736545969222929,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "kind": "table_records",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2023 | 3,759 | millions\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2025 | 3,503 | millions\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2024 | 3,278 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1371",
+      "rank": 18,
+      "score": 15.71262436940717,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "e five trailing quarters. Daily Risk Management VaR Second Quarter 2025 Third Quarter 2025 Fourth Quarter 2025 First Quarter 2026 Second Quarter 2026 81 VaR backtesting The Firm performs daily VaR model backtesting, which compares the daily Risk Management VaR results with the daily gains and losses that are utilized for VaR backtesting purposes. The gains and losses depicted in the chart below do not reflect the Firm’s reported revenue as they exclude certain components of total net revenue, su"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3185",
+      "rank": 19,
+      "score": 15.673254334331371,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2023 | 2,610 | millions\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2025 | 6,112 | millions\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2024 | 5,632 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3184",
+      "rank": 20,
+      "score": 15.672500244543446,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "form": "10-K"
+      },
+      "text": "Investment banking fees | Underwriting - Equity | Year ended December 31, 2025 | 1,734 | USD millions\nInvestment banking fees | Underwriting - Equity | Year ended December 31, 2024 | 1,687 | USD millions\nInvestment banking fees | Underwriting - Equity | Year ended December 31, 2023 | 1,149 | USD millions\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2025 | 4,378 | millions\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2024 | 3,945 | millions"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_3188",
+      "JPMC_10-K_FY2025_3187"
+    ]
+  ],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_3188",
+      "JPMC_10-K_FY2025_3187"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_2207",
+      "rank": 1,
+      "rrf_score": 0.030834914611005692,
+      "found_in": {
+        "dense": 2,
+        "sparse": 8
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Three months ended June 30, 2026 | 2,197 | millions\nInvestment banking fees | Underwriting - Total underwriting | Three months ended June 30, 2025 | 1,650 | millions\nInvestment banking fees | Underwriting - Total underwriting | Six months ended June 30, 2026 | 3,780 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2205",
+      "rank": 2,
+      "rrf_score": 0.030679156908665108,
+      "found_in": {
+        "dense": 1,
+        "sparse": 10
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Investment banking fees | Underwriting - Equity | Three months ended June 30, 2026 | 827 | USD millions\nInvestment banking fees | Underwriting - Equity | Three months ended June 30, 2025 | 469 | USD millions\nInvestment banking fees | Underwriting - Equity | Six months ended June 30, 2026 | 1,303 | USD millions\nInvestment banking fees | Underwriting - Equity | Six months ended June 30, 2025 | 790 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2210",
+      "rank": 3,
+      "rrf_score": 0.030330882352941176,
+      "found_in": {
+        "dense": 8,
+        "sparse": 4
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total investment banking fees | Three months ended June 30, 2025 | 2,499 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Six months ended June 30, 2026 | 6,066 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Six months ended June 30, 2025 | 4,677 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2206",
+      "rank": 4,
+      "rrf_score": 0.030309988518943745,
+      "found_in": {
+        "dense": 5,
+        "sparse": 7
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Debt | Three months ended June 30, 2026 | 1,370 | millions\nInvestment banking fees | Underwriting - Debt | Three months ended June 30, 2025 | 1,181 | millions\nInvestment banking fees | Underwriting - Debt | Six months ended June 30, 2026 | 2,477 | millions\nInvestment banking fees | Underwriting - Debt | Six months ended June 30, 2025 | 2,350 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2209",
+      "rank": 5,
+      "rrf_score": 0.02967032967032967,
+      "found_in": {
+        "dense": 10,
+        "sparse": 5
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Advisory | Six months ended June 30, 2026 | 2,286 | millions\nInvestment banking fees | Underwriting - Advisory | Six months ended June 30, 2025 | 1,537 | millions\nInvestment banking fees | Underwriting - Total investment banking fees | Three months ended June 30, 2026 | 3,208 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_556",
+      "rank": 6,
+      "rrf_score": 0.0293236301369863,
+      "found_in": {
+        "dense": 4,
+        "sparse": 13
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative"
+      },
+      "text": "48.2 billion, up 23% . Banking & Payments revenue was $21.6 billion, up 20% . • Investment Banking revenue was $7.0 billion, up 42%, predominantly driven by higher investment banking fees and net gains on equity investments. Investment banking fees were up 29%, driven by higher fees across products. The Firm ranked #1 for global investment banking fees for the six months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $1.3 billion, up 65%, driven by higher revenue acr"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_504",
+      "rank": 7,
+      "rrf_score": 0.028006267136701922,
+      "found_in": {
+        "dense": 14,
+        "sparse": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/57a58129d8e2",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, 2026 | 3,277 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, 2025 | 2,513 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Three months ended June 30, Change | 30 | percent\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Six months ended June 30, 2026 | 6,160 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2208",
+      "rank": 8,
+      "rrf_score": 0.02797339593114241,
+      "found_in": {
+        "dense": 11,
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5676cb603c91",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Six months ended June 30, 2025 | 3,140 | millions\nInvestment banking fees | Underwriting - Advisory | Three months ended June 30, 2026 | 1,011 | millions\nInvestment banking fees | Underwriting - Advisory | Three months ended June 30, 2025 | 849 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3187",
+      "rank": 9,
+      "rrf_score": 0.02797339593114241,
+      "found_in": {
+        "dense": 12,
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "company": "JPMC"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2023 | 2,760 | millions\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2025 | 9,615 | USD millions\nInvestment banking fees | Underwriting - Total investment banking fees | Year ended December 31, 2024 | 8,910 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3184",
+      "rank": 10,
+      "rrf_score": 0.027583600982429624,
+      "found_in": {
+        "dense": 7,
+        "sparse": 19
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "form": "10-K"
+      },
+      "text": "Investment banking fees | Underwriting - Equity | Year ended December 31, 2025 | 1,734 | USD millions\nInvestment banking fees | Underwriting - Equity | Year ended December 31, 2024 | 1,687 | USD millions\nInvestment banking fees | Underwriting - Equity | Year ended December 31, 2023 | 1,149 | USD millions\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2025 | 4,378 | millions\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2024 | 3,945 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3185",
+      "rank": 11,
+      "rrf_score": 0.027313266443701224,
+      "found_in": {
+        "dense": 9,
+        "sparse": 18
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "section": "section_unknown",
+        "kind": "table_records"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Debt | Year ended December 31, 2023 | 2,610 | millions\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2025 | 6,112 | millions\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2024 | 5,632 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3186",
+      "rank": 12,
+      "rrf_score": 0.026856524873828405,
+      "found_in": {
+        "dense": 13,
+        "sparse": 16
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/4185dde5c429",
+        "kind": "table_records",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "Investment banking fees (continued) | values in millions unless the record states otherwise\nInvestment banking fees | Underwriting - Total underwriting | Year ended December 31, 2023 | 3,759 | millions\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2025 | 3,503 | millions\nInvestment banking fees | Underwriting - Advisory | Year ended December 31, 2024 | 3,278 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1511",
+      "rank": 13,
+      "rrf_score": 0.02666666666666667,
+      "found_in": {
+        "dense": 15,
+        "sparse": 15
+      },
+      "metadata": {
+        "kind": "table_records",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "Consolidated statements of income (unaudited) | Revenue - Investment banking fees | Three months ended June 30, 2026 | 3,208 | USD millions\nConsolidated statements of income (unaudited) | Revenue - Investment banking fees | Three months ended June 30, 2025 | 2,499 | USD millions\nConsolidated statements of income (unaudited) | Revenue - Investment banking fees | Six months ended June 30, 2026 | 6,066 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_906",
+      "rank": 14,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative"
+      },
+      "text": " (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rank": 15,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "cs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_550",
+      "rank": 16,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "y higher fees across all products, with particularly strong performance in equity underwriting fees. The Firm ranked #2 for global investment banking fees for the three months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $829 million, up 78%, predominantly driven by higher revenue from certain large IPOs and convertible securities offerings. – Advisory fees were $1.0 billion, up 20%, driven by higher fees from deals in the Financial Institutions, Technology and Div"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 17,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "rities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_645",
+      "rank": 18,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "FY2025",
+        "block_id": "none",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware"
+      },
+      "text": "nformation. 2025 compared with 2024 Investment banking fees increased, reflecting in CIB : • higher debt underwriting fees predominantly driven by non-investment grade loans and investment grade bonds, • higher advisory fees benefiting from higher fees from deals in the Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Media & Telecommunications sector, and • higher equity underwriting fees primarily driven by higher revenue from IPOs. Refer to CIB s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_921",
+      "rank": 19,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "form": "10-K",
+        "strategy": "record_aware"
+      },
+      "text": "r the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (d) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. (e) On January 1, 2025, $5.6 billion of loans were realigned from Global Corporate Banking to Fixed Income Markets. (f) In the first quarter of 2025, 219 employees were transferred to Corporate as a result of "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2204",
+      "rank": 20,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "block_id": "none",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "erest revenue. Investment banking fees The following table presents the components of investment banking fees. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_907",
+      "rank": 21,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "med Commercial & Specialized Industries. 70 JPMorgan Chase & Co./2025 Form 10-K 2025 compared with 2024 Net income was $27.8 billion, up 12%. Net revenue was $78.5 billion, up 12%. Banking & Payments revenue was $37.1 billion, up 5%. • Investment Banking revenue was $10.2 billion, up 6%. Investment Banking fees were up 7%, driven by higher fees across products. The Firm ranked #1 for Global Investment Banking fees, according to Dealogic. – Debt underwriting fees were $4.5 billion, up 9%, predomi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_268",
+      "rank": 22,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "$263 million in CIB. Refer to Executive Overview on pages 5–8, and Notes 2 and 5 for additional information. Quarterly results Investment banking fees increased, reflecting in CIB : • higher equity underwriting fees predominantly driven by higher revenue from certain large IPOs and convertible securities offerings, • higher debt underwriting fees predominantly driven by higher investment-grade loans and bonds and non-investment grade bonds, and • higher advisory fees driven by higher fees from d"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1371",
+      "rank": 23,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "e five trailing quarters. Daily Risk Management VaR Second Quarter 2025 Third Quarter 2025 Fourth Quarter 2025 First Quarter 2026 Second Quarter 2026 81 VaR backtesting The Firm performs daily VaR model backtesting, which compares the daily Risk Management VaR results with the daily gains and losses that are utilized for VaR backtesting purposes. The gains and losses depicted in the chart below do not reflect the Firm’s reported revenue as they exclude certain components of total net revenue, su"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_557",
+      "rank": 24,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "form": "10-Q",
+        "block_id": "none",
+        "kind": "narrative",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "$1.3 billion, up 65%, driven by higher revenue across all products. – Advisory fees were $2.3 billion, up 48%, largely driven by higher fees from deals in the Diversified Industries, Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Consumer & Retail sector. – Debt underwriting fees were $2.6 billion, up 6%, driven by higher Investment grade loans and bonds and non-investment grade bonds, largely offset by lower non-investment grade loans. • Payments"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_876",
+      "rank": 25,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/40859c8e1e10",
+        "period": "FY2025"
+      },
+      "text": "COMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Year ended December 31, 2025 | 9,735 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Year ended December 31, 2024 | 9,116 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Investment banking fees | Year ended December 31, 2023 | 6,631 | USD millions\nCOMMERCIAL & INVESTMENT BANK | Revenue - Principal transactions | Year ended December 31, 2025 | 27,226 | millions"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rerank_rank": 1,
+      "rerank_score": 5.931114196777344,
+      "rrf_rank": 17,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "rities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_645",
+      "rerank_rank": 2,
+      "rerank_score": 5.331920623779297,
+      "rrf_rank": 18,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "FY2025",
+        "block_id": "none",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware"
+      },
+      "text": "nformation. 2025 compared with 2024 Investment banking fees increased, reflecting in CIB : • higher debt underwriting fees predominantly driven by non-investment grade loans and investment grade bonds, • higher advisory fees benefiting from higher fees from deals in the Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Media & Telecommunications sector, and • higher equity underwriting fees primarily driven by higher revenue from IPOs. Refer to CIB s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_906",
+      "rerank_rank": 3,
+      "rerank_score": 4.616508960723877,
+      "rrf_rank": 14,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative"
+      },
+      "text": " (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rerank_rank": 4,
+      "rerank_score": 3.816753387451172,
+      "rrf_rank": 15,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "cs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_556",
+      "rerank_rank": 5,
+      "rerank_score": 2.1186084747314453,
+      "rrf_rank": 6,
+      "rrf_score": 0.0293236301369863,
+      "found_in": {
+        "dense": 4,
+        "sparse": 13
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative"
+      },
+      "text": "48.2 billion, up 23% . Banking & Payments revenue was $21.6 billion, up 20% . • Investment Banking revenue was $7.0 billion, up 42%, predominantly driven by higher investment banking fees and net gains on equity investments. Investment banking fees were up 29%, driven by higher fees across products. The Firm ranked #1 for global investment banking fees for the six months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $1.3 billion, up 65%, driven by higher revenue acr"
+    }
+  ],
+  "context": "[1] (10-K, FY2025, section_unknown)\nrities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen\n\n[2] (10-K, FY2025, section_unknown)\nnformation. 2025 compared with 2024 Investment banking fees increased, reflecting in CIB : • higher debt underwriting fees predominantly driven by non-investment grade loans and investment grade bonds, • higher advisory fees benefiting from higher fees from deals in the Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Media & Telecommunications sector, and • higher equity underwriting fees primarily driven by higher revenue from IPOs. Refer to CIB s\n\n[3] (10-K, FY2025, section_unknown)\n (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg\n\n[4] (10-Q, Q2-2026, section_unknown)\ncs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee\n\n[5] (10-Q, Q2-2026, section_unknown)\n48.2 billion, up 23% . Banking & Payments revenue was $21.6 billion, up 20% . • Investment Banking revenue was $7.0 billion, up 42%, predominantly driven by higher investment banking fees and net gains on equity investments. Investment banking fees were up 29%, driven by higher fees across products. The Firm ranked #1 for global investment banking fees for the six months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $1.3 billion, up 65%, driven by higher revenue acr",
+  "user_prompt": "[1] (10-K, FY2025, section_unknown)\nrities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen\n\n[2] (10-K, FY2025, section_unknown)\nnformation. 2025 compared with 2024 Investment banking fees increased, reflecting in CIB : • higher debt underwriting fees predominantly driven by non-investment grade loans and investment grade bonds, • higher advisory fees benefiting from higher fees from deals in the Financial Institutions and Technology sectors, partially offset by lower fees from deals in the Media & Telecommunications sector, and • higher equity underwriting fees primarily driven by higher revenue from IPOs. Refer to CIB s\n\n[3] (10-K, FY2025, section_unknown)\n (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg\n\n[4] (10-Q, Q2-2026, section_unknown)\ncs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee\n\n[5] (10-Q, Q2-2026, section_unknown)\n48.2 billion, up 23% . Banking & Payments revenue was $21.6 billion, up 20% . • Investment Banking revenue was $7.0 billion, up 42%, predominantly driven by higher investment banking fees and net gains on equity investments. Investment banking fees were up 29%, driven by higher fees across products. The Firm ranked #1 for global investment banking fees for the six months ended June 30, 2026, according to Dealogic. – Equity underwriting fees were $1.3 billion, up 65%, driven by higher revenue acr\n\nQuestion: Why did investment banking fees increase in the second quarter of 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_604"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-K_FY2025_645"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_906"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_250"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_556"
+    }
+  ],
+  "answer_text": "Investment banking fees increased in the second quarter of 2026 due to higher fees across products, with a specific mention of higher debt underwriting fees predominantly driven by non-investment grade loans and investment grade bonds, higher advisory fees benefiting from deals in the Financial Institutions and Technology sectors, and higher equity underwriting fees primarily driven by higher revenue from IPOs [2][5].",
+  "parsed_citations": [
+    2,
+    5
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-K_FY2025_645",
+      "metadata": {
+        "period": "FY2025",
+        "block_id": "none",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "strategy": "record_aware"
+      }
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_556",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative"
+      }
+    }
+  ]
+}

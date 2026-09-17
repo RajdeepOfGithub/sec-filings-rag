@@ -1,0 +1,1274 @@
+{
+  "question_id": "q01",
+  "question": "How many shares were repurchased in Q2 2026, and what did they cost?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "shares": 21.7,
+    "shares_unit": "million shares",
+    "cost": 6703,
+    "cost_unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Capital Risk Management",
+    "table": "Share repurchases, three and six months ended June 30 2026 and 2025",
+    "row": "Total number of shares of common stock repurchased / Aggregate purchase price of common stock repurchases",
+    "column": "Three months ended June 30, 2026",
+    "period": "Q2-2026"
+  },
+  "notes": "THE ARCHETYPE FAILURE. v1 answered 29.8M / $7,500M, which is the Q2 2025 column. Four-column table: 2026 2025 2026 2025 over Three-months / Six-months superheaders. Also the dollar row is truncated mid-row by chunking.",
+  "run": {
+    "timestamp": "2026-09-16T23:24:10.209223+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-K_FY2025_374",
+      "rank": 1,
+      "score": 0.5344927310943604,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | First quarter | 29,953,620 | $ | 252.50 | $ | 7,563 | $ | 11,763\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Second quarter | 29,800,960 | 251.67 | 7,500 | 4,263 | (b)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_375",
+      "rank": 2,
+      "score": 0.5441982746124268,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "kind": "table_records",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Third quarter | 27,987,016 | 297.10 | 8,315 | 41,685\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | October | 9,814,682 | 304.63 | 2,990 | 38,695"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_377",
+      "rank": 3,
+      "score": 0.5475107431411743,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Fourth quarter | 26,666,700 | 309.81 | 8,262 | 33,423 | (c)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Full year | 114,408,296 | $ | 276.55 | $ | 31,640 | $ | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_373",
+      "rank": 4,
+      "score": 0.5748707056045532,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "table_records"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | header row | Year ended December 31, 2025 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3941",
+      "rank": 5,
+      "score": 0.5771610736846924,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/220669a58ed7",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "kind": "table_records"
+      },
+      "text": "June 30, 2026 were as follows: (column headers unresolved) | header row | Six months ended June 30, 2026 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)\nJune 30, 2026 were as follows: (column headers unresolved) | First quarter | 27,508,883 | $ | 302.75 | $ | 8,328 | $ | 25,095"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_376",
+      "rank": 6,
+      "score": 0.5925345420837402,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | November | 7,923,457 | 307.82 | 2,439 | 36,256\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | December | 8,928,561 | 317.28 | 2,833 | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1171",
+      "rank": 7,
+      "score": 0.6302236318588257,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "form": "10-Q"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2026 | 21.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2025 | 29.8 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2026 | 49.3 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1172",
+      "rank": 8,
+      "score": 0.6406034827232361,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2025 | 59.8 | millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Three months ended June 30, 2026 | 6,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4450",
+      "rank": 9,
+      "score": 0.6480483412742615,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3940",
+      "rank": 10,
+      "score": 0.6521542072296143,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "narrative",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "block_id": "none"
+      },
+      "text": "ctive July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. 201 Shares repurchased pursuant to the common share repurchase program during the six months ended June 30, 2026 were as follows: "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_372",
+      "rank": 11,
+      "score": 0.6704161167144775,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "block_id": "none",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "kind": "narrative",
+        "strategy": "record_aware"
+      },
+      "text": "d a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1173",
+      "rank": 12,
+      "score": 0.6707556247711182,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Three months ended June 30, 2025 | 7,500 | USD millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Six months ended June 30, 2026 | 15,031 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1174",
+      "rank": 13,
+      "score": 0.6710278987884521,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Six months ended June 30, 2025 | 15,063 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1372",
+      "rank": 14,
+      "score": 0.6904022693634033,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/7388a693e46f",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2023 | 69.5 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1370",
+      "rank": 15,
+      "score": 0.7009577751159668,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "narrative",
+        "company": "JPMC"
+      },
+      "text": " Common stock repurchases On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1169",
+      "rank": 16,
+      "score": 0.7061916589736938,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1373",
+      "rank": 17,
+      "score": 0.7256835103034973,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/7388a693e46f",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Year ended December 31, 2025 | 31,640 | USD millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Year ended December 31, 2024 | 18,841 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4448",
+      "rank": 18,
+      "score": 0.7281313538551331,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": " On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ 50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $ 30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1374",
+      "rank": 19,
+      "score": 0.7397842407226562,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/7388a693e46f",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "period": "FY2025"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Year ended December 31, 2023 | 9,898 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4451",
+      "rank": 20,
+      "score": 0.7916128635406494,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ (continued) | values in millions unless the record states otherwise\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2023 | 69.5 | millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1171",
+      "rank": 1,
+      "score": 16.847075133714522,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2026 | 21.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2025 | 29.8 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2026 | 49.3 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1372",
+      "rank": 2,
+      "score": 15.589656027436696,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/7388a693e46f",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2023 | 69.5 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_375",
+      "rank": 3,
+      "score": 15.062673353173672,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "kind": "table_records",
+        "section": "Item 5 - Market for Registrant's Common Equity"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Third quarter | 27,987,016 | 297.10 | 8,315 | 41,685\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | October | 9,814,682 | 304.63 | 2,990 | 38,695"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_376",
+      "rank": 4,
+      "score": 15.062673353173672,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "kind": "table_records",
+        "form": "10-K",
+        "section": "Item 5 - Market for Registrant's Common Equity"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | November | 7,923,457 | 307.82 | 2,439 | 36,256\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | December | 8,928,561 | 317.28 | 2,833 | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_374",
+      "rank": 5,
+      "score": 14.91858811672596,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | First quarter | 29,953,620 | $ | 252.50 | $ | 7,563 | $ | 11,763\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Second quarter | 29,800,960 | 251.67 | 7,500 | 4,263 | (b)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_377",
+      "rank": 6,
+      "score": 14.84757428665717,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Fourth quarter | 26,666,700 | 309.81 | 8,262 | 33,423 | (c)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Full year | 114,408,296 | $ | 276.55 | $ | 31,640 | $ | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_373",
+      "rank": 7,
+      "score": 13.779589133741181,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | header row | Year ended December 31, 2025 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4450",
+      "rank": 8,
+      "score": 13.779589133741181,
+      "score_type": "bm25",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3940",
+      "rank": 9,
+      "score": 13.473404111929817,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "ctive July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. 201 Shares repurchased pursuant to the common share repurchase program during the six months ended June 30, 2026 were as follows: "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_372",
+      "rank": 10,
+      "score": 11.438436025301792,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "kind": "narrative",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "record_aware"
+      },
+      "text": "d a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1172",
+      "rank": 11,
+      "score": 10.747829822580753,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2025 | 59.8 | millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Three months ended June 30, 2026 | 6,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1907",
+      "rank": 12,
+      "score": 10.705428188809297,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/2bf8759d6861",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated balance sheets (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated balance sheets (unaudited) | Stockholders’ equity - Treasury stock, at cost ( 1,446,747,700 and 1,408,661,319 shares) | June 30, 2026 | ( 178,433 )\nConsolidated balance sheets (unaudited) | Stockholders’ equity - Treasury stock, at cost ( 1,446,747,700 and 1,408,661,319 shares) | December 31, 2025 | ( 164,591 )"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4451",
+      "rank": 13,
+      "score": 10.424752077658443,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c",
+        "period": "FY2025",
+        "strategy": "record_aware"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ (continued) | values in millions unless the record states otherwise\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2023 | 69.5 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3941",
+      "rank": 14,
+      "score": 10.387694311044966,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/220669a58ed7",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "June 30, 2026 were as follows: (column headers unresolved) | header row | Six months ended June 30, 2026 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)\nJune 30, 2026 were as follows: (column headers unresolved) | First quarter | 27,508,883 | $ | 302.75 | $ | 8,328 | $ | 25,095"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2365",
+      "rank": 15,
+      "score": 9.884597393854012,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/f64b17d3f2f2",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Consolidated balance sheets (continued) | values in millions unless the record states otherwise\nConsolidated balance sheets | Stockholders’ equity - Treasury stock, at cost ( 1,408,661,319 and 1,307,313,494 shares) | December 31, 2025 | ( 164,591 )\nConsolidated balance sheets | Stockholders’ equity - Treasury stock, at cost ( 1,408,661,319 and 1,307,313,494 shares) | December 31, 2024 | ( 134,018 )"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3229",
+      "rank": 16,
+      "score": 9.491389316385849,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/81535bc623c8",
+        "form": "10-Q"
+      },
+      "text": "Options to repurchase delinquent loans | Loans repurchased or option to repurchase (a) | June 30, 2026 | 439 | USD millions\nOptions to repurchase delinquent loans | Loans repurchased or option to repurchase (a) | December 31, 2025 | 856 | USD millions\nOptions to repurchase delinquent loans | Real estate owned | June 30, 2026 | 2 | millions\nOptions to repurchase delinquent loans | Real estate owned | December 31, 2025 | 2 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4876",
+      "rank": 17,
+      "score": 9.3446898812534,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "in many such proceedings of multiple defendants, including the Firm, whose share of liability (if any) has yet to be determined, • the numerous yet-unresolved issues in many of the proceedings, including issues regarding class certification and the scope of many of the claims, and • the uncertainty of the various potential outcomes of such proceedings, including where the Firm has made assumptions concerning future rulings by the court or other adjudicator, or about the behavior or incentives of"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1376",
+      "rank": 18,
+      "score": 9.30517847657411,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "none",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "narrative"
+      },
+      "text": "he amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurcha"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4456",
+      "rank": 19,
+      "score": 9.30517847657411,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "none",
+        "period": "FY2025",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "he amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurcha"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1176",
+      "rank": 20,
+      "score": 9.30517847657411,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "block_id": "none",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "form": "10-Q"
+      },
+      "text": "he amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurcha"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-Q_Q2-2026_1174",
+      "JPMC_10-Q_Q2-2026_1173"
+    ],
+    [
+      "JPMC_10-K_FY2025_1374",
+      "JPMC_10-K_FY2025_1373"
+    ]
+  ],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_4456",
+      "JPMC_10-K_FY2025_1376"
+    ],
+    [
+      "JPMC_10-Q_Q2-2026_1176",
+      "JPMC_10-K_FY2025_1376"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_10-K_FY2025_375",
+      "rank": 1,
+      "rrf_score": 0.03200204813108039,
+      "found_in": {
+        "dense": 2,
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "kind": "table_records",
+        "section": "Item 5 - Market for Registrant's Common Equity"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Third quarter | 27,987,016 | 297.10 | 8,315 | 41,685\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | October | 9,814,682 | 304.63 | 2,990 | 38,695"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_374",
+      "rank": 2,
+      "rrf_score": 0.03177805800756621,
+      "found_in": {
+        "dense": 1,
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | First quarter | 29,953,620 | $ | 252.50 | $ | 7,563 | $ | 11,763\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Second quarter | 29,800,960 | 251.67 | 7,500 | 4,263 | (b)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1171",
+      "rank": 3,
+      "rrf_score": 0.03131881575727918,
+      "found_in": {
+        "dense": 7,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2026 | 21.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2025 | 29.8 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2026 | 49.3 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_377",
+      "rank": 4,
+      "rrf_score": 0.031024531024531024,
+      "found_in": {
+        "dense": 3,
+        "sparse": 6
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Fourth quarter | 26,666,700 | 309.81 | 8,262 | 33,423 | (c)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Full year | 114,408,296 | $ | 276.55 | $ | 31,640 | $ | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_376",
+      "rank": 5,
+      "rrf_score": 0.030776515151515152,
+      "found_in": {
+        "dense": 6,
+        "sparse": 4
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "kind": "table_records",
+        "form": "10-K",
+        "section": "Item 5 - Market for Registrant's Common Equity"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | November | 7,923,457 | 307.82 | 2,439 | 36,256\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | December | 8,928,561 | 317.28 | 2,833 | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_373",
+      "rank": 6,
+      "rrf_score": 0.03055037313432836,
+      "found_in": {
+        "dense": 4,
+        "sparse": 7
+      },
+      "metadata": {
+        "form": "10-K",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | header row | Year ended December 31, 2025 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1372",
+      "rank": 7,
+      "rrf_score": 0.029827662395050816,
+      "found_in": {
+        "dense": 13,
+        "sparse": 2
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "FY2025",
+        "block_id": "JPMC_10-K_FY2025/table/7388a693e46f",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Year ended December 31, 2023 | 69.5 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4450",
+      "rank": 8,
+      "rrf_score": 0.02919863597612958,
+      "found_in": {
+        "dense": 9,
+        "sparse": 8
+      },
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3941",
+      "rank": 9,
+      "rrf_score": 0.0288981288981289,
+      "found_in": {
+        "dense": 5,
+        "sparse": 14
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/220669a58ed7",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "June 30, 2026 were as follows: (column headers unresolved) | header row | Six months ended June 30, 2026 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)\nJune 30, 2026 were as follows: (column headers unresolved) | First quarter | 27,508,883 | $ | 302.75 | $ | 8,328 | $ | 25,095"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1172",
+      "rank": 10,
+      "rrf_score": 0.028790389395194696,
+      "found_in": {
+        "dense": 8,
+        "sparse": 11
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "strategy": "record_aware"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2025 | 59.8 | millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Three months ended June 30, 2026 | 6,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3940",
+      "rank": 11,
+      "rrf_score": 0.02877846790890269,
+      "found_in": {
+        "dense": 10,
+        "sparse": 9
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "kind": "narrative",
+        "section": "section_unknown",
+        "form": "10-Q"
+      },
+      "text": "ctive July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. 201 Shares repurchased pursuant to the common share repurchase program during the six months ended June 30, 2026 were as follows: "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_372",
+      "rank": 12,
+      "rrf_score": 0.028370221327967807,
+      "found_in": {
+        "dense": 11,
+        "sparse": 10
+      },
+      "metadata": {
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "kind": "narrative",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "record_aware"
+      },
+      "text": "d a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4451",
+      "rank": 13,
+      "rrf_score": 0.02651914295749912,
+      "found_in": {
+        "dense": 18,
+        "sparse": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c",
+        "period": "FY2025",
+        "strategy": "record_aware"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ (continued) | values in millions unless the record states otherwise\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2023 | 69.5 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1173",
+      "rank": 14,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "record_aware"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Three months ended June 30, 2025 | 7,500 | USD millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Six months ended June 30, 2026 | 15,031 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1907",
+      "rank": 15,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/2bf8759d6861",
+        "kind": "table_records",
+        "section": "section_unknown"
+      },
+      "text": "Consolidated balance sheets (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated balance sheets (unaudited) | Stockholders’ equity - Treasury stock, at cost ( 1,446,747,700 and 1,408,661,319 shares) | June 30, 2026 | ( 178,433 )\nConsolidated balance sheets (unaudited) | Stockholders’ equity - Treasury stock, at cost ( 1,446,747,700 and 1,408,661,319 shares) | December 31, 2025 | ( 164,591 )"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1370",
+      "rank": 16,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "kind": "narrative",
+        "company": "JPMC"
+      },
+      "text": " Common stock repurchases On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1169",
+      "rank": 17,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2365",
+      "rank": 18,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/f64b17d3f2f2",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Consolidated balance sheets (continued) | values in millions unless the record states otherwise\nConsolidated balance sheets | Stockholders’ equity - Treasury stock, at cost ( 1,408,661,319 and 1,307,313,494 shares) | December 31, 2025 | ( 164,591 )\nConsolidated balance sheets | Stockholders’ equity - Treasury stock, at cost ( 1,408,661,319 and 1,307,313,494 shares) | December 31, 2024 | ( 134,018 )"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1373",
+      "rank": 19,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-K_FY2025/table/7388a693e46f",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "Common stock repurchases (continued) | values in millions unless the record states otherwise\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Year ended December 31, 2025 | 31,640 | USD millions\nCommon stock repurchases | Aggregate purchase price of common stock repurchases (a) | Year ended December 31, 2024 | 18,841 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3229",
+      "rank": 20,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/81535bc623c8",
+        "form": "10-Q"
+      },
+      "text": "Options to repurchase delinquent loans | Loans repurchased or option to repurchase (a) | June 30, 2026 | 439 | USD millions\nOptions to repurchase delinquent loans | Loans repurchased or option to repurchase (a) | December 31, 2025 | 856 | USD millions\nOptions to repurchase delinquent loans | Real estate owned | June 30, 2026 | 2 | millions\nOptions to repurchase delinquent loans | Real estate owned | December 31, 2025 | 2 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4448",
+      "rank": 21,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "block_id": "none"
+      },
+      "text": " On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ 50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $ 30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4876",
+      "rank": 22,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "narrative",
+        "block_id": "none",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware"
+      },
+      "text": "in many such proceedings of multiple defendants, including the Firm, whose share of liability (if any) has yet to be determined, • the numerous yet-unresolved issues in many of the proceedings, including issues regarding class certification and the scope of many of the claims, and • the uncertainty of the various potential outcomes of such proceedings, including where the Firm has made assumptions concerning future rulings by the court or other adjudicator, or about the behavior or incentives of"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1376",
+      "rank": 23,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "block_id": "none",
+        "period": "FY2025",
+        "section": "section_unknown",
+        "kind": "narrative"
+      },
+      "text": "he amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurcha"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_374",
+      "rerank_rank": 1,
+      "rerank_score": 6.154388427734375,
+      "rrf_rank": 2,
+      "rrf_score": 0.03177805800756621,
+      "found_in": {
+        "dense": 1,
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | First quarter | 29,953,620 | $ | 252.50 | $ | 7,563 | $ | 11,763\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Second quarter | 29,800,960 | 251.67 | 7,500 | 4,263 | (b)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1171",
+      "rerank_rank": 2,
+      "rerank_score": 5.873910427093506,
+      "rrf_rank": 3,
+      "rrf_score": 0.03131881575727918,
+      "found_in": {
+        "dense": 7,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "Common stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2026 | 21.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2025 | 29.8 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2026 | 49.3 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_377",
+      "rerank_rank": 3,
+      "rerank_score": 5.849637031555176,
+      "rrf_rank": 4,
+      "rrf_score": 0.031024531024531024,
+      "found_in": {
+        "dense": 3,
+        "sparse": 6
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/6c57d79dc726",
+        "period": "FY2025",
+        "section": "Item 5 - Market for Registrant's Common Equity",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Fourth quarter | 26,666,700 | 309.81 | 8,262 | 33,423 | (c)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Full year | 114,408,296 | $ | 276.55 | $ | 31,640 | $ | 33,423 | (c)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3941",
+      "rerank_rank": 4,
+      "rerank_score": 5.791975021362305,
+      "rrf_rank": 9,
+      "rrf_score": 0.0288981288981289,
+      "found_in": {
+        "dense": 5,
+        "sparse": 14
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/220669a58ed7",
+        "kind": "table_records",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware"
+      },
+      "text": "June 30, 2026 were as follows: (column headers unresolved) | header row | Six months ended June 30, 2026 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)\nJune 30, 2026 were as follows: (column headers unresolved) | First quarter | 27,508,883 | $ | 302.75 | $ | 8,328 | $ | 25,095"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4450",
+      "rerank_rank": 5,
+      "rerank_score": 5.720282554626465,
+      "rrf_rank": 8,
+      "rrf_score": 0.02919863597612958,
+      "found_in": {
+        "dense": 9,
+        "sparse": 8
+      },
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/cd7544a15d5c",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025"
+      },
+      "text": "On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions"
+    }
+  ],
+  "context": "[1] (10-K, FY2025, Item 5 - Market for Registrant's Common Equity)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | First quarter | 29,953,620 | $ | 252.50 | $ | 7,563 | $ | 11,763\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Second quarter | 29,800,960 | 251.67 | 7,500 | 4,263 | (b)\n\n[2] (10-Q, Q2-2026, section_unknown)\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2026 | 21.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2025 | 29.8 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2026 | 49.3 | millions\n\n[3] (10-K, FY2025, Item 5 - Market for Registrant's Common Equity)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Fourth quarter | 26,666,700 | 309.81 | 8,262 | 33,423 | (c)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Full year | 114,408,296 | $ | 276.55 | $ | 31,640 | $ | 33,423 | (c)\n\n[4] (10-Q, Q2-2026, section_unknown)\nJune 30, 2026 were as follows: (column headers unresolved) | header row | Six months ended June 30, 2026 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)\nJune 30, 2026 were as follows: (column headers unresolved) | First quarter | 27,508,883 | $ | 302.75 | $ | 8,328 | $ | 25,095\n\n[5] (10-K, FY2025, section_unknown)\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions",
+  "user_prompt": "[1] (10-K, FY2025, Item 5 - Market for Registrant's Common Equity)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | First quarter | 29,953,620 | $ | 252.50 | $ | 7,563 | $ | 11,763\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Second quarter | 29,800,960 | 251.67 | 7,500 | 4,263 | (b)\n\n[2] (10-Q, Q2-2026, section_unknown)\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2026 | 21.7 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Three months ended June 30, 2025 | 29.8 | millions\nCommon stock repurchases | Total number of shares of common stock repurchased | Six months ended June 30, 2026 | 49.3 | millions\n\n[3] (10-K, FY2025, Item 5 - Market for Registrant's Common Equity)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (continued)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Fourth quarter | 26,666,700 | 309.81 | 8,262 | 33,423 | (c)\nShares repurchased pursuant to the common share repurchase programs during 2025 were as follows: (column headers unresolved) | Full year | 114,408,296 | $ | 276.55 | $ | 31,640 | $ | 33,423 | (c)\n\n[4] (10-Q, Q2-2026, section_unknown)\nJune 30, 2026 were as follows: (column headers unresolved) | header row | Six months ended June 30, 2026 | Total number of shares of common stock repurchased | Average price paid per share of common stock (a) | Aggregate purchase price of common stock repurchases (in millions) (a) | Dollar value of remaining authorized repurchase (in millions) (a)\nJune 30, 2026 were as follows: (column headers unresolved) | First quarter | 27,508,883 | $ | 302.75 | $ | 8,328 | $ | 25,095\n\n[5] (10-K, FY2025, section_unknown)\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2025 | 114.4 | millions\nOn July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ | Total number of shares of common stock repurchased | Year ended December 31, 2024 | 91.7 | millions\n\nQuestion: How many shares were repurchased in Q2 2026, and what did they cost?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_374"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1171"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_377"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_3941"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_4450"
+    }
+  ],
+  "answer_text": "In Q2 2026, a total of 21.7 million shares of common stock were repurchased. The average price paid per share was not specified in the provided context, so that information is missing [2].",
+  "parsed_citations": [
+    2
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1171",
+      "metadata": {
+        "period": "Q2-2026",
+        "block_id": "JPMC_10-Q_Q2-2026/table/cfae3e6da91c",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q"
+      }
+    }
+  ]
+}

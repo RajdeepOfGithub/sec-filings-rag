@@ -1,0 +1,1513 @@
+{
+  "question_id": "q02",
+  "question": "What was total net revenue for the second quarter of 2026?",
+  "category": "tabular",
+  "difficulty": "medium",
+  "expected": {
+    "value": 57347,
+    "unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Executive Overview",
+    "table": "Financial performance of JPMorganChase",
+    "row": "Total net revenue",
+    "column": "Three months ended June 30, 2026",
+    "period": "Q2-2026"
+  },
+  "notes": "Also appears in Consolidated Financial Highlights (2Q26 column) and Consolidated Results of Operations. Three sources, same figure - a distractor test as much as a retrieval test.",
+  "run": {
+    "timestamp": "2026-09-17T00:25:22.492787+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs_v2"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_17",
+      "rank": 1,
+      "score": 0.6530370712280273,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 2Q26 | 57,347 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 1Q26 | 49,836 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 4Q25 | 45,798 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_18",
+      "rank": 2,
+      "score": 0.7738879323005676,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 3Q25 | 46,427 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 2Q25 | 44,912 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1535",
+      "rank": 3,
+      "score": 0.7837293148040771,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2026 | 57,347 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2025 | 44,912 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1536",
+      "rank": 4,
+      "score": 0.7878659963607788,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2026 | 107,183 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2025 | 90,222 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_450",
+      "rank": 5,
+      "score": 0.7951980829238892,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "FY2025"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected income statement data - Total net revenue | As of or for the year ended December 31, 2025 | 182,447 | USD millions\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected income statement data - Total net revenue | As of or for the year ended December 31, 2024 | 177,556 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_642",
+      "rank": 6,
+      "score": 0.813474714756012,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/46145c786b20",
+        "section": "section_unknown"
+      },
+      "text": "CONSOLIDATED RESULTS OF OPERATIONS (continued) | values in millions unless the record states otherwise\nCONSOLIDATED RESULTS OF OPERATIONS | Year ended December 31, (in millions) - Total net revenue | Year ended December 31, 2023 | 158,104 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_778",
+      "rank": 7,
+      "score": 0.8155571818351746,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "narrative"
+      },
+      "text": " have been revised to conform with the current presentation. (f) Included a $774 million income tax benefit driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. 40 Quarterly results Net income was $4.2 billion, compared with $1.7 billion in the prior year. Net revenue was $6.0 billion, compared with $1.5 billion in the prior year. Net interest income was $822 million, do"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_641",
+      "rank": 8,
+      "score": 0.8189698457717896,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/46145c786b20",
+        "period": "FY2025"
+      },
+      "text": "CONSOLIDATED RESULTS OF OPERATIONS (continued) | values in millions unless the record states otherwise\nCONSOLIDATED RESULTS OF OPERATIONS | Year ended December 31, (in millions) - Total net revenue | Year ended December 31, 2025 | 182,447 | USD millions\nCONSOLIDATED RESULTS OF OPERATIONS | Year ended December 31, (in millions) - Total net revenue | Year ended December 31, 2024 | 177,556 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_19",
+      "rank": 9,
+      "score": 0.8194641470909119,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2026 | 107,183 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2025 | 90,222 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_194",
+      "rank": 10,
+      "score": 0.8403168320655823,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 90,222 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Change | 19 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_451",
+      "rank": 11,
+      "score": 0.8411203026771545,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "FY2025",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "company": "JPMC"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) (continued) | values in millions unless the record states otherwise\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected income statement data - Total net revenue | As of or for the year ended December 31, 2023 | 158,104 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_645",
+      "rank": 12,
+      "score": 0.843204915523529,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5fcad82f1763"
+      },
+      "text": "Markets revenue (continued)\nMarkets revenue (column headers unresolved) | Net interest income | 2,579 | (634) | 1,945 | 1,783 | (1,222) | 561\nMarkets revenue (column headers unresolved) | Total net revenue | $ | 6,053 | $ | 6,025 | $ | 12,078 | $ | 5,690 | $ | 3,246 | $ | 8,936\nMarkets revenue (column headers unresolved) | Six months ended June 30, | Six months ended June 30,\nMarkets revenue (column headers unresolved) | 2026 | 2025"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_192",
+      "rank": 13,
+      "score": 0.8499192595481873,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 57,347 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 44,912 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_648",
+      "rank": 14,
+      "score": 0.8559448719024658,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5fcad82f1763",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Markets revenue (continued)\nMarkets revenue (column headers unresolved) | Total net revenue | $ | 13,131 | $ | 10,506 | $ | 23,637 | $ | 11,539 | $ | 7,060 | $ | 18,599"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_193",
+      "rank": 15,
+      "score": 0.859442949295044,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Six months ended June 30, Change | 28 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 107,183 | millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_38",
+      "rank": 16,
+      "score": 0.8665989637374878,
+      "score_type": "l2_distance",
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 2Q26 | 21,155 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 1Q26 | 16,494 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_186",
+      "rank": 17,
+      "score": 0.872585654258728,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "form": "10-Q"
+      },
+      "text": "EXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 31,836 | USD millions\nEXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 21,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_542",
+      "rank": 18,
+      "score": 0.8757827877998352,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "none"
+      },
+      "text": "r the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_701",
+      "rank": 19,
+      "score": 0.8764514923095703,
+      "score_type": "l2_distance",
+      "metadata": {
+        "kind": "narrative",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Management was $3.3 billion, up 23%, driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gains. Revenue from Global Private Bank was $3.5 billion, up 16%, reflecting: • higher nonint"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_40",
+      "rank": 20,
+      "score": 0.8787973523139954,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 2Q25 | 14,987 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, Six months ended June 30, 2026 | 37,649 | USD millions"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1371",
+      "rank": 1,
+      "score": 21.60076470937699,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "e five trailing quarters. Daily Risk Management VaR Second Quarter 2025 Third Quarter 2025 Fourth Quarter 2025 First Quarter 2026 Second Quarter 2026 81 VaR backtesting The Firm performs daily VaR model backtesting, which compares the daily Risk Management VaR results with the daily gains and losses that are utilized for VaR backtesting purposes. The gains and losses depicted in the chart below do not reflect the Firm’s reported revenue as they exclude certain components of total net revenue, su"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_238",
+      "rank": 2,
+      "score": 20.665758002593954,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 milli"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_816",
+      "rank": 3,
+      "score": 17.678112955047805,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": " (a) Includes a provision for lending-related commitments of $2.2 billion related to the Apple Card transaction. (b) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. Refer to Note 32 for further details on total net revenue and tot"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_906",
+      "rank": 4,
+      "score": 15.11466717476047,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative"
+      },
+      "text": " (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4629",
+      "rank": 5,
+      "score": 15.004082918760032,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "tax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (g) Included the net gain related to Visa shares of $ 7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included a $ 1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quart"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_563",
+      "rank": 6,
+      "score": 14.059427869155584,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "net revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Refer to Note 6 for additional information. 44 JPMorgan Chase & Co./2025 Form 10-K FIVE-YEAR STOCK PERFORMANCE The following table and graph compare the five-year cumulative total return for JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) common stock with the cumu"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3405",
+      "rank": 7,
+      "score": 14.017735495218881,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "none",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "Item 4 - Mine Safety Disclosures"
+      },
+      "text": "ct of 1934) were adopted by any Section 16 Director or Officer during the second quarter of 2026. Additionally, no Rule 10b5-1 or non-Rule 10b5-1 trading arrangements were terminated by any Section 16 Director or Officer in the second quarter of 2026. Name Title Adoption date Duration (a) Aggregate number of shares to be sold Robin Leopold Head of Human Resources April 22, 2026 April 22, 2026 – December 31, 2026 5,000 (a) Sales under the trading arrangement will not commence until completion of "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_175",
+      "rank": 8,
+      "score": 13.946593053316942,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "narrative",
+        "block_id": "none",
+        "period": "Q2-2026"
+      },
+      "text": " financial condition and results of operations (“MD&A”) of JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) for the second quarter of 2026. This Quarterly Report on Form 10-Q for the second quarter of 2026 (“Form 10-Q”) should be read together with JPMorganChase’s Annual Report on Form 10-K for the year ended December 31, 2025 (“2025 Form 10-K”). Refer to the Glossary of terms and acronyms and line of business metrics on pages 192-200 for definitions of terms and acronyms used throughout thi"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 9,
+      "score": 13.88481748269698,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "rities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1098",
+      "rank": 10,
+      "score": 13.717434463415653,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "narrative"
+      },
+      "text": "red from the LOBs to Corporate as a result of the centralization of certain functions. (f) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (g) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included the estimated bargain purchase gain of $2.8 billion for the year ended Decembe"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_921",
+      "rank": 11,
+      "score": 13.634511373784028,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "form": "10-K",
+        "strategy": "record_aware"
+      },
+      "text": "r the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (d) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. (e) On January 1, 2025, $5.6 billion of loans were realigned from Global Corporate Banking to Fixed Income Markets. (f) In the first quarter of 2025, 219 employees were transferred to Corporate as a result of "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3233",
+      "rank": 12,
+      "score": 13.129792582811271,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-K",
+        "kind": "narrative",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "none"
+      },
+      "text": " (a)  Included FDIC special assessment accrual releases of $ 763 million and an accrual increase of $ 725 million for the years ended December 31, 2025 and 2024, respectively, which are adjustments to the initial $ 2.9 billion estimate recorded in the fourth quarter of 2023. (b)  Represents the contribution of a portion of Visa C shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 32 for additional information on noninterest revenue and expense by segmen"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1742",
+      "rank": 13,
+      "score": 12.697733174165723,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "narrative"
+      },
+      "text": "l case assumptions provided in the following table, resulting in: • a weighted average U.S. unemployment rate peaking at 5.8% in the fourth quarter of 2026, and • a weighted average U.S. real GDP level that is 2.1% lower than the central case at the end of the second quarter of 2027. The following table presents the Firm’s central case assumptions for the periods presented: "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1101",
+      "rank": 14,
+      "score": 12.632072766572502,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": " the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • lower net investment securities losses associated with repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries, and • the $588 million First Republic-related gain recorded in the first quarter of 2025. Noninterest expense was $1.8 billion, down 54%, primarily "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rank": 15,
+      "score": 12.072299624448744,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "cs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_652",
+      "rank": 16,
+      "score": 11.965544180997059,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": "he impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments, and • higher card revenue in CIB Payments as a result of higher volume. Refer to CCB and CIB segment results on pages 65–68 and pages 69–75, respectively, and Note 6 for additional information. Other income decreased, reflecting: • the absence in Corporate of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • high"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1923",
+      "rank": 17,
+      "score": 11.751598939980717,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "form": "10-K",
+        "block_id": "none",
+        "period": "FY2025",
+        "strategy": "record_aware"
+      },
+      "text": "pes. 136 JPMorgan Chase & Co./2025 Form 10-K The following graph presents daily Risk Management VaR for the four trailing quarters. The movements in the first quarter of 2025 were due to a client-driven equity position that has since matured. Daily Risk Management VaR First Quarter 2025 Second Quarter 2025 Third Quarter 2025 Fourth Quarter 2025 JPMorgan Chase & Co./2025 Form 10-K 137 Management’s discussion and analysis VaR backtesting The Firm performs daily VaR model backtesting, which compare"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1097",
+      "rank": 18,
+      "score": 11.669162283041212,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025"
+      },
+      "text": "imate recorded in the fourth quarter of 2023. (c) Predominantly relates to the Firm's international consumer initiatives. (d) Included a $774 million income tax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (e) In the first quarter of 2025, 768 employees were transferred from the LOBs to Corporate as a result of the "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3821",
+      "rank": 19,
+      "score": 11.56997614949713,
+      "score_type": "bm25",
+      "metadata": {
+        "block_id": "none",
+        "form": "10-K",
+        "kind": "narrative",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown"
+      },
+      "text": " estimated using a weighted average of five internally developed macroeconomic scenarios. The adverse scenarios incorporate more punitive macroeconomic factors than the central case assumptions provided in the following table, resulting in: • a weighted average U.S. unemployment rate peaking at 5.8% in the fourth quarter of 2026, and • a weighted average U.S. real GDP level that is 2.1% lower than the central case at the end of the second quarter of 2027. The following table presents the Firm’s "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_760",
+      "rank": 20,
+      "score": 11.548546533891543,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Total net revenue - Total net revenue | As of or for the three months ended June 30, Change | 293 | millions\nCORPORATE | Total net revenue - Total net revenue | As of or for the six months ended June 30, 2026 | 7,261 | USD millions\nCORPORATE | Total net revenue - Total net revenue | As of or for the six months ended June 30, 2025 | 3,842 | USD millions"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_641",
+      "JPMC_10-K_FY2025_642"
+    ]
+  ],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_17",
+      "rank": 1,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388"
+      },
+      "text": "Consolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 2Q26 | 57,347 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 1Q26 | 49,836 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 4Q25 | 45,798 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1371",
+      "rank": 2,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "none",
+        "period": "Q2-2026",
+        "kind": "narrative"
+      },
+      "text": "e five trailing quarters. Daily Risk Management VaR Second Quarter 2025 Third Quarter 2025 Fourth Quarter 2025 First Quarter 2026 Second Quarter 2026 81 VaR backtesting The Firm performs daily VaR model backtesting, which compares the daily Risk Management VaR results with the daily gains and losses that are utilized for VaR backtesting purposes. The gains and losses depicted in the chart below do not reflect the Firm’s reported revenue as they exclude certain components of total net revenue, su"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_18",
+      "rank": 3,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 3Q25 | 46,427 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, 2Q25 | 44,912 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_238",
+      "rank": 4,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 milli"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1535",
+      "rank": 5,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "section_unknown",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2026 | 57,347 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Three months ended June 30, 2025 | 44,912 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_816",
+      "rank": 6,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": " (a) Includes a provision for lending-related commitments of $2.2 billion related to the Apple Card transaction. (b) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. Refer to Note 32 for further details on total net revenue and tot"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1536",
+      "rank": 7,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/b70f780b5935",
+        "company": "JPMC"
+      },
+      "text": "Consolidated statements of income (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2026 | 107,183 | millions\nConsolidated statements of income (unaudited) | Revenue - Total net revenue | Six months ended June 30, 2025 | 90,222 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_906",
+      "rank": 8,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "kind": "narrative"
+      },
+      "text": " (a) In the second quarter of 2025, amounts were reclassified from Other to Global Corporate Banking & Global Investment Banking reflecting the subsequent alignment of certain business activities after the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (b) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. 70 JPMorg"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_450",
+      "rank": 9,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "form": "10-K",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "kind": "table_records",
+        "period": "FY2025"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected income statement data - Total net revenue | As of or for the year ended December 31, 2025 | 182,447 | USD millions\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected income statement data - Total net revenue | As of or for the year ended December 31, 2024 | 177,556 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4629",
+      "rank": 10,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "tax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (g) Included the net gain related to Visa shares of $ 7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included a $ 1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quart"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_642",
+      "rank": 11,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "kind": "table_records",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-K_FY2025/table/46145c786b20",
+        "section": "section_unknown"
+      },
+      "text": "CONSOLIDATED RESULTS OF OPERATIONS (continued) | values in millions unless the record states otherwise\nCONSOLIDATED RESULTS OF OPERATIONS | Year ended December 31, (in millions) - Total net revenue | Year ended December 31, 2023 | 158,104 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_563",
+      "rank": 12,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "net revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Refer to Note 6 for additional information. 44 JPMorgan Chase & Co./2025 Form 10-K FIVE-YEAR STOCK PERFORMANCE The following table and graph compare the five-year cumulative total return for JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) common stock with the cumu"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_778",
+      "rank": 13,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "kind": "narrative"
+      },
+      "text": " have been revised to conform with the current presentation. (f) Included a $774 million income tax benefit driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. 40 Quarterly results Net income was $4.2 billion, compared with $1.7 billion in the prior year. Net revenue was $6.0 billion, compared with $1.5 billion in the prior year. Net interest income was $822 million, do"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3405",
+      "rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "block_id": "none",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "section": "Item 4 - Mine Safety Disclosures"
+      },
+      "text": "ct of 1934) were adopted by any Section 16 Director or Officer during the second quarter of 2026. Additionally, no Rule 10b5-1 or non-Rule 10b5-1 trading arrangements were terminated by any Section 16 Director or Officer in the second quarter of 2026. Name Title Adoption date Duration (a) Aggregate number of shares to be sold Robin Leopold Head of Human Resources April 22, 2026 April 22, 2026 – December 31, 2026 5,000 (a) Sales under the trading arrangement will not commence until completion of "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_19",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2026 | 107,183 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Total net revenue | As of or for the period ended, Six months ended June 30, 2025 | 90,222 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_175",
+      "rank": 16,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "form": "10-Q",
+        "kind": "narrative",
+        "block_id": "none",
+        "period": "Q2-2026"
+      },
+      "text": " financial condition and results of operations (“MD&A”) of JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) for the second quarter of 2026. This Quarterly Report on Form 10-Q for the second quarter of 2026 (“Form 10-Q”) should be read together with JPMorganChase’s Annual Report on Form 10-K for the year ended December 31, 2025 (“2025 Form 10-K”). Refer to the Glossary of terms and acronyms and line of business metrics on pages 192-200 for definitions of terms and acronyms used throughout thi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_194",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "company": "JPMC"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Six months ended June 30, 2025 | 90,222 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Change | 19 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 18,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "kind": "narrative",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": "rities losses in Treasury and CIO, higher Payments fees, higher investment banking fees, and a $588 million First Republic-related gain recorded in the first quarter of 2025. These increases were predominantly offset by the absence of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, as well as lower card income in the current year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compen"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_451",
+      "rank": 19,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "period": "FY2025",
+        "kind": "table_records",
+        "block_id": "JPMC_10-K_FY2025/table/ff10435d0a7f",
+        "company": "JPMC"
+      },
+      "text": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) (continued) | values in millions unless the record states otherwise\nTHREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited) | Selected income statement data - Total net revenue | As of or for the year ended December 31, 2023 | 158,104 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1098",
+      "rank": 20,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "block_id": "none",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "narrative"
+      },
+      "text": "red from the LOBs to Corporate as a result of the centralization of certain functions. (f) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (g) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included the estimated bargain purchase gain of $2.8 billion for the year ended Decembe"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_645",
+      "rank": 21,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5fcad82f1763"
+      },
+      "text": "Markets revenue (continued)\nMarkets revenue (column headers unresolved) | Net interest income | 2,579 | (634) | 1,945 | 1,783 | (1,222) | 561\nMarkets revenue (column headers unresolved) | Total net revenue | $ | 6,053 | $ | 6,025 | $ | 12,078 | $ | 5,690 | $ | 3,246 | $ | 8,936\nMarkets revenue (column headers unresolved) | Six months ended June 30, | Six months ended June 30,\nMarkets revenue (column headers unresolved) | 2026 | 2025"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_921",
+      "rank": 22,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "form": "10-K",
+        "strategy": "record_aware"
+      },
+      "text": "r the Firm’s business segment reorganization in the second quarter of 2024. Prior-period amounts have been revised to conform with the current presentation. (d) In the second quarter of 2025, the Middle Market Banking client coverage segment was renamed Commercial & Specialized Industries. (e) On January 1, 2025, $5.6 billion of loans were realigned from Global Corporate Banking to Fixed Income Markets. (f) In the first quarter of 2025, 219 employees were transferred to Corporate as a result of "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_192",
+      "rank": 23,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 57,347 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 44,912 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3233",
+      "rank": 24,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-K",
+        "kind": "narrative",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "company": "JPMC",
+        "block_id": "none"
+      },
+      "text": " (a)  Included FDIC special assessment accrual releases of $ 763 million and an accrual increase of $ 725 million for the years ended December 31, 2025 and 2024, respectively, which are adjustments to the initial $ 2.9 billion estimate recorded in the fourth quarter of 2023. (b)  Represents the contribution of a portion of Visa C shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 32 for additional information on noninterest revenue and expense by segmen"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_648",
+      "rank": 25,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "kind": "table_records",
+        "form": "10-Q",
+        "block_id": "JPMC_10-Q_Q2-2026/table/5fcad82f1763",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "Markets revenue (continued)\nMarkets revenue (column headers unresolved) | Total net revenue | $ | 13,131 | $ | 10,506 | $ | 23,637 | $ | 11,539 | $ | 7,060 | $ | 18,599"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1742",
+      "rank": 26,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "none",
+        "form": "10-K",
+        "period": "FY2025",
+        "kind": "narrative"
+      },
+      "text": "l case assumptions provided in the following table, resulting in: • a weighted average U.S. unemployment rate peaking at 5.8% in the fourth quarter of 2026, and • a weighted average U.S. real GDP level that is 2.1% lower than the central case at the end of the second quarter of 2027. The following table presents the Firm’s central case assumptions for the periods presented: "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_193",
+      "rank": 27,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690"
+      },
+      "text": "EXECUTIVE OVERVIEW (continued) | values in millions unless the record states otherwise\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Six months ended June 30, Change | 28 | millions\nEXECUTIVE OVERVIEW | Selected income statement data - Total net revenue | (unaudited) As of or for the period ended, Six months ended June 30, 2026 | 107,183 | millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1101",
+      "rank": 28,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": " the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • lower net investment securities losses associated with repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries, and • the $588 million First Republic-related gain recorded in the first quarter of 2025. Noninterest expense was $1.8 billion, down 54%, primarily "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_38",
+      "rank": 29,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "section": "section_unknown",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-Q"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 2Q26 | 21,155 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 1Q26 | 16,494 | USD millions"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rank": 30,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "block_id": "none",
+        "form": "10-Q",
+        "kind": "narrative",
+        "strategy": "record_aware",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": "cs for each of the Firm’s lines of business (\"LOB\") are presented below for the second quarter of 2026. CCB ROE 34% • Average deposits up 3% year-over-year (\"YoY\"), up 2% quarter-over-quarter (\"QoQ\"); client investment assets up 21% • Average loans up 2% YoY, up 1% QoQ; Card Services net charge-off rate of 3.34% • Debit and credit card sales volume (a) up 10% • Active mobile customers up 6% CIB ROE 22% • Investment banking fees up 30% YoY, up 14% QoQ; #1 ranking for global investment banking fee"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_186",
+      "rank": 31,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "section": "section_unknown",
+        "kind": "table_records",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/bf4aa2153690",
+        "form": "10-Q"
+      },
+      "text": "EXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2026 | 31,836 | USD millions\nEXECUTIVE OVERVIEW | Selected income statement data - Noninterest revenue | (unaudited) As of or for the period ended, Three months ended June 30, 2025 | 21,703 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_652",
+      "rank": 32,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "block_id": "none",
+        "kind": "narrative",
+        "period": "FY2025",
+        "strategy": "record_aware",
+        "form": "10-K"
+      },
+      "text": "he impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments, and • higher card revenue in CIB Payments as a result of higher volume. Refer to CCB and CIB segment results on pages 65–68 and pages 69–75, respectively, and Note 6 for additional information. Other income decreased, reflecting: • the absence in Corporate of the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • high"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_542",
+      "rank": 33,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "record_aware",
+        "form": "10-Q",
+        "block_id": "none"
+      },
+      "text": "r the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $1.2 billion and $1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1923",
+      "rank": 34,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "form": "10-K",
+        "block_id": "none",
+        "period": "FY2025",
+        "strategy": "record_aware"
+      },
+      "text": "pes. 136 JPMorgan Chase & Co./2025 Form 10-K The following graph presents daily Risk Management VaR for the four trailing quarters. The movements in the first quarter of 2025 were due to a client-driven equity position that has since matured. Daily Risk Management VaR First Quarter 2025 Second Quarter 2025 Third Quarter 2025 Fourth Quarter 2025 JPMorgan Chase & Co./2025 Form 10-K 137 Management’s discussion and analysis VaR backtesting The Firm performs daily VaR model backtesting, which compare"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_701",
+      "rank": 35,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "kind": "narrative",
+        "form": "10-Q",
+        "strategy": "record_aware",
+        "block_id": "none",
+        "section": "section_unknown",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Management was $3.3 billion, up 23%, driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gains. Revenue from Global Private Bank was $3.5 billion, up 16%, reflecting: • higher nonint"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1097",
+      "rank": 36,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "section_unknown",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025"
+      },
+      "text": "imate recorded in the fourth quarter of 2023. (c) Predominantly relates to the Firm's international consumer initiatives. (d) Included a $774 million income tax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (e) In the first quarter of 2025, 768 employees were transferred from the LOBs to Corporate as a result of the "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_40",
+      "rank": 37,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "company": "JPMC",
+        "block_id": "JPMC_10-Q_Q2-2026/table/79755cea9388",
+        "section": "section_unknown",
+        "strategy": "record_aware",
+        "kind": "table_records",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "Consolidated financial highlights (unaudited) (continued) | values in millions unless the record states otherwise\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, 2Q25 | 14,987 | USD millions\nConsolidated financial highlights (unaudited) | Selected income statement data - Net income | As of or for the period ended, Six months ended June 30, 2026 | 37,649 | USD millions"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_3821",
+      "rank": 38,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "block_id": "none",
+        "form": "10-K",
+        "kind": "narrative",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "period": "FY2025",
+        "section": "section_unknown"
+      },
+      "text": " estimated using a weighted average of five internally developed macroeconomic scenarios. The adverse scenarios incorporate more punitive macroeconomic factors than the central case assumptions provided in the following table, resulting in: • a weighted average U.S. unemployment rate peaking at 5.8% in the fourth quarter of 2026, and • a weighted average U.S. real GDP level that is 2.1% lower than the central case at the end of the second quarter of 2027. The following table presents the Firm’s "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_760",
+      "rank": 39,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "strategy": "record_aware",
+        "block_id": "JPMC_10-Q_Q2-2026/table/1d08745320ee",
+        "kind": "table_records",
+        "section": "section_unknown",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "CORPORATE (continued) | values in millions unless the record states otherwise\nCORPORATE | Total net revenue - Total net revenue | As of or for the three months ended June 30, Change | 293 | millions\nCORPORATE | Total net revenue - Total net revenue | As of or for the six months ended June 30, 2026 | 7,261 | USD millions\nCORPORATE | Total net revenue - Total net revenue | As of or for the six months ended June 30, 2025 | 3,842 | USD millions"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_563",
+      "rerank_rank": 1,
+      "rerank_score": 5.945535659790039,
+      "rrf_rank": 12,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "block_id": "none",
+        "section": "section_unknown",
+        "kind": "narrative",
+        "company": "JPMC",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "net revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Refer to Note 6 for additional information. 44 JPMorgan Chase & Co./2025 Form 10-K FIVE-YEAR STOCK PERFORMANCE The following table and graph compare the five-year cumulative total return for JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) common stock with the cumu"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_238",
+      "rerank_rank": 2,
+      "rerank_score": 5.849251747131348,
+      "rrf_rank": 4,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "section": "section_unknown",
+        "form": "10-Q",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 milli"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_816",
+      "rerank_rank": 3,
+      "rerank_score": 4.56392240524292,
+      "rrf_rank": 6,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "period": "FY2025",
+        "block_id": "none",
+        "company": "JPMC",
+        "section": "section_unknown"
+      },
+      "text": " (a) Includes a provision for lending-related commitments of $2.2 billion related to the Apple Card transaction. (b) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. Refer to Note 32 for further details on total net revenue and tot"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_4629",
+      "rerank_rank": 4,
+      "rerank_score": 4.175566673278809,
+      "rrf_rank": 10,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "record_aware",
+        "kind": "narrative",
+        "company": "JPMC",
+        "period": "FY2025",
+        "block_id": "none",
+        "section": "section_unknown"
+      },
+      "text": "tax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (g) Included the net gain related to Visa shares of $ 7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included a $ 1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quart"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1101",
+      "rerank_rank": 5,
+      "rerank_score": 4.076162815093994,
+      "rrf_rank": 28,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "kind": "narrative",
+        "period": "FY2025",
+        "block_id": "none",
+        "strategy": "record_aware",
+        "form": "10-K",
+        "section": "section_unknown"
+      },
+      "text": " the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • lower net investment securities losses associated with repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries, and • the $588 million First Republic-related gain recorded in the first quarter of 2025. Noninterest expense was $1.8 billion, down 54%, primarily "
+    }
+  ],
+  "context": "[1] (10-K, FY2025, section_unknown)\nnet revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Refer to Note 6 for additional information. 44 JPMorgan Chase & Co./2025 Form 10-K FIVE-YEAR STOCK PERFORMANCE The following table and graph compare the five-year cumulative total return for JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) common stock with the cumu\n\n[2] (10-Q, Q2-2026, section_unknown)\nassesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 milli\n\n[3] (10-K, FY2025, section_unknown)\n (a) Includes a provision for lending-related commitments of $2.2 billion related to the Apple Card transaction. (b) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. Refer to Note 32 for further details on total net revenue and tot\n\n[4] (10-K, FY2025, section_unknown)\ntax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (g) Included the net gain related to Visa shares of $ 7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included a $ 1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quart\n\n[5] (10-K, FY2025, section_unknown)\n the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • lower net investment securities losses associated with repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries, and • the $588 million First Republic-related gain recorded in the first quarter of 2025. Noninterest expense was $1.8 billion, down 54%, primarily ",
+  "user_prompt": "[1] (10-K, FY2025, section_unknown)\nnet revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Refer to Note 6 for additional information. 44 JPMorgan Chase & Co./2025 Form 10-K FIVE-YEAR STOCK PERFORMANCE The following table and graph compare the five-year cumulative total return for JPMorgan Chase & Co. (“JPMorganChase” or the “Firm”) common stock with the cumu\n\n[2] (10-Q, Q2-2026, section_unknown)\nassesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 milli\n\n[3] (10-K, FY2025, section_unknown)\n (a) Includes a provision for lending-related commitments of $2.2 billion related to the Apple Card transaction. (b) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. Refer to Note 32 for further details on total net revenue and tot\n\n[4] (10-K, FY2025, section_unknown)\ntax benefit recorded in the second quarter of 2025, driven by the resolution of certain tax audits and the impact of tax regulations related to foreign currency translation gains and losses finalized in 2024 and effective for 2025. (g) Included the net gain related to Visa shares of $ 7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (h) Included a $ 1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quart\n\n[5] (10-K, FY2025, section_unknown)\n the $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024, partially offset by • lower net investment securities losses associated with repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries, and • the $588 million First Republic-related gain recorded in the first quarter of 2025. Noninterest expense was $1.8 billion, down 54%, primarily \n\nQuestion: What was total net revenue for the second quarter of 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_563"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_238"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_816"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-K_FY2025_4629"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_1101"
+    }
+  ],
+  "answer_text": "The context does not provide information on total net revenue for the second quarter of 2026. It only mentions that comparisons are made for the second quarter of 2026 versus the second quarter of 2025, but does not specify the actual figures.",
+  "parsed_citations": [],
+  "resolved_citations": []
+}
