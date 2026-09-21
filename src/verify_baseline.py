@@ -18,7 +18,7 @@ import glob
 import json
 import os
 
-from generator import AnswerResult
+from generator import AnswerResult, compute_confidence
 from verify import split_claims, verify_answer
 
 DEFAULT_BASE = "baseline/v2c"
@@ -61,7 +61,9 @@ def verify_run(record):
         citations=record["resolved_citations"],
         retrieved_chunks=record["reranked"],
     )
-    return verify_answer(result)
+    verify_answer(result)
+    result.confidence = compute_confidence(result)
+    return result
 
 def write_report(path, rows):
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -95,15 +97,16 @@ if __name__ == "__main__":
         print("No API calls made. Re-run with --confirm to execute.")
         raise SystemExit(1)
 
-    rows, total, supported = [], 0, 0
+    rows, scores, total, supported = [], [], 0, 0
     for record in records:
         result = verify_run(record)
         hits = sum(v["supported"] for v in result.citation_verification)
         total += len(result.citation_verification)
         supported += hits
         rows.extend({"question_id": record["question_id"], **v} for v in result.citation_verification)
-        print(f"{record['question_id']}: {len(result.citation_verification)} citation(s), {hits} supported",
-              flush=True)
+        scores.append((record["question_id"], result.confidence))
+        print(f"{record['question_id']}: {len(result.citation_verification)} citation(s), "
+              f"{hits} supported, confidence {result.confidence:.2f}", flush=True)
 
     print()
     print(f"TOTAL {total} citations, {supported} supported, {total - supported} not supported")
@@ -113,4 +116,12 @@ if __name__ == "__main__":
             print(f"       claim:  {row['claim']}")
             print(f"       reason: {row['reason']}")
 
-    write_report(args.out or os.path.join(args.base, "verification.json"), rows)
+    values = [c for _, c in scores]
+    print()
+    print(f"CONFIDENCE min {min(values):.2f}, max {max(values):.2f}, "
+          f"avg {sum(values) / len(values):.2f}")
+    for qid, c in sorted(scores, key=lambda pair: pair[1]):
+        print(f"  {qid} {c:.2f}")
+
+    write_report(args.out or os.path.join(args.base, "verification.json"),
+                 {"citations": rows, "confidence": dict(scores)})

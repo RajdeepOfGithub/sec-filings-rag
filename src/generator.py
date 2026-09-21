@@ -1,4 +1,5 @@
 import argparse
+import math
 import os
 import re
 from dataclasses import dataclass
@@ -100,6 +101,76 @@ def resolve_citations(numbers, citation_map, results):
     return citations
 
 
+# Confidence
+
+# A decline is an outcome, not a failure: an answer that correctly refuses gets
+# this instead of 0, so "I could not find it" never scores below a confident
+# wrong answer.
+DECLINE_CONFIDENCE = 0.35
+
+# Support is weighted heaviest because it is the only signal that reads the
+# answer against its own sources. Retrieval strength is the tiebreaker: it says
+# the cited passage was a good match for the question, not that the claim is
+# right. Both are first-pass guesses, not tuned.
+SUPPORT_WEIGHT = 0.6
+RETRIEVAL_WEIGHT = 0.4
+
+DECLINE_PHRASES = (
+    "does not provide",
+    "does not contain",
+    "does not specify",
+    "not enough information",
+    "no information",
+    "is missing",
+)
+
+
+def is_declined(answer_result):
+    """A decline cites nothing and says so. An uncited assertion is not a decline."""
+    if answer_result.citations:
+        return False
+    text = answer_result.answer_text.lower()
+    return any(phrase in text for phrase in DECLINE_PHRASES)
+
+def support_fraction(verifications):
+    if not verifications:
+        return 0.0
+    return sum(v["supported"] for v in verifications) / len(verifications)
+
+def top_cited_rerank_score(answer_result):
+    """
+    Cross-encoder scores are logits, roughly -6 to 9 on this corpus, so they go
+    through a sigmoid to land in 0-1. Only chunks the answer actually cited count.
+    """
+    cited_ids = {c["chunk_id"] for c in answer_result.citations}
+    scores = [r["rerank_score"] for r in answer_result.retrieved_chunks
+              if r["id"] in cited_ids and "rerank_score" in r]
+    if not scores:
+        return 0.0
+    return 1 / (1 + math.exp(-max(scores)))
+
+def compute_confidence(answer_result: AnswerResult) -> float:
+    """
+    0-1 confidence from signals already on the result. No API calls.
+
+    Declines get DECLINE_CONFIDENCE. Everything else is a weighted mix of how
+    much of the answer its own citations support and how strongly the reranker
+    matched the cited chunks. Verification is the larger term, so an answer
+    whose citations do not hold up cannot score high on retrieval alone. If
+    verification was skipped, retrieval is all that is left and carries the
+    score by itself.
+    """
+    if is_declined(answer_result):
+        return DECLINE_CONFIDENCE
+
+    retrieval = top_cited_rerank_score(answer_result)
+    if answer_result.citation_verification is None:
+        return round(retrieval, 3)
+
+    support = support_fraction(answer_result.citation_verification)
+    return round(SUPPORT_WEIGHT * support + RETRIEVAL_WEIGHT * retrieval, 3)
+
+
 # CLI
 
 def parse_args():
@@ -147,6 +218,16 @@ def print_result(context, result):
         print(f"  reason: {v['reason']}")
 
 
+def print_confidence(result):
+    if result.confidence is None:
+        return
+    print()
+    print("=" * 70)
+    print("CONFIDENCE")
+    print("=" * 70)
+    print(f"{result.confidence:.2f}" + ("  (declined)" if is_declined(result) else ""))
+
+
 if __name__ == "__main__":
     from verify import verify_answer  # imported here: verify imports generator
 
@@ -174,4 +255,7 @@ if __name__ == "__main__":
     if not args.no_verify:
         verify_answer(result)
 
+    result.confidence = compute_confidence(result)
+
     print_result(context, result)
+    print_confidence(result)
