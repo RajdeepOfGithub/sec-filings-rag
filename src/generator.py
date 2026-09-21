@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from pipeline import search
+from retriever import DEFAULT_COLLECTION
 
 load_dotenv()
 
@@ -19,9 +20,13 @@ Rules:
 - Use only information stated in the context. Do not use outside knowledge about the company, and do not infer figures that are not written down.
 - Cite the passage number for every factual claim, like this: [1]. If a claim draws on two passages, cite both: [1][2].
 - Quote figures exactly as they appear, including units and the period they cover. Do not convert, round, or aggregate numbers across periods.
+- When the question names a period or a scope - "Q2 2026", "the six months ended June 30", "consolidated", "the firm", a single segment - check that the figure you are about to use carries that same period and scope before you use it. The same metric appears in this corpus for several periods, and firmwide alongside per-segment. A figure that looks right is often the right metric for the wrong period or the wrong segment.
+- If two or more passages give the same metric for different periods or different segments, say which period and scope the figure you cite belongs to, and do not mix figures from different scopes in one sentence.
 - Tables in the context have been flattened, so column headers and values appear as plain sequences of numbers. Before using a figure from a table, state which column header it sits under and check the position matches. If a table lists headers like "2026 2025 2026 2025" followed by values, the first value belongs to the first header, the second to the second, and so on.
 - If a table row appears cut off, or if you cannot confidently match a figure to its column, say so rather than guessing.
-- If the context does not contain enough information to answer, say so plainly and state what is missing. Do not answer partially and hope it passes.
+- Read all the passages before you decide the context is insufficient. The answer is often spread across several of them: combine what they say and answer. No single passage has to contain the whole answer.
+- Answer everything the passages do support, and state it plainly rather than hedging. If they support part of the question, give that part in full and name only the part that is genuinely absent.
+- If, after reading every passage, the answer is in none of them, say so plainly and state what is missing. Do not guess to fill the gap.
 - Be brief. Answer the question asked and stop."""
 
 # Citation numbers are 1-99 only, so bracketed years like [2025] never match.
@@ -180,6 +185,8 @@ def parse_args():
     parser.add_argument("--top-k", type=int, default=5)
     parser.add_argument("--form", help="e.g. 10-K, 10-Q, earnings_call")
     parser.add_argument("--period", help="e.g. FY2025, Q2-2026")
+    parser.add_argument("--collection", default=DEFAULT_COLLECTION,
+                        help="Chroma collection to query; defaults to the v1 index")
     parser.add_argument("--no-verify", action="store_true",
                         help="skip citation verification (saves one LLM call per citation)")
     return parser.parse_args()
@@ -239,7 +246,8 @@ if __name__ == "__main__":
     if args.period:
         filters["period"] = args.period
 
-    results = search(args.question, n=args.n, top_k=args.top_k, filters=filters or None)
+    results = search(args.question, n=args.n, top_k=args.top_k, filters=filters or None,
+                     collection=args.collection)
     context, citation_map = build_context(results)
 
     answer_text = call_llm(SYSTEM_PROMPT, f"{context}\n\nQuestion: {args.question}")

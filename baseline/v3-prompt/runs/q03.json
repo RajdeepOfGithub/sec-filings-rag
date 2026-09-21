@@ -1,0 +1,1338 @@
+{
+  "question_id": "q03",
+  "question": "What was net income for the six months ended June 30, 2026?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "value": 37649,
+    "unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Executive Overview",
+    "table": "Financial performance of JPMorganChase",
+    "row": "Net income",
+    "column": "Six months ended June 30, 2026",
+    "period": "H1-2026"
+  },
+  "notes": "Deliberately asks for the six-month column, forcing the model past the three-month figures. Q2-2026 net income is 21,155 - if that comes back, it read the wrong superheader group.",
+  "run": {
+    "timestamp": "2026-09-21T01:23:17.644568+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_99",
+      "rank": 1,
+      "score": 0.6509818434715271,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": ", Six months ended June 30, 2026 2025 Change 2026 2025 Change Income before income tax expense $ 27,516 $ 18,284 50 % $ 47,995 $ 36,692 31 % Income tax expense 6,361 3,297 93 10,346 7,062 47 Effective tax rate 23.1 % 18.0 % 21.6 % 19.2 % Quarterly results The effective tax rate increased predominantly driven by the absence of a $774 million income tax benefit recorded in the prior year arising from the resolution of certain tax audits and the impact of tax regulations, and changes in the level a"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_127",
+      "rank": 2,
+      "score": 0.6889211535453796,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "1 111 25,622 23,209 105 23,314 Total net revenue 57,347 675 58,022 44,912 768 45,680 Total noninterest expense 27,316 NA 27,316 23,779 NA 23,779 Pre-provision profit 30,031 675 30,706 21,133 768 21,901 Provision for credit losses 2,515 NA 2,515 2,849 NA 2,849 Income before income tax expense 27,516 675 28,191 18,284 768 19,052 Income tax expense 6,361 675 7,036 3,297 768 4,065 Net income $ 21,155 NA $ 21,155 $ 14,987 NA $ 14,987 Overhead ratio 48 % NM 47 % 53 % NM 52 % Six months ended June 30, "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_16",
+      "rank": 3,
+      "score": 0.6932427287101746,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "nd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rank": 4,
+      "score": 0.7030028104782104,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "rate. Selected income statement and balance sheet data As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions, except employees) 2026 2025 Change 2026 2025 Change Revenue Principal transactions $ 149 $ (54) NM $ 118 $ (141) NM Investment securities losses (395) (54) NM (335) (91) (268) % All other income 5,470 (c) 157 NM 5,630 (c) 934 NM Noninterest revenue 5,224 49 NM 5,413 702 NM Net interest income 822 1,489 (45) % 1,848 3,140 (41) Total net reven"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_743",
+      "rank": 5,
+      "score": 0.7099164724349976,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_67",
+      "rank": 6,
+      "score": 0.7104564905166626,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "come 336 363 (7) 645 641 1 Card income 1,348 1,344 — 2,538 2,560 (1) Other income (a) 7,549 (b) 1,154 NM 9,220 (b) 3,077 200 Noninterest revenue 31,836 21,703 47 56,306 43,740 29 Net interest income 25,511 23,209 10 50,877 46,482 9 Total net revenue $ 57,347 $ 44,912 28 % $ 107,183 $ 90,222 19 % (a) Included operating lease income of $1.2 billion and $901 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1138",
+      "rank": 7,
+      "score": 0.737271785736084,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "millions, except per share amounts) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Basic earnings per share Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Less: Preferred stock dividends 308 282 584 537 Net income applicable to common equity 20,847 14,705 37,065 29,093 Less: Dividends and undistributed earnings allocated to participating securities 95 75 164 145 Net income applicable to common stockholders $ 20,752 $ 14,630 $ 36,901 $ 28,948 Total weighted-average basi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_146",
+      "rank": 8,
+      "score": 0.7460272908210754,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": " 9,678 6,650 46 1,957 1,473 33 Return on equity (“ROE”) 34 % 36 % 22 % 17 % 48 % 36 % Three months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 6,046 (a) $ 1,538 293 % $ 58,022 $ 45,680 27 % Total noninterest expense 611 547 12 27,316 23,779 15 Pre-provision profit 5,435 991 448 30,706 21,901 40 Provision for credit losses (10) 25 NM 2,515 2,849 (12) Net income 4,209 1,695 148 21,155 14,987 41 ROE NM NM 24 % 18 % Six months end"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 9,
+      "score": 0.7493887543678284,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " value of these amounts are recorded in net interest income. (b) Excludes amounts reclassified from AOCI to income associated with net investment hedges. The amounts reclassified for the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. Refer to Note 19 for further information. Gains and losses on derivatives used for specified risk management purpo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_265",
+      "rank": 10,
+      "score": 0.7505511045455933,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": ". Selected income statement and balance sheet data As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Investment securities losses $ (395) $ (54) NM $ (335) $ (91) (268) % Available-for-sale securities (average) (a) $ 533,510 $ 462,179 15 % $ 531,516 $ 427,282 24 Held-to-maturity securities (average) (a) 270,893 262,479 3 270,191 266,172 2 Investment securities portfolio (average) $ 804,403 $ 724,658 11 $ 801,70"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_230",
+      "rank": 11,
+      "score": 0.76591956615448,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "5 12 Total net revenue $ 6,851 $ 5,760 19 % $ 13,225 $ 11,491 15 % Financial ratios Return on equity 48 % 36 % 46 % 38 % Overhead ratio 61 65 63 65 Pre-tax margin ratio: Asset Management 36 33 35 33 Global Private Bank 40 36 38 37 Asset & Wealth Management 38 34 37 35 (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_625",
+      "rank": 12,
+      "score": 0.765954852104187,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "hase & Co. Consolidated statements of comprehensive income (unaudited) Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Other comprehensive income/(loss), after–tax Unrealized gains/(losses) on investment securities 320 ( 188 ) ( 2,081 ) 765 Translation adjustments, net of hedges ( 21 ) 868 ( 188 ) 1,357 Fair value hedges ( 9 ) ( 8 ) 32 20 Cash flow hedges ( 948 ) 1,529 ( 1,849 ) 3,203 Defined benefit pension a"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_219",
+      "rank": 13,
+      "score": 0.7827245593070984,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "$ 5,925 $ 8,783 $ 3,205 $ 3,865 $ 7,070 Lending- and deposit-related fees 120 65 185 133 41 174 Commissions and other fees 127 754 881 170 590 760 All other income 369 (85) 284 399 (28) 371 Noninterest revenue 3,474 6,659 10,133 3,907 4,468 8,375 Net interest income 2,579 (634) 1,945 1,783 (1,222) 561 Total net revenue $ 6,053 $ 6,025 $ 12,078 $ 5,690 $ 3,246 $ 8,936 Six months ended June 30, Six months ended June 30, 2026 2025 (in millions) Fixed Income Markets Equity Markets Total Markets Fixe"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_148",
+      "rank": 14,
+      "score": 0.7851800322532654,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "45 20 Provision for credit losses 4,206 4,711 (11) 838 1,401 (40) (11) 36 NM Net income 10,287 9,594 7 18,722 13,592 38 3,732 3,056 22 ROE 33 % 34 % 22 % 18 % 46 % 38 % Six months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 7,261 (a) $ 3,842 89 % $ 108,558 $ 91,694 18 % Total noninterest expense 1,179 732 61 54,166 47,376 14 Pre-provision profit 6,082 3,110 96 54,392 44,318 23 Provision for credit losses (11) 6 NM 5,022 6,154 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1252",
+      "rank": 15,
+      "score": 0.7869659662246704,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "5 ) ( 768 ) 6,361 3,297 Net income $ 4,209 $ 1,695 $ — $ — $ 21,155 $ 14,987 Average equity $ 93,448 $ 108,297 NA NA $ 343,146 $ 329,797 Total assets 1,309,857 1,370,312 NA NA 5,015,069 4,552,482 ROE NM NM NM NM 24 % 18 % Overhead ratio NM NM NM NM 48 53 187 As of or for the six months ended June 30, (in millions, except ratios) Consumer & Community Banking Commercial & Investment Bank Asset & Wealth Management 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 10,010 $ 8,623 $ 32,344 $ 27,614 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1250",
+      "rank": 16,
+      "score": 0.7872936725616455,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "nse/(benefit) 1,697 1,738 3,429 2,548 674 508 Net income $ 5,311 $ 5,169 $ 9,678 $ 6,650 $ 1,957 $ 1,473 Average equity $ 61,500 $ 56,000 $ 172,198 (g) $ 149,500 $ 16,000 $ 16,000 Total assets 672,612 652,379 2,709,357 2,260,825 323,243 268,966 ROE 34 % 36 % 22 % 17 % 48 % 36 % Overhead ratio 55 52 46 49 61 65 As of or for the three months ended June 30, (in millions, except ratios) Corporate Reconciling Items (a) Total 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 5,224 (e) $ 49 $ ( 564 )"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_180",
+      "rank": 17,
+      "score": 0.7897738218307495,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "e months ended June 30, Six months ended June 30, (in millions, except ratios) 2026 2025 Change 2026 2025 Change Revenue Investment banking fees $ 3,277 $ 2,513 30 % $ 6,160 $ 4,761 29 % Principal transactions 8,768 7,109 23 16,665 14,717 13 Lending- and deposit-related fees 1,487 1,296 15 2,881 2,526 14 Commissions and other fees 1,748 1,493 17 3,462 2,930 18 Card income 649 645 1 1,234 1,196 3 All other income 1,025 736 39 1,942 1,484 31 Noninterest revenue 16,954 13,792 23 32,344 27,614 17 Ne"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1254",
+      "rank": 18,
+      "score": 0.7910113334655762,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "9,483 8,374 7,446 Income/(loss) before income tax expense/(benefit) 13,547 12,734 24,868 18,317 4,862 4,009 Income tax expense/(benefit) 3,260 3,140 6,146 4,725 1,130 953 Net income $ 10,287 $ 9,594 $ 18,722 $ 13,592 $ 3,732 $ 3,056 Average equity $ 61,500 $ 56,000 $ 169,365 (g) $ 149,500 $ 16,000 $ 16,000 Total assets 672,612 652,379 2,709,357 2,260,825 323,243 268,966 ROE 33 % 34 % 22 % 18 % 46 % 38 % Overhead ratio 55 53 47 50 63 65 As of or for the six months ended June 30, (in millions, exc"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1263",
+      "rank": 19,
+      "score": 0.7937565445899963,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "ncome and changes in stockholders’ equity for the three-month and six-month periods ended June 30, 2026 and 2025, and the consolidated statements of cash flows for the six-month periods ended June 30, 2026 and 2025, including the related notes (collectively referred to as the “interim financial statements”). Based on our reviews, we are not aware of any material modifications that should be made to the accompanying interim financial statements for them to be in conformity with accounting princip"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_846",
+      "rank": 20,
+      "score": 0.7957999110221863,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "x gains/(losses) recorded on such instruments for the three and six months ended June 30, 2026 and 2025. Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Three months ended June 30, (in millions) Amounts recorded in income (b) Amounts recorded in OCI Amounts recorded in income (b) Amounts recorded in OCI Foreign exchange derivatives $ ( 20 ) $ 57 $ 120 $ ( 4,213 ) Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Six months"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_1116",
+      "rank": 1,
+      "score": 22.876588987599533,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " the components of mortgage fees and related income (including the impact of MSR risk management activities) for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 CCB mortgage fees and related income Production revenue $ 147 $ 151 $ 325 $ 261 Net mortgage servicing revenue: Operating revenue: Loan servicing revenue 403 420 812 824 Changes in MSR asset fair value due to collection/realization of expected "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_368",
+      "rank": 2,
+      "score": 22.714239382257364,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "oans-to-deposits ratio 57 % 58 % The following table provides a summary of the average balances and average interest rates of JPMorganChase’s deposits for the three and six months ended June 30, 2026 and 2025. (in millions) Average balances Average interest rates Three months ended Six months ended Three months ended Six months ended June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 U.S. offices Noninterest-bearing $ 597,106 $ 572,715"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1084",
+      "rank": 3,
+      "score": 22.59589583069372,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "e 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1386",
+      "rank": 4,
+      "score": 22.070592068765315,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "ollowing financial information included in the Firm’s Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2026, formatted in XBRL (eXtensible Business Reporting Language) interactive data files: (i) the Consolidated statements of income (unaudited) for the three and six months ended June 30, 2026 and 2025, (ii) the Consolidated statements of comprehensive income (unaudited) for the three and six months ended June 30, 2026 and 2025, (iii) the Consolidated balance sheets (unaudit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 5,
+      "score": 21.960374151286743,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " value of these amounts are recorded in net interest income. (b) Excludes amounts reclassified from AOCI to income associated with net investment hedges. The amounts reclassified for the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. Refer to Note 19 for further information. Gains and losses on derivatives used for specified risk management purpo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_846",
+      "rank": 6,
+      "score": 21.588908687291323,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "x gains/(losses) recorded on such instruments for the three and six months ended June 30, 2026 and 2025. Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Three months ended June 30, (in millions) Amounts recorded in income (b) Amounts recorded in OCI Amounts recorded in income (b) Amounts recorded in OCI Foreign exchange derivatives $ ( 20 ) $ 57 $ 120 $ ( 4,213 ) Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Six months"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1128",
+      "rank": 7,
+      "score": 21.503017570257658,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "of the six months ended June 30, 2026 and 2025. Firm as lessor The Firm’s lease financings are predominantly auto operating leases, and are included in other assets on the Firm’s Consolidated balance sheets. The following table presents the Firm’s operating lease income, included within other income , and the related depreciation expense, included within technology, communications and equipment expense, on the Consolidated statements of income. Three months ended June 30, Six months ended June 3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1153",
+      "rank": 8,
+      "score": 21.491024808212725,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "(losses) on translation adjustments and related hedges are reported in other income/expense in the Consolidated statements of income. The net amounts reclassified during the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. (c) Represents changes in fair value of cross-currency swaps attributable to changes in cross-currency basis spreads, which are"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_723",
+      "rank": 9,
+      "score": 21.4907002752094,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": " material for the three and six months ended June 30, 2026 and 2025. (e) Changes in fair value for MSRs are reported in mortgage fees and related income. (f) Realized (gains)/losses due to DVA for fair value option elected liabilities are reported in principal transactions revenue, and were not material for the three and six months ended June 30, 2026 and 2025. Unrealized (gains)/losses are reported in OCI, and were $ 166 million and $ 63 million for the three months ended June 30, 2026 and 2025"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_179",
+      "rank": 10,
+      "score": 21.489243179698168,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " Firmwide mortgage origination volume was $21.2 billion and $16.3 billion for the three months ended June 30, 2026 and 2025, respectively, and $37.8 billion and $27.5 billion for the six months ended June 30, 2026 and 2025, respectively. 26 COMMERCIAL & INVESTMENT BANK Refer to pages 69–75 of JPMorganChase’s 2025 Form 10-K and Line of Business Metrics on page 199 for a discussion of the business profile of CIB. Selected income statement data Three months ended June 30, Six months ended June 30, "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_743",
+      "rank": 11,
+      "score": 21.396421409744708,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_896",
+      "rank": 12,
+      "score": 21.2504674699553,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "billion for the three and six months ended June 30, 2025, respectively. (c) The amortized cost of investment securities is reported net of allowance for credit losses of $ 63 million and $ 106 million at June 30, 2026 and December 31, 2025, respectively. (d) Excludes $ 5.3 billion and $ 4.6 billion of accrued interest receivable at June 30, 2026 and December 31, 2025, respectively. The Firm did not reverse through interest income any accrued interest receivable for the three and six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_472",
+      "rank": 13,
+      "score": 21.178594741614262,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "harge-offs decreased by $203 million for the six months ended June 30, 2026, compared to the same period in the prior year, primarily due to lower net charge-offs in Commercial and Industrial, concentrated in Technology, Media & Telecommunications and Healthcare, as well as in Real Estate. Wholesale net charge-offs/(recoveries) (in millions, except ratios) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Average loans retained $ 825,356 $ 721,105 $ 809,594 $ 703,952 Gros"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_150",
+      "rank": 14,
+      "score": 21.099619474777352,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "rative discussion of the Firm’s results by business segments and Corporate as of or for the three and six months ended June 30, 2026 and 2025, unless otherwise specified. 21 CONSUMER & COMMUNITY BANKING Refer to pages 65–68 of JPMorganChase's 2025 Form 10-K and Line of Business Metrics on page 199 for a discussion of the business profile of CCB. Selected income statement data Three months ended June 30, Six months ended June 30, (in millions, except ratios) 2026 2025 Change 2026 2025 Change Reve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_130",
+      "rank": 15,
+      "score": 20.86274948019176,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "CIB, and for net interest income, predominantly recognized in CIB and Corporate. 18 The following table provides information on net interest income, net yield, and noninterest revenue excluding Markets. (in millions, except rates) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Net interest income – reported (a) $ 25,511 $ 23,209 10 % $ 50,877 $ 46,482 9 % Fully taxable-equivalent adjustments 111 105 6 224 207 8 Net interest income – managed basis $ 25,622"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_154",
+      "rank": 16,
+      "score": 20.709052983377987,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "erhead ratio 55 52 55 53 (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_299",
+      "rank": 17,
+      "score": 20.654060465178908,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "losses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_155",
+      "rank": 18,
+      "score": 20.649747887125148,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " ended June 30, 2026 and 2025, respectively, and $1.6 billion for each of the six months ended June 30, 2026 and 2025. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) Included depreciation expense on leased assets of $694 million and $577 million for the three months ended June 30, 2026 and 2025, respectively, and $1.5 billion and $1.1 billion for the six months ended June 30, 2026 and 2025, respectively"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_188",
+      "rank": 19,
+      "score": 20.19381894386062,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "n principal transactions revenue. Results are presented net of associated hedging activities and net of CVA and FVA amounts allocated to Fixed Income Markets and Equity Markets. Refer to Notes 2, 3 and 19 for additional information. Selected income statement data Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Banking & Payments revenue by client coverage segment (a) Global Corporate Banking & Global Investment Banking $ 7,797 $ 6,319 23 % $ "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_169",
+      "rank": 20,
+      "score": 20.168299470202143,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "ectively. (b) Average Home Lending loans held-for sale and loans at fair value were $13.0 billion and $8.9 billion for the three months ended June 30, 2026 and 2025, respectively, and $12.4 billion and $8.2 billion for the six months ended June 30, 2026 and 2025, respectively. (c) Refer to footnote (e) on page 22 for further information on the centralization of Risk functions. 24 Selected metrics As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 1,
+      "rrf_score": 0.029877369007803793,
+      "found_in": {
+        "dense": 9,
+        "sparse": 5
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " value of these amounts are recorded in net interest income. (b) Excludes amounts reclassified from AOCI to income associated with net investment hedges. The amounts reclassified for the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. Refer to Note 19 for further information. Gains and losses on derivatives used for specified risk management purpo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_743",
+      "rank": 2,
+      "rrf_score": 0.02946912242686891,
+      "found_in": {
+        "dense": 5,
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_846",
+      "rank": 3,
+      "rrf_score": 0.027651515151515153,
+      "found_in": {
+        "dense": 20,
+        "sparse": 6
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "x gains/(losses) recorded on such instruments for the three and six months ended June 30, 2026 and 2025. Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Three months ended June 30, (in millions) Amounts recorded in income (b) Amounts recorded in OCI Amounts recorded in income (b) Amounts recorded in OCI Foreign exchange derivatives $ ( 20 ) $ 57 $ 120 $ ( 4,213 ) Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Six months"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_99",
+      "rank": 4,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": ", Six months ended June 30, 2026 2025 Change 2026 2025 Change Income before income tax expense $ 27,516 $ 18,284 50 % $ 47,995 $ 36,692 31 % Income tax expense 6,361 3,297 93 10,346 7,062 47 Effective tax rate 23.1 % 18.0 % 21.6 % 19.2 % Quarterly results The effective tax rate increased predominantly driven by the absence of a $774 million income tax benefit recorded in the prior year arising from the resolution of certain tax audits and the impact of tax regulations, and changes in the level a"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1116",
+      "rank": 5,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " the components of mortgage fees and related income (including the impact of MSR risk management activities) for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 CCB mortgage fees and related income Production revenue $ 147 $ 151 $ 325 $ 261 Net mortgage servicing revenue: Operating revenue: Loan servicing revenue 403 420 812 824 Changes in MSR asset fair value due to collection/realization of expected "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_127",
+      "rank": 6,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "1 111 25,622 23,209 105 23,314 Total net revenue 57,347 675 58,022 44,912 768 45,680 Total noninterest expense 27,316 NA 27,316 23,779 NA 23,779 Pre-provision profit 30,031 675 30,706 21,133 768 21,901 Provision for credit losses 2,515 NA 2,515 2,849 NA 2,849 Income before income tax expense 27,516 675 28,191 18,284 768 19,052 Income tax expense 6,361 675 7,036 3,297 768 4,065 Net income $ 21,155 NA $ 21,155 $ 14,987 NA $ 14,987 Overhead ratio 48 % NM 47 % 53 % NM 52 % Six months ended June 30, "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_368",
+      "rank": 7,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "oans-to-deposits ratio 57 % 58 % The following table provides a summary of the average balances and average interest rates of JPMorganChase’s deposits for the three and six months ended June 30, 2026 and 2025. (in millions) Average balances Average interest rates Three months ended Six months ended Three months ended Six months ended June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 U.S. offices Noninterest-bearing $ 597,106 $ 572,715"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_16",
+      "rank": 8,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "nd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1084",
+      "rank": 9,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "e 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_250",
+      "rank": 10,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "rate. Selected income statement and balance sheet data As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions, except employees) 2026 2025 Change 2026 2025 Change Revenue Principal transactions $ 149 $ (54) NM $ 118 $ (141) NM Investment securities losses (395) (54) NM (335) (91) (268) % All other income 5,470 (c) 157 NM 5,630 (c) 934 NM Noninterest revenue 5,224 49 NM 5,413 702 NM Net interest income 822 1,489 (45) % 1,848 3,140 (41) Total net reven"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1386",
+      "rank": 11,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "ollowing financial information included in the Firm’s Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2026, formatted in XBRL (eXtensible Business Reporting Language) interactive data files: (i) the Consolidated statements of income (unaudited) for the three and six months ended June 30, 2026 and 2025, (ii) the Consolidated statements of comprehensive income (unaudited) for the three and six months ended June 30, 2026 and 2025, (iii) the Consolidated balance sheets (unaudit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_67",
+      "rank": 12,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "come 336 363 (7) 645 641 1 Card income 1,348 1,344 — 2,538 2,560 (1) Other income (a) 7,549 (b) 1,154 NM 9,220 (b) 3,077 200 Noninterest revenue 31,836 21,703 47 56,306 43,740 29 Net interest income 25,511 23,209 10 50,877 46,482 9 Total net revenue $ 57,347 $ 44,912 28 % $ 107,183 $ 90,222 19 % (a) Included operating lease income of $1.2 billion and $901 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1138",
+      "rank": 13,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "millions, except per share amounts) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Basic earnings per share Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Less: Preferred stock dividends 308 282 584 537 Net income applicable to common equity 20,847 14,705 37,065 29,093 Less: Dividends and undistributed earnings allocated to participating securities 95 75 164 145 Net income applicable to common stockholders $ 20,752 $ 14,630 $ 36,901 $ 28,948 Total weighted-average basi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1128",
+      "rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "of the six months ended June 30, 2026 and 2025. Firm as lessor The Firm’s lease financings are predominantly auto operating leases, and are included in other assets on the Firm’s Consolidated balance sheets. The following table presents the Firm’s operating lease income, included within other income , and the related depreciation expense, included within technology, communications and equipment expense, on the Consolidated statements of income. Three months ended June 30, Six months ended June 3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_146",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": " 9,678 6,650 46 1,957 1,473 33 Return on equity (“ROE”) 34 % 36 % 22 % 17 % 48 % 36 % Three months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 6,046 (a) $ 1,538 293 % $ 58,022 $ 45,680 27 % Total noninterest expense 611 547 12 27,316 23,779 15 Pre-provision profit 5,435 991 448 30,706 21,901 40 Provision for credit losses (10) 25 NM 2,515 2,849 (12) Net income 4,209 1,695 148 21,155 14,987 41 ROE NM NM 24 % 18 % Six months end"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1153",
+      "rank": 16,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "(losses) on translation adjustments and related hedges are reported in other income/expense in the Consolidated statements of income. The net amounts reclassified during the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. (c) Represents changes in fair value of cross-currency swaps attributable to changes in cross-currency basis spreads, which are"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_723",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": " material for the three and six months ended June 30, 2026 and 2025. (e) Changes in fair value for MSRs are reported in mortgage fees and related income. (f) Realized (gains)/losses due to DVA for fair value option elected liabilities are reported in principal transactions revenue, and were not material for the three and six months ended June 30, 2026 and 2025. Unrealized (gains)/losses are reported in OCI, and were $ 166 million and $ 63 million for the three months ended June 30, 2026 and 2025"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_265",
+      "rank": 18,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": ". Selected income statement and balance sheet data As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Investment securities losses $ (395) $ (54) NM $ (335) $ (91) (268) % Available-for-sale securities (average) (a) $ 533,510 $ 462,179 15 % $ 531,516 $ 427,282 24 Held-to-maturity securities (average) (a) 270,893 262,479 3 270,191 266,172 2 Investment securities portfolio (average) $ 804,403 $ 724,658 11 $ 801,70"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_179",
+      "rank": 19,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " Firmwide mortgage origination volume was $21.2 billion and $16.3 billion for the three months ended June 30, 2026 and 2025, respectively, and $37.8 billion and $27.5 billion for the six months ended June 30, 2026 and 2025, respectively. 26 COMMERCIAL & INVESTMENT BANK Refer to pages 69–75 of JPMorganChase’s 2025 Form 10-K and Line of Business Metrics on page 199 for a discussion of the business profile of CIB. Selected income statement data Three months ended June 30, Six months ended June 30, "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_230",
+      "rank": 20,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "5 12 Total net revenue $ 6,851 $ 5,760 19 % $ 13,225 $ 11,491 15 % Financial ratios Return on equity 48 % 36 % 46 % 38 % Overhead ratio 61 65 63 65 Pre-tax margin ratio: Asset Management 36 33 35 33 Global Private Bank 40 36 38 37 Asset & Wealth Management 38 34 37 35 (a) Included compensation expense recorded in and allocated from Corporate of $287 million and $272 million for the three months ended June 30, 2026 and 2025, respectively, and $587 million and $541 million for the six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_625",
+      "rank": 21,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "hase & Co. Consolidated statements of comprehensive income (unaudited) Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Other comprehensive income/(loss), after–tax Unrealized gains/(losses) on investment securities 320 ( 188 ) ( 2,081 ) 765 Translation adjustments, net of hedges ( 21 ) 868 ( 188 ) 1,357 Fair value hedges ( 9 ) ( 8 ) 32 20 Cash flow hedges ( 948 ) 1,529 ( 1,849 ) 3,203 Defined benefit pension a"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_896",
+      "rank": 22,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "billion for the three and six months ended June 30, 2025, respectively. (c) The amortized cost of investment securities is reported net of allowance for credit losses of $ 63 million and $ 106 million at June 30, 2026 and December 31, 2025, respectively. (d) Excludes $ 5.3 billion and $ 4.6 billion of accrued interest receivable at June 30, 2026 and December 31, 2025, respectively. The Firm did not reverse through interest income any accrued interest receivable for the three and six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_219",
+      "rank": 23,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "$ 5,925 $ 8,783 $ 3,205 $ 3,865 $ 7,070 Lending- and deposit-related fees 120 65 185 133 41 174 Commissions and other fees 127 754 881 170 590 760 All other income 369 (85) 284 399 (28) 371 Noninterest revenue 3,474 6,659 10,133 3,907 4,468 8,375 Net interest income 2,579 (634) 1,945 1,783 (1,222) 561 Total net revenue $ 6,053 $ 6,025 $ 12,078 $ 5,690 $ 3,246 $ 8,936 Six months ended June 30, Six months ended June 30, 2026 2025 (in millions) Fixed Income Markets Equity Markets Total Markets Fixe"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_472",
+      "rank": 24,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "harge-offs decreased by $203 million for the six months ended June 30, 2026, compared to the same period in the prior year, primarily due to lower net charge-offs in Commercial and Industrial, concentrated in Technology, Media & Telecommunications and Healthcare, as well as in Real Estate. Wholesale net charge-offs/(recoveries) (in millions, except ratios) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Average loans retained $ 825,356 $ 721,105 $ 809,594 $ 703,952 Gros"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_148",
+      "rank": 25,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "45 20 Provision for credit losses 4,206 4,711 (11) 838 1,401 (40) (11) 36 NM Net income 10,287 9,594 7 18,722 13,592 38 3,732 3,056 22 ROE 33 % 34 % 22 % 18 % 46 % 38 % Six months ended June 30, Corporate Total (in millions, except ratios) 2026 2025 Change 2026 2025 Change Total net revenue $ 7,261 (a) $ 3,842 89 % $ 108,558 $ 91,694 18 % Total noninterest expense 1,179 732 61 54,166 47,376 14 Pre-provision profit 6,082 3,110 96 54,392 44,318 23 Provision for credit losses (11) 6 NM 5,022 6,154 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_150",
+      "rank": 26,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "rative discussion of the Firm’s results by business segments and Corporate as of or for the three and six months ended June 30, 2026 and 2025, unless otherwise specified. 21 CONSUMER & COMMUNITY BANKING Refer to pages 65–68 of JPMorganChase's 2025 Form 10-K and Line of Business Metrics on page 199 for a discussion of the business profile of CCB. Selected income statement data Three months ended June 30, Six months ended June 30, (in millions, except ratios) 2026 2025 Change 2026 2025 Change Reve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1252",
+      "rank": 27,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "5 ) ( 768 ) 6,361 3,297 Net income $ 4,209 $ 1,695 $ — $ — $ 21,155 $ 14,987 Average equity $ 93,448 $ 108,297 NA NA $ 343,146 $ 329,797 Total assets 1,309,857 1,370,312 NA NA 5,015,069 4,552,482 ROE NM NM NM NM 24 % 18 % Overhead ratio NM NM NM NM 48 53 187 As of or for the six months ended June 30, (in millions, except ratios) Consumer & Community Banking Commercial & Investment Bank Asset & Wealth Management 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 10,010 $ 8,623 $ 32,344 $ 27,614 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_130",
+      "rank": 28,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "CIB, and for net interest income, predominantly recognized in CIB and Corporate. 18 The following table provides information on net interest income, net yield, and noninterest revenue excluding Markets. (in millions, except rates) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Net interest income – reported (a) $ 25,511 $ 23,209 10 % $ 50,877 $ 46,482 9 % Fully taxable-equivalent adjustments 111 105 6 224 207 8 Net interest income – managed basis $ 25,622"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1250",
+      "rank": 29,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "nse/(benefit) 1,697 1,738 3,429 2,548 674 508 Net income $ 5,311 $ 5,169 $ 9,678 $ 6,650 $ 1,957 $ 1,473 Average equity $ 61,500 $ 56,000 $ 172,198 (g) $ 149,500 $ 16,000 $ 16,000 Total assets 672,612 652,379 2,709,357 2,260,825 323,243 268,966 ROE 34 % 36 % 22 % 17 % 48 % 36 % Overhead ratio 55 52 46 49 61 65 As of or for the three months ended June 30, (in millions, except ratios) Corporate Reconciling Items (a) Total 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 5,224 (e) $ 49 $ ( 564 )"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_154",
+      "rank": 30,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "erhead ratio 55 52 55 53 (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_180",
+      "rank": 31,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "e months ended June 30, Six months ended June 30, (in millions, except ratios) 2026 2025 Change 2026 2025 Change Revenue Investment banking fees $ 3,277 $ 2,513 30 % $ 6,160 $ 4,761 29 % Principal transactions 8,768 7,109 23 16,665 14,717 13 Lending- and deposit-related fees 1,487 1,296 15 2,881 2,526 14 Commissions and other fees 1,748 1,493 17 3,462 2,930 18 Card income 649 645 1 1,234 1,196 3 All other income 1,025 736 39 1,942 1,484 31 Noninterest revenue 16,954 13,792 23 32,344 27,614 17 Ne"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_299",
+      "rank": 32,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "losses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1254",
+      "rank": 33,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "9,483 8,374 7,446 Income/(loss) before income tax expense/(benefit) 13,547 12,734 24,868 18,317 4,862 4,009 Income tax expense/(benefit) 3,260 3,140 6,146 4,725 1,130 953 Net income $ 10,287 $ 9,594 $ 18,722 $ 13,592 $ 3,732 $ 3,056 Average equity $ 61,500 $ 56,000 $ 169,365 (g) $ 149,500 $ 16,000 $ 16,000 Total assets 672,612 652,379 2,709,357 2,260,825 323,243 268,966 ROE 33 % 34 % 22 % 18 % 46 % 38 % Overhead ratio 55 53 47 50 63 65 As of or for the six months ended June 30, (in millions, exc"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_155",
+      "rank": 34,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": " ended June 30, 2026 and 2025, respectively, and $1.6 billion for each of the six months ended June 30, 2026 and 2025. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) Included depreciation expense on leased assets of $694 million and $577 million for the three months ended June 30, 2026 and 2025, respectively, and $1.5 billion and $1.1 billion for the six months ended June 30, 2026 and 2025, respectively"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1263",
+      "rank": 35,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "ncome and changes in stockholders’ equity for the three-month and six-month periods ended June 30, 2026 and 2025, and the consolidated statements of cash flows for the six-month periods ended June 30, 2026 and 2025, including the related notes (collectively referred to as the “interim financial statements”). Based on our reviews, we are not aware of any material modifications that should be made to the accompanying interim financial statements for them to be in conformity with accounting princip"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_188",
+      "rank": 36,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "n principal transactions revenue. Results are presented net of associated hedging activities and net of CVA and FVA amounts allocated to Fixed Income Markets and Equity Markets. Refer to Notes 2, 3 and 19 for additional information. Selected income statement data Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Banking & Payments revenue by client coverage segment (a) Global Corporate Banking & Global Investment Banking $ 7,797 $ 6,319 23 % $ "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_169",
+      "rank": 37,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "ectively. (b) Average Home Lending loans held-for sale and loans at fair value were $13.0 billion and $8.9 billion for the three months ended June 30, 2026 and 2025, respectively, and $12.4 billion and $8.2 billion for the six months ended June 30, 2026 and 2025, respectively. (c) Refer to footnote (e) on page 22 for further information on the centralization of Risk functions. 24 Selected metrics As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_625",
+      "rerank_rank": 1,
+      "rerank_score": 9.308177947998047,
+      "rrf_rank": 21,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "hase & Co. Consolidated statements of comprehensive income (unaudited) Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Other comprehensive income/(loss), after–tax Unrealized gains/(losses) on investment securities 320 ( 188 ) ( 2,081 ) 765 Translation adjustments, net of hedges ( 21 ) 868 ( 188 ) 1,357 Fair value hedges ( 9 ) ( 8 ) 32 20 Cash flow hedges ( 948 ) 1,529 ( 1,849 ) 3,203 Defined benefit pension a"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1138",
+      "rerank_rank": 2,
+      "rerank_score": 9.116424560546875,
+      "rrf_rank": 13,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "millions, except per share amounts) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Basic earnings per share Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Less: Preferred stock dividends 308 282 584 537 Net income applicable to common equity 20,847 14,705 37,065 29,093 Less: Dividends and undistributed earnings allocated to participating securities 95 75 164 145 Net income applicable to common stockholders $ 20,752 $ 14,630 $ 36,901 $ 28,948 Total weighted-average basi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_16",
+      "rerank_rank": 3,
+      "rerank_score": 8.932805061340332,
+      "rrf_rank": 8,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "nd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1084",
+      "rerank_rank": 4,
+      "rerank_score": 8.84280776977539,
+      "rrf_rank": 9,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "e 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_743",
+      "rerank_rank": 5,
+      "rerank_score": 8.24240779876709,
+      "rrf_rank": 2,
+      "rrf_score": 0.02946912242686891,
+      "found_in": {
+        "dense": 5,
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026)\nhase & Co. Consolidated statements of comprehensive income (unaudited) Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Other comprehensive income/(loss), after–tax Unrealized gains/(losses) on investment securities 320 ( 188 ) ( 2,081 ) 765 Translation adjustments, net of hedges ( 21 ) 868 ( 188 ) 1,357 Fair value hedges ( 9 ) ( 8 ) 32 20 Cash flow hedges ( 948 ) 1,529 ( 1,849 ) 3,203 Defined benefit pension a\n\n[2] (10-Q, Q2-2026)\nmillions, except per share amounts) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Basic earnings per share Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Less: Preferred stock dividends 308 282 584 537 Net income applicable to common equity 20,847 14,705 37,065 29,093 Less: Dividends and undistributed earnings allocated to participating securities 95 75 164 145 Net income applicable to common stockholders $ 20,752 $ 14,630 $ 36,901 $ 28,948 Total weighted-average basi\n\n[3] (10-Q, Q2-2026)\nnd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4\n\n[4] (10-Q, Q2-2026)\ne 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments \n\n[5] (10-Q, Q2-2026)\nJune 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga",
+  "user_prompt": "[1] (10-Q, Q2-2026)\nhase & Co. Consolidated statements of comprehensive income (unaudited) Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Other comprehensive income/(loss), after–tax Unrealized gains/(losses) on investment securities 320 ( 188 ) ( 2,081 ) 765 Translation adjustments, net of hedges ( 21 ) 868 ( 188 ) 1,357 Fair value hedges ( 9 ) ( 8 ) 32 20 Cash flow hedges ( 948 ) 1,529 ( 1,849 ) 3,203 Defined benefit pension a\n\n[2] (10-Q, Q2-2026)\nmillions, except per share amounts) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Basic earnings per share Net income $ 21,155 $ 14,987 $ 37,649 $ 29,630 Less: Preferred stock dividends 308 282 584 537 Net income applicable to common equity 20,847 14,705 37,065 29,093 Less: Dividends and undistributed earnings allocated to participating securities 95 75 164 145 Net income applicable to common stockholders $ 20,752 $ 14,630 $ 36,901 $ 28,948 Total weighted-average basi\n\n[3] (10-Q, Q2-2026)\nnd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4\n\n[4] (10-Q, Q2-2026)\ne 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments \n\n[5] (10-Q, Q2-2026)\nJune 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga\n\nQuestion: What was net income for the six months ended June 30, 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_625"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1138"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_16"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1084"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_743"
+    }
+  ],
+  "answer_text": "Net income for the six months ended June 30, 2026, was $37,649 million [1][2].",
+  "parsed_citations": [
+    1,
+    2
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_625",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      }
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1138",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC"
+      }
+    }
+  ]
+}

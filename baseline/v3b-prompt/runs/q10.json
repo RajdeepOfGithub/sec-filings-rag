@@ -1,0 +1,1282 @@
+{
+  "question_id": "q10",
+  "question": "What happened with the Visa share exchange and what was its financial impact?",
+  "category": "narrative",
+  "difficulty": "medium",
+  "expected": {
+    "claims": [
+      "Visa commenced an exchange offer for Class B-2 shares on April 13 2026",
+      "Visa accepted the Firm's tender of 18.6 million Class B-2 shares on May 11 2026",
+      "exchanged for a combination of Class B-3 and Class C shares",
+      "resulted in a $4.6 billion net gain for the three months ended June 30 2026"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Executive Overview",
+    "passage": "Visa shares",
+    "period": "Q2-2026"
+  },
+  "notes": "REGRESSION CHECK, but contains figures embedded in prose (18.6 million shares, $4.6 billion). This is the class of numeric question Project 2's XBRL path will NOT cover, because these are narrative mentions rather than tagged facts.",
+  "run": {
+    "timestamp": "2026-09-21T01:28:15.657589+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_43",
+      "rank": 1,
+      "score": 0.6523968577384949,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "d an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares (“Visa C shares”), resulting in a $4.6 billion net gain for the three months ended June 30, 2026. Gains on certain equity investments : The second quarter of 2026 included $1.0 billion of gains on certain equity investments, consisting of $763 million in "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_258",
+      "rank": 2,
+      "score": 0.7463656663894653,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": " down $138 million, which included higher net investment securities losses. Refer to Notes 2 and 5 for additional information on Visa shares and the gains on certain equity investments. Noninterest expense was $611 million, compared with $547 million in the prior year. Income tax expense was $1.2 billion, compared with a $729 million benefit in the prior year, driven by changes in the level and mix of income and expenses subject to U.S. federal, state and local taxes, and the absence of a $774 m"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_750",
+      "rank": 3,
+      "score": 0.7844774723052979,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "res are included in Assets and liabilities measured at fair value on a recurring basis on page 100. Visa’s acceptance of the Firm's tender resulted in an initial gain of $ 4.5 billion based on the fair value of the Visa C shares. In addition, the current quarter also reflected other Visa-related activity, including the fair value changes of the Visa C shares and derivative instruments, as well as dividends, resulting in the net $ 4.6 billion gain on Visa shares. As of June 30, 2026, approximatel"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1559",
+      "rank": 4,
+      "score": 0.7864660024642944,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": "strictions on Visa B-2 shares may be terminated and what the final conversion rate for the Visa B-2 shares will be. As a result of these considerations, as well as differences in voting rights, Visa B-2 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. On February 13, 2026, Visa Inc. (“Visa”) announced that its Board of Directors has authorized Visa to proceed with a successive exchange offer in respect of Visa’s outstanding Class B common s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1560",
+      "rank": 5,
+      "score": 0.7870092391967773,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": " in respect of Visa’s outstanding Class B common stock with timing, terms, and conditions as discussed in Visa’s disclosure. The timing and likelihood of any future exchange offer is dependent upon actions taken by Visa and other factors that are outside of the Firm’s control. Separately, in connection with sales of Visa B shares prior to 2024, the Firm has entered into derivative instruments with the purchasers of the shares under which the Firm retains the risk associated with changes in the c"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_671",
+      "rank": 6,
+      "score": 0.793576717376709,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "ear – a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, and – restructuring and integration costs associated with First Republic. Refer to Note 6 for additional information on Visa shares and FDIC-related expense, Note 10 and Note 13 for additional information on the investment securities portfolio and the allowance for credit losses, and Note 6 and Note 34 for additional information on the First Republic acquisition. The current period income tax expense was driven by"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_751",
+      "rank": 7,
+      "score": 0.7985605597496033,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": " on Visa shares. As of June 30, 2026, approximately $ 1.6 billion of Visa C shares are subject to a lock-up restriction that expires on August 9, 2026. The Visa B-3 shares are subject to certain transfer restrictions and are convertible into Visa Class A common shares (“Visa A shares”) at a specified conversion rate upon final resolution of certain litigation matters involving Visa. The conversion rate of Visa B-3 shares to Visa A shares was 1.4953 at June 30, 2026 and may be adjusted by Visa de"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1558",
+      "rank": 8,
+      "score": 0.8147562742233276,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "itigation matters involving Visa. The conversion rate of Visa B-2 shares to Visa A shares was 1.5108 at December 31, 2025 and may be adjusted by Visa depending on developments related to the litigation matters. The outcome of those litigation matters, and the effect that the resolution of those matters may have on the conversion rate, is unknown. Accordingly, as of December 31, 2025, there is significant uncertainty regarding when the transfer restrictions on Visa B-2 shares may be terminated an"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_749",
+      "rank": 9,
+      "score": 0.8261083960533142,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " in the Firm's principal investment portfolio as of June 30, 2026 and June 30, 2025, respectively. On April 13, 2026, Visa commenced an exchange offer for any and all outstanding shares of Visa Class B-1 common stock (\"Visa B-1 shares\") and Visa B-2 shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa B-2 shares in exchange for a combination of Visa B-3 shares and Visa C common shares (“Visa C shares”). The Visa C shares are included in Assets and liabilities measure"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1260",
+      "rank": 10,
+      "score": 0.8298434615135193,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "$ 587 million and $ 541 million, respectively. (e) Included a $ 4.6 billion net gain related to Visa shares and $ 763 million of gains on certain equity investments. Refer to Notes 2 and 5 for additional information. (f) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Cor"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_753",
+      "rank": 11,
+      "score": 0.8597201108932495,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " will be. As a result of these considerations, as well as differences in voting rights, Visa B-3 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. Separately, in connection with sales of Visa B shares prior to 2024, the Firm has entered into derivative instruments with the purchasers of the shares under which the Firm retains the risk associated with changes in the conversion rate. The notional amount of shares associated with those derivati"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_84",
+      "rank": 12,
+      "score": 0.8663720488548279,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "wer net interchange income, predominantly offset by higher annual fees. Net interchange income decreased as the impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments. Other income increased, reflecting: • the $4.6 billion net gain related to Visa shares in Corporate, • $1.0 billion of gains on certain equity investments, consisting of $763 million in Corporate and $263 million in CIB, • higher auto operating lease income in CCB d"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_666",
+      "rank": 13,
+      "score": 0.8674757480621338,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "y translation gains and losses finalized in 2024 and effective for 2025. (e) In the first quarter of 2025, 768 employees were transferred from the LOBs to Corporate as a result of the centralization of certain functions. (f) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (g) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. R"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1557",
+      "rank": 14,
+      "score": 0.8687983751296997,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "5 were $( 1.5 ) billion . Included in other assets above is the Firm’s interest in approximately 18.6 million Visa Class B-2 common shares (\"Visa B-2 shares\") reflected in the Firm's principal investment portfolio at both December 31, 2025 and 2024. The Visa B-2 shares are subject to certain transfer restrictions and are convertible into Visa Class A common shares (“Visa A shares”) at a specified conversion rate upon final resolution of certain litigation matters involving Visa. The conversion r"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1563",
+      "rank": 15,
+      "score": 0.8812012076377869,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": "t of the 2024 Visa exchange offer. As of December 31, 2025, the Firm held derivative instruments associated with 11.6 million Visa B-2 shares related to Visa B share sales prior to 2024, which are all subject to similar terms and conditions. JPMorgan Chase & Co./2025 Form 10-K 193 Notes to consolidated financial statements Additional disclosures about the fair value of financial instruments that are not carried on the Consolidated balance sheets at fair value U.S. GAAP requires disclosure of the"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_428",
+      "rank": 16,
+      "score": 0.8854994773864746,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "utive Overview on page 47 for additional information. (f) Includes a decrease of approximately 25 basis points under the Standardized approach related to the Apple Card transaction. Refer to Capital Risk Management on pages 89–99 for additional information. (g) Total net revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Re"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_254",
+      "rank": 17,
+      "score": 0.8893743753433228,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "tiatives. (c) Included a $4.6 billion net gain related to Visa shares and $763 million of gains on certain equity investments. Refer to Executive Overview on pages 5–8, and Notes 2 and 5 for additional information. (d) Included equity investments with a carrying value of $3.7 billion made by the Strategic Investment Group within the Firm’s Security and Resiliency Initiative. These investments are generally accounted for under the measurement alternative, except for equity that is publicly traded"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_45",
+      "rank": 18,
+      "score": 0.8951437473297119,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "CE of 29%. The Firm's results included a $4.6 billion net gain related to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII exc"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1561",
+      "rank": 19,
+      "score": 0.9010365605354309,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": " retains the risk associated with changes in the conversion rate. Under the terms of the derivative instruments, the Firm will (a) make or receive payments based on subsequent changes in the conversion rate and (b) make periodic interest payments to the purchasers of the Visa B shares. The payments under the derivative instruments will continue as long as the Visa B-2 shares associated with the previously sold Visa B shares remain subject to transfer restrictions. The derivative instruments are "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_42",
+      "rank": 20,
+      "score": 0.9048930406570435,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "of CIB's Fixed Income Markets and Equity Markets businesses. The Firm assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shar"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_1563",
+      "rank": 1,
+      "score": 14.864335437343712,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "t of the 2024 Visa exchange offer. As of December 31, 2025, the Firm held derivative instruments associated with 11.6 million Visa B-2 shares related to Visa B share sales prior to 2024, which are all subject to similar terms and conditions. JPMorgan Chase & Co./2025 Form 10-K 193 Notes to consolidated financial statements Additional disclosures about the fair value of financial instruments that are not carried on the Consolidated balance sheets at fair value U.S. GAAP requires disclosure of the"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_749",
+      "rank": 2,
+      "score": 12.502367473451931,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": " in the Firm's principal investment portfolio as of June 30, 2026 and June 30, 2025, respectively. On April 13, 2026, Visa commenced an exchange offer for any and all outstanding shares of Visa Class B-1 common stock (\"Visa B-1 shares\") and Visa B-2 shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa B-2 shares in exchange for a combination of Visa B-3 shares and Visa C common shares (“Visa C shares”). The Visa C shares are included in Assets and liabilities measure"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_43",
+      "rank": 3,
+      "score": 11.699862596648224,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "d an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares (“Visa C shares”), resulting in a $4.6 billion net gain for the three months ended June 30, 2026. Gains on certain equity investments : The second quarter of 2026 included $1.0 billion of gains on certain equity investments, consisting of $763 million in "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1559",
+      "rank": 4,
+      "score": 11.612852319951658,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "strictions on Visa B-2 shares may be terminated and what the final conversion rate for the Visa B-2 shares will be. As a result of these considerations, as well as differences in voting rights, Visa B-2 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. On February 13, 2026, Visa Inc. (“Visa”) announced that its Board of Directors has authorized Visa to proceed with a successive exchange offer in respect of Visa’s outstanding Class B common s"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1285",
+      "rank": 5,
+      "score": 11.333160958968042,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "the contracting parties. The new guidance also clarifies the applicability of derivative accounting treatment to contracts with both in scope and out of scope terms. • Clarifies the accounting for share-based payments from a customer in exchange for goods or services. • Required effective date: January 1, 2027. (a) • The guidance may be applied on a prospective or modified retrospective basis. • The Firm is evaluating the potential impact on the Consolidated Financial Statements, as well as the "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1560",
+      "rank": 6,
+      "score": 10.696194723390251,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": " in respect of Visa’s outstanding Class B common stock with timing, terms, and conditions as discussed in Visa’s disclosure. The timing and likelihood of any future exchange offer is dependent upon actions taken by Visa and other factors that are outside of the Firm’s control. Separately, in connection with sales of Visa B shares prior to 2024, the Firm has entered into derivative instruments with the purchasers of the shares under which the Firm retains the risk associated with changes in the c"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_20",
+      "rank": 7,
+      "score": 10.373667655968346,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "t happened in equities this quarter, it's a little bit hard to imagine that being repeated. The background environment is quite supportive. We'll see what happens. In the end, we're just trying to serve the clients and manage the risk and get our fair share of the business. Overall, obviously, the environment feels pretty good. I guess you did say something about risk on, and you said how risk on are we. Not to be pedantic, but I think the question, the we matters, right? The market is clearly e"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1334",
+      "rank": 8,
+      "score": 10.302042780178205,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "isk management purposes, primarily to mitigate credit risk and foreign exchange risk, and (c) other derivatives. PSU(s): Performance share units Regulatory VaR: Daily aggregated VaR calculated in accordance with regulatory rules. REO: Real estate owned Reported basis: Financial statements prepared under U.S. GAAP, which excludes the impact of taxable-equivalent adjustments. Retained loans: Loans that are held-for-investment (i.e. excludes loans held-for-sale and loans at fair value). 196 Revenue"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_42",
+      "rank": 9,
+      "score": 9.693012049698938,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "of CIB's Fixed Income Markets and Equity Markets businesses. The Firm assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shar"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_601",
+      "rank": 10,
+      "score": 9.442409790774992,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": " specific operations or activities of one of the contracting parties. The new guidance also clarifies the applicability of derivative accounting treatment to contracts with both in-scope and out-of-scope terms. • Clarifies the accounting for share-based payments from a customer in exchange for goods or services. • Required effective date: January 1, 2027. (a) • Permits adoption on a prospective or modified retrospective basis. • The Firm is evaluating the potential impact on the Consolidated Fin"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2",
+      "rank": 11,
+      "score": 9.309025265356464,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "tive Preferred Stock, Series DD JPM PR D The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 6.00% Non-Cumulative Preferred Stock, Series EE JPM PR C The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.75% Non-Cumulative Preferred Stock, Series GG JPM PR J The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.55% Non-Cumulati"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_639",
+      "rank": 12,
+      "score": 9.299333292596208,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "ments. 96 JPMorgan Chase & Co. Consolidated statements of cash flows (unaudited) Six months ended June 30, (in millions) 2026 2025 Operating activities Net income $ 37,649 $ 29,630 Adjustments to reconcile net income to net cash used in operating activities: Provision for credit losses 5,022 6,154 Depreciation and amortization 4,681 4,240 Deferred tax (benefit)/expense 127 ( 418 ) Initial gain on the Visa share exchange ( 4,509 ) — Other 1,432 979 Originations and purchases of loans held-for-sal"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3",
+      "rank": 13,
+      "score": 9.272572933476294,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "undredth interest in a share of 4.55% Non-Cumulative Preferred Stock, Series JJ JPM PR K The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.625% Non-Cumulative Preferred Stock, Series LL JPM PR L The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.20% Non-Cumulative Preferred Stock, Series MM JPM PR M The New York Stock Exchange Guarantee of Callable Fixed Rate Notes due June 10"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_874",
+      "rank": 14,
+      "score": 8.987052217546603,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "h period. Other income The following table presents certain components of other income. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Operating lease income $ 1,207 $ 901 $ 2,360 $ 1,730 Initial gain on the Visa share exchange (a) 4,509 — 4,509 — Gains on certain equity investments (b) 1,026 — 1,026 — First Republic-related gain — 40 (c) — 628 (c) (a) Relates to the initial gain recognized on May 11, 2026. Refer to Note 2 for additional information. (b) "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1356",
+      "rank": 15,
+      "score": 8.92709602379236,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "(in millions) 2025 2024 2023 Operating activities Net income $ 57,048 $ 58,471 $ 49,552 Adjustments to reconcile net income to net cash provided by operating activities: Provision for credit losses 14,212 10,678 9,320 Depreciation and amortization 8,821 7,938 7,512 Deferred tax (benefit)/expense 5,611 2,004 ( 4,534 ) Estimated bargain purchase gain associated with the First Republic acquisition — ( 103 ) ( 2,775 ) Initial gain on the Visa share exchange — ( 7,990 ) — Other 1,309 1,985 4,301 Orig"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_754",
+      "rank": 16,
+      "score": 8.756014968771735,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "al amount of shares associated with those derivative instruments has been adjusted as a result of the Visa exchange offer. Refer to page 193 of JPMorganChase’s 2025 Form 10-K for further information. 112 Additional disclosures about the fair value of financial instruments that are not carried on the Consolidated balance sheets at fair value The following table presents, by fair value hierarchy classification, the carrying values and estimated fair values at June 30, 2026 and December 31, 2025, o"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_751",
+      "rank": 17,
+      "score": 8.71365437654197,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": " on Visa shares. As of June 30, 2026, approximately $ 1.6 billion of Visa C shares are subject to a lock-up restriction that expires on August 9, 2026. The Visa B-3 shares are subject to certain transfer restrictions and are convertible into Visa Class A common shares (“Visa A shares”) at a specified conversion rate upon final resolution of certain litigation matters involving Visa. The conversion rate of Visa B-3 shares to Visa A shares was 1.4953 at June 30, 2026 and may be adjusted by Visa de"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_142",
+      "rank": 18,
+      "score": 8.694508358185931,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "onomic conditions and other factors, which may impact the allocation of net interest income to the segments. Foreign exchange risk Foreign exchange risk is transferred from the LOBs and Other Corporate to Treasury and CIO for certain revenues and expenses. Treasury and CIO manages these risks centrally and reports the impact of foreign exchange rate movements related to the transferred risk in its results. Refer to Market Risk Management on pages 79-85 for additional information. Capital allocat"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_19",
+      "rank": 19,
+      "score": 8.683125794177712,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": " and some kind of exceptional events this quarter. On the market side, I would probably separate between fixed income and equities. All the normal caveats, like we don't know, anything can happen. Clearly, markets revenues in general have been quite elevated and strong for some time, although, as we pointed out, that also is associated with much more financial resource deployment in support of our clients. I think the particular set of things that happened in equities this quarter, it's a little"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2369",
+      "rank": 20,
+      "score": 8.395568976096017,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "fer to Note 5 for information on the derivatives that the Firm executes for its own account and records in its Consolidated Financial Statements. Exchange & Clearing House Memberships The Firm is a member of several securities and derivative exchanges and clearing houses, both in the U.S. and other countries, and it provides clearing services to its clients. Membership in some of these organizations requires the Firm to pay a pro rata share of the losses incurred by the organization as a result "
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_43",
+      "rank": 1,
+      "rrf_score": 0.032266458495966696,
+      "found_in": {
+        "dense": 1,
+        "sparse": 3
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "d an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares (“Visa C shares”), resulting in a $4.6 billion net gain for the three months ended June 30, 2026. Gains on certain equity investments : The second quarter of 2026 included $1.0 billion of gains on certain equity investments, consisting of $763 million in "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1559",
+      "rank": 2,
+      "rrf_score": 0.03125,
+      "found_in": {
+        "dense": 4,
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "strictions on Visa B-2 shares may be terminated and what the final conversion rate for the Visa B-2 shares will be. As a result of these considerations, as well as differences in voting rights, Visa B-2 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. On February 13, 2026, Visa Inc. (“Visa”) announced that its Board of Directors has authorized Visa to proceed with a successive exchange offer in respect of Visa’s outstanding Class B common s"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_749",
+      "rank": 3,
+      "rrf_score": 0.030621785881252923,
+      "found_in": {
+        "dense": 9,
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": " in the Firm's principal investment portfolio as of June 30, 2026 and June 30, 2025, respectively. On April 13, 2026, Visa commenced an exchange offer for any and all outstanding shares of Visa Class B-1 common stock (\"Visa B-1 shares\") and Visa B-2 shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa B-2 shares in exchange for a combination of Visa B-3 shares and Visa C common shares (“Visa C shares”). The Visa C shares are included in Assets and liabilities measure"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1560",
+      "rank": 4,
+      "rrf_score": 0.030536130536130537,
+      "found_in": {
+        "dense": 5,
+        "sparse": 6
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": " in respect of Visa’s outstanding Class B common stock with timing, terms, and conditions as discussed in Visa’s disclosure. The timing and likelihood of any future exchange offer is dependent upon actions taken by Visa and other factors that are outside of the Firm’s control. Separately, in connection with sales of Visa B shares prior to 2024, the Firm has entered into derivative instruments with the purchasers of the shares under which the Firm retains the risk associated with changes in the c"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1563",
+      "rank": 5,
+      "rrf_score": 0.029726775956284153,
+      "found_in": {
+        "dense": 15,
+        "sparse": 1
+      },
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "t of the 2024 Visa exchange offer. As of December 31, 2025, the Firm held derivative instruments associated with 11.6 million Visa B-2 shares related to Visa B share sales prior to 2024, which are all subject to similar terms and conditions. JPMorgan Chase & Co./2025 Form 10-K 193 Notes to consolidated financial statements Additional disclosures about the fair value of financial instruments that are not carried on the Consolidated balance sheets at fair value U.S. GAAP requires disclosure of the"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_751",
+      "rank": 6,
+      "rrf_score": 0.027912386121341344,
+      "found_in": {
+        "dense": 7,
+        "sparse": 17
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": " on Visa shares. As of June 30, 2026, approximately $ 1.6 billion of Visa C shares are subject to a lock-up restriction that expires on August 9, 2026. The Visa B-3 shares are subject to certain transfer restrictions and are convertible into Visa Class A common shares (“Visa A shares”) at a specified conversion rate upon final resolution of certain litigation matters involving Visa. The conversion rate of Visa B-3 shares to Visa A shares was 1.4953 at June 30, 2026 and may be adjusted by Visa de"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_42",
+      "rank": 7,
+      "rrf_score": 0.026992753623188405,
+      "found_in": {
+        "dense": 20,
+        "sparse": 9
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "of CIB's Fixed Income Markets and Equity Markets businesses. The Firm assesses the performance of its Markets business on a total net revenue basis, as revenues in NII generally have offsets across other revenue lines, primarily Principal transactions revenue. Comparisons noted in the sections below are for the second quarter of 2026 versus the second quarter of 2025, unless otherwise specified. Visa shares : On April 13, 2026, Visa Inc. commenced an exchange offer for Visa Class B-2 common shar"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_258",
+      "rank": 8,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": " down $138 million, which included higher net investment securities losses. Refer to Notes 2 and 5 for additional information on Visa shares and the gains on certain equity investments. Noninterest expense was $611 million, compared with $547 million in the prior year. Income tax expense was $1.2 billion, compared with a $729 million benefit in the prior year, driven by changes in the level and mix of income and expenses subject to U.S. federal, state and local taxes, and the absence of a $774 m"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_750",
+      "rank": 9,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "res are included in Assets and liabilities measured at fair value on a recurring basis on page 100. Visa’s acceptance of the Firm's tender resulted in an initial gain of $ 4.5 billion based on the fair value of the Visa C shares. In addition, the current quarter also reflected other Visa-related activity, including the fair value changes of the Visa C shares and derivative instruments, as well as dividends, resulting in the net $ 4.6 billion gain on Visa shares. As of June 30, 2026, approximatel"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1285",
+      "rank": 10,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "the contracting parties. The new guidance also clarifies the applicability of derivative accounting treatment to contracts with both in scope and out of scope terms. • Clarifies the accounting for share-based payments from a customer in exchange for goods or services. • Required effective date: January 1, 2027. (a) • The guidance may be applied on a prospective or modified retrospective basis. • The Firm is evaluating the potential impact on the Consolidated Financial Statements, as well as the "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_671",
+      "rank": 11,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "ear – a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, and – restructuring and integration costs associated with First Republic. Refer to Note 6 for additional information on Visa shares and FDIC-related expense, Note 10 and Note 13 for additional information on the investment securities portfolio and the allowance for credit losses, and Note 6 and Note 34 for additional information on the First Republic acquisition. The current period income tax expense was driven by"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_20",
+      "rank": 12,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "earnings_call",
+        "strategy": "fixed_size"
+      },
+      "text": "t happened in equities this quarter, it's a little bit hard to imagine that being repeated. The background environment is quite supportive. We'll see what happens. In the end, we're just trying to serve the clients and manage the risk and get our fair share of the business. Overall, obviously, the environment feels pretty good. I guess you did say something about risk on, and you said how risk on are we. Not to be pedantic, but I think the question, the we matters, right? The market is clearly e"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1558",
+      "rank": 13,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "itigation matters involving Visa. The conversion rate of Visa B-2 shares to Visa A shares was 1.5108 at December 31, 2025 and may be adjusted by Visa depending on developments related to the litigation matters. The outcome of those litigation matters, and the effect that the resolution of those matters may have on the conversion rate, is unknown. Accordingly, as of December 31, 2025, there is significant uncertainty regarding when the transfer restrictions on Visa B-2 shares may be terminated an"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1334",
+      "rank": 14,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "isk management purposes, primarily to mitigate credit risk and foreign exchange risk, and (c) other derivatives. PSU(s): Performance share units Regulatory VaR: Daily aggregated VaR calculated in accordance with regulatory rules. REO: Real estate owned Reported basis: Financial statements prepared under U.S. GAAP, which excludes the impact of taxable-equivalent adjustments. Retained loans: Loans that are held-for-investment (i.e. excludes loans held-for-sale and loans at fair value). 196 Revenue"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1260",
+      "rank": 15,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "$ 587 million and $ 541 million, respectively. (e) Included a $ 4.6 billion net gain related to Visa shares and $ 763 million of gains on certain equity investments. Refer to Notes 2 and 5 for additional information. (f) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Cor"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_601",
+      "rank": 16,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": " specific operations or activities of one of the contracting parties. The new guidance also clarifies the applicability of derivative accounting treatment to contracts with both in-scope and out-of-scope terms. • Clarifies the accounting for share-based payments from a customer in exchange for goods or services. • Required effective date: January 1, 2027. (a) • Permits adoption on a prospective or modified retrospective basis. • The Firm is evaluating the potential impact on the Consolidated Fin"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_753",
+      "rank": 17,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " will be. As a result of these considerations, as well as differences in voting rights, Visa B-3 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. Separately, in connection with sales of Visa B shares prior to 2024, the Firm has entered into derivative instruments with the purchasers of the shares under which the Firm retains the risk associated with changes in the conversion rate. The notional amount of shares associated with those derivati"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_2",
+      "rank": 18,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "tive Preferred Stock, Series DD JPM PR D The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 6.00% Non-Cumulative Preferred Stock, Series EE JPM PR C The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.75% Non-Cumulative Preferred Stock, Series GG JPM PR J The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.55% Non-Cumulati"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_84",
+      "rank": 19,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "wer net interchange income, predominantly offset by higher annual fees. Net interchange income decreased as the impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments. Other income increased, reflecting: • the $4.6 billion net gain related to Visa shares in Corporate, • $1.0 billion of gains on certain equity investments, consisting of $763 million in Corporate and $263 million in CIB, • higher auto operating lease income in CCB d"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_639",
+      "rank": 20,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "ments. 96 JPMorgan Chase & Co. Consolidated statements of cash flows (unaudited) Six months ended June 30, (in millions) 2026 2025 Operating activities Net income $ 37,649 $ 29,630 Adjustments to reconcile net income to net cash used in operating activities: Provision for credit losses 5,022 6,154 Depreciation and amortization 4,681 4,240 Deferred tax (benefit)/expense 127 ( 418 ) Initial gain on the Visa share exchange ( 4,509 ) — Other 1,432 979 Originations and purchases of loans held-for-sal"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_666",
+      "rank": 21,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "y translation gains and losses finalized in 2024 and effective for 2025. (e) In the first quarter of 2025, 768 employees were transferred from the LOBs to Corporate as a result of the centralization of certain functions. (f) Included the net gain related to Visa shares of $7.9 billion recorded in the second quarter of 2024. Refer to Note 6 for additional information. (g) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. R"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_3",
+      "rank": 22,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "undredth interest in a share of 4.55% Non-Cumulative Preferred Stock, Series JJ JPM PR K The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.625% Non-Cumulative Preferred Stock, Series LL JPM PR L The New York Stock Exchange Depositary Shares, each representing a one-four hundredth interest in a share of 4.20% Non-Cumulative Preferred Stock, Series MM JPM PR M The New York Stock Exchange Guarantee of Callable Fixed Rate Notes due June 10"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1557",
+      "rank": 23,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "5 were $( 1.5 ) billion . Included in other assets above is the Firm’s interest in approximately 18.6 million Visa Class B-2 common shares (\"Visa B-2 shares\") reflected in the Firm's principal investment portfolio at both December 31, 2025 and 2024. The Visa B-2 shares are subject to certain transfer restrictions and are convertible into Visa Class A common shares (“Visa A shares”) at a specified conversion rate upon final resolution of certain litigation matters involving Visa. The conversion r"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_874",
+      "rank": 24,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "h period. Other income The following table presents certain components of other income. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Operating lease income $ 1,207 $ 901 $ 2,360 $ 1,730 Initial gain on the Visa share exchange (a) 4,509 — 4,509 — Gains on certain equity investments (b) 1,026 — 1,026 — First Republic-related gain — 40 (c) — 628 (c) (a) Relates to the initial gain recognized on May 11, 2026. Refer to Note 2 for additional information. (b) "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1356",
+      "rank": 25,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "(in millions) 2025 2024 2023 Operating activities Net income $ 57,048 $ 58,471 $ 49,552 Adjustments to reconcile net income to net cash provided by operating activities: Provision for credit losses 14,212 10,678 9,320 Depreciation and amortization 8,821 7,938 7,512 Deferred tax (benefit)/expense 5,611 2,004 ( 4,534 ) Estimated bargain purchase gain associated with the First Republic acquisition — ( 103 ) ( 2,775 ) Initial gain on the Visa share exchange — ( 7,990 ) — Other 1,309 1,985 4,301 Orig"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_428",
+      "rank": 26,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "utive Overview on page 47 for additional information. (f) Includes a decrease of approximately 25 basis points under the Standardized approach related to the Apple Card transaction. Refer to Capital Risk Management on pages 89–99 for additional information. (g) Total net revenue included a $7.9 billion net gain related to Visa shares, and total noninterest expense included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation, both recorded in the second quarter of 2024. Re"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_754",
+      "rank": 27,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "al amount of shares associated with those derivative instruments has been adjusted as a result of the Visa exchange offer. Refer to page 193 of JPMorganChase’s 2025 Form 10-K for further information. 112 Additional disclosures about the fair value of financial instruments that are not carried on the Consolidated balance sheets at fair value The following table presents, by fair value hierarchy classification, the carrying values and estimated fair values at June 30, 2026 and December 31, 2025, o"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_254",
+      "rank": 28,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "tiatives. (c) Included a $4.6 billion net gain related to Visa shares and $763 million of gains on certain equity investments. Refer to Executive Overview on pages 5–8, and Notes 2 and 5 for additional information. (d) Included equity investments with a carrying value of $3.7 billion made by the Strategic Investment Group within the Firm’s Security and Resiliency Initiative. These investments are generally accounted for under the measurement alternative, except for equity that is publicly traded"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_45",
+      "rank": 29,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "CE of 29%. The Firm's results included a $4.6 billion net gain related to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII exc"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_142",
+      "rank": 30,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "onomic conditions and other factors, which may impact the allocation of net interest income to the segments. Foreign exchange risk Foreign exchange risk is transferred from the LOBs and Other Corporate to Treasury and CIO for certain revenues and expenses. Treasury and CIO manages these risks centrally and reports the impact of foreign exchange rate movements related to the transferred risk in its results. Refer to Market Risk Management on pages 79-85 for additional information. Capital allocat"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1561",
+      "rank": 31,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": " retains the risk associated with changes in the conversion rate. Under the terms of the derivative instruments, the Firm will (a) make or receive payments based on subsequent changes in the conversion rate and (b) make periodic interest payments to the purchasers of the Visa B shares. The payments under the derivative instruments will continue as long as the Visa B-2 shares associated with the previously sold Visa B shares remain subject to transfer restrictions. The derivative instruments are "
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_19",
+      "rank": 32,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "earnings_call"
+      },
+      "text": " and some kind of exceptional events this quarter. On the market side, I would probably separate between fixed income and equities. All the normal caveats, like we don't know, anything can happen. Clearly, markets revenues in general have been quite elevated and strong for some time, although, as we pointed out, that also is associated with much more financial resource deployment in support of our clients. I think the particular set of things that happened in equities this quarter, it's a little"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2369",
+      "rank": 33,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "fer to Note 5 for information on the derivatives that the Firm executes for its own account and records in its Consolidated Financial Statements. Exchange & Clearing House Memberships The Firm is a member of several securities and derivative exchanges and clearing houses, both in the U.S. and other countries, and it provides clearing services to its clients. Membership in some of these organizations requires the Firm to pay a pro rata share of the losses incurred by the organization as a result "
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_43",
+      "rerank_rank": 1,
+      "rerank_score": 1.1521048545837402,
+      "rrf_rank": 1,
+      "rrf_score": 0.032266458495966696,
+      "found_in": {
+        "dense": 1,
+        "sparse": 3
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "d an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares (“Visa C shares”), resulting in a $4.6 billion net gain for the three months ended June 30, 2026. Gains on certain equity investments : The second quarter of 2026 included $1.0 billion of gains on certain equity investments, consisting of $763 million in "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_749",
+      "rerank_rank": 2,
+      "rerank_score": 1.0319010019302368,
+      "rrf_rank": 3,
+      "rrf_score": 0.030621785881252923,
+      "found_in": {
+        "dense": 9,
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": " in the Firm's principal investment portfolio as of June 30, 2026 and June 30, 2025, respectively. On April 13, 2026, Visa commenced an exchange offer for any and all outstanding shares of Visa Class B-1 common stock (\"Visa B-1 shares\") and Visa B-2 shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa B-2 shares in exchange for a combination of Visa B-3 shares and Visa C common shares (“Visa C shares”). The Visa C shares are included in Assets and liabilities measure"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_45",
+      "rerank_rank": 3,
+      "rerank_score": -0.4473937153816223,
+      "rrf_rank": 29,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "CE of 29%. The Firm's results included a $4.6 billion net gain related to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII exc"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_84",
+      "rerank_rank": 4,
+      "rerank_score": -0.8078404664993286,
+      "rrf_rank": 19,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "wer net interchange income, predominantly offset by higher annual fees. Net interchange income decreased as the impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments. Other income increased, reflecting: • the $4.6 billion net gain related to Visa shares in Corporate, • $1.0 billion of gains on certain equity investments, consisting of $763 million in Corporate and $263 million in CIB, • higher auto operating lease income in CCB d"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1559",
+      "rerank_rank": 5,
+      "rerank_score": -1.0015605688095093,
+      "rrf_rank": 2,
+      "rrf_score": 0.03125,
+      "found_in": {
+        "dense": 4,
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "strictions on Visa B-2 shares may be terminated and what the final conversion rate for the Visa B-2 shares will be. As a result of these considerations, as well as differences in voting rights, Visa B-2 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. On February 13, 2026, Visa Inc. (“Visa”) announced that its Board of Directors has authorized Visa to proceed with a successive exchange offer in respect of Visa’s outstanding Class B common s"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026)\nd an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares (“Visa C shares”), resulting in a $4.6 billion net gain for the three months ended June 30, 2026. Gains on certain equity investments : The second quarter of 2026 included $1.0 billion of gains on certain equity investments, consisting of $763 million in \n\n[2] (10-Q, Q2-2026)\n in the Firm's principal investment portfolio as of June 30, 2026 and June 30, 2025, respectively. On April 13, 2026, Visa commenced an exchange offer for any and all outstanding shares of Visa Class B-1 common stock (\"Visa B-1 shares\") and Visa B-2 shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa B-2 shares in exchange for a combination of Visa B-3 shares and Visa C common shares (“Visa C shares”). The Visa C shares are included in Assets and liabilities measure\n\n[3] (10-Q, Q2-2026)\nCE of 29%. The Firm's results included a $4.6 billion net gain related to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII exc\n\n[4] (10-Q, Q2-2026)\nwer net interchange income, predominantly offset by higher annual fees. Net interchange income decreased as the impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments. Other income increased, reflecting: • the $4.6 billion net gain related to Visa shares in Corporate, • $1.0 billion of gains on certain equity investments, consisting of $763 million in Corporate and $263 million in CIB, • higher auto operating lease income in CCB d\n\n[5] (10-K, FY2025, Body - MD&A and financials)\nstrictions on Visa B-2 shares may be terminated and what the final conversion rate for the Visa B-2 shares will be. As a result of these considerations, as well as differences in voting rights, Visa B-2 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. On February 13, 2026, Visa Inc. (“Visa”) announced that its Board of Directors has authorized Visa to proceed with a successive exchange offer in respect of Visa’s outstanding Class B common s",
+  "user_prompt": "[1] (10-Q, Q2-2026)\nd an exchange offer for Visa Class B-2 common shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares (“Visa C shares”), resulting in a $4.6 billion net gain for the three months ended June 30, 2026. Gains on certain equity investments : The second quarter of 2026 included $1.0 billion of gains on certain equity investments, consisting of $763 million in \n\n[2] (10-Q, Q2-2026)\n in the Firm's principal investment portfolio as of June 30, 2026 and June 30, 2025, respectively. On April 13, 2026, Visa commenced an exchange offer for any and all outstanding shares of Visa Class B-1 common stock (\"Visa B-1 shares\") and Visa B-2 shares. On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa B-2 shares in exchange for a combination of Visa B-3 shares and Visa C common shares (“Visa C shares”). The Visa C shares are included in Assets and liabilities measure\n\n[3] (10-Q, Q2-2026)\nCE of 29%. The Firm's results included a $4.6 billion net gain related to Visa shares in Corporate and $1.0 billion of gains on certain equity investments in Corporate and CIB. • Total net revenue was $57.3 billion, up 28%, reflecting: – Net interest income (\"NII\") was $25.5 billion, up 10%, driven by higher Markets net interest income, higher deposit balances, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower 5 rates. NII exc\n\n[4] (10-Q, Q2-2026)\nwer net interchange income, predominantly offset by higher annual fees. Net interchange income decreased as the impact of increased debit and credit card sales volume was more than offset by higher rewards costs and partner payments. Other income increased, reflecting: • the $4.6 billion net gain related to Visa shares in Corporate, • $1.0 billion of gains on certain equity investments, consisting of $763 million in Corporate and $263 million in CIB, • higher auto operating lease income in CCB d\n\n[5] (10-K, FY2025, Body - MD&A and financials)\nstrictions on Visa B-2 shares may be terminated and what the final conversion rate for the Visa B-2 shares will be. As a result of these considerations, as well as differences in voting rights, Visa B-2 shares are not considered to be similar to Visa A shares, and are held at their nominal carryover basis. On February 13, 2026, Visa Inc. (“Visa”) announced that its Board of Directors has authorized Visa to proceed with a successive exchange offer in respect of Visa’s outstanding Class B common s\n\nQuestion: What happened with the Visa share exchange and what was its financial impact?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_43"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_749"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_45"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_84"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_1559"
+    }
+  ],
+  "answer_text": "On May 11, 2026, Visa accepted the Firm’s tender of its 18.6 million Visa Class B-2 common shares in exchange for a combination of Visa Class B-3 common shares and Visa Class C common shares. This transaction resulted in a $4.6 billion net gain for the three months ended June 30, 2026 [1][3].",
+  "parsed_citations": [
+    1,
+    3
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_43",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      }
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_45",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      }
+    }
+  ]
+}

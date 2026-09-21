@@ -1,0 +1,1223 @@
+{
+  "question_id": "q07",
+  "question": "What was compensation expense in Q2 2026 compared with Q2 2025?",
+  "category": "tabular",
+  "difficulty": "medium",
+  "expected": {
+    "value_2026": 15159,
+    "value_2025": 13710,
+    "unit": "USD millions",
+    "change_pct": 11
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated Results of Operations",
+    "table": "Noninterest expense",
+    "row": "Compensation expense",
+    "column": "Three months ended June 30, 2026 and 2025",
+    "period": "Q2-2026 vs Q2-2025"
+  },
+  "notes": "Two-figure answer, so it has to get both columns right rather than one. In the flattened text the '(in millions)' label and the period headers land on separate lines.",
+  "run": {
+    "timestamp": "2026-09-21T01:28:10.909164+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_185",
+      "rank": 1,
+      "score": 0.7554507851600647,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 27 Selected income statement data Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rank": 2,
+      "score": 0.7646465301513672,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_93",
+      "rank": 3,
+      "score": 0.8117201328277588,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "llion, net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $1.4 billion. 12 Noninterest expense (in millions) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Compensation expense $ 15,159 $ 13,710 11 % $ 30,498 $ 27,803 10 % Noncompensation expense: Occupancy 1,482 1,264 17 2,929 2,566 14 Technology, communications and equipment (a) 3,107 2,704 15 6,128 5,282 16 Professional and outside services 3,855 3,006 28 7,33"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_95",
+      "rank": 4,
+      "score": 0.8132414221763611,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "uto operating lease assets. Refer to Note 16 for additional information. (b) Refer to Note 5 for additional information. Quarterly results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_231",
+      "rank": 5,
+      "score": 0.8395501375198364,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1261",
+      "rank": 6,
+      "score": 0.846519410610199,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "e, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. (g) During the three months ended June 30, 2026, the capital allocated to CIB from Corporate was increased by $ 8.5 billion, compared with the capital allocated in the first quarter of 2026, in connection with growth i"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_97",
+      "rank": 7,
+      "score": 0.8481220602989197,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "nsation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher brokerage expense in CIB and higher distribution fees in AWM, • higher FDIC-related expense, which included the absence of an FDIC special asses"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_184",
+      "rank": 8,
+      "score": 0.850716233253479,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "$1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_887",
+      "rank": 9,
+      "score": 0.8575235605239868,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "s (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_451",
+      "rank": 10,
+      "score": 0.8608662486076355,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "urrent year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compensation and growth in the number of employees. The increase in expense was also driven by higher brokerage expense and distribution fees, higher auto lease depreciation, and continued investments in technology and marketing, as well as higher occupancy expense. These factors were partially offset by FDIC special assessment accrual releases of $763 million comp"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_886",
+      "rank": 11,
+      "score": 0.8611423373222351,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ng policies and other information relating to employee share-based incentives. The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Cost of prior grants of restricted stock units (“RSUs”), performance share units (“PSUs”) and stock appreciation rights (“SARs”) that are amortized over their applicabl"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_232",
+      "rank": 12,
+      "score": 0.8635055422782898,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Man"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_154",
+      "rank": 13,
+      "score": 0.869510293006897,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "erhead ratio 55 52 55 53 (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_16",
+      "rank": 14,
+      "score": 0.872696578502655,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "nd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_157",
+      "rank": 15,
+      "score": 0.8754916191101074,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "on expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 22 Quarterly results Net income was $5.3 billion, up 3%. Net revenue was $20.3 billion, up 8%. Net interest income was $15.1 billion, up 5%, predominan"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 16,
+      "score": 0.8773220777511597,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": " by deposit margin compression. • Credit Adjustments & Other was a loss of $63 million, compared with a loss of $244 million in the prior year. Noninterest expense was $38.2 billion, up 8%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage, technology and regulatory expense. The provision for credit losses was $2.6 billion, driven by net increases in the loan and lending-related commitment portfolios, net changes in credit qua"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_201",
+      "rank": 17,
+      "score": 0.8862757086753845,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_492",
+      "rank": 18,
+      "score": 0.8990665078163147,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": " to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher revenue-related compensation, predominantly in CIB and AWM. Noncompensation expense increased, primarily reflecting: • higher brokerage ex"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_228",
+      "rank": 19,
+      "score": 0.9009659290313721,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "months ended June 30, 2026 2025 Change 2026 2025 Change Revenue Asset management fees $ 4,227 $ 3,642 16 % $ 8,352 $ 7,237 15 % Commissions and other fees 445 314 42 814 587 39 All other income 370 117 216 524 242 117 Noninterest revenue 5,042 4,073 24 9,690 8,066 20 Net interest income 1,809 1,687 7 3,535 3,425 3 Total net revenue 6,851 5,760 19 13,225 11,491 15 Provision for credit losses 13 46 (72) (11) 36 NM Noninterest expense Compensation expense 2,322 2,083 (b) 11 4,661 4,150 (b) 12 Nonco"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1807",
+      "rank": 20,
+      "score": 0.9042701721191406,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": ". That cost is expected to be amortized into compensation expense over a weighted-average period of 1.6 years. The Firm does not capitalize any compensation expense related to share-based compensation awards to employees. Tax benefits Income tax benefits (including tax benefits from dividends or d ividend equivalents) related to share-based incentive arrangements recognized in the Firm’s Consolidated statements of income for the years ended December 31, 2025, 2024 and 2023, were $ 1.4 billion, $"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_492",
+      "rank": 1,
+      "score": 13.97903772149053,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": " to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher revenue-related compensation, predominantly in CIB and AWM. Noncompensation expense increased, primarily reflecting: • higher brokerage ex"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_194",
+      "rank": 2,
+      "score": 13.253398227401924,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "s well as higher average deposits. • Credit Adjustments & Other was a loss of $44 million, compared with a loss of $67 million in the prior year. Noninterest expense was $11.4 billion, up 18%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $356 million, driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offset by a red"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 3,
+      "score": 13.172044975161501,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": " by deposit margin compression. • Credit Adjustments & Other was a loss of $63 million, compared with a loss of $244 million in the prior year. Noninterest expense was $38.2 billion, up 8%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage, technology and regulatory expense. The provision for credit losses was $2.6 billion, driven by net increases in the loan and lending-related commitment portfolios, net changes in credit qua"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_185",
+      "rank": 4,
+      "score": 12.184264441549535,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 27 Selected income statement data Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rank": 5,
+      "score": 11.524560735286073,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_231",
+      "rank": 6,
+      "score": 11.495875563624507,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1261",
+      "rank": 7,
+      "score": 11.357224495900448,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "e, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. (g) During the three months ended June 30, 2026, the capital allocated to CIB from Corporate was increased by $ 8.5 billion, compared with the capital allocated in the first quarter of 2026, in connection with growth i"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_255",
+      "rank": 8,
+      "score": 11.319864562539333,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "rnative, except for equity that is publicly traded which is carried at fair value. (e) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1807",
+      "rank": 9,
+      "score": 10.805248935357453,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": ". That cost is expected to be amortized into compensation expense over a weighted-average period of 1.6 years. The Firm does not capitalize any compensation expense related to share-based compensation awards to employees. Tax benefits Income tax benefits (including tax benefits from dividends or d ividend equivalents) related to share-based incentive arrangements recognized in the Firm’s Consolidated statements of income for the years ended December 31, 2025, 2024 and 2023, were $ 1.4 billion, $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_156",
+      "rank": 10,
+      "score": 10.790853257342421,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": " months ended June 30, 2026 and 2025, respectively. (d) Included MSR risk management results of $39 million and $47 million for the three months ended June 30, 2026 and 2025, respectively, and $24 million and $56 million for the six months ended June 30, 2026 and 2025, respectively. (e) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now refl"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_451",
+      "rank": 11,
+      "score": 10.714349261672002,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "urrent year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compensation and growth in the number of employees. The increase in expense was also driven by higher brokerage expense and distribution fees, higher auto lease depreciation, and continued investments in technology and marketing, as well as higher occupancy expense. These factors were partially offset by FDIC special assessment accrual releases of $763 million comp"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_184",
+      "rank": 12,
+      "score": 10.591359037552028,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "$1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1298",
+      "rank": 13,
+      "score": 10.521702913017947,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "ss/transaction volume or revenue. Examples of volume- and revenue-related expenses include commissions and incentive compensation, depreciation expense related to operating lease assets, and brokerage expense related to equities trading transaction volume. • Investments include expenses associated with supporting medium- to longer-term strategic plans of the Firm. Examples of investments include initiatives in technology (including related compensation), marketing, and compensation for new banke"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_47",
+      "rank": 14,
+      "score": 10.310493935086875,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "gher net investment securities losses in Treasury and CIO. • Noninterest expense was $27.3 billion, up 15%, predominantly driven by higher compensation expense as a result of higher revenue-related compensation, wage inflation and growth in the number of employees, as well as higher brokerage expense and distribution fees, continued investments in marketing and technology, and higher occupancy expense. • The provision for credit losses was $2.5 billion. Net charge-offs were $2.4 billion, down $4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_93",
+      "rank": 15,
+      "score": 10.223956408522143,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "llion, net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $1.4 billion. 12 Noninterest expense (in millions) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Compensation expense $ 15,159 $ 13,710 11 % $ 30,498 $ 27,803 10 % Noncompensation expense: Occupancy 1,482 1,264 17 2,929 2,566 14 Technology, communications and equipment (a) 3,107 2,704 15 6,128 5,282 16 Professional and outside services 3,855 3,006 28 7,33"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_154",
+      "rank": 16,
+      "score": 10.144538449528843,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "erhead ratio 55 52 55 53 (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_160",
+      "rank": 17,
+      "score": 10.118644999341285,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "tical Accounting Estimates on pages 87-89 for additional information on the credit card rewards liability. Noninterest expense was $11.1 billion, up 13%, reflecting: • higher noncompensation expense, predominantly driven by continued investments in marketing and technology, and higher auto lease depreciation on higher auto operating lease assets, as well as • higher compensation expense, predominantly for advisors and bankers, including higher revenue-related compensation. The provision for cred"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_843",
+      "rank": 18,
+      "score": 10.085017117978758,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "me-indexed floating-rate assets. Gains and losses were recorded in net interest income. (b) Primarily consists of hedges of the foreign currency risk of non-U.S. dollar-denominated revenue and expense. The income statement classification of gains and losses follows the hedged item – primarily noninterest revenue and compensation expense. The Firm did not experience any forecasted transactions that failed to occur for the three and six months ended June 30, 2026 and 2025. Over the next 12 months,"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1802",
+      "rank": 19,
+      "score": 10.043308538472662,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " on the classification of share-based awards for purposes of calculating earnings per share. 226 JPMorgan Chase & Co./2025 Form 10-K RSUs, PSUs and SARs activity Generally, compensation expense for RSUs and PSUs is measured based on the number of units granted multiplied by the stock price at the grant date, and for SARs, is measured at the grant date using the Black-Scholes valuation model. Compensation expense for these awards is recognized in net income as described previously. The following "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rank": 20,
+      "score": 9.92149807528012,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_185",
+      "rank": 1,
+      "rrf_score": 0.032018442622950824,
+      "found_in": {
+        "dense": 1,
+        "sparse": 4
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 27 Selected income statement data Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rank": 2,
+      "rrf_score": 0.0315136476426799,
+      "found_in": {
+        "dense": 2,
+        "sparse": 5
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_231",
+      "rank": 3,
+      "rrf_score": 0.030536130536130537,
+      "found_in": {
+        "dense": 5,
+        "sparse": 6
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1261",
+      "rank": 4,
+      "rrf_score": 0.03007688828584351,
+      "found_in": {
+        "dense": 6,
+        "sparse": 7
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "e, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. (g) During the three months ended June 30, 2026, the capital allocated to CIB from Corporate was increased by $ 8.5 billion, compared with the capital allocated in the first quarter of 2026, in connection with growth i"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_492",
+      "rank": 5,
+      "rrf_score": 0.02921395544346364,
+      "found_in": {
+        "dense": 18,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": " to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher revenue-related compensation, predominantly in CIB and AWM. Noncompensation expense increased, primarily reflecting: • higher brokerage ex"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_93",
+      "rank": 6,
+      "rrf_score": 0.029206349206349208,
+      "found_in": {
+        "dense": 3,
+        "sparse": 15
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "llion, net charge-offs were $4.7 billion and the net addition to the allowance for credit losses was $1.4 billion. 12 Noninterest expense (in millions) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Compensation expense $ 15,159 $ 13,710 11 % $ 30,498 $ 27,803 10 % Noncompensation expense: Occupancy 1,482 1,264 17 2,929 2,566 14 Technology, communications and equipment (a) 3,107 2,704 15 6,128 5,282 16 Professional and outside services 3,855 3,006 28 7,33"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_604",
+      "rank": 7,
+      "rrf_score": 0.029030910609857977,
+      "found_in": {
+        "dense": 16,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": " by deposit margin compression. • Credit Adjustments & Other was a loss of $63 million, compared with a loss of $244 million in the prior year. Noninterest expense was $38.2 billion, up 8%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage, technology and regulatory expense. The provision for credit losses was $2.6 billion, driven by net increases in the loan and lending-related commitment portfolios, net changes in credit qua"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_184",
+      "rank": 8,
+      "rrf_score": 0.028594771241830064,
+      "found_in": {
+        "dense": 8,
+        "sparse": 12
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "$1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_451",
+      "rank": 9,
+      "rrf_score": 0.028370221327967807,
+      "found_in": {
+        "dense": 10,
+        "sparse": 11
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "urrent year. • Noninterest expense was $95.6 billion, up 4%, driven by higher compensation expense, including higher revenue-related compensation and growth in the number of employees. The increase in expense was also driven by higher brokerage expense and distribution fees, higher auto lease depreciation, and continued investments in technology and marketing, as well as higher occupancy expense. These factors were partially offset by FDIC special assessment accrual releases of $763 million comp"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1807",
+      "rank": 10,
+      "rrf_score": 0.026992753623188405,
+      "found_in": {
+        "dense": 20,
+        "sparse": 9
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": ". That cost is expected to be amortized into compensation expense over a weighted-average period of 1.6 years. The Firm does not capitalize any compensation expense related to share-based compensation awards to employees. Tax benefits Income tax benefits (including tax benefits from dividends or d ividend equivalents) related to share-based incentive arrangements recognized in the Firm’s Consolidated statements of income for the years ended December 31, 2025, 2024 and 2023, were $ 1.4 billion, $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_154",
+      "rank": 11,
+      "rrf_score": 0.026856524873828405,
+      "found_in": {
+        "dense": 13,
+        "sparse": 16
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "erhead ratio 55 52 55 53 (a) Primarily includes operating lease income and commissions and other fees. Operating lease income was $1.2 billion and $896 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2026 and 2025, respectively. (b) Included compensation expense recorded in and allocated from Corporate of $815 million and $785 million for the three months ended June 30, 2026 and 2025, respectively, and $"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_194",
+      "rank": 12,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "sparse": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "s well as higher average deposits. • Credit Adjustments & Other was a loss of $44 million, compared with a loss of $67 million in the prior year. Noninterest expense was $11.4 billion, up 18%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $356 million, driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offset by a red"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_95",
+      "rank": 13,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "uto operating lease assets. Refer to Note 16 for additional information. (b) Refer to Note 5 for additional information. Quarterly results Compensation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_97",
+      "rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "nsation expense increased predominantly driven by: • higher revenue-related compensation across the LOBs, • the impact of wage inflation, and • growth in the number of employees, primarily front office employees. Noncompensation expense increased, reflecting: • higher investments in technology across the LOBs and Corporate and marketing in CCB, • higher brokerage expense in CIB and higher distribution fees in AWM, • higher FDIC-related expense, which included the absence of an FDIC special asses"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_255",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "rnative, except for equity that is publicly traded which is carried at fair value. (e) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_887",
+      "rank": 16,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "s (“SARs”) that are amortized over their applicable vesting periods $ 459 $ 380 $ 899 $ 804 Accrual of estimated costs of share-based awards to be granted in future periods, predominantly those to full-career eligible employees 708 579 1,441 1,208 Total noncash compensation expense related to employee share-based incentive plans $ 1,167 $ 959 $ 2,340 $ 2,012 In the first quarter of 2026, in connection with its annual incentive grant for the 2025 performance year, the Firm granted 12 million RSUs"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_156",
+      "rank": 17,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": " months ended June 30, 2026 and 2025, respectively. (d) Included MSR risk management results of $39 million and $47 million for the three months ended June 30, 2026 and 2025, respectively, and $24 million and $56 million for the six months ended June 30, 2026 and 2025, respectively. (e) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now refl"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_886",
+      "rank": 18,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ng policies and other information relating to employee share-based incentives. The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Cost of prior grants of restricted stock units (“RSUs”), performance share units (“PSUs”) and stock appreciation rights (“SARs”) that are amortized over their applicabl"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_232",
+      "rank": 19,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 35 Quarterly results Net income was $2.0 billion, up 33%. Net revenue was $6.9 billion, up 19%. Net interest income was $1.8 billion, up 7%. Noninterest revenue was $5.0 billion, up 24%. Revenue from Asset Man"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1298",
+      "rank": 20,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size"
+      },
+      "text": "ss/transaction volume or revenue. Examples of volume- and revenue-related expenses include commissions and incentive compensation, depreciation expense related to operating lease assets, and brokerage expense related to equities trading transaction volume. • Investments include expenses associated with supporting medium- to longer-term strategic plans of the Firm. Examples of investments include initiatives in technology (including related compensation), marketing, and compensation for new banke"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_16",
+      "rank": 21,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "nd where otherwise noted) Six months ended June 30, 2Q26 1Q26 4Q25 3Q25 2Q25 2026 2025 Selected income statement data Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912 $ 107,183 (e) $ 90,222 Total noninterest expense 27,316 26,850 23,983 24,281 23,779 54,166 47,376 Pre-provision profit (a) 30,031 22,986 21,815 22,146 21,133 53,017 42,846 Provision for credit losses 2,515 2,507 4,655 (f) 3,403 2,849 5,022 6,154 Income before income tax expense 27,516 20,479 17,160 18,743 18,284 4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_47",
+      "rank": 22,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "gher net investment securities losses in Treasury and CIO. • Noninterest expense was $27.3 billion, up 15%, predominantly driven by higher compensation expense as a result of higher revenue-related compensation, wage inflation and growth in the number of employees, as well as higher brokerage expense and distribution fees, continued investments in marketing and technology, and higher occupancy expense. • The provision for credit losses was $2.5 billion. Net charge-offs were $2.4 billion, down $4"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_157",
+      "rank": 23,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "on expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation. 22 Quarterly results Net income was $5.3 billion, up 3%. Net revenue was $20.3 billion, up 8%. Net interest income was $15.1 billion, up 5%, predominan"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_201",
+      "rank": 24,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "was $22.5 billion, up 16%, predominantly driven by higher compensation, including higher revenue-related compensation, as well as higher brokerage expense. The provision for credit losses was $838 million , driven by changes in credit quality of certain exposures and a net increase in the loan portfolio, partially offset by a reduction in the allowance with respect to certain accounts receivable and an update to loss assumptions on certain loans in Markets. The net addition to the allowance for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_160",
+      "rank": 25,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "tical Accounting Estimates on pages 87-89 for additional information on the credit card rewards liability. Noninterest expense was $11.1 billion, up 13%, reflecting: • higher noncompensation expense, predominantly driven by continued investments in marketing and technology, and higher auto lease depreciation on higher auto operating lease assets, as well as • higher compensation expense, predominantly for advisors and bankers, including higher revenue-related compensation. The provision for cred"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_843",
+      "rank": 26,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "me-indexed floating-rate assets. Gains and losses were recorded in net interest income. (b) Primarily consists of hedges of the foreign currency risk of non-U.S. dollar-denominated revenue and expense. The income statement classification of gains and losses follows the hedged item – primarily noninterest revenue and compensation expense. The Firm did not experience any forecasted transactions that failed to occur for the three and six months ended June 30, 2026 and 2025. Over the next 12 months,"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_228",
+      "rank": 27,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "months ended June 30, 2026 2025 Change 2026 2025 Change Revenue Asset management fees $ 4,227 $ 3,642 16 % $ 8,352 $ 7,237 15 % Commissions and other fees 445 314 42 814 587 39 All other income 370 117 216 524 242 117 Noninterest revenue 5,042 4,073 24 9,690 8,066 20 Net interest income 1,809 1,687 7 3,535 3,425 3 Total net revenue 6,851 5,760 19 13,225 11,491 15 Provision for credit losses 13 46 (72) (11) 36 NM Noninterest expense Compensation expense 2,322 2,083 (b) 11 4,661 4,150 (b) 12 Nonco"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1802",
+      "rank": 28,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " on the classification of share-based awards for purposes of calculating earnings per share. 226 JPMorgan Chase & Co./2025 Form 10-K RSUs, PSUs and SARs activity Generally, compensation expense for RSUs and PSUs is measured based on the number of units granted multiplied by the stock price at the grant date, and for SARs, is measured at the grant date using the Black-Scholes valuation model. Compensation expense for these awards is recognized in net income as described previously. The following "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rank": 29,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_492",
+      "rerank_rank": 1,
+      "rerank_score": 5.995222568511963,
+      "rrf_rank": 5,
+      "rrf_score": 0.02921395544346364,
+      "found_in": {
+        "dense": 18,
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": " to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher revenue-related compensation, predominantly in CIB and AWM. Noncompensation expense increased, primarily reflecting: • higher brokerage ex"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1259",
+      "rerank_rank": 2,
+      "rerank_score": 3.691025733947754,
+      "rrf_rank": 2,
+      "rrf_score": 0.0315136476426799,
+      "found_in": {
+        "dense": 2,
+        "sparse": 5
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "recorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_231",
+      "rerank_rank": 3,
+      "rerank_score": 2.276454448699951,
+      "rrf_rank": 3,
+      "rrf_score": 0.030536130536130537,
+      "found_in": {
+        "dense": 5,
+        "sparse": 6
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1805",
+      "rerank_rank": 4,
+      "rerank_score": 2.268420934677124,
+      "rrf_rank": 29,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "rcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_184",
+      "rerank_rank": 5,
+      "rerank_score": 2.072158098220825,
+      "rrf_rank": 8,
+      "rrf_score": 0.028594771241830064,
+      "found_in": {
+        "dense": 8,
+        "sparse": 12
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "$1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to "
+    }
+  ],
+  "context": "[1] (10-K, FY2025, Body - MD&A and financials)\n to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher revenue-related compensation, predominantly in CIB and AWM. Noncompensation expense increased, primarily reflecting: • higher brokerage ex\n\n[2] (10-Q, Q2-2026)\nrecorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)\n\n[3] (10-Q, Q2-2026)\n million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation\n\n[4] (10-K, FY2025, Body - MD&A and financials)\nrcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o\n\n[5] (10-Q, Q2-2026)\n$1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to ",
+  "user_prompt": "[1] (10-K, FY2025, Body - MD&A and financials)\n to Note 6 for additional information. (c) Included a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Note 6 for additional information. 2025 compared with 2024 Compensation expense increased driven by: • growth in the number of employees, primarily front office employees, and • higher revenue-related compensation, predominantly in CIB and AWM. Noncompensation expense increased, primarily reflecting: • higher brokerage ex\n\n[2] (10-Q, Q2-2026)\nrecorded in noncompensation expense. For the three months ended June 30, 2026 and 2025, compensation expense allocated from Corporate to CCB was $ 815 million and $ 785 million, to CIB was $ 1.2 billion and $ 1.1 billion, and to AWM was $ 287 million and $ 272 million, respectively; and for the six months ended June 30, 2026 and 2025, the expense allocation to CCB was $ 1.6 billion each, to CIB was $ 2.4 billion and $ 2.3 billion, and to AWM was $ 587 million and $ 541 million, respectively. (e)\n\n[3] (10-Q, Q2-2026)\n million and $541 million for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (b) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation\n\n[4] (10-K, FY2025, Body - MD&A and financials)\nrcised in 2025 and 2024. The total intrinsic value of SARs exercised during the year ended December 31, 2023 was $ 24 million. Compensation expense The Firm recognized the following noncash compensation expense related to its various employee share-based incentive plans in its Consolidated statements of income. Year ended December 31, (in millions) 2025 2024 2023 Cost of prior grants of RSUs, PSUs and SARs that are amortized over their applicable vesting periods $ 1,541 $ 1,622 $ 1,510 Accrual o\n\n[5] (10-Q, Q2-2026)\n$1.1 billion for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $2.3 billion for the six months ended June 30, 2026 and 2025, respectively. Refer to Note 25, footnote (d) of the Segment & Corporate results and reconciliation table for additional information on the allocation. (c) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to \n\nQuestion: What was compensation expense in Q2 2026 compared with Q2 2025?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_492"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1259"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_231"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-K_FY2025_1805"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_184"
+    }
+  ],
+  "answer_text": "For the three months ended June 30, 2026, the compensation expense allocated to CCB was $815 million, to CIB was $1.2 billion, and to AWM was $287 million. For the same period in 2025, the compensation expense allocated to CCB was $785 million, to CIB was $1.1 billion, and to AWM was $272 million [2][5].",
+  "parsed_citations": [
+    2,
+    5
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1259",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      }
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_184",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      }
+    }
+  ]
+}

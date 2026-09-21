@@ -1,0 +1,1328 @@
+{
+  "question_id": "q06",
+  "question": "What was the credit card provision for credit losses for the six months ended June 30, 2026?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "value": 4070,
+    "unit": "USD millions"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated Results of Operations",
+    "table": "Provision for credit losses",
+    "row": "Credit card",
+    "column": "Six months ended June 30, 2026",
+    "period": "H1-2026"
+  },
+  "notes": "Row-and-column intersection with no supporting prose. Q2-2026 credit card is 2,026 and H1-2025 is 4,319 - two plausible wrong answers adjacent to the right one.",
+  "run": {
+    "timestamp": "2026-09-21T01:28:09.181227+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rank": 1,
+      "score": 0.5228251218795776,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_508",
+      "rank": 2,
+      "score": 0.6589245200157166,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " risk-rated loans. (b) At June 30, 2026 and 2025, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $165 million and $288 million, respectively, associated with certain accounts receivable in CIB. (c) The Firm’s policy is generally to exempt credit card loans from being placed on nonaccrual status as permitted by regulatory guidance. (d) Represents the impact of the Apple Card transaction. Refer to Note 13 of the Firm's 2025 Fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_426",
+      "rank": 3,
+      "score": 0.6654426455497742,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": ", respectively, decreased compared to the December 31, 2025 30+ and 90+ day delinquency rates of 2.16% and 1.10%, respectively, reflecting favorable credit performance. Net charge-offs increased for the three and six months ended June 30, 2026 compared to the same periods in the prior year, reflecting loan growth. Consistent with the Firm’s policy, all credit card loans typically remain on accrual status until charged off. However, the Firm’s allowance for loan losses includes the estimated unco"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rank": 4,
+      "score": 0.6654527187347412,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_486",
+      "rank": 5,
+      "score": 0.6656274199485779,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": " excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_424",
+      "rank": 6,
+      "score": 0.6845289468765259,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "x months ended June 30, 2026 and 2025. Nonaccrual loan activity Six months ended June 30, (in millions) 2026 2025 Beginning balance $ 4,673 $ 3,926 Additions 1,713 2,515 Reductions: Principal payments and other 514 437 Sales 462 337 Charge-offs 307 318 Returned to performing status 542 563 Foreclosures and other liquidations 113 117 Total reductions 1,938 1,772 Net changes (225) 743 Ending balance $ 4,448 $ 4,669 Refer to Note 11 for further information on the consumer credit portfolio, includin"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1031",
+      "rank": 7,
+      "score": 0.7031830549240112,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "methodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1039",
+      "rank": 8,
+      "score": 0.7120028734207153,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " and other liabilities on the Consolidated balance sheets. (d) At June 30, 2026 and 2025, lending-related commitments excluded $ 24.7 billion and $ 20.7 billion, respectively, for the consumer, excluding credit card portfolio segment; $ 1.2 trillion and $ 1.0 trillion, respectively, for the credit card portfolio segment; and $ 47.4 billion and $ 24.2 billion, respectively, for the wholesale portfolio segment, which were not subject to the allowance for lending-related commitments. (e) Represents"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1038",
+      "rank": 9,
+      "score": 0.7127192616462708,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "2026 and 2025, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 165 million and $ 288 million, respectively, associated with certain accounts receivable in CIB. (b) Includes collateral-dependent loans, including those for which foreclosure is deemed probable, and nonaccrual risk-rated loans. 159 (c) The allowance for lending-related commitments is reported in accounts payable and other liabilities on the Consolidated balance"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_402",
+      "rank": 10,
+      "score": 0.7129620909690857,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " is generally to exempt credit card loans from being placed on nonaccrual status as permitted by regulatory guidance. The following table provides information about the Firm’s net charge-offs. (in millions, except ratios) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Net charge-offs $ 2,366 $ 2,410 $ 4,682 $ 4,742 Average retained loans 1,435,638 1,321,430 1,418,293 1,303,527 Net charge-off rates 0.66 % 0.73 % 0.67 % 0.73 % 60 CONSUMER CREDIT PORTFOLIO The Firm’s reta"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_170",
+      "rank": 11,
+      "score": 0.718123733997345,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " or for the six months ended June 30, (in millions, except ratio data) 2026 2025 Change 2026 2025 Change Credit data and quality statistics Nonaccrual loans (a) $ 3,506 $ 3,891 (10) % $ 3,506 $ 3,891 (10) % Net charge-offs/(recoveries) Banking & Wealth Management 87 102 (15) 172 199 (14) Home Lending (18) (21) 14 (33) (47) 30 Card Services 2,025 1,938 4 4,069 3,921 4 Auto 62 67 (7) 143 167 (14) Total net charge-offs/(recoveries) $ 2,156 $ 2,086 3 $ 4,351 $ 4,240 3 Net charge-off/(recovery) rate "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_447",
+      "rank": 12,
+      "score": 0.7211293578147888,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": " or more past due and accruing loans Net charge-offs/ (recoveries) Credit derivative and credit-related notes (h) Liquid securities and other cash collateral held against derivative receivables As of or for the six months ended June 30, 2026 (in millions) Credit exposure (f)(g) Investment- grade Noncriticized Criticized performing Criticized nonperforming Real Estate $ 230,417 $ 157,803 $ 60,375 $ 10,768 $ 1,471 $ 846 $ 23 $ (94) $ — Individuals and Individual Entities (b) 190,800 158,182 31,579"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_166",
+      "rank": 13,
+      "score": 0.7355758547782898,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "2 billion and the net addition to the allowance for credit losses was $471 million. 23 Selected metrics As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions, except employees) 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total assets $ 672,612 $ 652,379 3 % $ 672,612 $ 652,379 3 % Loans: Banking & Wealth Management 34,337 33,749 2 34,337 33,749 2 Home Lending (a) 237,176 241,618 (2) 237,176 241,618 (2) Card Services 24"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2050",
+      "rank": 14,
+      "score": 0.7360955476760864,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": " Financial Instruments - Credit Losses: Troubled Debt Restructurings accounting guidance. Refer to Note 1 for further information. (b) At December 31, 2025, 2024 and 2023, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 288 million, $ 268 million and $ 243 million, respectively, associated with certain accounts receivable in CIB. (c) Includes collateral-dependent loans, including those for which foreclosure is deemed probab"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_165",
+      "rank": 15,
+      "score": 0.7422707676887512,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_604",
+      "rank": 16,
+      "score": 0.74470055103302,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " planned date of adoption. Financial Instruments - Credit Losses: Purchased Loans Issued November 2025 • Establishes an additional allowance framework for purchased, seasoned held-for-investment loans, excluding credit cards. • Requires that management’s initial estimate of expected credit losses be recognized as an increase to the allowance for credit losses with a corresponding increase to the loan’s amortized cost. • Required effective date: January 1, 2027. (a) • Requires adoption on a prosp"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_496",
+      "rank": 17,
+      "score": 0.7469738721847534,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " losses on investment securities, which is reflected in investment securities on the Consolidated balance sheets. Discussion of changes in the allowance The allowance for credit losses as of June 30, 2026 was $31.5 billion, reflecting a net addition of $303 million from December 31, 2025. The net addition to the allowance for credit losses included: • $473 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offse"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_407",
+      "rank": 18,
+      "score": 0.7489755153656006,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "notes used in credit portfolio management activities (h) $ (424) $ (485) Three months ended June 30, (in millions, except ratios) Net charge-offs/(recoveries) Average loans - retained Net charge-off/(recovery) rate (j) 2026 2025 2026 2025 2026 2025 Consumer, excluding credit card Residential real estate $ (16) $ (21) $ 301,254 $ 305,598 (0.02) % (0.03) % Auto and other 149 150 65,456 66,407 0.91 0.91 Total consumer, excluding credit card - retained 133 129 366,710 372,005 0.15 0.14 Credit card -"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_88",
+      "rank": 19,
+      "score": 0.7497087717056274,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "ision for credit losses was $2.5 billion. Net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $149 million. The provision for credit losses included: • $2.2 billion in consumer , reflecting net charge-offs of $2.2 billion, predominantly driven by Card Services, primarily due to loan growth. The allowance for credit losses was relatively flat, and • $361 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit qualit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_161",
+      "rank": 20,
+      "score": 0.753503143787384,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "venue-related compensation. The provision for credit losses was $2.2 billion. Net charge-offs were $2.2 billion, up $70 million, predominantly driven by Card Services, reflecting loan growth. The allowance for credit losses was flat. In the prior year, the provision was $2.1 billion, net charge-offs were $2.1 billion and the allowance for credit losses was relatively flat. Refer to Credit and Investment Risk Management on pages 59-78 and Allowance for Credit Losses on pages 75-77 for a further d"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rank": 1,
+      "score": 26.663296497639934,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rank": 2,
+      "score": 25.122613756306983,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_942",
+      "rank": 3,
+      "score": 24.516898160827893,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "justments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_938",
+      "rank": 4,
+      "score": 23.81843523225907,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "of these tables. 2026 2025 Three months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Purchases $ 205 (b)(c) $ — $ 77 $ 282 $ 158 (b)(c) $ — $ 203 $ 361 Sales 1,014 — 16,167 17,181 — — 13,365 13,365 Retained loans reclassified to held-for-sale (a) 356 — 258 614 187 — 434 621 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, e"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_502",
+      "rank": 5,
+      "score": 23.499370704632124,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "tfolio on pages 66-74 and Note 11 for additional information on the consumer and wholesale credit portfolios. Refer to Critical Accounting Estimates Used by the Firm on pages 87-89 for further information on the allowance for credit losses and related management judgments. 75 Allowance for credit losses and related information 2026 2025 Six months ended June 30, Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total (in millions, e"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_388",
+      "rank": 6,
+      "score": 23.284558933362778,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "ies or redemptions, as applicable, for the three and six months ended June 30, 2026 and 2025, respectively. Long-term secured funding Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 2026 2025 2026 2025 (in millions) Issuance Maturities/Redemptions Issuance Maturities/Redemptions Credit card securitization $ 1,249 $ — $ — $ — $ 1,249 $ — $ — $ — FHLB advances — — 420 801 4,500 — 5,121 6,742 Other long-term secured funding (a) 183 613 457 782 496 747 779 893 Total long-te"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_943",
+      "rank": 7,
+      "score": 23.27959800322201,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "ommitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes $( 12 ) million and $ 106 million related to loans for the three months ended June 30, 2026 and 2025, respectively, and $ 60 million and $ 36 million for the six months ended June 30, 2026 and 2025, respectively. 141 Consumer, excluding credit card loan portfolio Consumer loans, excluding credit card loans, consist primarily of scored residential mortgages, home equity loans and lines of credit, auto and business banking loans, with a focus on se"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_368",
+      "rank": 8,
+      "score": 22.714239382257364,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "oans-to-deposits ratio 57 % 58 % The following table provides a summary of the average balances and average interest rates of JPMorganChase’s deposits for the three and six months ended June 30, 2026 and 2025. (in millions) Average balances Average interest rates Three months ended Six months ended Three months ended Six months ended June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 U.S. offices Noninterest-bearing $ 597,106 $ 572,715"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1084",
+      "rank": 9,
+      "score": 22.481578851923267,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "e 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_974",
+      "rank": 10,
+      "score": 22.469821499935286,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " The Firm grants certain modifications of auto and other loans to borrowers experiencing financial difficulty. For the three and six months ended June 30, 2026 and 2025, retained auto and other FDMs were not material. As of June 30, 2026 and December 31, 2025, there were no additional unfunded commitments to lend to borrowers experiencing financial difficulty whose loans have been modified as FDMs. 147 Credit card loan portfolio The credit card portfolio segment includes credit card loans origin"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_982",
+      "rank": 11,
+      "score": 22.402778964969826,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "ons Three months ended June 30, 2026 Six months ended June 30, 2026 (in millions, except ratios) Amortized cost basis % of loan modifications to total retained credit card loans Financial effect of loan modifications Amortized cost basis % of loan modifications to total retained credit card loans Financial effect of loan modifications Term extension and interest rate reduction (a)(b) $ 648 0.26 % Term extension with a reduction in the weighted average contractual interest rate from 22.92 % to 3."
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_987",
+      "rank": 12,
+      "score": 22.296920605511396,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " 1,135 30-89 days past due and still accruing 181 102 90 or more days past due and still accruing 118 60 Total $ 2,651 $ 1,297 149 Defaults of FDMs For the three and six months ended June 30, 2026, defaults of retained credit card FDMs that had been modified within twelve months were $ 102 million and $ 136 million, respectively, and were in the form of a combination of term extension and interest rate reduction, while not material for the three and six months ended June 30, 2025. For credit car"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_723",
+      "rank": 13,
+      "score": 22.074611351986967,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": " material for the three and six months ended June 30, 2026 and 2025. (e) Changes in fair value for MSRs are reported in mortgage fees and related income. (f) Realized (gains)/losses due to DVA for fair value option elected liabilities are reported in principal transactions revenue, and were not material for the three and six months ended June 30, 2026 and 2025. Unrealized (gains)/losses are reported in OCI, and were $ 166 million and $ 63 million for the three months ended June 30, 2026 and 2025"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_896",
+      "rank": 14,
+      "score": 21.85509656995425,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "billion for the three and six months ended June 30, 2025, respectively. (c) The amortized cost of investment securities is reported net of allowance for credit losses of $ 63 million and $ 106 million at June 30, 2026 and December 31, 2025, respectively. (d) Excludes $ 5.3 billion and $ 4.6 billion of accrued interest receivable at June 30, 2026 and December 31, 2025, respectively. The Firm did not reverse through interest income any accrued interest receivable for the three and six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_86",
+      "rank": 15,
+      "score": 21.82092224272104,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "alances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.2 trillion, up $455 billion, and the yield was 4.79%, down 32 bps. The net yield on these assets, on an FTE basis, was 2.45%, a decrease of 6 bps. The net yield excluding Markets was 3.69%, down 6 bps. 11 Provision for credit losses Three months ended June 30, Six months ended June "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_743",
+      "rank": 16,
+      "score": 21.616096976572422,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_981",
+      "rank": 17,
+      "score": 21.582807222846508,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "the interest rate on the credit card account. If the borrower does not make the contractual payments when due under the modified payment terms, the credit card loan continues to age and will be charged-off in accordance with the Firm's standard charge-off policy. In most cases, the Firm does not reinstate the borrower's line of credit. Financial effects of FDMs The following tables provide information on retained credit card FDMs. Loan modifications Three months ended June 30, 2026 Six months en"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1031",
+      "rank": 18,
+      "score": 21.52763656154015,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "methodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_975",
+      "rank": 19,
+      "score": 20.889576839594298,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ortfolio segment includes credit card loans originated and purchased by the Firm. Delinquency rates are the primary credit quality indicator for credit card loans. Refer to Note 12 of JPMorganChase's 2025 Form 10-K for further information on the credit card loan portfolio, including credit quality indicators. The following tables provide information on delinquency and gross charge-offs. As of or for the six months ended June 30, 2026 (in millions, except ratios) Within the revolving period Conve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_846",
+      "rank": 20,
+      "score": 20.823434103016098,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "x gains/(losses) recorded on such instruments for the three and six months ended June 30, 2026 and 2025. Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Three months ended June 30, (in millions) Amounts recorded in income (b) Amounts recorded in OCI Amounts recorded in income (b) Amounts recorded in OCI Foreign exchange derivatives $ ( 20 ) $ 57 $ 120 $ ( 4,213 ) Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Six months"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rank": 2,
+      "rrf_score": 0.031754032258064516,
+      "found_in": {
+        "dense": 4,
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1031",
+      "rank": 3,
+      "rrf_score": 0.027745885954841176,
+      "found_in": {
+        "dense": 7,
+        "sparse": 18
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "methodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_508",
+      "rank": 4,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": " risk-rated loans. (b) At June 30, 2026 and 2025, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $165 million and $288 million, respectively, associated with certain accounts receivable in CIB. (c) The Firm’s policy is generally to exempt credit card loans from being placed on nonaccrual status as permitted by regulatory guidance. (d) Represents the impact of the Apple Card transaction. Refer to Note 13 of the Firm's 2025 Fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_426",
+      "rank": 5,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": ", respectively, decreased compared to the December 31, 2025 30+ and 90+ day delinquency rates of 2.16% and 1.10%, respectively, reflecting favorable credit performance. Net charge-offs increased for the three and six months ended June 30, 2026 compared to the same periods in the prior year, reflecting loan growth. Consistent with the Firm’s policy, all credit card loans typically remain on accrual status until charged off. However, the Firm’s allowance for loan losses includes the estimated unco"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_942",
+      "rank": 6,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "justments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_938",
+      "rank": 7,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "of these tables. 2026 2025 Three months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Purchases $ 205 (b)(c) $ — $ 77 $ 282 $ 158 (b)(c) $ — $ 203 $ 361 Sales 1,014 — 16,167 17,181 — — 13,365 13,365 Retained loans reclassified to held-for-sale (a) 356 — 258 614 187 — 434 621 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, e"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_486",
+      "rank": 8,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": " excluding credit card $ 693 $ 631 $ 935 Credit card 10,829 9,292 6,048 Total consumer 11,522 9,923 6,983 Wholesale 2,718 731 2,299 Investment securities (28) 24 38 Total provision for credit losses $ 14,212 $ 10,678 $ 9,320 2025 compared with 2024 The provision for credit losses was $14.2 billion. Net charge-offs were $9.8 billion and the net addition to the allowance for credit losses was $4.4 billion. The provision for credit losses included: • $11.5 billion in consumer , consisting of net ch"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_502",
+      "rank": 9,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "tfolio on pages 66-74 and Note 11 for additional information on the consumer and wholesale credit portfolios. Refer to Critical Accounting Estimates Used by the Firm on pages 87-89 for further information on the allowance for credit losses and related management judgments. 75 Allowance for credit losses and related information 2026 2025 Six months ended June 30, Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total (in millions, e"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_424",
+      "rank": 10,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "x months ended June 30, 2026 and 2025. Nonaccrual loan activity Six months ended June 30, (in millions) 2026 2025 Beginning balance $ 4,673 $ 3,926 Additions 1,713 2,515 Reductions: Principal payments and other 514 437 Sales 462 337 Charge-offs 307 318 Returned to performing status 542 563 Foreclosures and other liquidations 113 117 Total reductions 1,938 1,772 Net changes (225) 743 Ending balance $ 4,448 $ 4,669 Refer to Note 11 for further information on the consumer credit portfolio, includin"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_388",
+      "rank": 11,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "ies or redemptions, as applicable, for the three and six months ended June 30, 2026 and 2025, respectively. Long-term secured funding Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 2026 2025 2026 2025 (in millions) Issuance Maturities/Redemptions Issuance Maturities/Redemptions Credit card securitization $ 1,249 $ — $ — $ — $ 1,249 $ — $ — $ — FHLB advances — — 420 801 4,500 — 5,121 6,742 Other long-term secured funding (a) 183 613 457 782 496 747 779 893 Total long-te"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_943",
+      "rank": 12,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q"
+      },
+      "text": "ommitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes $( 12 ) million and $ 106 million related to loans for the three months ended June 30, 2026 and 2025, respectively, and $ 60 million and $ 36 million for the six months ended June 30, 2026 and 2025, respectively. 141 Consumer, excluding credit card loan portfolio Consumer loans, excluding credit card loans, consist primarily of scored residential mortgages, home equity loans and lines of credit, auto and business banking loans, with a focus on se"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1039",
+      "rank": 13,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " and other liabilities on the Consolidated balance sheets. (d) At June 30, 2026 and 2025, lending-related commitments excluded $ 24.7 billion and $ 20.7 billion, respectively, for the consumer, excluding credit card portfolio segment; $ 1.2 trillion and $ 1.0 trillion, respectively, for the credit card portfolio segment; and $ 47.4 billion and $ 24.2 billion, respectively, for the wholesale portfolio segment, which were not subject to the allowance for lending-related commitments. (e) Represents"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_368",
+      "rank": 14,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "oans-to-deposits ratio 57 % 58 % The following table provides a summary of the average balances and average interest rates of JPMorganChase’s deposits for the three and six months ended June 30, 2026 and 2025. (in millions) Average balances Average interest rates Three months ended Six months ended Three months ended Six months ended June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 June 30, 2026 June 30, 2025 U.S. offices Noninterest-bearing $ 597,106 $ 572,715"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1038",
+      "rank": 15,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "2026 and 2025, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 165 million and $ 288 million, respectively, associated with certain accounts receivable in CIB. (b) Includes collateral-dependent loans, including those for which foreclosure is deemed probable, and nonaccrual risk-rated loans. 159 (c) The allowance for lending-related commitments is reported in accounts payable and other liabilities on the Consolidated balance"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1084",
+      "rank": 16,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "e 30, 2026 and 2025, respectively, and $ 544 million and $ 560 million for the six months ended June 30, 2026 and 2025, respectively, of income tax credits along with $( 297 ) million and $( 349 ) million for the three months ended June 30, 2026 and 2025, respectively, and $( 603 ) million and $( 690 ) million for the six months ended June 30, 2026 and 2025, respectively, of amortization losses from investments in programs for which the Firm elected proportional amortization but the investments "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_402",
+      "rank": 17,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": " is generally to exempt credit card loans from being placed on nonaccrual status as permitted by regulatory guidance. The following table provides information about the Firm’s net charge-offs. (in millions, except ratios) Three months ended June 30, Six months ended June 30, 2026 2025 2026 2025 Net charge-offs $ 2,366 $ 2,410 $ 4,682 $ 4,742 Average retained loans 1,435,638 1,321,430 1,418,293 1,303,527 Net charge-off rates 0.66 % 0.73 % 0.67 % 0.73 % 60 CONSUMER CREDIT PORTFOLIO The Firm’s reta"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_974",
+      "rank": 18,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " The Firm grants certain modifications of auto and other loans to borrowers experiencing financial difficulty. For the three and six months ended June 30, 2026 and 2025, retained auto and other FDMs were not material. As of June 30, 2026 and December 31, 2025, there were no additional unfunded commitments to lend to borrowers experiencing financial difficulty whose loans have been modified as FDMs. 147 Credit card loan portfolio The credit card portfolio segment includes credit card loans origin"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_170",
+      "rank": 19,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": " or for the six months ended June 30, (in millions, except ratio data) 2026 2025 Change 2026 2025 Change Credit data and quality statistics Nonaccrual loans (a) $ 3,506 $ 3,891 (10) % $ 3,506 $ 3,891 (10) % Net charge-offs/(recoveries) Banking & Wealth Management 87 102 (15) 172 199 (14) Home Lending (18) (21) 14 (33) (47) 30 Card Services 2,025 1,938 4 4,069 3,921 4 Auto 62 67 (7) 143 167 (14) Total net charge-offs/(recoveries) $ 2,156 $ 2,086 3 $ 4,351 $ 4,240 3 Net charge-off/(recovery) rate "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_982",
+      "rank": 20,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "ons Three months ended June 30, 2026 Six months ended June 30, 2026 (in millions, except ratios) Amortized cost basis % of loan modifications to total retained credit card loans Financial effect of loan modifications Amortized cost basis % of loan modifications to total retained credit card loans Financial effect of loan modifications Term extension and interest rate reduction (a)(b) $ 648 0.26 % Term extension with a reduction in the weighted average contractual interest rate from 22.92 % to 3."
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_447",
+      "rank": 21,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": " or more past due and accruing loans Net charge-offs/ (recoveries) Credit derivative and credit-related notes (h) Liquid securities and other cash collateral held against derivative receivables As of or for the six months ended June 30, 2026 (in millions) Credit exposure (f)(g) Investment- grade Noncriticized Criticized performing Criticized nonperforming Real Estate $ 230,417 $ 157,803 $ 60,375 $ 10,768 $ 1,471 $ 846 $ 23 $ (94) $ — Individuals and Individual Entities (b) 190,800 158,182 31,579"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_987",
+      "rank": 22,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " 1,135 30-89 days past due and still accruing 181 102 90 or more days past due and still accruing 118 60 Total $ 2,651 $ 1,297 149 Defaults of FDMs For the three and six months ended June 30, 2026, defaults of retained credit card FDMs that had been modified within twelve months were $ 102 million and $ 136 million, respectively, and were in the form of a combination of term extension and interest rate reduction, while not material for the three and six months ended June 30, 2025. For credit car"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_166",
+      "rank": 23,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "2 billion and the net addition to the allowance for credit losses was $471 million. 23 Selected metrics As of or for the three months ended June 30, As of or for the six months ended June 30, (in millions, except employees) 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total assets $ 672,612 $ 652,379 3 % $ 672,612 $ 652,379 3 % Loans: Banking & Wealth Management 34,337 33,749 2 34,337 33,749 2 Home Lending (a) 237,176 241,618 (2) 237,176 241,618 (2) Card Services 24"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_723",
+      "rank": 24,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": " material for the three and six months ended June 30, 2026 and 2025. (e) Changes in fair value for MSRs are reported in mortgage fees and related income. (f) Realized (gains)/losses due to DVA for fair value option elected liabilities are reported in principal transactions revenue, and were not material for the three and six months ended June 30, 2026 and 2025. Unrealized (gains)/losses are reported in OCI, and were $ 166 million and $ 63 million for the three months ended June 30, 2026 and 2025"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2050",
+      "rank": 25,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": " Financial Instruments - Credit Losses: Troubled Debt Restructurings accounting guidance. Refer to Note 1 for further information. (b) At December 31, 2025, 2024 and 2023, in addition to the allowance for credit losses in the table above, the Firm also had an allowance for credit losses of $ 288 million, $ 268 million and $ 243 million, respectively, associated with certain accounts receivable in CIB. (c) Includes collateral-dependent loans, including those for which foreclosure is deemed probab"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_896",
+      "rank": 26,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "billion for the three and six months ended June 30, 2025, respectively. (c) The amortized cost of investment securities is reported net of allowance for credit losses of $ 63 million and $ 106 million at June 30, 2026 and December 31, 2025, respectively. (d) Excludes $ 5.3 billion and $ 4.6 billion of accrued interest receivable at June 30, 2026 and December 31, 2025, respectively. The Firm did not reverse through interest income any accrued interest receivable for the three and six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_165",
+      "rank": 27,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": " and bankers, including higher revenue-related compensation. The provision for credit losses was $4.2 billion. Net charge-offs were $4.4 billion, up $111 million, largely driven by Card Services, reflecting loan growth. The net reduction in the allowance for credit losses of $145 million was predominantly driven by improvements in home prices in the first quarter of 2026. In the prior year, the provision was $4.7 billion, net charge-offs were $4.2 billion and the net addition to the allowance fo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_86",
+      "rank": 28,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "alances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.2 trillion, up $455 billion, and the yield was 4.79%, down 32 bps. The net yield on these assets, on an FTE basis, was 2.45%, a decrease of 6 bps. The net yield excluding Markets was 3.69%, down 6 bps. 11 Provision for credit losses Three months ended June 30, Six months ended June "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_604",
+      "rank": 29,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " planned date of adoption. Financial Instruments - Credit Losses: Purchased Loans Issued November 2025 • Establishes an additional allowance framework for purchased, seasoned held-for-investment loans, excluding credit cards. • Requires that management’s initial estimate of expected credit losses be recognized as an increase to the allowance for credit losses with a corresponding increase to the loan’s amortized cost. • Required effective date: January 1, 2027. (a) • Requires adoption on a prosp"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_743",
+      "rank": 30,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Loans $ ( 158 ) $ ( 105 ) $ ( 170 ) $ ( 139 ) Other assets (a) 652 ( 14 ) 675 14 Accounts payable and other liabilities — ( 4 ) — ( 5 ) Total nonrecurring fair value gains/(losses) $ 494 $ ( 123 ) $ 505 $ ( 130 ) (a) Included $ 651 million and $( 7 ) million for the three months ended June 30, 2026 and 2025, respectively, and $ 664 million and $ 26 million for the six months ended June 30, 2026 and 2025, respectively, of net ga"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_496",
+      "rank": 31,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " losses on investment securities, which is reflected in investment securities on the Consolidated balance sheets. Discussion of changes in the allowance The allowance for credit losses as of June 30, 2026 was $31.5 billion, reflecting a net addition of $303 million from December 31, 2025. The net addition to the allowance for credit losses included: • $473 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offse"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_981",
+      "rank": 32,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "the interest rate on the credit card account. If the borrower does not make the contractual payments when due under the modified payment terms, the credit card loan continues to age and will be charged-off in accordance with the Firm's standard charge-off policy. In most cases, the Firm does not reinstate the borrower's line of credit. Financial effects of FDMs The following tables provide information on retained credit card FDMs. Loan modifications Three months ended June 30, 2026 Six months en"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_407",
+      "rank": 33,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "notes used in credit portfolio management activities (h) $ (424) $ (485) Three months ended June 30, (in millions, except ratios) Net charge-offs/(recoveries) Average loans - retained Net charge-off/(recovery) rate (j) 2026 2025 2026 2025 2026 2025 Consumer, excluding credit card Residential real estate $ (16) $ (21) $ 301,254 $ 305,598 (0.02) % (0.03) % Auto and other 149 150 65,456 66,407 0.91 0.91 Total consumer, excluding credit card - retained 133 129 366,710 372,005 0.15 0.14 Credit card -"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_88",
+      "rank": 34,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "ision for credit losses was $2.5 billion. Net charge-offs were $2.4 billion and the net addition to the allowance for credit losses was $149 million. The provision for credit losses included: • $2.2 billion in consumer , reflecting net charge-offs of $2.2 billion, predominantly driven by Card Services, primarily due to loan growth. The allowance for credit losses was relatively flat, and • $361 million in wholesale , driven by a net increase in the loan portfolio and changes in the credit qualit"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_975",
+      "rank": 35,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ortfolio segment includes credit card loans originated and purchased by the Firm. Delinquency rates are the primary credit quality indicator for credit card loans. Refer to Note 12 of JPMorganChase's 2025 Form 10-K for further information on the credit card loan portfolio, including credit quality indicators. The following tables provide information on delinquency and gross charge-offs. As of or for the six months ended June 30, 2026 (in millions, except ratios) Within the revolving period Conve"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_161",
+      "rank": 36,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "venue-related compensation. The provision for credit losses was $2.2 billion. Net charge-offs were $2.2 billion, up $70 million, predominantly driven by Card Services, reflecting loan growth. The allowance for credit losses was flat. In the prior year, the provision was $2.1 billion, net charge-offs were $2.1 billion and the allowance for credit losses was relatively flat. Refer to Credit and Investment Risk Management on pages 59-78 and Allowance for Credit Losses on pages 75-77 for a further d"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_846",
+      "rank": 37,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "sparse": 20
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "x gains/(losses) recorded on such instruments for the three and six months ended June 30, 2026 and 2025. Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Three months ended June 30, (in millions) Amounts recorded in income (b) Amounts recorded in OCI Amounts recorded in income (b) Amounts recorded in OCI Foreign exchange derivatives $ ( 20 ) $ 57 $ 120 $ ( 4,213 ) Gains/(losses) recorded in income (a) and other comprehensive income/(loss) 2026 2025 Six months"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_87",
+      "rerank_rank": 1,
+      "rerank_score": 8.648927688598633,
+      "rrf_rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1031",
+      "rerank_rank": 2,
+      "rerank_score": 7.489852428436279,
+      "rrf_rank": 3,
+      "rrf_score": 0.027745885954841176,
+      "found_in": {
+        "dense": 7,
+        "sparse": 18
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "methodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_202",
+      "rerank_rank": 3,
+      "rerank_score": 7.259274959564209,
+      "rrf_rank": 2,
+      "rrf_score": 0.031754032258064516,
+      "found_in": {
+        "dense": 4,
+        "sparse": 2
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026"
+      },
+      "text": "in Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_942",
+      "rerank_rank": 4,
+      "rerank_score": 6.782138347625732,
+      "rrf_rank": 6,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "justments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_987",
+      "rerank_rank": 5,
+      "rerank_score": 6.727392673492432,
+      "rrf_rank": 22,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": " 1,135 30-89 days past due and still accruing 181 102 90 or more days past due and still accruing 118 60 Total $ 2,651 $ 1,297 149 Defaults of FDMs For the three and six months ended June 30, 2026, defaults of retained credit card FDMs that had been modified within twelve months were $ 102 million and $ 136 million, respectively, and were in the form of a combination of term extension and interest rate reduction, while not material for the three and six months ended June 30, 2025. For credit car"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026)\nThree months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char\n\n[2] (10-Q, Q2-2026)\nmethodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97\n\n[3] (10-Q, Q2-2026)\nin Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total\n\n[4] (10-Q, Q2-2026)\njustments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes \n\n[5] (10-Q, Q2-2026)\n 1,135 30-89 days past due and still accruing 181 102 90 or more days past due and still accruing 118 60 Total $ 2,651 $ 1,297 149 Defaults of FDMs For the three and six months ended June 30, 2026, defaults of retained credit card FDMs that had been modified within twelve months were $ 102 million and $ 136 million, respectively, and were in the form of a combination of term extension and interest rate reduction, while not material for the three and six months ended June 30, 2025. For credit car",
+  "user_prompt": "[1] (10-Q, Q2-2026)\nThree months ended June 30, Six months ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Consumer, excluding credit card $ 142 $ 131 8 % $ 155 $ 335 (54) % Credit card 2,026 1,937 5 4,070 4,319 (6) Total consumer 2,168 2,068 5 4,225 4,654 (9) Wholesale 361 791 (54) 808 1,527 (47) Investment securities (14) (10) (40) (11) (27) 59 Total provision for credit losses $ 2,515 $ 2,849 (12) % $ 5,022 $ 6,154 (18) % Quarterly results The provision for credit losses was $2.5 billion. Net char\n\n[2] (10-Q, Q2-2026)\nmethodology. Refer to Note 10 of JPMorganChase’s 2025 Form 10-K and Note 9 of this Form 10-Q for further information on the allowance for credit losses on investment securities. 2026 2025 Six months ended June 30, (in millions) Consumer, excluding credit card Credit card Wholesale Total Consumer, excluding credit card Credit card Wholesale Total Allowance for loan losses Beginning balance at January 1, $ 1,920 $ 15,557 $ 8,288 $ 25,765 $ 1,807 $ 14,600 $ 7,938 $ 24,345 Gross charge-offs 510 4,97\n\n[3] (10-Q, Q2-2026)\nin Markets. The net addition to the allowance for credit losses was $511 million and net charge-offs were $327 million . In the prior year, the provision was $1.4 billion, the net addition to the allowance for credit losses was $899 million and net charge-offs were $502 million. 29 Selected metrics (in millions, except employees) As of or for the three months ended June 30, As of or for the six months ended June 30, 2026 2025 Change 2026 2025 Change Selected balance sheet data (period-end) Total\n\n[4] (10-Q, Q2-2026)\njustments to record loans and lending-related commitments held-for-sale at the lower of cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in write downs, recoveries or changes in the allowance recognized in the provision for credit losses. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Net gains/(losses) on sales of loans and lending-related commitments (a) $ 118 $ 113 $ 67 $ 43 (a) Includes \n\n[5] (10-Q, Q2-2026)\n 1,135 30-89 days past due and still accruing 181 102 90 or more days past due and still accruing 118 60 Total $ 2,651 $ 1,297 149 Defaults of FDMs For the three and six months ended June 30, 2026, defaults of retained credit card FDMs that had been modified within twelve months were $ 102 million and $ 136 million, respectively, and were in the form of a combination of term extension and interest rate reduction, while not material for the three and six months ended June 30, 2025. For credit car\n\nQuestion: What was the credit card provision for credit losses for the six months ended June 30, 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_87"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_1031"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-Q_Q2-2026_202"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-Q_Q2-2026_942"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_987"
+    }
+  ],
+  "answer_text": "The credit card provision for credit losses for the six months ended June 30, 2026, was $4,070 million [1].",
+  "parsed_citations": [
+    1
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_87",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1224 @@
+{
+  "question_id": "q04",
+  "question": "What was the CET1 capital ratio under the Standardized approach at the end of Q2 2026?",
+  "category": "tabular",
+  "difficulty": "hard",
+  "expected": {
+    "value": 14.2,
+    "unit": "percent"
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Consolidated financial highlights",
+    "table": "Consolidated financial highlights (unaudited)",
+    "row": "Common equity Tier 1 (CET1) capital ratio - Standardized",
+    "column": "2Q26",
+    "period": "Q2-2026"
+  },
+  "notes": "Comes from the SEVEN-column table: 2Q26 1Q26 4Q25 3Q25 2Q25 then 2026 2025 under a separate 'Six months ended June 30' superheader that flat text drops entirely. 2Q25 value is 15.1 - a plausible wrong answer. Hardest alignment case in the set.",
+  "run": {
+    "timestamp": "2026-09-21T01:23:19.648748+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-K_FY2025_772",
+      "rank": 1,
+      "score": 0.5246069431304932,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "sets 1,981,692 (b) 1,757,460 2,045,249 (b)(e) 1,740,429 (e) CET1 capital ratio 14.6 % (c) 15.7 % 11.5 % 14.1 % (c) 15.8 % 11.5 % Tier 1 capital ratio 15.5 (c) 16.8 13.0 15.0 (c) 16.9 13.0 Total capital ratio 17.4 (c) 18.5 15.0 16.1 (c) 17.9 15.0 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. For the year ended December 31, 2024, CET1 capital reflected a $720 million benefit. Refer to Note 27 for additional information. (b) Includes ap"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2314",
+      "rank": 2,
+      "score": 0.5725631713867188,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "898 (d) 282,328 (d) Risk-weighted assets 1,757,460 1,718,777 1,740,429 (d) 1,594,072 (b) CET1 capital ratio 15.7 % 16.0 % 15.8 % 17.3 % Tier 1 capital ratio 16.8 16.0 16.9 17.3 Total capital ratio 18.5 17.2 17.9 17.7 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The capital metrics for the year ended December 31, 2024 reflected the CECL capital transition provisions. (b) Includes approximately $ 23 billion under the Standardized appr"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_289",
+      "rank": 3,
+      "score": 0.5862425565719604,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "nced (in millions, except ratios) June 30, 2026 December 31, 2025 Capital ratio requirements (a) June 30, 2026 December 31, 2025 Capital ratio requirements (a) Risk-based capital metrics: CET1 capital $ 302,619 $ 288,469 $ 302,619 $ 288,469 Tier 1 capital 322,720 307,630 322,720 307,630 Total capital 362,723 343,843 346,248 328,962 (b) Risk-weighted assets 2,132,428 1,981,692 2,123,862 2,045,249 (b) CET1 capital ratio 14.2 % 14.6 % 11.5 % 14.2 % 14.1 % 11.5 % Tier 1 capital ratio 15.1 15.5 13.0 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_299",
+      "rank": 4,
+      "score": 0.6127685308456421,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "losses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2305",
+      "rank": 5,
+      "score": 0.6274487972259521,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "e regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_458",
+      "rank": 6,
+      "score": 0.6313260197639465,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": "dardized and Advanced CET1 ratios were 14.6% and 14.1%, respectively. • SLR was 5.8%. • TBVPS grew 10.5%, ending 2025 at $107.56. • As of December 31, 2025, the Firm had eligible end-of-period High Quality Liquid Assets (“HQLA”) of approximately $915 billion and unencumbered marketable securities with a fair value of approximately $548 billion, resulting in approximately $1.5 trillion of liquidity sources. Refer to Capital Risk Management and Liquidity Risk Management on pages 89–99 and pages 10"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_775",
+      "rank": 7,
+      "score": 0.6573024988174438,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": ", Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) Includes the impacts of certain assets associated with First Republic to which the Standardized approach has been applied as permitted by the transition provisions in the U.S. capital rules. Three months en"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_301",
+      "rank": 8,
+      "score": 0.6714216470718384,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "capital adjustments (b) 1,778 Change in Standardized/Advanced CET1 capital 14,150 Standardized/Advanced CET1 capital at June 30, 2026 $ 302,619 Standardized/Advanced Tier 1 capital at December 31, 2025 $ 307,630 Change in CET1 capital 14,150 Net issuances of noncumulative perpetual preferred stock 995 Other (55) Change in Standardized/Advanced Tier 1 capital 15,090 Standardized/Advanced Tier 1 capital at June 30, 2026 $ 322,720 Standardized Tier 2 capital at December 31, 2025 $ 36,213 Change in "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_323",
+      "rank": 9,
+      "score": 0.6826589107513428,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "t SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CC"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_20",
+      "rank": 10,
+      "score": 0.6870466470718384,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "N.A. LCR (average) (c) 118 120 115 117 120 118 120 Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) 14.2 14.3 14.6 14.8 15.1 14.2 15.1 Tier 1 capital ratio – Standardized (d) 15.1 15.2 15.5 15.8 16.1 15.1 16.1 Total capital ratio – Standardized (d) 17.0 17.2 17.4 17.7 17.8 17.0 17.8 Tier 1 leverage ratio (c) 6.6 6.6 6.9 6.9 6.9 6.6 6.9 Supplementary leverage ratio (“SLR”) (c) 5.5 5.6 5.8 5.8 5.9 5.5 5.9 Selected balance sheet data (period-end) Trading assets $ 1,062,072 $ 1,069,335"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_823",
+      "rank": 11,
+      "score": 0.6911240816116333,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "31, 2025 Regulatory Minimum ratios (a) (in millions, except ratios) Actual Total capital $ 53,554 CET1 capital ratio 15.4 % 4.5 % Tier 1 capital ratio 19.8 6.0 Total capital ratio 23.6 8.0 Tier 1 leverage ratio 5.9 3.3 (b) (a) Represents minimum Pillar 1 requirements specified by the PRA. J.P. Morgan Securities plc's capital ratios as of December 31, 2025 exceeded the minimum requirements, including the additional capital requirements specified by the PRA. (b) At least 75% of the Tier 1 leverage"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_786",
+      "rank": 12,
+      "score": 0.6912052631378174,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "r 1 capital and Tier 2 capital for the year ended December 31, 2025. Year ended December 31, (in millions) 2025 Standardized/Advanced CET1 capital at December 31, 2024 $ 275,513 Net income applicable to common equity 55,949 Dividends declared on common stock (16,060) Net purchase of treasury stock (30,573) Changes in additional paid-in capital 203 Changes related to AOCI applicable to capital: Unrealized gains/(losses) on investment securities 3,569 Translation adjustments, net of hedges (a) 1,3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_335",
+      "rank": 13,
+      "score": 0.699709951877594,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "d leverage-based capital metrics. June 30, 2026 Estimated Regulatory Minimum ratios (a) (in millions, except ratios) Total capital $ 54,463 CET1 capital ratio 17.2 % 4.5 % Tier 1 capital ratio 17.2 6.0 Total capital ratio 30.2 8.0 Tier 1 leverage ratio 5.7 3.0 (a) Represents minimum Pillar 1 requirements specified by the EU CRR. J.P. Morgan SE’s capital and leverage ratios as of June 30, 2026 exceeded the minimum requirements, including the additional capital requirements specified by EU regulat"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_332",
+      "rank": 14,
+      "score": 0.7046120166778564,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "a) (in millions, except ratios) Total capital $ 56,487 CET1 capital ratio 15.6 % 4.5 % Tier 1 capital ratio 19.7 6.0 Total capital ratio 22.9 8.0 Tier 1 leverage ratio 5.4 3.3 (b) (a) Represents minimum Pillar 1 requirements specified by the PRA. J.P. Morgan Securities plc's capital ratios as of June 30, 2026 exceeded the minimum requirements, including the additional capital requirements specified by the PRA. (b) At least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital. J"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2306",
+      "rank": 15,
+      "score": 0.7059412598609924,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "1, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_734",
+      "rank": 16,
+      "score": 0.7069813013076782,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "e & Co./2025 Form 10-K 89 Management’s discussion and analysis Reserve uses results under the severely adverse scenario from its supervisory stress test to determine each firm’s Stress Capital Buffer (“SCB”) requirement for the coming year. The Firm's current SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of December 31, 2025. Refer to Key "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1168",
+      "rank": 17,
+      "score": 0.7088913917541504,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "sed capital metrics: CET1 capital $ 302,619 $ 302,585 $ 302,619 $ 302,585 Tier 1 capital 322,720 302,589 322,720 302,589 Total capital 362,723 326,427 346,248 310,358 Risk-weighted assets 2,132,428 2,013,591 2,123,862 1,881,276 CET1 capital ratio 14.2 % 15.0 % 14.2 % 16.1 % Tier 1 capital ratio 15.1 15.0 15.2 16.1 Total capital ratio 17.0 16.2 16.3 16.5 December 31, 2025 (in millions, except ratios) Standardized Advanced JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. JPMorgan Chase & Co. JPMorga"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_758",
+      "rank": 18,
+      "score": 0.724766194820404,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "n effect. All banking institutions are currently required to have a minimum CET1 capital ratio of 4.5% of risk-weighted assets. Certain banking organizations, including the Firm, are required to hold additional levels of capital to serve as a “capital conservation buffer.” The capital conservation buffer incorporates a GSIB surcharge, a discretionary countercyclical capital buffer and a fixed capital conservation buffer of 2.5% for Advanced regulatory capital requirements, as well as a variable "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2312",
+      "rank": 19,
+      "score": 0.736167848110199,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "subject. December 31, 2025 (in millions, except ratios) Standardized Advanced JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. Risk-based capital metrics: (a) CET1 capital $ 288,469 $ 294,804 $ 288,469 $ 294,804 Tier 1 capital 307,630 294,807 307,630 294,807 Total capital 343,843 317,684 328,962 (d) 302,732 (d) Risk-weighted assets (b) 1,981,692 1,928,039 2,045,249 (d) 1,864,923 (d) CET1 capital ratio (c) 14.6 % 15.3 % 14.1 % 15.8 % Tier 1 capital rat"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_293",
+      "rank": 20,
+      "score": 0.7517218589782715,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "Firm early adopted effective January 1, 2026. For the year ended December 31, 2025, the SLR requirement was 5.0%. Refer to Key Regulatory Developments on pages 44-45 and Note 21 for additional information related to the eSLR final rule. 46 Capital components The following table presents reconciliations of total stockholders’ equity to CET1 capital, Tier 1 capital and Total capital as of June 30, 2026 and December 31, 2025. (in millions) June 30, 2026 December 31, 2025 Total stockholders’ equity "
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_774",
+      "rank": 1,
+      "score": 23.41945091348326,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "ximately 90 basis points under the Advanced approach related to the Apple Card transaction. The impact under the Advanced approach is expected to reduce to approximately 30 basis points once the necessary modeling steps are completed, which is expected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements app"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_299",
+      "rank": 2,
+      "score": 22.8384223014843,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "losses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2306",
+      "rank": 3,
+      "score": 22.525345514487633,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "1, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_275",
+      "rank": 4,
+      "score": 22.004403028326653,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "ardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. As of June 30, 2026, the Advanced Total Capital ratio became the most binding constraint for the Firm’s Basel III risk-based ratios. However, as of June 30, 2026, the Standardized ratios are more binding than the Advanced ratios w"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2305",
+      "rank": 5,
+      "score": 21.50172368953807,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "e regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_775",
+      "rank": 6,
+      "score": 21.36575274851519,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": ", Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) Includes the impacts of certain assets associated with First Republic to which the Standardized approach has been applied as permitted by the transition provisions in the U.S. capital rules. Three months en"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1162",
+      "rank": 7,
+      "score": 21.16740504397617,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "l ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio req"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_301",
+      "rank": 8,
+      "score": 21.147844721767324,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "capital adjustments (b) 1,778 Change in Standardized/Advanced CET1 capital 14,150 Standardized/Advanced CET1 capital at June 30, 2026 $ 302,619 Standardized/Advanced Tier 1 capital at December 31, 2025 $ 307,630 Change in CET1 capital 14,150 Net issuances of noncumulative perpetual preferred stock 995 Other (55) Change in Standardized/Advanced Tier 1 capital 15,090 Standardized/Advanced Tier 1 capital at June 30, 2026 $ 322,720 Standardized Tier 2 capital at December 31, 2025 $ 36,213 Change in "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_742",
+      "rank": 9,
+      "score": 20.8638403148368,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "Basel III RWA: a standardized approach (“Standardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The current Basel III rules establish capital requirements for calculating credit risk RWA and market risk RWA, and in the case of Advanced, operational risk RWA. Key differences in th"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_423",
+      "rank": 10,
+      "score": 20.804484749678956,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "o 58 56 55 Firm Liquidity coverage ratio (“LCR”) (average) (b) 111 113 113 JPMorgan Chase Bank, N.A. LCR (average) (b) 115 124 129 Common equity Tier 1 (“CET1”) capital ratio – Standardized (c)(d) 14.6 (f) 15.7 15.0 Tier 1 capital ratio – Standardized (c)(d) 15.5 (f) 16.8 16.6 Total capital ratio – Standardized (c)(d) 17.4 (f) 18.5 18.5 Tier 1 leverage ratio (b)(c) 6.9 7.2 7.2 Supplementary leverage ratio (“SLR”) (b)(c) 5.8 6.1 6.1 Selected balance sheet data (period-end) Trading assets $ 802,87"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2302",
+      "rank": 11,
+      "score": 19.61421224452468,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "form": "10-K"
+      },
+      "text": "Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The three components of regulatory capital under the Basel III rules and their primary drivers are as illustrated below: Under the risk-based capital and leverage-based guidelines of the Federal Reserve, JPMorgan Chase & Co. is required to maintain minimum ratios for CET1 capital, Tier 1 capital, Total capital, Tier 1 leverage and the SLR. Failure to meet these minimum requirements could cause"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_20",
+      "rank": 12,
+      "score": 18.815294565562915,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "N.A. LCR (average) (c) 118 120 115 117 120 118 120 Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) 14.2 14.3 14.6 14.8 15.1 14.2 15.1 Tier 1 capital ratio – Standardized (d) 15.1 15.2 15.5 15.8 16.1 15.1 16.1 Total capital ratio – Standardized (d) 17.0 17.2 17.4 17.7 17.8 17.0 17.8 Tier 1 leverage ratio (c) 6.6 6.6 6.9 6.9 6.9 6.6 6.9 Supplementary leverage ratio (“SLR”) (c) 5.5 5.6 5.8 5.8 5.9 5.5 5.9 Selected balance sheet data (period-end) Trading assets $ 1,062,072 $ 1,069,335"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_787",
+      "rank": 13,
+      "score": 17.96791885016347,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "569 Translation adjustments, net of hedges (a) 1,339 Fair value hedges 64 Defined benefit pension and other postretirement employee benefit (“OPEB”) plans 579 Changes related to other CET1 capital adjustments (b) (2,114) Change in Standardized/Advanced CET1 capital 12,956 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Standardized/Advanced Tier 1 capital at December 31, 2024 $ 294,881 Change in CET1 capital (b) 12,956 Net redemptions of noncumulative perpetual preferred stock "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_332",
+      "rank": 14,
+      "score": 17.77039163805525,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "a) (in millions, except ratios) Total capital $ 56,487 CET1 capital ratio 15.6 % 4.5 % Tier 1 capital ratio 19.7 6.0 Total capital ratio 22.9 8.0 Tier 1 leverage ratio 5.4 3.3 (b) (a) Represents minimum Pillar 1 requirements specified by the PRA. J.P. Morgan Securities plc's capital ratios as of June 30, 2026 exceeded the minimum requirements, including the additional capital requirements specified by the PRA. (b) At least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital. J"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2314",
+      "rank": 15,
+      "score": 17.7259199699909,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "898 (d) 282,328 (d) Risk-weighted assets 1,757,460 1,718,777 1,740,429 (d) 1,594,072 (b) CET1 capital ratio 15.7 % 16.0 % 15.8 % 17.3 % Tier 1 capital ratio 16.8 16.0 16.9 17.3 Total capital ratio 18.5 17.2 17.9 17.7 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The capital metrics for the year ended December 31, 2024 reflected the CECL capital transition provisions. (b) Includes approximately $ 23 billion under the Standardized appr"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2301",
+      "rank": 16,
+      "score": 17.605346687812485,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "quacy standards for large and internationally active U.S. bank holding companies and banks, including the Firm and JPMorgan Chase Bank, N.A. Under the rules currently in effect, two comprehensive approaches are prescribed for calculating Basel III RWA: a Standardized approach, and an Advanced approach. For each of these risk-based capital ratios, the capital adequacy of the Firm and JPMorgan Chase Bank, N.A. is evaluated against the lower of the Standardized or Advanced approaches compared to th"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_785",
+      "rank": 17,
+      "score": 17.54542492724499,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "apital transition provision with any excess deducted from RWA. (f) As of December 31, 2025 and 2024, included an incremental $468 million and $541 million allowance for credit losses, respectively, on certain assets associated with First Republic to which the Standardized approach has been applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the year ended "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2315",
+      "rank": 18,
+      "score": 17.42991761541276,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC"
+      },
+      "text": "oximately $ 23 billion under the Standardized approach and approximately $ 110 billion under the Advanced approach for both the Firm and Bank related to the Apple Card transaction. (c) Includes decreases of approximately 25 basis points under the Standardized approach for both the Firm and Bank and approximately 90 basis points and 110 basis points under the Advanced approach for the Firm and Bank, respectively, related to the Apple Card transaction. (d) Includes the impacts of certain assets as"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1168",
+      "rank": 19,
+      "score": 16.925431123879342,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "sed capital metrics: CET1 capital $ 302,619 $ 302,585 $ 302,619 $ 302,585 Tier 1 capital 322,720 302,589 322,720 302,589 Total capital 362,723 326,427 346,248 310,358 Risk-weighted assets 2,132,428 2,013,591 2,123,862 1,881,276 CET1 capital ratio 14.2 % 15.0 % 14.2 % 16.1 % Tier 1 capital ratio 15.1 15.0 15.2 16.1 Total capital ratio 17.0 16.2 16.3 16.5 December 31, 2025 (in millions, except ratios) Standardized Advanced JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. JPMorgan Chase & Co. JPMorga"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_289",
+      "rank": 20,
+      "score": 16.907467852414023,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "nced (in millions, except ratios) June 30, 2026 December 31, 2025 Capital ratio requirements (a) June 30, 2026 December 31, 2025 Capital ratio requirements (a) Risk-based capital metrics: CET1 capital $ 302,619 $ 288,469 $ 302,619 $ 288,469 Tier 1 capital 322,720 307,630 322,720 307,630 Total capital 362,723 343,843 346,248 328,962 (b) Risk-weighted assets 2,132,428 1,981,692 2,123,862 2,045,249 (b) CET1 capital ratio 14.2 % 14.6 % 11.5 % 14.2 % 14.1 % 11.5 % Tier 1 capital ratio 15.1 15.5 13.0 "
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_299",
+      "rank": 1,
+      "rrf_score": 0.031754032258064516,
+      "found_in": {
+        "dense": 4,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "losses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2305",
+      "rank": 2,
+      "rrf_score": 0.03076923076923077,
+      "found_in": {
+        "dense": 5,
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "e regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_775",
+      "rank": 3,
+      "rrf_score": 0.03007688828584351,
+      "found_in": {
+        "dense": 7,
+        "sparse": 6
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": ", Tier 1, and Total capital ratio requirements applicable to the Firm were 12.3%, 13.8%, and 15.8%, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5%, 13.0%, and 15.0%, respectively. Refer to Note 27 for additional information. (e) Includes the impacts of certain assets associated with First Republic to which the Standardized approach has been applied as permitted by the transition provisions in the U.S. capital rules. Three months en"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2314",
+      "rank": 4,
+      "rrf_score": 0.02946236559139785,
+      "found_in": {
+        "dense": 2,
+        "sparse": 15
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "898 (d) 282,328 (d) Risk-weighted assets 1,757,460 1,718,777 1,740,429 (d) 1,594,072 (b) CET1 capital ratio 15.7 % 16.0 % 15.8 % 17.3 % Tier 1 capital ratio 16.8 16.0 16.9 17.3 Total capital ratio 18.5 17.2 17.9 17.7 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The capital metrics for the year ended December 31, 2024 reflected the CECL capital transition provisions. (b) Includes approximately $ 23 billion under the Standardized appr"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_301",
+      "rank": 5,
+      "rrf_score": 0.029411764705882353,
+      "found_in": {
+        "dense": 8,
+        "sparse": 8
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "capital adjustments (b) 1,778 Change in Standardized/Advanced CET1 capital 14,150 Standardized/Advanced CET1 capital at June 30, 2026 $ 302,619 Standardized/Advanced Tier 1 capital at December 31, 2025 $ 307,630 Change in CET1 capital 14,150 Net issuances of noncumulative perpetual preferred stock 995 Other (55) Change in Standardized/Advanced Tier 1 capital 15,090 Standardized/Advanced Tier 1 capital at June 30, 2026 $ 322,720 Standardized Tier 2 capital at December 31, 2025 $ 36,213 Change in "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2306",
+      "rank": 6,
+      "rrf_score": 0.029206349206349208,
+      "found_in": {
+        "dense": 15,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "1, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_289",
+      "rank": 7,
+      "rrf_score": 0.028373015873015873,
+      "found_in": {
+        "dense": 3,
+        "sparse": 20
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "nced (in millions, except ratios) June 30, 2026 December 31, 2025 Capital ratio requirements (a) June 30, 2026 December 31, 2025 Capital ratio requirements (a) Risk-based capital metrics: CET1 capital $ 302,619 $ 288,469 $ 302,619 $ 288,469 Tier 1 capital 322,720 307,630 322,720 307,630 Total capital 362,723 343,843 346,248 328,962 (b) Risk-weighted assets 2,132,428 1,981,692 2,123,862 2,045,249 (b) CET1 capital ratio 14.2 % 14.6 % 11.5 % 14.2 % 14.1 % 11.5 % Tier 1 capital ratio 15.1 15.5 13.0 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_20",
+      "rank": 8,
+      "rrf_score": 0.02817460317460317,
+      "found_in": {
+        "dense": 10,
+        "sparse": 12
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "N.A. LCR (average) (c) 118 120 115 117 120 118 120 Common equity Tier 1 (“CET1”) capital ratio – Standardized (d) 14.2 14.3 14.6 14.8 15.1 14.2 15.1 Tier 1 capital ratio – Standardized (d) 15.1 15.2 15.5 15.8 16.1 15.1 16.1 Total capital ratio – Standardized (d) 17.0 17.2 17.4 17.7 17.8 17.0 17.8 Tier 1 leverage ratio (c) 6.6 6.6 6.9 6.9 6.9 6.6 6.9 Supplementary leverage ratio (“SLR”) (c) 5.5 5.6 5.8 5.8 5.9 5.5 5.9 Selected balance sheet data (period-end) Trading assets $ 1,062,072 $ 1,069,335"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_332",
+      "rank": 9,
+      "rrf_score": 0.02702702702702703,
+      "found_in": {
+        "dense": 14,
+        "sparse": 14
+      },
+      "metadata": {
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "a) (in millions, except ratios) Total capital $ 56,487 CET1 capital ratio 15.6 % 4.5 % Tier 1 capital ratio 19.7 6.0 Total capital ratio 22.9 8.0 Tier 1 leverage ratio 5.4 3.3 (b) (a) Represents minimum Pillar 1 requirements specified by the PRA. J.P. Morgan Securities plc's capital ratios as of June 30, 2026 exceeded the minimum requirements, including the additional capital requirements specified by the PRA. (b) At least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital. J"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1168",
+      "rank": 10,
+      "rrf_score": 0.025645240835114255,
+      "found_in": {
+        "dense": 17,
+        "sparse": 19
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "sed capital metrics: CET1 capital $ 302,619 $ 302,585 $ 302,619 $ 302,585 Tier 1 capital 322,720 302,589 322,720 302,589 Total capital 362,723 326,427 346,248 310,358 Risk-weighted assets 2,132,428 2,013,591 2,123,862 1,881,276 CET1 capital ratio 14.2 % 15.0 % 14.2 % 16.1 % Tier 1 capital ratio 15.1 15.0 15.2 16.1 Total capital ratio 17.0 16.2 16.3 16.5 December 31, 2025 (in millions, except ratios) Standardized Advanced JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. JPMorgan Chase & Co. JPMorga"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_772",
+      "rank": 11,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": "sets 1,981,692 (b) 1,757,460 2,045,249 (b)(e) 1,740,429 (e) CET1 capital ratio 14.6 % (c) 15.7 % 11.5 % 14.1 % (c) 15.8 % 11.5 % Tier 1 capital ratio 15.5 (c) 16.8 13.0 15.0 (c) 16.9 13.0 Total capital ratio 17.4 (c) 18.5 15.0 16.1 (c) 17.9 15.0 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. For the year ended December 31, 2024, CET1 capital reflected a $720 million benefit. Refer to Note 27 for additional information. (b) Includes ap"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_774",
+      "rank": 12,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "ximately 90 basis points under the Advanced approach related to the Apple Card transaction. The impact under the Advanced approach is expected to reduce to approximately 30 basis points once the necessary modeling steps are completed, which is expected in the near term. (d) Represents minimum requirements and regulatory buffers applicable to the Firm for the year ended December 31, 2025. For the year ended December 31, 2024, the Standardized CET1, Tier 1, and Total capital ratio requirements app"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_275",
+      "rank": 13,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "ardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. As of June 30, 2026, the Advanced Total Capital ratio became the most binding constraint for the Firm’s Basel III risk-based ratios. However, as of June 30, 2026, the Standardized ratios are more binding than the Advanced ratios w"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_458",
+      "rank": 14,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "dense": 6
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": "dardized and Advanced CET1 ratios were 14.6% and 14.1%, respectively. • SLR was 5.8%. • TBVPS grew 10.5%, ending 2025 at $107.56. • As of December 31, 2025, the Firm had eligible end-of-period High Quality Liquid Assets (“HQLA”) of approximately $915 billion and unencumbered marketable securities with a fair value of approximately $548 billion, resulting in approximately $1.5 trillion of liquidity sources. Refer to Capital Risk Management and Liquidity Risk Management on pages 89–99 and pages 10"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1162",
+      "rank": 15,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "sparse": 7
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "l ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio req"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_323",
+      "rank": 16,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "t SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CC"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_742",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "Basel III RWA: a standardized approach (“Standardized”), and an advanced approach (“Advanced”). For each of these risk-based capital ratios, the capital adequacy of the Firm is evaluated against the lower of the Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The current Basel III rules establish capital requirements for calculating credit risk RWA and market risk RWA, and in the case of Advanced, operational risk RWA. Key differences in th"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_423",
+      "rank": 18,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "sparse": 10
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "o 58 56 55 Firm Liquidity coverage ratio (“LCR”) (average) (b) 111 113 113 JPMorgan Chase Bank, N.A. LCR (average) (b) 115 124 129 Common equity Tier 1 (“CET1”) capital ratio – Standardized (c)(d) 14.6 (f) 15.7 15.0 Tier 1 capital ratio – Standardized (c)(d) 15.5 (f) 16.8 16.6 Total capital ratio – Standardized (c)(d) 17.4 (f) 18.5 18.5 Tier 1 leverage ratio (b)(c) 6.9 7.2 7.2 Supplementary leverage ratio (“SLR”) (b)(c) 5.8 6.1 6.1 Selected balance sheet data (period-end) Trading assets $ 802,87"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_823",
+      "rank": 19,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "31, 2025 Regulatory Minimum ratios (a) (in millions, except ratios) Actual Total capital $ 53,554 CET1 capital ratio 15.4 % 4.5 % Tier 1 capital ratio 19.8 6.0 Total capital ratio 23.6 8.0 Tier 1 leverage ratio 5.9 3.3 (b) (a) Represents minimum Pillar 1 requirements specified by the PRA. J.P. Morgan Securities plc's capital ratios as of December 31, 2025 exceeded the minimum requirements, including the additional capital requirements specified by the PRA. (b) At least 75% of the Tier 1 leverage"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2302",
+      "rank": 20,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "form": "10-K"
+      },
+      "text": "Standardized or Advanced approaches compared to their respective regulatory capital ratio requirements. The three components of regulatory capital under the Basel III rules and their primary drivers are as illustrated below: Under the risk-based capital and leverage-based guidelines of the Federal Reserve, JPMorgan Chase & Co. is required to maintain minimum ratios for CET1 capital, Tier 1 capital, Total capital, Tier 1 leverage and the SLR. Failure to meet these minimum requirements could cause"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_786",
+      "rank": 21,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "r 1 capital and Tier 2 capital for the year ended December 31, 2025. Year ended December 31, (in millions) 2025 Standardized/Advanced CET1 capital at December 31, 2024 $ 275,513 Net income applicable to common equity 55,949 Dividends declared on common stock (16,060) Net purchase of treasury stock (30,573) Changes in additional paid-in capital 203 Changes related to AOCI applicable to capital: Unrealized gains/(losses) on investment securities 3,569 Translation adjustments, net of hedges (a) 1,3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_335",
+      "rank": 22,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "d leverage-based capital metrics. June 30, 2026 Estimated Regulatory Minimum ratios (a) (in millions, except ratios) Total capital $ 54,463 CET1 capital ratio 17.2 % 4.5 % Tier 1 capital ratio 17.2 6.0 Total capital ratio 30.2 8.0 Tier 1 leverage ratio 5.7 3.0 (a) Represents minimum Pillar 1 requirements specified by the EU CRR. J.P. Morgan SE’s capital and leverage ratios as of June 30, 2026 exceeded the minimum requirements, including the additional capital requirements specified by EU regulat"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_787",
+      "rank": 23,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "569 Translation adjustments, net of hedges (a) 1,339 Fair value hedges 64 Defined benefit pension and other postretirement employee benefit (“OPEB”) plans 579 Changes related to other CET1 capital adjustments (b) (2,114) Change in Standardized/Advanced CET1 capital 12,956 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Standardized/Advanced Tier 1 capital at December 31, 2024 $ 294,881 Change in CET1 capital (b) 12,956 Net redemptions of noncumulative perpetual preferred stock "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_734",
+      "rank": 24,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "e & Co./2025 Form 10-K 89 Management’s discussion and analysis Reserve uses results under the severely adverse scenario from its supervisory stress test to determine each firm’s Stress Capital Buffer (“SCB”) requirement for the coming year. The Firm's current SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of December 31, 2025. Refer to Key "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2301",
+      "rank": 25,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "quacy standards for large and internationally active U.S. bank holding companies and banks, including the Firm and JPMorgan Chase Bank, N.A. Under the rules currently in effect, two comprehensive approaches are prescribed for calculating Basel III RWA: a Standardized approach, and an Advanced approach. For each of these risk-based capital ratios, the capital adequacy of the Firm and JPMorgan Chase Bank, N.A. is evaluated against the lower of the Standardized or Advanced approaches compared to th"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_785",
+      "rank": 26,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "apital transition provision with any excess deducted from RWA. (f) As of December 31, 2025 and 2024, included an incremental $468 million and $541 million allowance for credit losses, respectively, on certain assets associated with First Republic to which the Standardized approach has been applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the year ended "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_758",
+      "rank": 27,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "dense": 18
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "n effect. All banking institutions are currently required to have a minimum CET1 capital ratio of 4.5% of risk-weighted assets. Certain banking organizations, including the Firm, are required to hold additional levels of capital to serve as a “capital conservation buffer.” The capital conservation buffer incorporates a GSIB surcharge, a discretionary countercyclical capital buffer and a fixed capital conservation buffer of 2.5% for Advanced regulatory capital requirements, as well as a variable "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2315",
+      "rank": 28,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC"
+      },
+      "text": "oximately $ 23 billion under the Standardized approach and approximately $ 110 billion under the Advanced approach for both the Firm and Bank related to the Apple Card transaction. (c) Includes decreases of approximately 25 basis points under the Standardized approach for both the Firm and Bank and approximately 90 basis points and 110 basis points under the Advanced approach for the Firm and Bank, respectively, related to the Apple Card transaction. (d) Includes the impacts of certain assets as"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2312",
+      "rank": 29,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "subject. December 31, 2025 (in millions, except ratios) Standardized Advanced JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. JPMorgan Chase & Co. JPMorgan Chase Bank, N.A. Risk-based capital metrics: (a) CET1 capital $ 288,469 $ 294,804 $ 288,469 $ 294,804 Tier 1 capital 307,630 294,807 307,630 294,807 Total capital 343,843 317,684 328,962 (d) 302,732 (d) Risk-weighted assets (b) 1,981,692 1,928,039 2,045,249 (d) 1,864,923 (d) CET1 capital ratio (c) 14.6 % 15.3 % 14.1 % 15.8 % Tier 1 capital rat"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_293",
+      "rank": 30,
+      "rrf_score": 0.0125,
+      "found_in": {
+        "dense": 20
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "Firm early adopted effective January 1, 2026. For the year ended December 31, 2025, the SLR requirement was 5.0%. Refer to Key Regulatory Developments on pages 44-45 and Note 21 for additional information related to the eSLR final rule. 46 Capital components The following table presents reconciliations of total stockholders’ equity to CET1 capital, Tier 1 capital and Total capital as of June 30, 2026 and December 31, 2025. (in millions) June 30, 2026 December 31, 2025 Total stockholders’ equity "
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_299",
+      "rerank_rank": 1,
+      "rerank_score": 5.08875846862793,
+      "rrf_rank": 1,
+      "rrf_score": 0.031754032258064516,
+      "found_in": {
+        "dense": 4,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "losses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_323",
+      "rerank_rank": 2,
+      "rerank_score": 4.695167541503906,
+      "rrf_rank": 16,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "t SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CC"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2306",
+      "rerank_rank": 3,
+      "rerank_score": 4.62624454498291,
+      "rrf_rank": 6,
+      "rrf_score": 0.029206349206349208,
+      "found_in": {
+        "dense": 15,
+        "sparse": 3
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "1, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2314",
+      "rerank_rank": 4,
+      "rerank_score": 4.074643135070801,
+      "rrf_rank": 4,
+      "rrf_score": 0.02946236559139785,
+      "found_in": {
+        "dense": 2,
+        "sparse": 15
+      },
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "898 (d) 282,328 (d) Risk-weighted assets 1,757,460 1,718,777 1,740,429 (d) 1,594,072 (b) CET1 capital ratio 15.7 % 16.0 % 15.8 % 17.3 % Tier 1 capital ratio 16.8 16.0 16.9 17.3 Total capital ratio 18.5 17.2 17.9 17.7 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The capital metrics for the year ended December 31, 2024 reflected the CECL capital transition provisions. (b) Includes approximately $ 23 billion under the Standardized appr"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2305",
+      "rerank_rank": 5,
+      "rerank_score": 3.483191967010498,
+      "rrf_rank": 2,
+      "rrf_score": 0.03076923076923077,
+      "found_in": {
+        "dense": 5,
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "e regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026)\nlosses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare\n\n[2] (10-Q, Q2-2026)\nt SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CC\n\n[3] (10-K, FY2025, Body - MD&A and financials)\n1, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase\n\n[4] (10-K, FY2025, Body - MD&A and financials)\n898 (d) 282,328 (d) Risk-weighted assets 1,757,460 1,718,777 1,740,429 (d) 1,594,072 (b) CET1 capital ratio 15.7 % 16.0 % 15.8 % 17.3 % Tier 1 capital ratio 16.8 16.0 16.9 17.3 Total capital ratio 18.5 17.2 17.9 17.7 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The capital metrics for the year ended December 31, 2024 reflected the CECL capital transition provisions. (b) Includes approximately $ 23 billion under the Standardized appr\n\n[5] (10-K, FY2025, Body - MD&A and financials)\ne regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio",
+  "user_prompt": "[1] (10-Q, Q2-2026)\nlosses, on certain assets associated with First Republic to which the Standardized approach was applied, as permitted by the transition provisions in the U.S. capital rules. Capital rollforward The following table presents the changes in CET1 capital, Tier 1 capital and Tier 2 capital for the six months ended June 30, 2026. Six months ended June 30, (in millions) 2026 Standardized/Advanced CET1 capital at December 31, 2025 $ 288,469 Net income applicable to common equity 37,065 Dividends declare\n\n[2] (10-Q, Q2-2026)\nt SCB requirement is 2.5% and will remain in effect through September 30, 2027, based on the current rules. The Firm’s Standardized CET1 capital ratio requirement, including regulatory buffers, was 11.5% as of June 30, 2026. Refer to Key Regulatory Developments on pages 44-45 for information related to proposed changes to the SCB requirement and stress testing framework. Refer to Capital planning and stress testing on pages 89–90 of JPMorganChase’s 2025 Form 10-K for additional information on CC\n\n[3] (10-K, FY2025, Body - MD&A and financials)\n1, 2024, the CET1, Tier 1, and Total capital ratio requirements under Standardized applicable to the Firm were 12.3 %, 13.8 %, and 15.8 %, respectively; the Advanced CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.5 %, 13.0 %, and 15.0 %, respectively. (c) Represents requirements for JPMorgan Chase Bank, N.A. The CET1, Tier 1 and Total capital ratio requirements include a fixed capital conservation buffer requirement of 2.5 % that is applicable to JPMorgan Chase\n\n[4] (10-K, FY2025, Body - MD&A and financials)\n898 (d) 282,328 (d) Risk-weighted assets 1,757,460 1,718,777 1,740,429 (d) 1,594,072 (b) CET1 capital ratio 15.7 % 16.0 % 15.8 % 17.3 % Tier 1 capital ratio 16.8 16.0 16.9 17.3 Total capital ratio 18.5 17.2 17.9 17.7 (a) As of January 1, 2025, the benefit from the CECL capital transition provision had been fully phased out. The capital metrics for the year ended December 31, 2024 reflected the CECL capital transition provisions. (b) Includes approximately $ 23 billion under the Standardized appr\n\n[5] (10-K, FY2025, Body - MD&A and financials)\ne regulatory capital ratio requirements applicable to the Firm. The CET1, Tier 1 and Total capital ratio requirements each include a respective minimum requirement plus a GSIB surcharge of 4.5 % as calculated under Method 2; plus a 2.5 % SCB for Standardized ratios and a fixed 2.5 % capital conservation buffer for Advanced ratios. The countercyclical buffer is currently set to 0 % by the federal banking agencies. (b) For the year ended December 31, 2024, the CET1, Tier 1, and Total capital ratio\n\nQuestion: What was the CET1 capital ratio under the Standardized approach at the end of Q2 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_299"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_323"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_2306"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-K_FY2025_2314"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_2305"
+    }
+  ],
+  "answer_text": "The CET1 capital ratio under the Standardized approach at the end of Q2 2026 was 11.5% as of June 30, 2026 [2].",
+  "parsed_citations": [
+    2
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_323",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      }
+    }
+  ]
+}

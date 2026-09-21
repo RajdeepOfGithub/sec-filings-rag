@@ -1,0 +1,1154 @@
+{
+  "question_id": "q08",
+  "question": "How much did the firm spend on share repurchases in fiscal year 2025?",
+  "category": "tabular",
+  "difficulty": "easy",
+  "expected": {
+    "value": 31640,
+    "unit": "USD millions",
+    "shares": 114.4,
+    "shares_unit": "million shares"
+  },
+  "evidence": {
+    "document": "JPMC_10-K_FY2025",
+    "section": "Body - MD&A and financials",
+    "table": "Repurchases of common stock for the years ended December 31 2025, 2024 and 2023",
+    "row": "Aggregate purchase price of common stock repurchases",
+    "column": "2025",
+    "period": "FY2025"
+  },
+  "notes": "REGRESSION CHECK. v1 answers this correctly. Three-column table that happens to fit inside one chunk. If v2 breaks this, the table converter has regressed something.",
+  "run": {
+    "timestamp": "2026-09-21T01:23:26.647093+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-K_FY2025_2240",
+      "rank": 1,
+      "score": 0.4958652853965759,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "on share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares i"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_806",
+      "rank": 2,
+      "score": 0.5352334976196289,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "s under its previously-approved common share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authori"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_346",
+      "rank": 3,
+      "score": 0.5703341960906982,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "section": "Part II - pointer block"
+      },
+      "text": "ction of Management’s discussion and analysis on page 97 for information regarding repurchases under the Firm’s common share repurchase program. On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares r"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_317",
+      "rank": 4,
+      "score": 0.5831134915351868,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": "d to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Total number of shares of common stock repurchased 21.7 29.8 49.3 59.8 Aggregate purchase price of common stock repurchases (a) $ 6,703 "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2239",
+      "rank": 5,
+      "score": 0.6465490460395813,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC"
+      },
+      "text": ".8 1.0 Total reissuance 13.0 12.7 11.9 Total treasury – balance at December 31 ( 1,408.7 ) ( 1,307.3 ) ( 1,228.3 ) Outstanding at December 31 2,696.2 2,797.6 2,876.6 On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ 50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $ 30 billion of common shares under its previously-approved common share repurchase program that was announced on "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_347",
+      "rank": 6,
+      "score": 0.6498512029647827,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Part II - pointer block",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "gram that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: Year ended December 31, 2025 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 29,953,620 $ 252.50 $ 7,563 $ 11,763 Second quarter 29,800,960 251.67 7,500 4,263"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_805",
+      "rank": 7,
+      "score": 0.7264705896377563,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC"
+      },
+      "text": "g table shows the common dividend payout ratio based on net income applicable to common equity. Year ended December 31, 2025 2024 2023 Common dividend payout ratio 29 % 24 % 25 % Common stock repurchases On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repur"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1377",
+      "rank": 8,
+      "score": 0.7363022565841675,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC"
+      },
+      "text": "eviously-approved common share repurchase program that was announced on July 1, 2025. 201 Shares repurchased pursuant to the common share repurchase program during the six months ended June 30, 2026 were as follows: Six months ended June 30, 2026 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 27"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_316",
+      "rank": 9,
+      "score": 0.753633975982666,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "at its Board of Directors intends to increase the quarterly common stock dividend to $1.65 per share for the third quarter of 2026. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Common stock repurchases On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares u"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_808",
+      "rank": 10,
+      "score": 0.7896807789802551,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": " repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurchases may be suspended by"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_349",
+      "rank": 11,
+      "score": 0.7928829193115234,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "he $50 billion repurchase program was authorized by the Board of Directors effective July 1, 2025. (c) Represents the amount remaining under the $50 billion repurchase program. Item 6. Reserved Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations. Management’s discussion and analysis of financial condition and results of operations, entitled “Management’s discussion and analysis,” appears on pages 46–160. Such information should be read in conjunction wit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_810",
+      "rank": 12,
+      "score": 0.7965046763420105,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "n shares — for example, during internal trading blackout periods. Refer to Capital planning and stress testing on pages 89–90 for additional information. Refer to Part II, Item 5: Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities on page 33 of this 2025 Form 10-K for additional information regarding repurchases of the Firm’s equity securities. Preferred stock Preferred stock dividends were $1.1 billion, $1.3 billion, and $1.5 billion for"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1378",
+      "rank": 13,
+      "score": 0.7969459295272827,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ized repurchase (in millions) (a) First quarter 27,508,883 $ 302.75 $ 8,328 $ 25,095 April 8,186,096 $ 307.83 $ 2,520 $ 22,575 May 7,908,801 303.45 2,400 20,175 June 5,651,221 315.43 1,783 18,392 (b) Second quarter 21,746,118 $ 308.21 $ 6,703 $ 18,392 (b) Year-to-date 49,255,001 $ 305.16 $ 15,031 $ 18,392 (b) (a) Excludes excise tax and commissions. (b) Represents the amount remaining under the $50 billion repurchase program. Item 3.    Defaults Upon Senior Securities. None. Item 4.    Mine Safe"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1376",
+      "rank": 14,
+      "score": 0.8102951645851135,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "l Risk Management on pages 44-51 of this Form 10-Q and pages 89–99 of JPMorganChase’s 2025 Form 10-K for information regarding repurchases under the Firm’s common share repurchase program. On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1354",
+      "rank": 15,
+      "score": 0.8236397504806519,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " at January 1 ( 134,018 ) ( 116,217 ) ( 107,336 ) Repurchase ( 31,924 ) ( 19,007 ) ( 9,980 ) Reissuance 1,351 1,206 1,099 Balance at December 31 ( 164,591 ) ( 134,018 ) ( 116,217 ) Total stockholders’ equity $ 362,438 $ 344,758 $ 327,878 Effective January 1, 2024, the Firm adopted the Equity Method and Joint Ventures: Accounting for Investments in Tax Credit Structures Using the Proportional Amortization Method accounting guidance. Effective January 1, 2023, the Firm adopted the Financial Instru"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2242",
+      "rank": 16,
+      "score": 0.8424409627914429,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "ital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurchases may be suspended by management at any time; and may be "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_318",
+      "rank": 17,
+      "score": 0.851646900177002,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "ase price of common stock repurchases (a) $ 6,703 $ 7,500 $ 15,031 $ 15,063 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory c"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2238",
+      "rank": 18,
+      "score": 0.8654913902282715,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": " issued which were reissued from treasury by the Firm during the years ended December 31, 2025, 2024 and 2023 were as follows. Year ended December 31, (in millions) 2025 2024 2023 Total issued – balance at January 1 4,104.9 4,104.9 4,104.9 Treasury – balance at January 1 ( 1,307.3 ) ( 1,228.3 ) ( 1,170.7 ) Repurchase ( 114.4 ) ( 91.7 ) ( 69.5 ) Reissuance: Employee benefits and compensation plans 12.3 11.9 10.9 Employee stock purchase plans 0.7 0.8 1.0 Total reissuance 13.0 12.7 11.9 Total treas"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_319",
+      "rank": 19,
+      "score": 0.872394859790802,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "ncluding market conditions; legal and regulatory considerations affecting the amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dyna"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_807",
+      "rank": 20,
+      "score": 0.8919497132301331,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": "x and commissions. The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory considerations affecting the amount and timing of repurchase activity; the Firm’s capital position "
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_2240",
+      "rank": 1,
+      "score": 12.85822601527484,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "on share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares i"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_806",
+      "rank": 2,
+      "score": 12.780583170847116,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "s under its previously-approved common share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authori"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_805",
+      "rank": 3,
+      "score": 12.348753810899485,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "g table shows the common dividend payout ratio based on net income applicable to common equity. Year ended December 31, 2025 2024 2023 Common dividend payout ratio 29 % 24 % 25 % Common stock repurchases On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repur"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_346",
+      "rank": 4,
+      "score": 11.589732644920737,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "ction of Management’s discussion and analysis on page 97 for information regarding repurchases under the Firm’s common share repurchase program. On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares r"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_347",
+      "rank": 5,
+      "score": 11.534548362237901,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": "gram that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: Year ended December 31, 2025 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 29,953,620 $ 252.50 $ 7,563 $ 11,763 Second quarter 29,800,960 251.67 7,500 4,263"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_318",
+      "rank": 6,
+      "score": 11.484826381017738,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "ase price of common stock repurchases (a) $ 6,703 $ 7,500 $ 15,031 $ 15,063 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory c"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_808",
+      "rank": 7,
+      "score": 11.107032404037836,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": " repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurchases may be suspended by"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2242",
+      "rank": 8,
+      "score": 10.954073780287795,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "ital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurchases may be suspended by management at any time; and may be "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1376",
+      "rank": 9,
+      "score": 10.872171306856455,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "l Risk Management on pages 44-51 of this Form 10-Q and pages 89–99 of JPMorganChase’s 2025 Form 10-K for information regarding repurchases under the Firm’s common share repurchase program. On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_317",
+      "rank": 10,
+      "score": 10.638488229838686,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "d to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Total number of shares of common stock repurchased 21.7 29.8 49.3 59.8 Aggregate purchase price of common stock repurchases (a) $ 6,703 "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1377",
+      "rank": 11,
+      "score": 10.454945245337345,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "eviously-approved common share repurchase program that was announced on July 1, 2025. 201 Shares repurchased pursuant to the common share repurchase program during the six months ended June 30, 2026 were as follows: Six months ended June 30, 2026 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 27"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_807",
+      "rank": 12,
+      "score": 10.334120081842947,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "x and commissions. The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory considerations affecting the amount and timing of repurchase activity; the Firm’s capital position "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2241",
+      "rank": 13,
+      "score": 10.334120081842947,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "ctors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory considerations affecting the amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and in"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_72",
+      "rank": 14,
+      "score": 10.094705844797037,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " and there's some timing or whatever. At a high level, that gives you the picture of the second half of the year will be what it'll be. I think when you look at returns, overhead ratio, any metric that your updated models show for this year, it's obviously exceptional performance principally through the lens of returns, which is what actually matters. Jamie Dimon: There's a little bit of that in Asset & Wealth Management, a little bit of that in credit card spend, a little bit of that other part"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_5",
+      "rank": 15,
+      "score": 10.018073356575659,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "ew points to highlight. Consumers and small businesses continue to show resilience despite elevated gas prices and inflation, with higher tax refunds and a solid labor market contributing to strong spend growth. In banking and wealth management, average deposits were up 3% year-on-year and 2% quarter-on-quarter, driven by strong net new checking account growth of over 500,000 accounts this quarter. Client investment assets were up 21% year-on-year, driven by market performance along with strong "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_316",
+      "rank": 16,
+      "score": 9.896166493432762,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "at its Board of Directors intends to increase the quarterly common stock dividend to $1.65 per share for the third quarter of 2026. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Common stock repurchases On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares u"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_345",
+      "rank": 17,
+      "score": 9.718828277924644,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": "yout ratio. Refer to Note 21 and Note 26 for discussions of restrictions on dividend payments. On January 31, 2026, there were 202,288 holders of record of JPMorganChase common stock. Refer to Part III, Item 12 on page 38 for information regarding securities authorized for issuance under the Firm’s employee share-based incentive plans. Repurchases under the common share repurchase program Refer to Capital actions in the Capital Risk Management section of Management’s discussion and analysis on p"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_375",
+      "rank": 18,
+      "score": 9.711129819580206,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " the Firm’s fiscal year ended December 31, 2025. Code of Conduct and Code of Ethics JPMorganChase has adopted, and posted on its website at https://www.jpmorganchase.com, a Code of Conduct for all employees of the Firm and a Code of Ethics for its Chairman and Chief Executive Officer, Chief Financial Officer, Principal Accounting Officer and all other professionals of the Firm worldwide serving in a finance, accounting, treasury, tax or investor relations role. The Code of Ethics is also availab"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_374",
+      "rank": 19,
+      "score": 9.598167205172992,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "inuously held senior-level positions with JPMorganChase. There are no family relationships among the foregoing executive officers. Information to be provided in Items 10, 11, 12, 13 and 14 of this 2025 Form 10-K and not otherwise included herein is incorporated by reference to the Firm’s Definitive Proxy Statement for its 2026 Annual Meeting of Stockholders to be held on May 19, 2026, which will be filed with the SEC within 120 days of the end of the Firm’s fiscal year ended December 31, 2025. C"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2149",
+      "rank": 20,
+      "score": 9.476470161633499,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "t assets acquired, and can be adjusted up to one year from the acquisition date as additional information pertaining to facts and circumstances that existed as of the acquisition date is obtained about the fair value of assets acquired and liabilities assumed. Subsequent to initial recognition, goodwill is not amortized but is tested for impairment during the fourth quarter of each fiscal year, or more often if events or circumstances, such as adverse changes in the business climate, indicate th"
+    }
+  ],
+  "dense_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_806",
+      "JPMC_10-K_FY2025_2240"
+    ],
+    [
+      "JPMC_10-K_FY2025_2242",
+      "JPMC_10-K_FY2025_808"
+    ]
+  ],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_806",
+      "JPMC_10-K_FY2025_2240"
+    ],
+    [
+      "JPMC_10-K_FY2025_2242",
+      "JPMC_10-K_FY2025_808"
+    ],
+    [
+      "JPMC_10-K_FY2025_2241",
+      "JPMC_10-K_FY2025_807"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_10-K_FY2025_2240",
+      "rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "on share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares i"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_346",
+      "rank": 2,
+      "rrf_score": 0.03200204813108039,
+      "found_in": {
+        "dense": 2,
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "ction of Management’s discussion and analysis on page 97 for information regarding repurchases under the Firm’s common share repurchase program. On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares r"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_805",
+      "rank": 3,
+      "rrf_score": 0.03128054740957967,
+      "found_in": {
+        "dense": 6,
+        "sparse": 2
+      },
+      "metadata": {
+        "company": "JPMC",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "g table shows the common dividend payout ratio based on net income applicable to common equity. Year ended December 31, 2025 2024 2023 Common dividend payout ratio 29 % 24 % 25 % Common stock repurchases On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repur"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_347",
+      "rank": 4,
+      "rrf_score": 0.031009615384615385,
+      "found_in": {
+        "dense": 5,
+        "sparse": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": "gram that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: Year ended December 31, 2025 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 29,953,620 $ 252.50 $ 7,563 $ 11,763 Second quarter 29,800,960 251.67 7,500 4,263"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_317",
+      "rank": 5,
+      "rrf_score": 0.03057889822595705,
+      "found_in": {
+        "dense": 3,
+        "sparse": 8
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "d to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Total number of shares of common stock repurchased 21.7 29.8 49.3 59.8 Aggregate purchase price of common stock repurchases (a) $ 6,703 "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_808",
+      "rank": 6,
+      "rrf_score": 0.02964426877470356,
+      "found_in": {
+        "dense": 9,
+        "sparse": 6
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "form": "10-K"
+      },
+      "text": " repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dynamic nature of the decision-making process. The Firm’s common share repurchases may be suspended by"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1377",
+      "rank": 7,
+      "rrf_score": 0.029418126757516764,
+      "found_in": {
+        "dense": 7,
+        "sparse": 9
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "eviously-approved common share repurchase program that was announced on July 1, 2025. 201 Shares repurchased pursuant to the common share repurchase program during the six months ended June 30, 2026 were as follows: Six months ended June 30, 2026 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 27"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_318",
+      "rank": 8,
+      "rrf_score": 0.02871794871794872,
+      "found_in": {
+        "dense": 15,
+        "sparse": 5
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none"
+      },
+      "text": "ase price of common stock repurchases (a) $ 6,703 $ 7,500 $ 15,031 $ 15,063 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory c"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1376",
+      "rank": 9,
+      "rrf_score": 0.02862400327131466,
+      "found_in": {
+        "dense": 13,
+        "sparse": 7
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": "l Risk Management on pages 44-51 of this Form 10-Q and pages 89–99 of JPMorganChase’s 2025 Form 10-K for information regarding repurchases under the Firm’s common share repurchase program. On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares under its previously-approved common share repurchase program "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_316",
+      "rank": 10,
+      "rrf_score": 0.028404512489927477,
+      "found_in": {
+        "dense": 8,
+        "sparse": 13
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "at its Board of Directors intends to increase the quarterly common stock dividend to $1.65 per share for the third quarter of 2026. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Common stock repurchases On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares u"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_807",
+      "rank": 11,
+      "rrf_score": 0.027106227106227107,
+      "found_in": {
+        "dense": 18,
+        "sparse": 10
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025"
+      },
+      "text": "x and commissions. The Board of Directors’ authorization to repurchase common shares is utilized at management’s discretion. The common share repurchase program approved by the Board of Directors does not establish specific price targets or timetables. Management determines the amount and timing of common share repurchases based on various factors, including market conditions; legal and regulatory considerations affecting the amount and timing of repurchase activity; the Firm’s capital position "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2239",
+      "rank": 12,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "company": "JPMC"
+      },
+      "text": ".8 1.0 Total reissuance 13.0 12.7 11.9 Total treasury – balance at December 31 ( 1,408.7 ) ( 1,307.3 ) ( 1,228.3 ) Outstanding at December 31 2,696.2 2,797.6 2,876.6 On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $ 50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $ 30 billion of common shares under its previously-approved common share repurchase program that was announced on "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_349",
+      "rank": 13,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "he $50 billion repurchase program was authorized by the Board of Directors effective July 1, 2025. (c) Represents the amount remaining under the $50 billion repurchase program. Item 6. Reserved Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations. Management’s discussion and analysis of financial condition and results of operations, entitled “Management’s discussion and analysis,” appears on pages 46–160. Such information should be read in conjunction wit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_810",
+      "rank": 14,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "n shares — for example, during internal trading blackout periods. Refer to Capital planning and stress testing on pages 89–90 for additional information. Refer to Part II, Item 5: Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities on page 33 of this 2025 Form 10-K for additional information regarding repurchases of the Firm’s equity securities. Preferred stock Preferred stock dividends were $1.1 billion, $1.3 billion, and $1.5 billion for"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_72",
+      "rank": 15,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "section": "none",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " and there's some timing or whatever. At a high level, that gives you the picture of the second half of the year will be what it'll be. I think when you look at returns, overhead ratio, any metric that your updated models show for this year, it's obviously exceptional performance principally through the lens of returns, which is what actually matters. Jamie Dimon: There's a little bit of that in Asset & Wealth Management, a little bit of that in credit card spend, a little bit of that other part"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1378",
+      "rank": 16,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "company": "JPMC"
+      },
+      "text": "ized repurchase (in millions) (a) First quarter 27,508,883 $ 302.75 $ 8,328 $ 25,095 April 8,186,096 $ 307.83 $ 2,520 $ 22,575 May 7,908,801 303.45 2,400 20,175 June 5,651,221 315.43 1,783 18,392 (b) Second quarter 21,746,118 $ 308.21 $ 6,703 $ 18,392 (b) Year-to-date 49,255,001 $ 305.16 $ 15,031 $ 18,392 (b) (a) Excludes excise tax and commissions. (b) Represents the amount remaining under the $50 billion repurchase program. Item 3.    Defaults Upon Senior Securities. None. Item 4.    Mine Safe"
+    },
+    {
+      "id": "JPMC_earnings_call_Q2-2026_5",
+      "rank": 17,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "form": "earnings_call",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "ew points to highlight. Consumers and small businesses continue to show resilience despite elevated gas prices and inflation, with higher tax refunds and a solid labor market contributing to strong spend growth. In banking and wealth management, average deposits were up 3% year-on-year and 2% quarter-on-quarter, driven by strong net new checking account growth of over 500,000 accounts this quarter. Client investment assets were up 21% year-on-year, driven by market performance along with strong "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1354",
+      "rank": 18,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": " at January 1 ( 134,018 ) ( 116,217 ) ( 107,336 ) Repurchase ( 31,924 ) ( 19,007 ) ( 9,980 ) Reissuance 1,351 1,206 1,099 Balance at December 31 ( 164,591 ) ( 134,018 ) ( 116,217 ) Total stockholders’ equity $ 362,438 $ 344,758 $ 327,878 Effective January 1, 2024, the Firm adopted the Equity Method and Joint Ventures: Accounting for Investments in Tax Credit Structures Using the Proportional Amortization Method accounting guidance. Effective January 1, 2023, the Firm adopted the Financial Instru"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_345",
+      "rank": 19,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware"
+      },
+      "text": "yout ratio. Refer to Note 21 and Note 26 for discussions of restrictions on dividend payments. On January 31, 2026, there were 202,288 holders of record of JPMorganChase common stock. Refer to Part III, Item 12 on page 38 for information regarding securities authorized for issuance under the Firm’s employee share-based incentive plans. Repurchases under the common share repurchase program Refer to Capital actions in the Capital Risk Management section of Management’s discussion and analysis on p"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_375",
+      "rank": 20,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "period": "FY2025",
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " the Firm’s fiscal year ended December 31, 2025. Code of Conduct and Code of Ethics JPMorganChase has adopted, and posted on its website at https://www.jpmorganchase.com, a Code of Conduct for all employees of the Firm and a Code of Ethics for its Chairman and Chief Executive Officer, Chief Financial Officer, Principal Accounting Officer and all other professionals of the Firm worldwide serving in a finance, accounting, treasury, tax or investor relations role. The Code of Ethics is also availab"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2238",
+      "rank": 21,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": " issued which were reissued from treasury by the Firm during the years ended December 31, 2025, 2024 and 2023 were as follows. Year ended December 31, (in millions) 2025 2024 2023 Total issued – balance at January 1 4,104.9 4,104.9 4,104.9 Treasury – balance at January 1 ( 1,307.3 ) ( 1,228.3 ) ( 1,170.7 ) Repurchase ( 114.4 ) ( 91.7 ) ( 69.5 ) Reissuance: Employee benefits and compensation plans 12.3 11.9 10.9 Employee stock purchase plans 0.7 0.8 1.0 Total reissuance 13.0 12.7 11.9 Total treas"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_374",
+      "rank": 22,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "form": "10-K",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "inuously held senior-level positions with JPMorganChase. There are no family relationships among the foregoing executive officers. Information to be provided in Items 10, 11, 12, 13 and 14 of this 2025 Form 10-K and not otherwise included herein is incorporated by reference to the Firm’s Definitive Proxy Statement for its 2026 Annual Meeting of Stockholders to be held on May 19, 2026, which will be filed with the SEC within 120 days of the end of the Firm’s fiscal year ended December 31, 2025. C"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_319",
+      "rank": 23,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "ncluding market conditions; legal and regulatory considerations affecting the amount and timing of repurchase activity; the Firm’s capital position (taking into account goodwill and intangibles); organic capital generation; current and proposed future capital requirements; and other investment opportunities. The amount of common shares that the Firm repurchases in any period may be substantially more or less than the amounts estimated or actually repurchased in prior periods, reflecting the dyna"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2149",
+      "rank": 24,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC"
+      },
+      "text": "t assets acquired, and can be adjusted up to one year from the acquisition date as additional information pertaining to facts and circumstances that existed as of the acquisition date is obtained about the fair value of assets acquired and liabilities assumed. Subsequent to initial recognition, goodwill is not amortized but is tested for impairment during the fourth quarter of each fiscal year, or more often if events or circumstances, such as adverse changes in the business climate, indicate th"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-K_FY2025_2240",
+      "rerank_rank": 1,
+      "rerank_score": 7.626676082611084,
+      "rrf_rank": 1,
+      "rrf_score": 0.03278688524590164,
+      "found_in": {
+        "dense": 1,
+        "sparse": 1
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "on share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares i"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_317",
+      "rerank_rank": 2,
+      "rerank_score": 6.623729705810547,
+      "rrf_rank": 5,
+      "rrf_score": 0.03057889822595705,
+      "found_in": {
+        "dense": 3,
+        "sparse": 8
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "d to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Total number of shares of common stock repurchased 21.7 29.8 49.3 59.8 Aggregate purchase price of common stock repurchases (a) $ 6,703 "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_346",
+      "rerank_rank": 3,
+      "rerank_score": 6.451530933380127,
+      "rrf_rank": 2,
+      "rrf_score": 0.03200204813108039,
+      "found_in": {
+        "dense": 2,
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "ction of Management’s discussion and analysis on page 97 for information regarding repurchases under the Firm’s common share repurchase program. On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares r"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_347",
+      "rerank_rank": 4,
+      "rerank_score": 6.158952236175537,
+      "rrf_rank": 4,
+      "rrf_score": 0.031009615384615385,
+      "found_in": {
+        "dense": 5,
+        "sparse": 4
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Part II - pointer block",
+        "form": "10-K",
+        "period": "FY2025",
+        "strategy": "structure_aware"
+      },
+      "text": "gram that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: Year ended December 31, 2025 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 29,953,620 $ 252.50 $ 7,563 $ 11,763 Second quarter 29,800,960 251.67 7,500 4,263"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_316",
+      "rerank_rank": 5,
+      "rerank_score": 6.058206558227539,
+      "rrf_rank": 10,
+      "rrf_score": 0.028404512489927477,
+      "found_in": {
+        "dense": 8,
+        "sparse": 13
+      },
+      "metadata": {
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "at its Board of Directors intends to increase the quarterly common stock dividend to $1.65 per share for the third quarter of 2026. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Common stock repurchases On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares u"
+    }
+  ],
+  "context": "[1] (10-K, FY2025, Body - MD&A and financials)\non share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares i\n\n[2] (10-Q, Q2-2026)\nd to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Total number of shares of common stock repurchased 21.7 29.8 49.3 59.8 Aggregate purchase price of common stock repurchases (a) $ 6,703 \n\n[3] (10-K, FY2025, Part II - pointer block)\nction of Management’s discussion and analysis on page 97 for information regarding repurchases under the Firm’s common share repurchase program. On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares r\n\n[4] (10-K, FY2025, Part II - pointer block)\ngram that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: Year ended December 31, 2025 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 29,953,620 $ 252.50 $ 7,563 $ 11,763 Second quarter 29,800,960 251.67 7,500 4,263\n\n[5] (10-Q, Q2-2026)\nat its Board of Directors intends to increase the quarterly common stock dividend to $1.65 per share for the third quarter of 2026. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Common stock repurchases On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares u",
+  "user_prompt": "[1] (10-K, FY2025, Body - MD&A and financials)\non share repurchase program that was announced on June 28, 2024. The following table sets forth the Firm’s repurchases of common stock for the years ended December 31, 2025, 2024 and 2023. Year ended December 31, (in millions) 2025 2024 2023 Total number of shares of common stock repurchased 114.4 91.7 69.5 Aggregate purchase price of common stock repurchases (a) $ 31,640 $ 18,841 $ 9,898 (a) Excludes excise tax and commissions. The Board of Directors’ authorization to repurchase common shares i\n\n[2] (10-Q, Q2-2026)\nd to purchase up to $50 billion of common shares under its previously-approved common share repurchase program that was announced on July 1, 2025. The following table sets forth the Firm’s repurchases of common stock for the three and six months ended June 30, 2026 and 2025. Three months ended June 30, Six months ended June 30, (in millions) 2026 2025 2026 2025 Total number of shares of common stock repurchased 21.7 29.8 49.3 59.8 Aggregate purchase price of common stock repurchases (a) $ 6,703 \n\n[3] (10-K, FY2025, Part II - pointer block)\nction of Management’s discussion and analysis on page 97 for information regarding repurchases under the Firm’s common share repurchase program. On July 1, 2025, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2025. Through June 30, 2025, the Firm was authorized to purchase up to $30 billion of common shares under its previously-approved common share repurchase program that was announced on June 28, 2024. Shares r\n\n[4] (10-K, FY2025, Part II - pointer block)\ngram that was announced on June 28, 2024. Shares repurchased pursuant to the common share repurchase programs during 2025 were as follows: Year ended December 31, 2025 Total number of shares of common stock repurchased Average price paid per share of common stock (a) Aggregate purchase price of common stock repurchases (in millions) (a) Dollar value of remaining authorized repurchase (in millions) (a) First quarter 29,953,620 $ 252.50 $ 7,563 $ 11,763 Second quarter 29,800,960 251.67 7,500 4,263\n\n[5] (10-Q, Q2-2026)\nat its Board of Directors intends to increase the quarterly common stock dividend to $1.65 per share for the third quarter of 2026. The Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Common stock repurchases On June 24, 2026, the Firm announced that its Board of Directors had authorized a new $50 billion common share repurchase program, effective July 1, 2026. Through June 30, 2026, the Firm was authorized to purchase up to $50 billion of common shares u\n\nQuestion: How much did the firm spend on share repurchases in fiscal year 2025?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_2240"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_317"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_346"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-K_FY2025_347"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-Q_Q2-2026_316"
+    }
+  ],
+  "answer_text": "In fiscal year 2025, the firm spent an aggregate purchase price of common stock repurchases amounting to $31,640 million [1].",
+  "parsed_citations": [
+    1
+  ],
+  "resolved_citations": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-K_FY2025_2240",
+      "metadata": {
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "form": "10-K",
+        "period": "FY2025"
+      }
+    }
+  ]
+}

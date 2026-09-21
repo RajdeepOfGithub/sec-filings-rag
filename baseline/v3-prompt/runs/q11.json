@@ -1,0 +1,1317 @@
+{
+  "question_id": "q11",
+  "question": "What drove the increase in net interest income in Q2 2026?",
+  "category": "narrative",
+  "difficulty": "medium",
+  "expected": {
+    "claims": [
+      "higher Markets net interest income",
+      "higher deposit balances",
+      "higher revolving balances in Card Services",
+      "higher wholesale loan balances",
+      "partially offset by the impact of lower rates"
+    ]
+  },
+  "evidence": {
+    "document": "JPMC_10-Q_Q2-2026",
+    "section": "Executive Overview",
+    "passage": "Firmwide overview - Total net revenue was $57.3 billion, up 28%, reflecting",
+    "period": "Q2-2026"
+  },
+  "notes": "REGRESSION CHECK. The source passage is truncated at the chunk boundary in the raw extract ('partially offset by the impact of lower' cuts off), so this also tests whether the answer is complete.",
+  "run": {
+    "timestamp": "2026-09-21T01:23:32.136621+00:00",
+    "n": 20,
+    "top_k": 5,
+    "filters": null,
+    "generation_model": "gpt-4o-mini",
+    "generation_temperature": 0,
+    "collection": "financial_docs"
+  },
+  "dense": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_77",
+      "rank": 1,
+      "score": 0.6629908084869385,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "rmation on the gains on certain equity investments. Net interest income increased driven by higher Markets net interest income, higher deposit balances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.3 trillion, up $442 billion, and the yield was 4.75%, down 29 basis points (“bps”). The net yield on these assets, on an FTE basis, was 2.4"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_638",
+      "rank": 2,
+      "score": 0.7004654407501221,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "interest in the entity. 2025 compared with 2024 Net income was $6.5 billion, up 20%. Net revenue was $24.1 billion, up 12%. Net interest income was $6.8 billion, up 4%. Noninterest revenue was $17.2 billion, up 15%. Revenue from Asset Management was $11.7 billion, up 15%, predominantly driven by: • higher asset management fees, reflecting strong net inflows and higher average market levels, • higher investment valuation gains, and • performance fees. Revenue from Global Private Bank was $12.4 bi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_234",
+      "rank": 3,
+      "score": 0.7201870679855347,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": " higher brokerage commissions, and • higher net interest income driven by higher average loans, partially offset by narrower spreads on loans. Noninterest expense was $4.2 billion, up 13%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advisor teams, as well as higher distribution fees. Year-to-date results Net income was $3.7 billion, up 22%. Net revenue was $13.2 billion, up 15%. Net interest income was $3.5 billion,"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_235",
+      "rank": 4,
+      "score": 0.7305362224578857,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ion, up 15%. Net interest income was $3.5 billion, up 3%. Noninterest revenue was $9.7 billion, up 20%. Revenue from Asset Management was $6.4 billion, up 19%, predominantly driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gains. Revenue from Global Private Bank was $6.8 billion, up 12%, reflecting: • higher noninterest revenue, predominantly driven by higher management fees due to strong net inflows and "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_449",
+      "rank": 5,
+      "score": 0.7336393594741821,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "ets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_130",
+      "rank": 6,
+      "score": 0.7389146089553833,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "CIB, and for net interest income, predominantly recognized in CIB and Corporate. 18 The following table provides information on net interest income, net yield, and noninterest revenue excluding Markets. (in millions, except rates) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Net interest income – reported (a) $ 25,511 $ 23,209 10 % $ 50,877 $ 46,482 9 % Fully taxable-equivalent adjustments 111 105 6 224 207 8 Net interest income – managed basis $ 25,622"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_236",
+      "rank": 7,
+      "score": 0.7475444078445435,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "her management fees due to strong net inflows and higher average market levels, as well as higher brokerage commissions, and • higher net interest income driven by higher average loans, largely offset by narrower spreads on loans. Noninterest expense was $8.4 billion, up 12%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advisor teams, as well as higher distribution fees. 36 Selected metrics As of or for the three mon"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_668",
+      "rank": 8,
+      "score": 0.7563270330429077,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "-K 2025 compared with 2024 Net income was $4.5 billion, compared with $10.6 billion in the prior year. Net revenue was $7.0 billion, compared with $17.4 billion in the prior year. Net interest income was $6.1 billion, down $3.7 billion, driven by the impact of lower rates and changes in FTP for consumer deposits, partially offset by the impact of investment securities activity. Refer to Business Segment & Corporate Results on page 63 for additional information on FTP. Noninterest revenue was $91"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_66",
+      "rank": 9,
+      "score": 0.7633581757545471,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "ths ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Investment banking fees $ 3,208 $ 2,499 28 % $ 6,066 $ 4,677 30 % Principal transactions 9,007 7,149 26 16,994 14,763 15 Lending- and deposit-related fees 2,511 2,248 12 4,905 4,380 12 Asset management fees 5,658 4,806 18 11,173 9,506 18 Commissions and other fees 2,614 2,194 19 5,096 4,227 21 Investment securities losses (395) (54) NM (331) (91) (264) Mortgage fees and related income 336 363 (7) 645 641 1 Card income 1,348 1,344"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_67",
+      "rank": 10,
+      "score": 0.7730700969696045,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "come 336 363 (7) 645 641 1 Card income 1,348 1,344 — 2,538 2,560 (1) Other income (a) 7,549 (b) 1,154 NM 9,220 (b) 3,077 200 Noninterest revenue 31,836 21,703 47 56,306 43,740 29 Net interest income 25,511 23,209 10 50,877 46,482 9 Total net revenue $ 57,347 $ 44,912 28 % $ 107,183 $ 90,222 19 % (a) Included operating lease income of $1.2 billion and $901 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_861",
+      "rank": 11,
+      "score": 0.7761139273643494,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " higher-yielding product offerings, and • a decrease in CCB primarily driven by increased customer spending, predominantly offset by new accounts. Period-end deposits increased from December 31, 2024, reflecting: • an increase in CIB due to net inflows related to client-driven activities in Payments and Securities Services, • an increase in CCB primarily driven by new accounts, predominantly offset by increased customer spending, and • an increase in AWM primarily driven by growth in both new ac"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_158",
+      "rank": 12,
+      "score": 0.7780691385269165,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "terest income was $15.1 billion, up 5%, predominantly driven by higher Card Services NII, largely driven by higher revolving balances. Noninterest revenue was $5.2 billion, up 16%, predominantly driven by: • higher auto operating lease income as a result of growth in volume, and • in Banking & Wealth Management (\"BWM\"), higher asset management fees, reflecting higher average market levels and net inflows, as well as higher deposit-related fees as a result of higher transaction volume and new acc"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_151",
+      "rank": 13,
+      "score": 0.7823863625526428,
+      "score_type": "l2_distance",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "ept ratios) 2026 2025 Change 2026 2025 Change Revenue Lending- and deposit-related fees $ 971 $ 888 9 % $ 1,918 $ 1,727 11 % Asset management fees 1,379 1,110 24 2,682 2,203 22 Mortgage fees and related income 325 347 (6) 628 610 3 Card income 691 687 1 1,283 1,340 (4) All other income (a) 1,814 1,420 28 3,499 2,743 28 Noninterest revenue 5,180 4,452 16 10,010 8,623 16 Net interest income 15,092 14,395 5 29,830 28,537 5 Total net revenue 20,272 18,847 8 39,840 37,160 7 Provision for credit losse"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_108",
+      "rank": 14,
+      "score": 0.7922037839889526,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": ", driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offset by an update to loss assumptions on certain loans in Markets, and • a net reduction of $120 million in consumer , predominantly driven by improvements in home prices in the first quarter of 2026. Refer to Consolidated Results of Operations and Credit and Investment Risk Management on pages 9-14 and pages 59-78, respectively, Critical Accounting Estimates Used by the Firm on p"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_180",
+      "rank": 15,
+      "score": 0.7937800884246826,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "e months ended June 30, Six months ended June 30, (in millions, except ratios) 2026 2025 Change 2026 2025 Change Revenue Investment banking fees $ 3,277 $ 2,513 30 % $ 6,160 $ 4,761 29 % Principal transactions 8,768 7,109 23 16,665 14,717 13 Lending- and deposit-related fees 1,487 1,296 15 2,881 2,526 14 Commissions and other fees 1,748 1,493 17 3,462 2,930 18 Card income 649 645 1 1,234 1,196 3 All other income 1,025 736 39 1,942 1,484 31 Noninterest revenue 16,954 13,792 23 32,344 27,614 17 Ne"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_477",
+      "rank": 16,
+      "score": 0.7975283265113831,
+      "score_type": "l2_distance",
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "ss on a total net revenue basis. Refer to CIB segment and Corporate results on pages 69–75 and pages 80–82, respectively, and Note 6 for additional information. Lending- and deposit-related fees increased, reflecting: • in CIB, a reduction in client credits applied to deposit-related fees, as well as higher cash management fees in Payments as a result of higher volume, and • in CCB, higher deposit-related fees as a result of higher transaction volume and new accounts. Refer to CCB and CIB segmen"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_219",
+      "rank": 17,
+      "score": 0.8009637594223022,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "$ 5,925 $ 8,783 $ 3,205 $ 3,865 $ 7,070 Lending- and deposit-related fees 120 65 185 133 41 174 Commissions and other fees 127 754 881 170 590 760 All other income 369 (85) 284 399 (28) 371 Noninterest revenue 3,474 6,659 10,133 3,907 4,468 8,375 Net interest income 2,579 (634) 1,945 1,783 (1,222) 561 Total net revenue $ 6,053 $ 6,025 $ 12,078 $ 5,690 $ 3,246 $ 8,936 Six months ended June 30, Six months ended June 30, 2026 2025 (in millions) Fixed Income Markets Equity Markets Total Markets Fixe"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_359",
+      "rank": 18,
+      "score": 0.8047858476638794,
+      "score_type": "l2_distance",
+      "metadata": {
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "ption, average deposit trends may be impacted. Average deposits increased for the three months ended June 30, 2026 compared to the three months ended June 30, 2025, reflecting: • an increase in CIB due to net inflows related to client-driven activities, primarily in Payments, partially offset by net maturities of structured notes in Markets, • an increase in CCB driven by growth in new accounts, largely offset by continued customer spending, • an increase in Corporate as a result of growth in ne"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_361",
+      "rank": 19,
+      "score": 0.8089149594306946,
+      "score_type": "l2_distance",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " to net inflows related to client-driven activities, primarily in Payments, partially offset by net maturities of structured notes in Markets, • an increase in CCB driven by growth in new accounts, largely offset by continued customer spending, • an increase in Corporate as a result of growth in new accounts related to the Firm's international consumer initiatives , and • an increase in AWM primarily driven by growth in both new accounts and balances in existing accounts. Period-end deposits inc"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_535",
+      "rank": 20,
+      "score": 0.8126831650733948,
+      "score_type": "l2_distance",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "that these measures provide investors and analysts with alternative measures to analyze the revenue trends of the Firm. Year ended December 31, (in millions, except rates) 2025 2024 2023 Net interest income – reported (a) $ 95,443 $ 92,583 $ 89,267 Fully taxable-equivalent adjustments 425 477 480 Net interest income – managed basis $ 95,868 $ 93,060 $ 89,747 Less: Markets net interest income (b) 3,277 641 (294) Net interest income excluding Markets $ 92,591 $ 92,419 $ 90,041 Average interest-ear"
+    }
+  ],
+  "sparse": [
+    {
+      "id": "JPMC_10-K_FY2025_552",
+      "rank": 1,
+      "score": 11.971629290192304,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "sted to reflect economic conditions and other factors, which may impact the allocation of net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for as"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2437",
+      "rank": 2,
+      "score": 11.910644274075105,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "form": "10-K"
+      },
+      "text": "P process are adjusted to reflect economic conditions and other factors, which may impact the allocation of net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_130",
+      "rank": 3,
+      "score": 10.970325063457437,
+      "score_type": "bm25",
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "CIB, and for net interest income, predominantly recognized in CIB and Corporate. 18 The following table provides information on net interest income, net yield, and noninterest revenue excluding Markets. (in millions, except rates) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Net interest income – reported (a) $ 25,511 $ 23,209 10 % $ 50,877 $ 46,482 9 % Fully taxable-equivalent adjustments 111 105 6 224 207 8 Net interest income – managed basis $ 25,622"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_63",
+      "rank": 4,
+      "score": 10.278409209843756,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "provided the following outlook information on July 14, 2026 in connection with announcing its results for the quarter ended June 30, 2026: Full-year 2026 • Management expects net interest income to be approximately $105.5 billion and net interest income excluding Markets to be approximately $96.5 billion, market dependent. • Management expects adjusted expense to be approximately $107.5 billion, market dependent. • Management expects the net charge-off rate in Card Services to be approximately 3"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_468",
+      "rank": 5,
+      "score": 10.081686020381419,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "r the year and quarter ended December 31, 2025: Full-year 2026 • Management expects net interest income to be approximately $103 billion and net interest income excluding Markets to be approximately $95 billion, market dependent. • Management expects adjusted expense to be approximately $105 billion, market dependent. • Management expects the net charge-off rate in Card Services to be approximately 3.4%. Net interest income excluding Markets and adjusted expense are non-GAAP financial measures. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_476",
+      "rank": 6,
+      "score": 9.68070354451822,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "odities, largely offset by lower revenue in Securitized Products, Fixed Income Financing and Currencies & Emerging Markets, and • higher Equity Markets revenue, particularly in Equity Derivatives. The increase in CIB was partially offset by lower revenue in Treasury and CIO. Principal transactions revenue in CIB generally has offsets across other revenue lines, including net interest income. The Firm assesses the performance of its Markets business on a total net revenue basis. Refer to CIB segm"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_726",
+      "rank": 7,
+      "score": 9.537399944324847,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "2026, reflecting an increase of $ 1.9 billion from March 31, 2026 and an increase of $ 4.9 billion from December 31, 2025. The increase for the three and six months ended June 30, 2026 was predominantly driven by higher: • Non-U.S. government debt securities of $ 590 million and $ 552 million, respectively, primarily due to purchases. • Gross derivative receivables of $ 1.2 billion and $ 4.1 billion, respectively, due to gains, purchases and net transfers primarily offset by settlements. Refer t"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_359",
+      "rank": 8,
+      "score": 9.097789152084795,
+      "score_type": "bm25",
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "ption, average deposit trends may be impacted. Average deposits increased for the three months ended June 30, 2026 compared to the three months ended June 30, 2025, reflecting: • an increase in CIB due to net inflows related to client-driven activities, primarily in Payments, partially offset by net maturities of structured notes in Markets, • an increase in CCB driven by growth in new accounts, largely offset by continued customer spending, • an increase in Corporate as a result of growth in ne"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2464",
+      "rank": 9,
+      "score": 8.899245060985574,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "Net increase/(decrease) in cash and due from banks and deposits with banking subsidiaries ( 10 ) ( 46 ) ( 1 ) Cash and due from banks and deposits with banking subsidiaries at the beginning of the year 9,800 9,846 9,847 Cash and due from banks and deposits with banking subsidiaries at the end of the year (b) $ 9,790 $ 9,800 $ 9,846 Cash interest paid $ 12,399 $ 14,851 $ 13,742 Cash income taxes paid, net (e) 276 6,252 10,291 (a) Includes interest expense for intercompany derivative hedges on the"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_480",
+      "rank": 10,
+      "score": 8.677041037967884,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "th repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries. Refer to Corporate results on pages 80–82 and Note 10 for additional information. Mortgage fees and related income : refer to Notes 6 and 15 for additional information. Card income decreased driven by the net impact of: • lower income in CCB, reflecting lower net interchange income, as well as an increase in am"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_535",
+      "rank": 11,
+      "score": 8.63747420193683,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "that these measures provide investors and analysts with alternative measures to analyze the revenue trends of the Firm. Year ended December 31, (in millions, except rates) 2025 2024 2023 Net interest income – reported (a) $ 95,443 $ 92,583 $ 89,267 Fully taxable-equivalent adjustments 425 477 480 Net interest income – managed basis $ 95,868 $ 93,060 $ 89,747 Less: Markets net interest income (b) 3,277 641 (294) Net interest income excluding Markets $ 92,591 $ 92,419 $ 90,041 Average interest-ear"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_360",
+      "rank": 12,
+      "score": 8.59709299650246,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " increase in Corporate as a result of growth in new accounts related to the Firm's international consumer initiatives , and • an increase in AWM primarily driven by growth in both new accounts and balances in existing accounts, partially offset by continued migration into other investment products. Average deposits increased for the six months ended June 30, 2026 compared to the six months ended June 30, 2025, reflecting: • an increase in CIB due to net inflows related to client-driven activitie"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1494",
+      "rank": 13,
+      "score": 8.559039732215263,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "of certain derivatives and depends on a number of factors including interest rates, the current price of the underlying asset, and the expected income to be received and costs to be incurred by the seller as a result of holding that asset until the delivery date. An increase in the forward can result in an increase or a decrease in a fair value measurement. Changes in level 3 recurring fair value measurements The following tables include a rollforward of the Consolidated balance sheets amounts ("
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_837",
+      "rank": 14,
+      "score": 8.410937968507397,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "2 ) million and $ 641 million for active hedging relationships, and $( 588 ) million and $( 673 ) million for discontinued hedging relationships, respectively. Refer to Note 9 for additional information. (d) Positive (negative) amounts related to assets represent cumulative fair value hedge basis adjustments that will reduce (increase) net interest income in future periods. Positive (negative) amounts related to liabilities represent cumulative fair value hedge basis adjustments that will increa"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_896",
+      "rank": 15,
+      "score": 8.40918281462426,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "billion for the three and six months ended June 30, 2025, respectively. (c) The amortized cost of investment securities is reported net of allowance for credit losses of $ 63 million and $ 106 million at June 30, 2026 and December 31, 2025, respectively. (d) Excludes $ 5.3 billion and $ 4.6 billion of accrued interest receivable at June 30, 2026 and December 31, 2025, respectively. The Firm did not reverse through interest income any accrued interest receivable for the three and six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1255",
+      "rank": 16,
+      "score": 8.36713560289039,
+      "score_type": "bm25",
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "or the six months ended June 30, (in millions, except ratios) Corporate Reconciling Items (a) Total 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 5,413 (e) $ 702 $ ( 1,151 ) $ ( 1,265 ) $ 56,306 $ 43,740 Net interest income 1,848 3,140 ( 224 ) ( 207 ) 50,877 46,482 Total net revenue 7,261 3,842 ( 1,375 ) ( 1,472 ) 107,183 90,222 Provision for credit losses ( 11 ) 6 — — 5,022 6,154 Total noninterest expense (d) 1,179 732 (f) — — 54,166 47,376 Income/(loss) before income tax expense/(benefit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1690",
+      "rank": 17,
+      "score": 8.345172869757311,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "comprised of $ 641 million and $( 1.2 ) billion for active hedging relationships, and $( 673 ) million and $( 566 ) million for discontinued hedging relationships, respectively. Refer to Note 10 for additional information. (d) Positive (negative) amounts related to assets represent cumulative fair value hedge basis adjustments that will reduce (increase) net interest income in future periods. Positive (negative) amounts related to liabilities represent cumulative fair value hedge basis adjustmen"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 18,
+      "score": 8.255053262913819,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " value of these amounts are recorded in net interest income. (b) Excludes amounts reclassified from AOCI to income associated with net investment hedges. The amounts reclassified for the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. Refer to Note 19 for further information. Gains and losses on derivatives used for specified risk management purpo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_838",
+      "rank": 19,
+      "score": 8.216680469855833,
+      "score_type": "bm25",
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "air value hedge basis adjustments that will increase (reduce) net interest income in future periods. (e) Represents basis adjustments existing on the balance sheet date associated with hedged items that have been de-designated from qualifying fair value hedging relationships. 125 Cash flow hedge gains and losses The following tables present derivative instruments, by contract type, used in cash flow hedge accounting relationships, and the pre-tax gains/(losses) recorded on such derivatives, for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_83",
+      "rank": 20,
+      "score": 8.186001600948515,
+      "score_type": "bm25",
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "d with repositioning the investment securities portfolio in Treasury and CIO. The current year net loss was primarily related to sales of U.S. GSE and government agency MBS, partially offset by gains on sales of U.S. Treasuries. Mortgage fees and related income : refer to Note 14 for additional information. 10 Card income was relatively flat, reflecting, primarily in CCB, an increase in amortization related to new account origination costs and lower net interchange income, predominantly offset b"
+    }
+  ],
+  "dense_dedup_dropped": [],
+  "sparse_dedup_dropped": [
+    [
+      "JPMC_10-K_FY2025_2437",
+      "JPMC_10-K_FY2025_552"
+    ]
+  ],
+  "fused": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_130",
+      "rank": 1,
+      "rrf_score": 0.03128054740957967,
+      "found_in": {
+        "dense": 6,
+        "sparse": 2
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "CIB, and for net interest income, predominantly recognized in CIB and Corporate. 18 The following table provides information on net interest income, net yield, and noninterest revenue excluding Markets. (in millions, except rates) Three months ended June 30, Six months ended June 30, 2026 2025 Change 2026 2025 Change Net interest income – reported (a) $ 25,511 $ 23,209 10 % $ 50,877 $ 46,482 9 % Fully taxable-equivalent adjustments 111 105 6 224 207 8 Net interest income – managed basis $ 25,622"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_359",
+      "rank": 2,
+      "rrf_score": 0.027745885954841176,
+      "found_in": {
+        "dense": 18,
+        "sparse": 7
+      },
+      "metadata": {
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "ption, average deposit trends may be impacted. Average deposits increased for the three months ended June 30, 2026 compared to the three months ended June 30, 2025, reflecting: • an increase in CIB due to net inflows related to client-driven activities, primarily in Payments, partially offset by net maturities of structured notes in Markets, • an increase in CCB driven by growth in new accounts, largely offset by continued customer spending, • an increase in Corporate as a result of growth in ne"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_535",
+      "rank": 3,
+      "rrf_score": 0.026785714285714288,
+      "found_in": {
+        "dense": 20,
+        "sparse": 10
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "period": "FY2025"
+      },
+      "text": "that these measures provide investors and analysts with alternative measures to analyze the revenue trends of the Firm. Year ended December 31, (in millions, except rates) 2025 2024 2023 Net interest income – reported (a) $ 95,443 $ 92,583 $ 89,267 Fully taxable-equivalent adjustments 425 477 480 Net interest income – managed basis $ 95,868 $ 93,060 $ 89,747 Less: Markets net interest income (b) 3,277 641 (294) Net interest income excluding Markets $ 92,591 $ 92,419 $ 90,041 Average interest-ear"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_77",
+      "rank": 4,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "rmation on the gains on certain equity investments. Net interest income increased driven by higher Markets net interest income, higher deposit balances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.3 trillion, up $442 billion, and the yield was 4.75%, down 29 basis points (“bps”). The net yield on these assets, on an FTE basis, was 2.4"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_552",
+      "rank": 5,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "sted to reflect economic conditions and other factors, which may impact the allocation of net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for as"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_638",
+      "rank": 6,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "interest in the entity. 2025 compared with 2024 Net income was $6.5 billion, up 20%. Net revenue was $24.1 billion, up 12%. Net interest income was $6.8 billion, up 4%. Noninterest revenue was $17.2 billion, up 15%. Revenue from Asset Management was $11.7 billion, up 15%, predominantly driven by: • higher asset management fees, reflecting strong net inflows and higher average market levels, • higher investment valuation gains, and • performance fees. Revenue from Global Private Bank was $12.4 bi"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_234",
+      "rank": 7,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "dense": 3
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q"
+      },
+      "text": " higher brokerage commissions, and • higher net interest income driven by higher average loans, partially offset by narrower spreads on loans. Noninterest expense was $4.2 billion, up 13%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advisor teams, as well as higher distribution fees. Year-to-date results Net income was $3.7 billion, up 22%. Net revenue was $13.2 billion, up 15%. Net interest income was $3.5 billion,"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_63",
+      "rank": 8,
+      "rrf_score": 0.015873015873015872,
+      "found_in": {
+        "sparse": 3
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "provided the following outlook information on July 14, 2026 in connection with announcing its results for the quarter ended June 30, 2026: Full-year 2026 • Management expects net interest income to be approximately $105.5 billion and net interest income excluding Markets to be approximately $96.5 billion, market dependent. • Management expects adjusted expense to be approximately $107.5 billion, market dependent. • Management expects the net charge-off rate in Card Services to be approximately 3"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_235",
+      "rank": 9,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "dense": 4
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "ion, up 15%. Net interest income was $3.5 billion, up 3%. Noninterest revenue was $9.7 billion, up 20%. Revenue from Asset Management was $6.4 billion, up 19%, predominantly driven by: • higher asset management fees, reflecting higher average market levels and strong net inflows, and • higher investment valuation gains. Revenue from Global Private Bank was $6.8 billion, up 12%, reflecting: • higher noninterest revenue, predominantly driven by higher management fees due to strong net inflows and "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_468",
+      "rank": 10,
+      "rrf_score": 0.015625,
+      "found_in": {
+        "sparse": 4
+      },
+      "metadata": {
+        "strategy": "structure_aware",
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "r the year and quarter ended December 31, 2025: Full-year 2026 • Management expects net interest income to be approximately $103 billion and net interest income excluding Markets to be approximately $95 billion, market dependent. • Management expects adjusted expense to be approximately $105 billion, market dependent. • Management expects the net charge-off rate in Card Services to be approximately 3.4%. Net interest income excluding Markets and adjusted expense are non-GAAP financial measures. "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_449",
+      "rank": 11,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "dense": 5
+      },
+      "metadata": {
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "ets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. NII excluding Markets was $92.6 billion, flat when compared with the prior year. – Noninterest revenue (“NIR”) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating "
+    },
+    {
+      "id": "JPMC_10-K_FY2025_476",
+      "rank": 12,
+      "rrf_score": 0.015384615384615385,
+      "found_in": {
+        "sparse": 5
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware"
+      },
+      "text": "odities, largely offset by lower revenue in Securitized Products, Fixed Income Financing and Currencies & Emerging Markets, and • higher Equity Markets revenue, particularly in Equity Derivatives. The increase in CIB was partially offset by lower revenue in Treasury and CIO. Principal transactions revenue in CIB generally has offsets across other revenue lines, including net interest income. The Firm assesses the performance of its Markets business on a total net revenue basis. Refer to CIB segm"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_726",
+      "rank": 13,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "2026, reflecting an increase of $ 1.9 billion from March 31, 2026 and an increase of $ 4.9 billion from December 31, 2025. The increase for the three and six months ended June 30, 2026 was predominantly driven by higher: • Non-U.S. government debt securities of $ 590 million and $ 552 million, respectively, primarily due to purchases. • Gross derivative receivables of $ 1.2 billion and $ 4.1 billion, respectively, due to gains, purchases and net transfers primarily offset by settlements. Refer t"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_236",
+      "rank": 14,
+      "rrf_score": 0.014925373134328358,
+      "found_in": {
+        "dense": 7
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "strategy": "fixed_size",
+        "form": "10-Q"
+      },
+      "text": "her management fees due to strong net inflows and higher average market levels, as well as higher brokerage commissions, and • higher net interest income driven by higher average loans, largely offset by narrower spreads on loans. Noninterest expense was $8.4 billion, up 12%, largely driven by higher compensation, primarily higher revenue-related compensation and continued growth in private banking advisor teams, as well as higher distribution fees. 36 Selected metrics As of or for the three mon"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_668",
+      "rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "-K 2025 compared with 2024 Net income was $4.5 billion, compared with $10.6 billion in the prior year. Net revenue was $7.0 billion, compared with $17.4 billion in the prior year. Net interest income was $6.1 billion, down $3.7 billion, driven by the impact of lower rates and changes in FTP for consumer deposits, partially offset by the impact of investment securities activity. Refer to Business Segment & Corporate Results on page 63 for additional information on FTP. Noninterest revenue was $91"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_2464",
+      "rank": 16,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "sparse": 8
+      },
+      "metadata": {
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC",
+        "section": "Body - MD&A and financials"
+      },
+      "text": "Net increase/(decrease) in cash and due from banks and deposits with banking subsidiaries ( 10 ) ( 46 ) ( 1 ) Cash and due from banks and deposits with banking subsidiaries at the beginning of the year 9,800 9,846 9,847 Cash and due from banks and deposits with banking subsidiaries at the end of the year (b) $ 9,790 $ 9,800 $ 9,846 Cash interest paid $ 12,399 $ 14,851 $ 13,742 Cash income taxes paid, net (e) 276 6,252 10,291 (a) Includes interest expense for intercompany derivative hedges on the"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_66",
+      "rank": 17,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "dense": 9
+      },
+      "metadata": {
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "company": "JPMC"
+      },
+      "text": "ths ended June 30, (in millions) 2026 2025 Change 2026 2025 Change Investment banking fees $ 3,208 $ 2,499 28 % $ 6,066 $ 4,677 30 % Principal transactions 9,007 7,149 26 16,994 14,763 15 Lending- and deposit-related fees 2,511 2,248 12 4,905 4,380 12 Asset management fees 5,658 4,806 18 11,173 9,506 18 Commissions and other fees 2,614 2,194 19 5,096 4,227 21 Investment securities losses (395) (54) NM (331) (91) (264) Mortgage fees and related income 336 363 (7) 645 641 1 Card income 1,348 1,344"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_480",
+      "rank": 18,
+      "rrf_score": 0.014492753623188406,
+      "found_in": {
+        "sparse": 9
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "period": "FY2025"
+      },
+      "text": "th repositioning the investment securities portfolio in Treasury and CIO. The prior year net loss was primarily related to sales of U.S. GSE and government agency MBS and U.S. Treasuries. Refer to Corporate results on pages 80–82 and Note 10 for additional information. Mortgage fees and related income : refer to Notes 6 and 15 for additional information. Card income decreased driven by the net impact of: • lower income in CCB, reflecting lower net interchange income, as well as an increase in am"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_67",
+      "rank": 19,
+      "rrf_score": 0.014285714285714285,
+      "found_in": {
+        "dense": 10
+      },
+      "metadata": {
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026"
+      },
+      "text": "come 336 363 (7) 645 641 1 Card income 1,348 1,344 — 2,538 2,560 (1) Other income (a) 7,549 (b) 1,154 NM 9,220 (b) 3,077 200 Noninterest revenue 31,836 21,703 47 56,306 43,740 29 Net interest income 25,511 23,209 10 50,877 46,482 9 Total net revenue $ 57,347 $ 44,912 28 % $ 107,183 $ 90,222 19 % (a) Included operating lease income of $1.2 billion and $901 million for the three months ended June 30, 2026 and 2025, respectively, and $2.4 billion and $1.7 billion for the six months ended June 30, 2"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_861",
+      "rank": 20,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "dense": 11
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "FY2025",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials"
+      },
+      "text": " higher-yielding product offerings, and • a decrease in CCB primarily driven by increased customer spending, predominantly offset by new accounts. Period-end deposits increased from December 31, 2024, reflecting: • an increase in CIB due to net inflows related to client-driven activities in Payments and Securities Services, • an increase in CCB primarily driven by new accounts, predominantly offset by increased customer spending, and • an increase in AWM primarily driven by growth in both new ac"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_360",
+      "rank": 21,
+      "rrf_score": 0.014084507042253521,
+      "found_in": {
+        "sparse": 11
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": " increase in Corporate as a result of growth in new accounts related to the Firm's international consumer initiatives , and • an increase in AWM primarily driven by growth in both new accounts and balances in existing accounts, partially offset by continued migration into other investment products. Average deposits increased for the six months ended June 30, 2026 compared to the six months ended June 30, 2025, reflecting: • an increase in CIB due to net inflows related to client-driven activitie"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_158",
+      "rank": 22,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "dense": 12
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "terest income was $15.1 billion, up 5%, predominantly driven by higher Card Services NII, largely driven by higher revolving balances. Noninterest revenue was $5.2 billion, up 16%, predominantly driven by: • higher auto operating lease income as a result of growth in volume, and • in Banking & Wealth Management (\"BWM\"), higher asset management fees, reflecting higher average market levels and net inflows, as well as higher deposit-related fees as a result of higher transaction volume and new acc"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1494",
+      "rank": 23,
+      "rrf_score": 0.013888888888888888,
+      "found_in": {
+        "sparse": 12
+      },
+      "metadata": {
+        "form": "10-K",
+        "period": "FY2025",
+        "section": "Body - MD&A and financials",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "of certain derivatives and depends on a number of factors including interest rates, the current price of the underlying asset, and the expected income to be received and costs to be incurred by the seller as a result of holding that asset until the delivery date. An increase in the forward can result in an increase or a decrease in a fair value measurement. Changes in level 3 recurring fair value measurements The following tables include a rollforward of the Consolidated balance sheets amounts ("
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_151",
+      "rank": 24,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "dense": 13
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "ept ratios) 2026 2025 Change 2026 2025 Change Revenue Lending- and deposit-related fees $ 971 $ 888 9 % $ 1,918 $ 1,727 11 % Asset management fees 1,379 1,110 24 2,682 2,203 22 Mortgage fees and related income 325 347 (6) 628 610 3 Card income 691 687 1 1,283 1,340 (4) All other income (a) 1,814 1,420 28 3,499 2,743 28 Noninterest revenue 5,180 4,452 16 10,010 8,623 16 Net interest income 15,092 14,395 5 29,830 28,537 5 Total net revenue 20,272 18,847 8 39,840 37,160 7 Provision for credit losse"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_837",
+      "rank": 25,
+      "rrf_score": 0.0136986301369863,
+      "found_in": {
+        "sparse": 13
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026"
+      },
+      "text": "2 ) million and $ 641 million for active hedging relationships, and $( 588 ) million and $( 673 ) million for discontinued hedging relationships, respectively. Refer to Note 9 for additional information. (d) Positive (negative) amounts related to assets represent cumulative fair value hedge basis adjustments that will reduce (increase) net interest income in future periods. Positive (negative) amounts related to liabilities represent cumulative fair value hedge basis adjustments that will increa"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_108",
+      "rank": 26,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "dense": 14
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size",
+        "form": "10-Q",
+        "section": "none"
+      },
+      "text": ", driven by a net increase in the loan portfolio and changes in the credit quality of certain exposures, partially offset by an update to loss assumptions on certain loans in Markets, and • a net reduction of $120 million in consumer , predominantly driven by improvements in home prices in the first quarter of 2026. Refer to Consolidated Results of Operations and Credit and Investment Risk Management on pages 9-14 and pages 59-78, respectively, Critical Accounting Estimates Used by the Firm on p"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_896",
+      "rank": 27,
+      "rrf_score": 0.013513513513513514,
+      "found_in": {
+        "sparse": 14
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "section": "none"
+      },
+      "text": "billion for the three and six months ended June 30, 2025, respectively. (c) The amortized cost of investment securities is reported net of allowance for credit losses of $ 63 million and $ 106 million at June 30, 2026 and December 31, 2025, respectively. (d) Excludes $ 5.3 billion and $ 4.6 billion of accrued interest receivable at June 30, 2026 and December 31, 2025, respectively. The Firm did not reverse through interest income any accrued interest receivable for the three and six months ended"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_180",
+      "rank": 28,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "dense": 15
+      },
+      "metadata": {
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "strategy": "fixed_size"
+      },
+      "text": "e months ended June 30, Six months ended June 30, (in millions, except ratios) 2026 2025 Change 2026 2025 Change Revenue Investment banking fees $ 3,277 $ 2,513 30 % $ 6,160 $ 4,761 29 % Principal transactions 8,768 7,109 23 16,665 14,717 13 Lending- and deposit-related fees 1,487 1,296 15 2,881 2,526 14 Commissions and other fees 1,748 1,493 17 3,462 2,930 18 Card income 649 645 1 1,234 1,196 3 All other income 1,025 736 39 1,942 1,484 31 Noninterest revenue 16,954 13,792 23 32,344 27,614 17 Ne"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_1255",
+      "rank": 29,
+      "rrf_score": 0.013333333333333334,
+      "found_in": {
+        "sparse": 15
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q"
+      },
+      "text": "or the six months ended June 30, (in millions, except ratios) Corporate Reconciling Items (a) Total 2026 2025 2026 2025 2026 2025 Noninterest revenue $ 5,413 (e) $ 702 $ ( 1,151 ) $ ( 1,265 ) $ 56,306 $ 43,740 Net interest income 1,848 3,140 ( 224 ) ( 207 ) 50,877 46,482 Total net revenue 7,261 3,842 ( 1,375 ) ( 1,472 ) 107,183 90,222 Provision for credit losses ( 11 ) 6 — — 5,022 6,154 Total noninterest expense (d) 1,179 732 (f) — — 54,166 47,376 Income/(loss) before income tax expense/(benefit"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_477",
+      "rank": 30,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "dense": 16
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "period": "FY2025",
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware"
+      },
+      "text": "ss on a total net revenue basis. Refer to CIB segment and Corporate results on pages 69–75 and pages 80–82, respectively, and Note 6 for additional information. Lending- and deposit-related fees increased, reflecting: • in CIB, a reduction in client credits applied to deposit-related fees, as well as higher cash management fees in Payments as a result of higher volume, and • in CCB, higher deposit-related fees as a result of higher transaction volume and new accounts. Refer to CCB and CIB segmen"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_1690",
+      "rank": 31,
+      "rrf_score": 0.013157894736842105,
+      "found_in": {
+        "sparse": 16
+      },
+      "metadata": {
+        "form": "10-K",
+        "company": "JPMC",
+        "strategy": "structure_aware",
+        "section": "Body - MD&A and financials",
+        "period": "FY2025"
+      },
+      "text": "comprised of $ 641 million and $( 1.2 ) billion for active hedging relationships, and $( 673 ) million and $( 566 ) million for discontinued hedging relationships, respectively. Refer to Note 10 for additional information. (d) Positive (negative) amounts related to assets represent cumulative fair value hedge basis adjustments that will reduce (increase) net interest income in future periods. Positive (negative) amounts related to liabilities represent cumulative fair value hedge basis adjustmen"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_219",
+      "rank": 32,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "dense": 17
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "form": "10-Q",
+        "section": "none",
+        "strategy": "fixed_size",
+        "company": "JPMC"
+      },
+      "text": "$ 5,925 $ 8,783 $ 3,205 $ 3,865 $ 7,070 Lending- and deposit-related fees 120 65 185 133 41 174 Commissions and other fees 127 754 881 170 590 760 All other income 369 (85) 284 399 (28) 371 Noninterest revenue 3,474 6,659 10,133 3,907 4,468 8,375 Net interest income 2,579 (634) 1,945 1,783 (1,222) 561 Total net revenue $ 6,053 $ 6,025 $ 12,078 $ 5,690 $ 3,246 $ 8,936 Six months ended June 30, Six months ended June 30, 2026 2025 (in millions) Fixed Income Markets Equity Markets Total Markets Fixe"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_848",
+      "rank": 33,
+      "rrf_score": 0.012987012987012988,
+      "found_in": {
+        "sparse": 17
+      },
+      "metadata": {
+        "form": "10-Q",
+        "section": "none",
+        "period": "Q2-2026",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": " value of these amounts are recorded in net interest income. (b) Excludes amounts reclassified from AOCI to income associated with net investment hedges. The amounts reclassified for the three and six months ended June 30, 2026 were not material. There were no sales or liquidations of legal entities that resulted in reclassifications for the three and six months ended June 30, 2025. Refer to Note 19 for further information. Gains and losses on derivatives used for specified risk management purpo"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_838",
+      "rank": 34,
+      "rrf_score": 0.01282051282051282,
+      "found_in": {
+        "sparse": 18
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": "air value hedge basis adjustments that will increase (reduce) net interest income in future periods. (e) Represents basis adjustments existing on the balance sheet date associated with hedged items that have been de-designated from qualifying fair value hedging relationships. 125 Cash flow hedge gains and losses The following tables present derivative instruments, by contract type, used in cash flow hedge accounting relationships, and the pre-tax gains/(losses) recorded on such derivatives, for "
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_361",
+      "rank": 35,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "dense": 19
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "section": "none",
+        "period": "Q2-2026",
+        "strategy": "fixed_size"
+      },
+      "text": " to net inflows related to client-driven activities, primarily in Payments, partially offset by net maturities of structured notes in Markets, • an increase in CCB driven by growth in new accounts, largely offset by continued customer spending, • an increase in Corporate as a result of growth in new accounts related to the Firm's international consumer initiatives , and • an increase in AWM primarily driven by growth in both new accounts and balances in existing accounts. Period-end deposits inc"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_83",
+      "rank": 36,
+      "rrf_score": 0.012658227848101266,
+      "found_in": {
+        "sparse": 19
+      },
+      "metadata": {
+        "form": "10-Q",
+        "company": "JPMC",
+        "period": "Q2-2026",
+        "strategy": "fixed_size",
+        "section": "none"
+      },
+      "text": "d with repositioning the investment securities portfolio in Treasury and CIO. The current year net loss was primarily related to sales of U.S. GSE and government agency MBS, partially offset by gains on sales of U.S. Treasuries. Mortgage fees and related income : refer to Note 14 for additional information. 10 Card income was relatively flat, reflecting, primarily in CCB, an increase in amortization related to new account origination costs and lower net interchange income, predominantly offset b"
+    }
+  ],
+  "post_fusion_dedup_dropped": [],
+  "reranked": [
+    {
+      "id": "JPMC_10-Q_Q2-2026_726",
+      "rerank_rank": 1,
+      "rerank_score": 2.4984359741210938,
+      "rrf_rank": 13,
+      "rrf_score": 0.015151515151515152,
+      "found_in": {
+        "sparse": 6
+      },
+      "metadata": {
+        "strategy": "fixed_size",
+        "company": "JPMC",
+        "section": "none",
+        "form": "10-Q",
+        "period": "Q2-2026"
+      },
+      "text": "2026, reflecting an increase of $ 1.9 billion from March 31, 2026 and an increase of $ 4.9 billion from December 31, 2025. The increase for the three and six months ended June 30, 2026 was predominantly driven by higher: • Non-U.S. government debt securities of $ 590 million and $ 552 million, respectively, primarily due to purchases. • Gross derivative receivables of $ 1.2 billion and $ 4.1 billion, respectively, due to gains, purchases and net transfers primarily offset by settlements. Refer t"
+    },
+    {
+      "id": "JPMC_10-Q_Q2-2026_77",
+      "rerank_rank": 2,
+      "rerank_score": 1.9903678894042969,
+      "rrf_rank": 4,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "dense": 1
+      },
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      },
+      "text": "rmation on the gains on certain equity investments. Net interest income increased driven by higher Markets net interest income, higher deposit balances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.3 trillion, up $442 billion, and the yield was 4.75%, down 29 basis points (“bps”). The net yield on these assets, on an FTE basis, was 2.4"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_552",
+      "rerank_rank": 3,
+      "rerank_score": 1.8006244897842407,
+      "rrf_rank": 5,
+      "rrf_score": 0.01639344262295082,
+      "found_in": {
+        "sparse": 1
+      },
+      "metadata": {
+        "company": "JPMC",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "form": "10-K"
+      },
+      "text": "sted to reflect economic conditions and other factors, which may impact the allocation of net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for as"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_668",
+      "rerank_rank": 4,
+      "rerank_score": 1.7268080711364746,
+      "rrf_rank": 15,
+      "rrf_score": 0.014705882352941176,
+      "found_in": {
+        "dense": 8
+      },
+      "metadata": {
+        "section": "Body - MD&A and financials",
+        "form": "10-K",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "-K 2025 compared with 2024 Net income was $4.5 billion, compared with $10.6 billion in the prior year. Net revenue was $7.0 billion, compared with $17.4 billion in the prior year. Net interest income was $6.1 billion, down $3.7 billion, driven by the impact of lower rates and changes in FTP for consumer deposits, partially offset by the impact of investment securities activity. Refer to Business Segment & Corporate Results on page 63 for additional information on FTP. Noninterest revenue was $91"
+    },
+    {
+      "id": "JPMC_10-K_FY2025_638",
+      "rerank_rank": 5,
+      "rerank_score": 1.4759750366210938,
+      "rrf_rank": 6,
+      "rrf_score": 0.016129032258064516,
+      "found_in": {
+        "dense": 2
+      },
+      "metadata": {
+        "form": "10-K",
+        "section": "Body - MD&A and financials",
+        "strategy": "structure_aware",
+        "period": "FY2025",
+        "company": "JPMC"
+      },
+      "text": "interest in the entity. 2025 compared with 2024 Net income was $6.5 billion, up 20%. Net revenue was $24.1 billion, up 12%. Net interest income was $6.8 billion, up 4%. Noninterest revenue was $17.2 billion, up 15%. Revenue from Asset Management was $11.7 billion, up 15%, predominantly driven by: • higher asset management fees, reflecting strong net inflows and higher average market levels, • higher investment valuation gains, and • performance fees. Revenue from Global Private Bank was $12.4 bi"
+    }
+  ],
+  "context": "[1] (10-Q, Q2-2026)\n2026, reflecting an increase of $ 1.9 billion from March 31, 2026 and an increase of $ 4.9 billion from December 31, 2025. The increase for the three and six months ended June 30, 2026 was predominantly driven by higher: • Non-U.S. government debt securities of $ 590 million and $ 552 million, respectively, primarily due to purchases. • Gross derivative receivables of $ 1.2 billion and $ 4.1 billion, respectively, due to gains, purchases and net transfers primarily offset by settlements. Refer t\n\n[2] (10-Q, Q2-2026)\nrmation on the gains on certain equity investments. Net interest income increased driven by higher Markets net interest income, higher deposit balances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.3 trillion, up $442 billion, and the yield was 4.75%, down 29 basis points (“bps”). The net yield on these assets, on an FTE basis, was 2.4\n\n[3] (10-K, FY2025, Body - MD&A and financials)\nsted to reflect economic conditions and other factors, which may impact the allocation of net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for as\n\n[4] (10-K, FY2025, Body - MD&A and financials)\n-K 2025 compared with 2024 Net income was $4.5 billion, compared with $10.6 billion in the prior year. Net revenue was $7.0 billion, compared with $17.4 billion in the prior year. Net interest income was $6.1 billion, down $3.7 billion, driven by the impact of lower rates and changes in FTP for consumer deposits, partially offset by the impact of investment securities activity. Refer to Business Segment & Corporate Results on page 63 for additional information on FTP. Noninterest revenue was $91\n\n[5] (10-K, FY2025, Body - MD&A and financials)\ninterest in the entity. 2025 compared with 2024 Net income was $6.5 billion, up 20%. Net revenue was $24.1 billion, up 12%. Net interest income was $6.8 billion, up 4%. Noninterest revenue was $17.2 billion, up 15%. Revenue from Asset Management was $11.7 billion, up 15%, predominantly driven by: • higher asset management fees, reflecting strong net inflows and higher average market levels, • higher investment valuation gains, and • performance fees. Revenue from Global Private Bank was $12.4 bi",
+  "user_prompt": "[1] (10-Q, Q2-2026)\n2026, reflecting an increase of $ 1.9 billion from March 31, 2026 and an increase of $ 4.9 billion from December 31, 2025. The increase for the three and six months ended June 30, 2026 was predominantly driven by higher: • Non-U.S. government debt securities of $ 590 million and $ 552 million, respectively, primarily due to purchases. • Gross derivative receivables of $ 1.2 billion and $ 4.1 billion, respectively, due to gains, purchases and net transfers primarily offset by settlements. Refer t\n\n[2] (10-Q, Q2-2026)\nrmation on the gains on certain equity investments. Net interest income increased driven by higher Markets net interest income, higher deposit balances across the LOBs and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates. The Firm’s average interest-earning assets were $4.3 trillion, up $442 billion, and the yield was 4.75%, down 29 basis points (“bps”). The net yield on these assets, on an FTE basis, was 2.4\n\n[3] (10-K, FY2025, Body - MD&A and financials)\nsted to reflect economic conditions and other factors, which may impact the allocation of net interest income to the segments. Effective in the fourth quarter of 2024, the Firm updated its FTP with respect to consumer deposits, which resulted in an increase in the funding benefit reflected within CCB’s net interest income that is fully offset in Corporate, with no effect on the Firm’s net interest income. As a result of lower average interest rates in the current year, the cost of funding for as\n\n[4] (10-K, FY2025, Body - MD&A and financials)\n-K 2025 compared with 2024 Net income was $4.5 billion, compared with $10.6 billion in the prior year. Net revenue was $7.0 billion, compared with $17.4 billion in the prior year. Net interest income was $6.1 billion, down $3.7 billion, driven by the impact of lower rates and changes in FTP for consumer deposits, partially offset by the impact of investment securities activity. Refer to Business Segment & Corporate Results on page 63 for additional information on FTP. Noninterest revenue was $91\n\n[5] (10-K, FY2025, Body - MD&A and financials)\ninterest in the entity. 2025 compared with 2024 Net income was $6.5 billion, up 20%. Net revenue was $24.1 billion, up 12%. Net interest income was $6.8 billion, up 4%. Noninterest revenue was $17.2 billion, up 15%. Revenue from Asset Management was $11.7 billion, up 15%, predominantly driven by: • higher asset management fees, reflecting strong net inflows and higher average market levels, • higher investment valuation gains, and • performance fees. Revenue from Global Private Bank was $12.4 bi\n\nQuestion: What drove the increase in net interest income in Q2 2026?",
+  "citation_map": [
+    {
+      "number": 1,
+      "chunk_id": "JPMC_10-Q_Q2-2026_726"
+    },
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_77"
+    },
+    {
+      "number": 3,
+      "chunk_id": "JPMC_10-K_FY2025_552"
+    },
+    {
+      "number": 4,
+      "chunk_id": "JPMC_10-K_FY2025_668"
+    },
+    {
+      "number": 5,
+      "chunk_id": "JPMC_10-K_FY2025_638"
+    }
+  ],
+  "answer_text": "The increase in net interest income in Q2 2026 was driven by higher Markets net interest income, higher deposit balances across the lines of business (LOBs) and Corporate, higher revolving balances in Card Services, and higher wholesale loan balances, partially offset by the impact of lower rates [2].",
+  "parsed_citations": [
+    2
+  ],
+  "resolved_citations": [
+    {
+      "number": 2,
+      "chunk_id": "JPMC_10-Q_Q2-2026_77",
+      "metadata": {
+        "period": "Q2-2026",
+        "section": "none",
+        "form": "10-Q",
+        "company": "JPMC",
+        "strategy": "fixed_size"
+      }
+    }
+  ]
+}
