@@ -34,6 +34,7 @@ class AnswerResult:
     citations: list          # [{"number", "chunk_id", "metadata"}]
     retrieved_chunks: list   # results from pipeline.search()
     confidence: float | None = None
+    citation_verification: list | None = None  # filled in by verify.verify_answer()
 
 
 def format_header(number, metadata):
@@ -108,6 +109,8 @@ def parse_args():
     parser.add_argument("--top-k", type=int, default=5)
     parser.add_argument("--form", help="e.g. 10-K, 10-Q, earnings_call")
     parser.add_argument("--period", help="e.g. FY2025, Q2-2026")
+    parser.add_argument("--no-verify", action="store_true",
+                        help="skip citation verification (saves one LLM call per citation)")
     return parser.parse_args()
 
 def print_result(context, result):
@@ -129,36 +132,46 @@ def print_result(context, result):
     for c in result.citations:
         print(f"[{c['number']}] -> {c['chunk_id']}")
 
+    if result.citation_verification is None:
+        return
+
+    print("\n" + "=" * 70)
+    print("CITATION VERIFICATION")
+    print("=" * 70)
+    if not result.citation_verification:
+        print("(no citations to verify)")
+    for v in result.citation_verification:
+        mark = "SUPPORTED    " if v["supported"] else "NOT SUPPORTED"
+        print(f"{mark} [{v['number']}] {v['chunk_id']}")
+        print(f"  claim:  {v['claim']}")
+        print(f"  reason: {v['reason']}")
+
+
 if __name__ == "__main__":
-    questions = [
-        "How much did the firm spend on share repurchases?",
-        "What was the CEO's total compensation?",
-        "How many shares were repurchased in Q2 2026, and what did they cost?",
-    ]
+    from verify import verify_answer  # imported here: verify imports generator
 
-    for q in questions:
-        results = search(q, n=20, top_k=5)
-        context, citation_map = build_context(results)
+    args = parse_args()
 
-        user_prompt = f"{context}\n\nQuestion: {q}"
-        answer_text = call_llm(SYSTEM_PROMPT, user_prompt)
+    filters = {}
+    if args.form:
+        filters["form"] = args.form
+    if args.period:
+        filters["period"] = args.period
 
-        numbers = parse_citations(answer_text)
-        result = AnswerResult(
-            question=q,
-            answer_text=answer_text,
-            citations=resolve_citations(numbers, citation_map, results),
-            retrieved_chunks=results,
-        )
+    results = search(args.question, n=args.n, top_k=args.top_k, filters=filters or None)
+    context, citation_map = build_context(results)
 
-        print("\n" + "=" * 70)
-        print(f"Q: {q}\n")
-        print("RETRIEVED:")
-        for i, r in enumerate(results, start=1):
-            m = r["metadata"]
-            print(f"  [{i}] {r['id']}  {m['form']}/{m['period']}")
-        print(f"\nANSWER:\n{answer_text}\n")
-        print(f"CITATIONS: {result.citations}")
-        if "Q2 2026" in q:
-            print("\nFULL CONTEXT AS SENT:")
-            print(context)
+    answer_text = call_llm(SYSTEM_PROMPT, f"{context}\n\nQuestion: {args.question}")
+    numbers = parse_citations(answer_text)
+
+    result = AnswerResult(
+        question=args.question,
+        answer_text=answer_text,
+        citations=resolve_citations(numbers, citation_map, results),
+        retrieved_chunks=results,
+    )
+
+    if not args.no_verify:
+        verify_answer(result)
+
+    print_result(context, result)
